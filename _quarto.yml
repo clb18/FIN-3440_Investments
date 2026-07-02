@@ -1,0 +1,45 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - assets/**
+  render:
+    - "*.qmd"
+    - "Lectures/*.qmd"          # use "Lectures/**/*.qmd" if you nest sub-folders
+
+
+website:
+  title: "Investments"
+  site-url: "https://clb18.github.io/FIN-3440_Investments"
+  repo-url: "https://github.com/clb18/FIN-3440_Investments"
+
+  navbar:
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Syllabus
+        href: syllabus.qmd
+      - text: CV
+        href: cv.qmd
+
+  sidebar:
+    style: docked
+    search: true
+    contents:
+      - section: "Lecture Notes"
+        contents:
+          - text: "Ch 1 - Investments: Background and Issues"
+            href: Lectures/Chapter01_Investments_Background_Lecture.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-location: left
+    number-sections: true
+    css: styles.css
+    grid:
+      sidebar-width: 275px
+      body-width: 1200px
+      margin-width: 0px
+      gutter-width: 1.5rem

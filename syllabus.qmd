@@ -1,0 +1,15 @@
+---
+title: "Course Syllabus"
+author: "Prof. Barker"
+date: today
+
+format:
+  html:
+    toc: true
+    number-sections: false
+  pdf:
+    toc: true
+    number-sections: false
+---
+
+This page is under construction.
