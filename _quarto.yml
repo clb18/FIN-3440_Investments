@@ -1,12 +1,13 @@
 project:
   type: website
-  output-dir: docs
-  resources:
+  resources: 
     - assets/**
-  render:
+  output-dir: docs
+  render: 
     - "*.qmd"
-    - "Lectures/*.qmd"          # use "Lectures/**/*.qmd" if you nest sub-folders
-
+    - "lectures/**.qmd"
+#    - "!lectures/Chapter05_Lecture**.qmd"
+#    - "!lectures/Chapter06_Lecture**.qmd"
 
 website:
   title: "Investments"
@@ -27,12 +28,28 @@ website:
     search: true
     contents:
       - section: "Lecture Notes"
-        contents:
-          - text: "Ch 1 - Investments: Background and Issues"
-            href: Lectures/Chapter01_Investments_Background_Lecture.qmd
-
+        contents: 
+          - text: "Ch 0 - Problems with Investment Theory"
+            href: Lectures/Chapter00_Lecture.qmd
+          - section: Elements of Investments
+            contents:
+              - text: "Ch 1 - Background and Issues"
+                href: Lectures/Chapter01_Lecture.qmd
+              - text: "Ch 2 - Asset Classes"
+                href: Lectures/Chapter02_Lecture.qmd
+              - text: "Ch 3 - How Securities Trade"
+                href: Lectures/Chapter03_Lecture.qmd
+              - text: "Ch 4 - Mutual Funds"
+                href: Lectures/Chapter04_Lecture.qmd
+        #- section: Portfolio Theory
+          #contents:
+              #- text: 
+                #href:
+      
 format:
   html:
+    code-fold: true
+    code-summary: "Show/hide R code"
     theme: cosmo
     toc: true
     toc-location: left

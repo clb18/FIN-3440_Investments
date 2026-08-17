@@ -1,0 +1,66 @@
+---
+title: "Chapter 0 - Preface - The Problem with Measurement"
+author: "Prof. Barker"
+date: today
+format:
+  html:
+    toc: true
+    toc-location: left
+    toc-depth: 3
+    toc-expand: 1
+    number-sections: true
+    number-offset: -1
+    title-block-style: default
+    theme: cosmo
+  docx:
+    toc: true
+    number-sections: true
+  pdf:
+    toc: true
+    number-sections: true
+    geometry: margin=1in
+---
+
+# Introduction
+
+**"In our lust for measurement, we frequently measure that which we can rather than that which we wish to measure...and forget that there is a difference."**
+
+  --Udny Yule, econometrician
+
+
+## Caveat Emptor - The Black Swan
+
+### Risk Is Not the Same as Uncertainty
+Traditional finance assumes that future risks can be estimated from historical data. Taleb argues that the most consequential events are fundamentally unpredictable 'unknown unknowns,' meaning markets are shaped more by Knightian uncertainty than by measurable risk.
+
+### EMH Cannot Price the Unknown
+The Efficient Market Hypothesis assumes prices reflect all available information. Taleb responds that truly transformative Black Swan events are, by definition, outside the available information set, so markets cannot efficiently price what no one yet knows.
+
+### Financial Markets Have Fat Tails
+Many classical financial models assume returns follow a normal distribution with rare extreme outcomes. Taleb argues that financial returns exhibit fat tails, making catastrophic events far more common than standard models predict.
+
+### Volatility Is Not True Risk
+Modern Portfolio Theory measures risk primarily through volatility. Taleb contends that investors are usually destroyed not by ordinary price fluctuations but by rare events such as leverage, liquidity crises, and systemic failures that volatility measures largely ignore.
+
+### Diversification Breaks Down in Crises
+Diversification reduces risk during normal market conditions by spreading exposures across assets. During major crises, however, correlations often converge toward one, causing many assets to fall together precisely when diversification is needed most.
+
+### History Is an Incomplete Guide
+Traditional models estimate future probabilities from historical observations. Taleb's 'turkey problem' illustrates that long periods of stability can create false confidence while hiding the possibility of a sudden catastrophic event. **Survivorship Bias - The Thanksgiving turkey has been fed well for many weeks. Why would he think this would ever end? Especially if it can't read a calendar.**
+
+### Models Create an Illusion of Precision
+Sophisticated mathematical models often produce highly precise estimates of risk and return. Taleb argues that this apparent precision encourages overconfidence because the assumptions underlying the models cannot capture unknown future events.
+
+### Incentives Encourage Hidden Tail Risk
+Financial institutions are frequently rewarded for generating steady short-term returns. Taleb argues that this incentive structure encourages strategies that earn small gains for long periods while quietly accumulating exposure to rare but devastating losses.
+
+**The Agency Problem**
+
+### Optimization Ignores Fragility
+Modern Portfolio Theory seeks to maximize expected returns for a given level of measured risk. Taleb instead argues that investors should prioritize robustness and resilience so portfolios can survive unforeseen shocks rather than simply perform well under assumed conditions.
+
+### The Goal Should Be Resilience
+Rather than attempting to predict every future event, Taleb recommends building portfolios that can withstand surprises. Maintaining liquidity, limiting leverage, and preserving flexibility become more valuable than pursuing mathematically optimal portfolios.
+
+### Overall Summary
+Taleb's central argument is that traditional EMH and Modern Portfolio Theory rely too heavily on historical data and probabilistic models that underestimate rare, high-impact events, making resilience, robustness, and survival more important than precise optimization or prediction.
