@@ -1,0 +1,2096 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Prof.&nbsp;Barker">
+<meta name="dcterms.date" content="2026-08-16">
+
+<title>Chapter 2 - Asset Classes and Financial Instruments – Investments</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a2e98a8173336b0a3fc6fb521ab0b9ac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Investments</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../syllabus.html"> 
+<span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../cv.html"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Lectures/Chapter00_Lecture.html">Lecture Notes</a></li><li class="breadcrumb-item"><a href="../Lectures/Chapter01_Lecture.html">Elements of Investments</a></li><li class="breadcrumb-item"><a href="../Lectures/Chapter02_Lecture.html">Ch 2 - Asset Classes</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Lecture Notes</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/Chapter00_Lecture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ch 0 - Problems with Investment Theory</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Elements of Investments</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/Chapter01_Lecture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ch 1 - Background and Issues</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/Chapter02_Lecture.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Ch 2 - Asset Classes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/Chapter03_Lecture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ch 3 - How Securities Trade</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/Chapter04_Lecture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ch 4 - Mutual Funds</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="1">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a>
+  <ul class="collapse">
+  <li><a href="#chapter-roadmap" id="toc-chapter-roadmap" class="nav-link" data-scroll-target="#chapter-roadmap">Chapter Roadmap</a></li>
+  </ul></li>
+  <li><a href="#the-money-market" id="toc-the-money-market" class="nav-link" data-scroll-target="#the-money-market">2.1 The Money Market</a>
+  <ul class="collapse">
+  <li><a href="#treasury-bills" id="toc-treasury-bills" class="nav-link" data-scroll-target="#treasury-bills">2.1.1 Treasury Bills</a></li>
+  <li><a href="#certificates-of-deposit" id="toc-certificates-of-deposit" class="nav-link" data-scroll-target="#certificates-of-deposit">2.1.2 Certificates of Deposit</a></li>
+  <li><a href="#commercial-paper" id="toc-commercial-paper" class="nav-link" data-scroll-target="#commercial-paper">2.1.3 Commercial Paper</a></li>
+  <li><a href="#bankers-acceptances" id="toc-bankers-acceptances" class="nav-link" data-scroll-target="#bankers-acceptances">2.1.4 Bankers’ Acceptances</a></li>
+  <li><a href="#eurodollars" id="toc-eurodollars" class="nav-link" data-scroll-target="#eurodollars">2.1.5 Eurodollars</a></li>
+  <li><a href="#repos-and-reverses" id="toc-repos-and-reverses" class="nav-link" data-scroll-target="#repos-and-reverses">2.1.6 Repos and Reverses</a></li>
+  <li><a href="#brokers-calls" id="toc-brokers-calls" class="nav-link" data-scroll-target="#brokers-calls">2.1.7 Brokers’ Calls</a></li>
+  <li><a href="#federal-funds" id="toc-federal-funds" class="nav-link" data-scroll-target="#federal-funds">2.1.8 Federal Funds</a></li>
+  <li><a href="#libor-and-its-replacements" id="toc-libor-and-its-replacements" class="nav-link" data-scroll-target="#libor-and-its-replacements">2.1.9 LIBOR and Its Replacements</a></li>
+  <li><a href="#yields-on-money-market-instruments" id="toc-yields-on-money-market-instruments" class="nav-link" data-scroll-target="#yields-on-money-market-instruments">2.1.10 Yields on Money Market Instruments</a></li>
+  <li><a href="#money-market-funds" id="toc-money-market-funds" class="nav-link" data-scroll-target="#money-market-funds">2.1.11 Money Market Funds</a></li>
+  </ul></li>
+  <li><a href="#the-bond-market" id="toc-the-bond-market" class="nav-link" data-scroll-target="#the-bond-market">2.2 The Bond Market</a>
+  <ul class="collapse">
+  <li><a href="#treasury-notes-and-bonds" id="toc-treasury-notes-and-bonds" class="nav-link" data-scroll-target="#treasury-notes-and-bonds">2.2.1 Treasury Notes and Bonds</a></li>
+  <li><a href="#inflation-protected-treasury-bonds" id="toc-inflation-protected-treasury-bonds" class="nav-link" data-scroll-target="#inflation-protected-treasury-bonds">2.2.2 Inflation-Protected Treasury Bonds</a></li>
+  <li><a href="#federal-agency-debt" id="toc-federal-agency-debt" class="nav-link" data-scroll-target="#federal-agency-debt">2.2.3 Federal Agency Debt</a></li>
+  <li><a href="#international-bonds" id="toc-international-bonds" class="nav-link" data-scroll-target="#international-bonds">2.2.4 International Bonds</a></li>
+  <li><a href="#municipal-bonds" id="toc-municipal-bonds" class="nav-link" data-scroll-target="#municipal-bonds">2.2.5 Municipal Bonds</a></li>
+  <li><a href="#corporate-bonds" id="toc-corporate-bonds" class="nav-link" data-scroll-target="#corporate-bonds">2.2.6 Corporate Bonds</a></li>
+  <li><a href="#mortgage--and-asset-backed-securities" id="toc-mortgage--and-asset-backed-securities" class="nav-link" data-scroll-target="#mortgage--and-asset-backed-securities">2.2.7 Mortgage- and Asset-Backed Securities</a></li>
+  </ul></li>
+  <li><a href="#equity-securities" id="toc-equity-securities" class="nav-link" data-scroll-target="#equity-securities">2.3 Equity Securities</a>
+  <ul class="collapse">
+  <li><a href="#common-stock-as-ownership-shares" id="toc-common-stock-as-ownership-shares" class="nav-link" data-scroll-target="#common-stock-as-ownership-shares">2.3.1 Common Stock as Ownership Shares</a></li>
+  <li><a href="#characteristics-of-common-stock" id="toc-characteristics-of-common-stock" class="nav-link" data-scroll-target="#characteristics-of-common-stock">2.3.2 Characteristics of Common Stock</a></li>
+  <li><a href="#stock-market-listings" id="toc-stock-market-listings" class="nav-link" data-scroll-target="#stock-market-listings">2.3.3 Stock Market Listings</a></li>
+  <li><a href="#preferred-stock" id="toc-preferred-stock" class="nav-link" data-scroll-target="#preferred-stock">2.3.4 Preferred Stock</a></li>
+  <li><a href="#depositary-receipts" id="toc-depositary-receipts" class="nav-link" data-scroll-target="#depositary-receipts">2.3.5 Depositary Receipts</a></li>
+  </ul></li>
+  <li><a href="#stock-and-bond-market-indexes" id="toc-stock-and-bond-market-indexes" class="nav-link" data-scroll-target="#stock-and-bond-market-indexes">2.4 Stock and Bond Market Indexes</a>
+  <ul class="collapse">
+  <li><a href="#stock-market-indexes" id="toc-stock-market-indexes" class="nav-link" data-scroll-target="#stock-market-indexes">2.4.1 Stock Market Indexes</a></li>
+  <li><a href="#the-dow-jones-industrial-average" id="toc-the-dow-jones-industrial-average" class="nav-link" data-scroll-target="#the-dow-jones-industrial-average">2.4.2 The Dow Jones Industrial Average</a></li>
+  <li><a href="#the-standard-poors-500-index" id="toc-the-standard-poors-500-index" class="nav-link" data-scroll-target="#the-standard-poors-500-index">2.4.3 The Standard &amp; Poor’s 500 Index</a></li>
+  <li><a href="#russell-indexes" id="toc-russell-indexes" class="nav-link" data-scroll-target="#russell-indexes">2.4.4 Russell Indexes</a></li>
+  <li><a href="#other-u.s.-market-value-indexes" id="toc-other-u.s.-market-value-indexes" class="nav-link" data-scroll-target="#other-u.s.-market-value-indexes">2.4.5 Other U.S. Market Value Indexes</a></li>
+  <li><a href="#equally-weighted-indexes" id="toc-equally-weighted-indexes" class="nav-link" data-scroll-target="#equally-weighted-indexes">2.4.6 Equally Weighted Indexes</a></li>
+  <li><a href="#foreign-and-international-stock-market-indexes" id="toc-foreign-and-international-stock-market-indexes" class="nav-link" data-scroll-target="#foreign-and-international-stock-market-indexes">2.4.7 Foreign and International Stock Market Indexes</a></li>
+  <li><a href="#bond-market-indicators" id="toc-bond-market-indicators" class="nav-link" data-scroll-target="#bond-market-indicators">2.4.8 Bond Market Indicators</a></li>
+  </ul></li>
+  <li><a href="#derivative-markets" id="toc-derivative-markets" class="nav-link" data-scroll-target="#derivative-markets">2.5 Derivative Markets</a>
+  <ul class="collapse">
+  <li><a href="#options" id="toc-options" class="nav-link" data-scroll-target="#options">2.5.1 Options</a></li>
+  <li><a href="#futures-contracts" id="toc-futures-contracts" class="nav-link" data-scroll-target="#futures-contracts">2.5.2 Futures Contracts</a></li>
+  </ul></li>
+  <li><a href="#concept-check-solutions" id="toc-concept-check-solutions" class="nav-link" data-scroll-target="#concept-check-solutions">Concept Check Solutions</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#key-terms" id="toc-key-terms" class="nav-link" data-scroll-target="#key-terms">Key Terms</a>
+  <ul class="collapse">
+  <li><a href="#looking-ahead" id="toc-looking-ahead" class="nav-link" data-scroll-target="#looking-ahead">Looking Ahead</a></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="Chapter02_Lecture.docx"><i class="bi bi-file-word"></i>MS Word</a></li><li><a href="Chapter02_Lecture.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Lectures/Chapter00_Lecture.html">Lecture Notes</a></li><li class="breadcrumb-item"><a href="../Lectures/Chapter01_Lecture.html">Elements of Investments</a></li><li class="breadcrumb-item"><a href="../Lectures/Chapter02_Lecture.html">Ch 2 - Asset Classes</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Chapter 2 - Asset Classes and Financial Instruments</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Prof.&nbsp;Barker </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 16, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level1">
+<h1>Learning Objectives</h1>
+<p>By the end of this chapter, you should be able to:</p>
+<ul>
+<li><strong>LO 2-1</strong> Describe the differences among the major assets that trade in money markets and in capital markets.</li>
+<li><strong>LO 2-2</strong> Describe the construction of stock market indexes.</li>
+<li><strong>LO 2-3</strong> Calculate the profit or loss on investments in options and futures contracts.</li>
+</ul>
+<section id="chapter-roadmap" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="chapter-roadmap">Chapter Roadmap</h2>
+<p>In Chapter 1 we saw that building a portfolio begins with <strong>asset allocation</strong> - deciding how much to place in broad asset classes - followed by <strong>security selection</strong> within each class. This chapter tours those asset classes and the specific instruments that populate them.</p>
+<p>Financial markets are traditionally split into two segments:</p>
+<ul>
+<li>The <strong>money market</strong>: short-term, marketable, liquid, low-risk debt securities (often called <em>cash equivalents</em>).</li>
+<li>The <strong>capital market</strong>: longer-term and riskier securities, which we further subdivide into (1) longer-term <strong>debt</strong> (bonds), (2) <strong>equity</strong>, and (3) <strong>derivative</strong> markets where options and futures trade.</li>
+</ul>
+<p>The table below previews the markets, instruments, and indexes covered in the chapter.</p>
+<p><strong>Table 2.1 - Financial markets and indexes</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>The money market</th>
+<th>The bond market</th>
+<th>Equity markets</th>
+<th>Derivative markets</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Treasury bills</td>
+<td>Treasury bonds and notes</td>
+<td>Common stocks</td>
+<td>Options</td>
+</tr>
+<tr class="even">
+<td>Certificates of deposit</td>
+<td>Federal agency debt</td>
+<td>Preferred stocks</td>
+<td>Futures and forwards</td>
+</tr>
+<tr class="odd">
+<td>Commercial paper</td>
+<td>Municipal bonds</td>
+<td></td>
+<td>Swaps</td>
+</tr>
+<tr class="even">
+<td>Bankers’ acceptances</td>
+<td>Corporate bonds</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Eurodollars</td>
+<td>Mortgage-backed securities</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Repos and reverses</td>
+<td><strong>Indexes:</strong> Dow Jones averages, S&amp;P indexes, bond-market indicators, international indexes</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Federal funds</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Brokers’ calls</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="the-money-market" class="level1">
+<h1>2.1 The Money Market</h1>
+<p>The <strong>money market</strong> consists of very short-term, highly marketable debt securities. Many of these securities trade in large denominations, placing them out of reach of individual investors directly; <strong>money market mutual funds</strong> solve this by pooling small investors’ resources to buy a diversified set of money market instruments on their behalf.</p>
+<section id="treasury-bills" class="level2">
+<h2 class="anchored" data-anchor-id="treasury-bills">2.1.1 Treasury Bills</h2>
+<p><strong>U.S. Treasury bills (T-bills)</strong> are the most marketable of all money market instruments. The government borrows by selling bills at a <strong>discount</strong> from their stated face (par) value; at maturity the investor receives the full face value, and the difference is the interest earned.</p>
+<p>Key features:</p>
+<ul>
+<li><strong>Maturities:</strong> issued with initial maturities of 4, 13, 26, or 52 weeks.</li>
+<li><strong>Denominations:</strong> minimum of only $100 (versus $100,000 for most other money market instruments), though $10,000 denominations are far more common.</li>
+<li><strong>Liquidity:</strong> very high - easily and cheaply converted to cash with minimal price risk.</li>
+<li><strong>Taxation:</strong> income is taxable at the federal level but <strong>exempt from state and local taxes</strong>.</li>
+</ul>
+<p><strong>Figure 2.1 - Treasury bill listings</strong> (from <em>The Wall Street Journal Online</em>, Sept.&nbsp;30, 2022):</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Maturity</th>
+<th>Days to Maturity</th>
+<th>Bid</th>
+<th>Asked</th>
+<th>Change</th>
+<th>Asked Yield</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>11-Oct-22</td>
+<td>11</td>
+<td>2.460</td>
+<td>2.450</td>
+<td>0.160</td>
+<td>2.485</td>
+</tr>
+<tr class="even">
+<td>17-Nov-22</td>
+<td>48</td>
+<td>2.818</td>
+<td>2.808</td>
+<td>0.000</td>
+<td>2.857</td>
+</tr>
+<tr class="odd">
+<td>05-Jan-23</td>
+<td>97</td>
+<td>3.168</td>
+<td>3.158</td>
+<td>0.007</td>
+<td>3.229</td>
+</tr>
+<tr class="even">
+<td>20-Apr-23</td>
+<td>202</td>
+<td>3.568</td>
+<td>3.558</td>
+<td>0.018</td>
+<td>3.681</td>
+</tr>
+<tr class="odd">
+<td>10-Aug-23</td>
+<td>314</td>
+<td>3.630</td>
+<td>3.620</td>
+<td>0.015</td>
+<td>3.790</td>
+</tr>
+</tbody>
+</table>
+<p>The financial press reports <strong>yields</strong>, not prices. The <strong>asked price</strong> is what you pay to buy a bill from a dealer; the <strong>bid price</strong> is the slightly lower price you receive when selling to a dealer; the <strong>bid-asked spread</strong> is the dealer’s profit.</p>
+<p><strong>The bank-discount method.</strong> The first columns are quoted using the bank-discount method, which annualizes the discount on a 360-day year and expresses it as a percentage of <em>face</em> value:</p>
+<p><span class="math display">\[
+\text{Ask price} = 1 - \text{ASKED} \times \frac{\text{Days until maturity}}{360}
+\]</span></p>
+<p>For the 97-day bill asked at 3.158%, the price is <span class="math inline">\(10{,}000 \times (1 - .03158 \times 97/360) = \$9{,}914.91\)</span> on a $10,000 face value.</p>
+<p>The bank-discount method is flawed for two reasons: it assumes a 360-day year, and it computes the return as a fraction of <em>face</em> value rather than the <em>price actually paid</em>. The <strong>bond-equivalent yield</strong> in the last column corrects both, annualizing the true gain on a 365-day year:</p>
+<p><span class="math display">\[
+\text{Bond-equivalent yield} = \frac{10{,}000 - P}{P} \times \frac{365}{n}
+\]</span></p>
+<p>For the same bill, the gain over 97 days is <span class="math inline">\(10{,}000/9{,}914.91 = 1.008582\)</span>, or .8582%; annualized, <span class="math inline">\(.8582\% \times 365/97 = 3.229\%\)</span>.</p>
+</section>
+<section id="certificates-of-deposit" class="level2">
+<h2 class="anchored" data-anchor-id="certificates-of-deposit">2.1.2 Certificates of Deposit</h2>
+<p>A <strong>certificate of deposit (CD)</strong> is a <strong>time deposit</strong> with a bank. Unlike demand deposits (checking accounts), time deposits cannot be withdrawn on demand - the bank pays interest and principal only at maturity. CDs above $100,000 are usually <strong>negotiable</strong> (they can be sold to another investor before maturity). Short-term CDs are highly marketable, though the market thins out for maturities of three months or more. As bank deposits, CDs are <strong>FDIC-insured up to $250,000</strong> in the event of a bank insolvency.</p>
+</section>
+<section id="commercial-paper" class="level2">
+<h2 class="anchored" data-anchor-id="commercial-paper">2.1.3 Commercial Paper</h2>
+<p><strong>Commercial paper (CP)</strong> is short-term unsecured debt issued directly to the public by large, well-known corporations, in lieu of borrowing from banks. Features:</p>
+<ul>
+<li><strong>Maturities:</strong> up to 270 days, but most often 1-2 months, usually in multiples of $100,000 (so small investors participate mainly through money market funds).</li>
+<li><strong>Safety:</strong> considered fairly safe because a firm’s condition can be monitored over such a short horizon; most issues are rated, and CP trades in secondary markets and is quite liquid.</li>
+<li><strong>Backing:</strong> sometimes supported by a bank line of credit.</li>
+</ul>
+<p><strong>Asset-backed commercial paper.</strong> In the years before the financial crisis, financial firms sharply increased issuance of <em>asset-backed</em> CP - short-term paper collateralized by other assets, most notoriously subprime mortgages. When those mortgages began defaulting in 2007, issuers found themselves unable to roll over (refinance) their maturing paper.</p>
+</section>
+<section id="bankers-acceptances" class="level2">
+<h2 class="anchored" data-anchor-id="bankers-acceptances">2.1.4 Bankers’ Acceptances</h2>
+<p>A <strong>bankers’ acceptance</strong> begins as an order to a bank by a customer to pay a sum of money at a future date, typically within six months - much like a postdated check. Once the bank stamps the order “<strong>accepted</strong>,” it assumes responsibility for payment, and the acceptance can then trade in secondary markets like any other claim on the bank. Because they substitute the bank’s creditworthiness for the customer’s, acceptances are considered very safe and are widely used in <strong>foreign trade</strong>, where one trader’s creditworthiness may be unknown to the other. They sell at a discount from face value, like T-bills.</p>
+</section>
+<section id="eurodollars" class="level2">
+<h2 class="anchored" data-anchor-id="eurodollars">2.1.5 Eurodollars</h2>
+<p><strong>Eurodollars</strong> are dollar-denominated deposits held at foreign banks or foreign branches of American banks. By locating outside the United States, these banks escape Federal Reserve regulation. Despite the “Euro” tag, the deposits need not be in Europe. Most are large-sum time deposits of less than six months’ maturity. A Eurodollar CD resembles a domestic CD but is the liability of a non-U.S. branch. (Dollar-denominated <em>Eurobonds</em> also exist but are excluded from the money market because of their long maturities.)</p>
+</section>
+<section id="repos-and-reverses" class="level2">
+<h2 class="anchored" data-anchor-id="repos-and-reverses">2.1.6 Repos and Reverses</h2>
+<p>Government-securities dealers use <strong>repurchase agreements (repos, or RPs)</strong> for short-term, usually overnight, borrowing:</p>
+<ul>
+<li>The dealer <strong>sells</strong> securities to an investor with an agreement to <strong>buy them back</strong> the next day at a slightly higher price. The price increase is the overnight interest, and the securities serve as <strong>collateral</strong> - making the repo effectively a collateralized loan with very low credit risk.</li>
+<li>A <strong>term repo</strong> is identical except the implicit loan runs 30 days or more.</li>
+<li>A <strong>reverse repo</strong> is the mirror image: the dealer <em>buys</em> securities from an investor with an agreement to <em>resell</em> them later at a higher price.</li>
+</ul>
+</section>
+<section id="brokers-calls" class="level2">
+<h2 class="anchored" data-anchor-id="brokers-calls">2.1.7 Brokers’ Calls</h2>
+<p>Investors who buy stocks <strong>on margin</strong> borrow part of the purchase price from their broker. The broker in turn may borrow from a bank, agreeing to repay on <strong>call</strong> (immediately) if the bank requests it. The rate charged on such loans - the <strong>call money rate</strong> - is typically about one percentage point above the short-term T-bill rate.</p>
+</section>
+<section id="federal-funds" class="level2">
+<h2 class="anchored" data-anchor-id="federal-funds">2.1.8 Federal Funds</h2>
+<p>Just as households keep deposits at banks, banks keep deposits at the Federal Reserve. Each member bank must maintain a minimum balance in a reserve account with the Fed; funds held there are called <strong>federal funds (fed funds)</strong>. Banks with excess reserves lend to banks with a shortage, usually overnight, at the <strong>federal funds rate</strong>. Although the market arose to help banks meet reserve requirements, the fed funds rate is now watched closely as a key <strong>barometer of monetary policy</strong>.</p>
+</section>
+<section id="libor-and-its-replacements" class="level2">
+<h2 class="anchored" data-anchor-id="libor-and-its-replacements">2.1.9 LIBOR and Its Replacements</h2>
+<p>The <strong>London Interbank Offer Rate (LIBOR)</strong> was, until 2021, the premier short-term rate in the European money market and a reference rate for a vast range of contracts (a borrower might pay “LIBOR plus two points”). More than $500 trillion of derivatives, plus trillions in floating-rate loans and bonds, were linked to it. Related rates included Euribor and Tibor, quoted across several currencies.</p>
+<p>LIBOR’s fatal flaw: it was not a rate at which actual transactions occurred but a <strong>survey</strong> of banks’ <em>estimated</em> borrowing rates - leaving it open to manipulation. In 2012 it emerged that several banks had <strong>colluded</strong> to shade their submissions to profit on derivatives positions, drawing more than $6 billion in fines. Regulators then decided to replace LIBOR with rates based on <strong>actual</strong> transactions:</p>
+<ul>
+<li><strong>United States:</strong> the <strong>Secured Overnight Financing Rate (SOFR)</strong> - the rate on overnight repurchase agreements collateralized by Treasury securities.</li>
+<li><strong>United Kingdom:</strong> SONIA (Sterling Overnight Index Average).</li>
+<li><strong>Japan:</strong> TONA (Tokyo Overnight Average Rate).</li>
+<li><strong>Euro area:</strong> ESTER (Euro Short-Term Rate).</li>
+</ul>
+<p>Unlike SOFR, several of these are unsecured, but as very short-term loans among highly rated banks they carry minimal credit risk. Because the new benchmarks are overnight rates, longer-term versions require averaging (e.g., the New York Fed publishes 30-, 90-, and 180-day SOFR averages).</p>
+</section>
+<section id="yields-on-money-market-instruments" class="level2">
+<h2 class="anchored" data-anchor-id="yields-on-money-market-instruments">2.1.10 Yields on Money Market Instruments</h2>
+<p>Most money market securities are low risk but <strong>not risk-free</strong>. They promise yields above default-free T-bills partly because of greater risk, and partly because investors accept lower yields on the most liquid instruments (like T-bills). Figure 2.2 shows that federal funds have consistently offered a yield premium over T-bills, and that this premium <strong>widens during crises</strong> - the OPEC shocks, the 1987 crash, the 1998 collapse of Long-Term Capital Management, and the 2008-2009 financial crisis. The related <strong>TED spread</strong> (LIBOR minus the T-bill rate) also spiked during the financial crisis and again at the onset of the COVID-19 pandemic in 2020.</p>
+<div id="fig-funds-spread" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-funds-spread-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/Ch02/Figure_2_2_funds_vs_tbill.png" class="img-fluid figure-img" style="width:85.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-funds-spread-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Figure 2.2 - Spread between the federal funds rate and the T-bill rate.
+</figcaption>
+</figure>
+</div>
+<p>Money market yields are not always directly comparable because quotes differ in (1) whether the return is figured on par value versus investment value, (2) whether a 360- or 365-day year is assumed, and (3) simple versus compound interest. The table below summarizes how each instrument is quoted.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Money Market Instrument</th>
+<th>Instrument Yield</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Treasury Bills</td>
+<td>Discount</td>
+</tr>
+<tr class="even">
+<td>Certificates of Deposit</td>
+<td>Bond Equivalent Yield</td>
+</tr>
+<tr class="odd">
+<td>Commercial Paper</td>
+<td>Discount</td>
+</tr>
+<tr class="even">
+<td>Bankers’ Acceptances</td>
+<td>Discount</td>
+</tr>
+<tr class="odd">
+<td>Eurodollars</td>
+<td>Bond Equivalent Yield</td>
+</tr>
+<tr class="even">
+<td>Federal Funds</td>
+<td>Bond Equivalent Yield</td>
+</tr>
+<tr class="odd">
+<td>Repurchase Agreements</td>
+<td>Discount</td>
+</tr>
+<tr class="even">
+<td>Reverse RPs</td>
+<td>Discount</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="money-market-funds" class="level2">
+<h2 class="anchored" data-anchor-id="money-market-funds">2.1.11 Money Market Funds</h2>
+<p><strong>Money market funds</strong> are mutual funds that invest in money market instruments; in 2022 they managed more than $5 trillion. They usually pose very low risk, but the financial crisis was a traumatic shock. Investors now distinguish between:</p>
+<ul>
+<li><strong>Government funds</strong> - holding short-term U.S. Treasury or agency securities.</li>
+<li><strong>Prime funds</strong> - also holding other instruments such as commercial paper or CDs; considered slightly riskier and offering higher yields.</li>
+</ul>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>On the Market Front - Money Market Funds and the Financial Crisis of 2008-2009</strong></p>
+<p>Money market funds typically maintain a share value of exactly $1 and pass all earnings through as interest, so investors treat them as near-substitutes for bank accounts. Until 2008 only one fund had “<strong>broken the buck</strong>” (fallen below $1 per share). When Lehman Brothers filed for bankruptcy on September 15, 2008, funds holding its commercial paper took large losses, and the next day the <strong>Reserve Primary Fund</strong> broke the buck at $0.97 per share. A run ensued. The U.S. Treasury temporarily offered to insure money market funds, which calmed the run but put the government on the hook for up to $3 trillion. Subsequent SEC reforms required institutional funds to “<strong>float</strong>” their share prices and, in 2023, added liquidity-fee triggers and higher minimums for very short-maturity holdings.</p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="the-bond-market" class="level1">
+<h1>2.2 The Bond Market</h1>
+<p>The <strong>bond market</strong> is composed of longer-term borrowing instruments than those of the money market: Treasury notes and bonds, corporate bonds, municipal bonds, mortgage securities, and federal agency debt. These are often called the <strong>fixed-income capital market</strong> because most promise either a fixed income stream or one set by a formula - though in practice the term “fixed income” is imperfect, so we simply call them debt instruments or bonds.</p>
+<section id="treasury-notes-and-bonds" class="level2">
+<h2 class="anchored" data-anchor-id="treasury-notes-and-bonds">2.2.1 Treasury Notes and Bonds</h2>
+<p>The U.S. government borrows long-term largely by issuing <strong>Treasury notes</strong> and <strong>Treasury bonds</strong>:</p>
+<ul>
+<li><strong>T-notes:</strong> original maturities up to 10 years.</li>
+<li><strong>T-bonds:</strong> original maturities of 20 to 30 years.</li>
+<li>Both may be issued in $100 increments but commonly trade in $1,000 denominations, and both make <strong>semiannual coupon payments</strong>.</li>
+</ul>
+<p><strong>Figure 2.3 - Listing of Treasury bond issues</strong> (Sept.&nbsp;30, 2022):</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Maturity</th>
+<th>Coupon</th>
+<th>Bid</th>
+<th>Asked</th>
+<th>Change</th>
+<th>Asked Yield to Maturity</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>15-Nov-2022</td>
+<td>1.625</td>
+<td>99.8250</td>
+<td>99.8438</td>
+<td>0.004</td>
+<td>2.965</td>
+</tr>
+<tr class="even">
+<td>15-Apr-2023</td>
+<td>0.25</td>
+<td>98.0500</td>
+<td>98.0688</td>
+<td>0.002</td>
+<td>3.946</td>
+</tr>
+<tr class="odd">
+<td>15-May-2025</td>
+<td>2.75</td>
+<td>96.2875</td>
+<td>96.3000</td>
+<td>-0.018</td>
+<td>4.254</td>
+</tr>
+<tr class="even">
+<td>15-Oct-2041</td>
+<td>1.75</td>
+<td>68.4500</td>
+<td>68.5125</td>
+<td>-0.870</td>
+<td>4.178</td>
+</tr>
+<tr class="odd">
+<td>15-Oct-2041</td>
+<td>3.75</td>
+<td>95.9188</td>
+<td>95.9813</td>
+<td>-0.930</td>
+<td>4.057</td>
+</tr>
+<tr class="even">
+<td>15-May-2052</td>
+<td>2.875</td>
+<td>83.8875</td>
+<td>83.9500</td>
+<td>-0.986</td>
+<td>3.780</td>
+</tr>
+</tbody>
+</table>
+<p>Prices are quoted as a <strong>percentage of par</strong>. For the highlighted 1.75% bond maturing October 2041, a bid of 68.45 means 68.45% of par, or $684.50 on a $1,000 bond; the asked price of 68.5125 means $685.125. The <strong>change</strong> of -0.870 means the asked price fell .87% of par from the prior day. The <strong>yield to maturity (YTM)</strong> in the last column is the annualized rate of return to an investor who buys at the asked price and holds to maturity, accounting for both coupon income and the gain to par (covered in detail in Chapter 10).</p>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Concept Check 2.1</strong> - Using Figure 2.3, what were the bid price, asked price, and yield to maturity of the 2.75% coupon May 2025 Treasury bond? What was its asked price the previous day? <em>(Solution at the end.)</em></p>
+</div>
+</div>
+</div>
+</section>
+<section id="inflation-protected-treasury-bonds" class="level2">
+<h2 class="anchored" data-anchor-id="inflation-protected-treasury-bonds">2.2.2 Inflation-Protected Treasury Bonds</h2>
+<p>The least-risky place to start a portfolio is at the government-debt end of the spectrum, and many governments issue bonds linked to the <strong>cost of living</strong> to help investors hedge inflation. In the U.S. these are <strong>TIPS (Treasury Inflation Protected Securities)</strong>: the principal is adjusted in proportion to increases in the <strong>Consumer Price Index</strong>, so the bonds provide a constant stream of income in <strong>real</strong> (inflation-adjusted) dollars, and the real interest rate is risk-free if held to maturity. In quote sheets they are marked with a trailing “i.”</p>
+</section>
+<section id="federal-agency-debt" class="level2">
+<h2 class="anchored" data-anchor-id="federal-agency-debt">2.2.3 Federal Agency Debt</h2>
+<p>Some government agencies issue their own securities to channel credit to sectors Congress believes are underserved by private markets. The major mortgage-related agencies are the <strong>Federal Home Loan Bank (FHLB)</strong>, the <strong>Federal National Mortgage Association (FNMA, or Fannie Mae)</strong>, the <strong>Government National Mortgage Association (GNMA, or Ginnie Mae)</strong>, and the <strong>Federal Home Loan Mortgage Corporation (FHLMC, or Freddie Mac)</strong>.</p>
+<p>Although agency debt was never <em>explicitly</em> insured, markets long assumed the government would step in - a belief validated in September 2008, when Fannie Mae and Freddie Mac, on the brink of insolvency, were placed into <strong>conservatorship</strong> under the Federal Housing Finance Agency, and their bonds were made good.</p>
+</section>
+<section id="international-bonds" class="level2">
+<h2 class="anchored" data-anchor-id="international-bonds">2.2.4 International Bonds</h2>
+<p>Firms borrow abroad and investors buy foreign bonds through a thriving international capital market centered largely in London:</p>
+<ul>
+<li>A <strong>Eurobond</strong> is a bond denominated in a currency <em>other than</em> that of the country where it is issued (e.g., a dollar-denominated bond sold in Britain is a <em>Eurodollar bond</em>; yen-denominated bonds sold outside Japan are <em>Euroyen bonds</em>). Because “Euro” is confusing, think of these simply as international bonds.</li>
+<li>In contrast, some bonds are issued <strong>in a foreign country but in the investor’s currency</strong>: a <strong>Yankee bond</strong> is a dollar-denominated bond sold in the U.S. by a non-U.S. issuer; <strong>Samurai bonds</strong> are yen-denominated bonds sold in Japan by non-Japanese issuers.</li>
+</ul>
+</section>
+<section id="municipal-bonds" class="level2">
+<h2 class="anchored" data-anchor-id="municipal-bonds">2.2.5 Municipal Bonds</h2>
+<p><strong>Municipal bonds (“munis”)</strong> are issued by state and local governments and resemble Treasury and corporate bonds, except that their <strong>interest income is exempt from federal income tax</strong> (and usually from state and local tax in the issuing state). Capital gains taxes still apply if a muni is sold or matures above the purchase price. Two main types:</p>
+<ul>
+<li><strong>General obligation bonds</strong> - backed by the “full faith and credit” (the taxing power) of the issuer.</li>
+<li><strong>Revenue bonds</strong> - issued to finance specific projects (airports, hospitals, turnpikes, port authorities) and backed only by that project’s revenues; therefore <strong>riskier</strong> in terms of default than general obligation bonds.</li>
+</ul>
+<p>An <strong>industrial development bond</strong> is a revenue bond issued to finance commercial enterprises (e.g., a factory operated by a private firm), giving the firm access to the municipality’s tax-exempt borrowing rate (subject to federal limits). Municipal maturities range up to 30 years; short-term <strong>tax anticipation notes</strong> raise funds ahead of tax collections.</p>
+<div id="fig-muni-debt" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-muni-debt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/Ch02/Figure_2_4_muni_debt.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-muni-debt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Figure 2.4 - Outstanding tax-exempt debt: industrial revenue bonds and general obligation bonds.
+</figcaption>
+</figure>
+</div>
+<p><strong>The equivalent taxable yield.</strong> Because muni interest escapes tax, investors compare after-tax returns. Let <span class="math inline">\(t\)</span> be the investor’s combined federal-plus-local marginal tax rate and <span class="math inline">\(r_{\text{taxable}}\)</span> the before-tax yield on a taxable bond. Then the after-tax taxable yield is <span class="math inline">\(r_{\text{taxable}}(1-t)\)</span>. Setting after-tax yields equal gives the <strong>equivalent taxable yield</strong> - the rate a taxable bond must offer to match a muni:</p>
+<p><span class="math display">\[
+r_{\text{taxable}}(1-t) = r_{\text{muni}} \qquad (2.1)
+\]</span></p>
+<p><span class="math display">\[
+r_{\text{taxable}} = \frac{r_{\text{muni}}}{1-t} \qquad (2.2)
+\]</span></p>
+<p><strong>Table 2.2 - Equivalent taxable yields for various tax-exempt yields</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Marginal Tax Rate</th>
+<th>1%</th>
+<th>2%</th>
+<th>3%</th>
+<th>4%</th>
+<th>5%</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>20%</td>
+<td>1.25%</td>
+<td>2.50%</td>
+<td>3.75%</td>
+<td>5.00%</td>
+<td>6.25%</td>
+</tr>
+<tr class="even">
+<td>30%</td>
+<td>1.43</td>
+<td>2.86</td>
+<td>4.29</td>
+<td>5.71</td>
+<td>7.15</td>
+</tr>
+<tr class="odd">
+<td>40%</td>
+<td>1.67</td>
+<td>3.33</td>
+<td>5.00</td>
+<td>6.67</td>
+<td>8.33</td>
+</tr>
+<tr class="even">
+<td>50%</td>
+<td>2.00</td>
+<td>4.00</td>
+<td>6.00</td>
+<td>8.00</td>
+<td>10.00</td>
+</tr>
+</tbody>
+</table>
+<p>The equivalent taxable yield rises with the tax bracket - the higher the bracket, the more valuable the exemption - which is why high-bracket investors tend to hold munis. Rearranging equation 2.1 gives the <strong>cutoff (break-even) tax bracket</strong> at which an investor is indifferent between taxable and tax-exempt bonds:</p>
+<p><span class="math display">\[
+t = 1 - \frac{r_{\text{muni}}}{r_{\text{taxable}}} \qquad (2.3)
+\]</span></p>
+<p>The <strong>yield ratio</strong> <span class="math inline">\(r_{\text{muni}}/r_{\text{taxable}}\)</span> is a key driver of muni attractiveness: the higher the ratio, the lower the cutoff bracket, and the more investors prefer munis. Figure 2.5 plots this ratio (versus Baa-rated corporate debt); it has hovered around 0.70 for most of the past 40 years, implying a cutoff bracket near <span class="math inline">\(1 - 0.70 = 0.30\)</span>, or 30%.</p>
+<div id="fig-yield-ratio" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-yield-ratio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/Ch02/Figure_2_5_yield_ratio.png" class="img-fluid figure-img" style="width:85.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-yield-ratio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Figure 2.5 - Ratio of yields on municipal debt to corporate Baa-rated debt.
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Example 2.1 - Taxable versus Tax-Exempt Yields</strong></p>
+<p>With the ratio around 0.70, equation 2.3 implies that an investor whose combined bracket exceeds 30% earns a higher after-tax yield from municipals. Because it is hard to control precisely for differences in risk between the bonds, this cutoff is approximate.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Concept Check 2.2</strong> - In a 30% combined bracket, would you prefer a 6% taxable return or a 4% tax-free yield? What is the equivalent taxable yield of the 4% tax-free yield? <em>(Solution at the end.)</em></p>
+</div>
+</div>
+</div>
+</section>
+<section id="corporate-bonds" class="level2">
+<h2 class="anchored" data-anchor-id="corporate-bonds">2.2.6 Corporate Bonds</h2>
+<p><strong>Corporate bonds</strong> are how firms borrow directly from the public. Structured much like Treasuries - semiannual coupons, face value returned at maturity - they differ chiefly by carrying <strong>default risk</strong> (covered in Chapter 10). By claim priority in bankruptcy:</p>
+<ul>
+<li><strong>Secured bonds</strong> - backed by specific collateral.</li>
+<li><strong>Debentures</strong> - unsecured, no specific collateral.</li>
+<li><strong>Subordinated debentures</strong> - lower-priority claim on assets.</li>
+</ul>
+<p>Corporate bonds may carry embedded options: <strong>callable bonds</strong> let the firm repurchase the bond at a stipulated call price, while <strong>convertible bonds</strong> let the holder convert each bond into a set number of shares (covered in Part Three). By credit quality, bonds are classified as <strong>investment grade</strong> versus <strong>speculative (high-yield) grade</strong>.</p>
+</section>
+<section id="mortgage--and-asset-backed-securities" class="level2">
+<h2 class="anchored" data-anchor-id="mortgage--and-asset-backed-securities">2.2.7 Mortgage- and Asset-Backed Securities</h2>
+<p>A <strong>mortgage-backed security</strong> is an ownership claim in a pool of mortgages (or an obligation secured by such a pool); owners receive the “<strong>pass-through</strong>” of the pool’s monthly principal and interest. Traditionally, pass-throughs were built from <strong>conforming mortgages</strong> meeting underwriting standards for purchase by Fannie Mae or Freddie Mac. Leading up to the crisis, however, large amounts of <strong>subprime mortgages</strong> (riskier loans to weaker borrowers) were bundled and sold by “private-label” issuers.</p>
+<div id="fig-mbs" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mbs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/Ch02/Figure_2_6_mbs_outstanding.png" class="img-fluid figure-img" style="width:85.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mbs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Figure 2.6 - Mortgage-backed securities outstanding (private issuers vs.&nbsp;federal agencies and pass-throughs).
+</figcaption>
+</figure>
+</div>
+<p>Encouraged to expand affordable housing, the government-sponsored enterprises bought subprime mortgage securities that proved disastrous, generating trillion-dollar losses across banks, hedge funds, Fannie, and Freddie. From 2007, the private-label pass-through market shrank rapidly (Figure 2.6).</p>
+<p>Despite these troubles, <strong>securitization</strong> is now common well beyond mortgages: car loans, student loans, home equity loans, credit card receivables, and even corporate debt are bundled into tradable pass-through securities. Figure 2.7 shows the rapid pre-2007 growth of nonmortgage asset-backed securities; the market contracted after the crisis and again during COVID-19 but remains substantial.</p>
+<div id="fig-abs" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-abs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/Ch02/Figure_2_7_abs_outstanding.png" class="img-fluid figure-img" style="width:85.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-abs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: Figure 2.7 - Asset-backed securities outstanding (student loans, equipment, credit card, automobile).
+</figcaption>
+</figure>
+</div>
+<hr>
+</section>
+</section>
+<section id="equity-securities" class="level1">
+<h1>2.3 Equity Securities</h1>
+<section id="common-stock-as-ownership-shares" class="level2">
+<h2 class="anchored" data-anchor-id="common-stock-as-ownership-shares">2.3.1 Common Stock as Ownership Shares</h2>
+<p><strong>Common stocks</strong> (equities) represent <strong>ownership shares</strong> in a corporation. Each share entitles its owner to one vote on matters of corporate governance at the annual meeting and to a share of the financial benefits of ownership (such as any dividends the firm chooses to pay).</p>
+<p>A corporation is controlled by a <strong>board of directors</strong> elected by shareholders; the board hires managers to run the firm day to day and is charged with overseeing management in shareholders’ interests. Shareholders who cannot attend the annual meeting may vote by <strong>proxy</strong>, empowering another party to vote in their name. Because management usually collects the vast majority of proxies, it typically enjoys considerable discretion - which can create <strong>agency problems</strong> (managers pursuing goals not aligned with shareholders). Mechanisms that mitigate agency problems include performance-based compensation, board and outside oversight, the threat of a <strong>proxy contest</strong>, and the threat of a <strong>takeover</strong>. A firm whose stock is not publicly traded is said to be <strong>private</strong>.</p>
+</section>
+<section id="characteristics-of-common-stock" class="level2">
+<h2 class="anchored" data-anchor-id="characteristics-of-common-stock">2.3.2 Characteristics of Common Stock</h2>
+<p>Two features define common stock as an investment:</p>
+<ul>
+<li><strong>Residual claim</strong> - stockholders are <strong>last in line</strong> among claimants. In liquidation they receive what remains after all others (tax authorities, employees, suppliers, bondholders, other creditors) are paid; in a going concern they have claim to operating income left after interest and taxes, which management may pay out as dividends or reinvest.</li>
+<li><strong>Limited liability</strong> - the most a shareholder can lose is the original investment. Unlike owners of unincorporated businesses, shareholders are not personally liable for the firm’s obligations; at worst, their stock becomes worthless.</li>
+</ul>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Concept Check 2.3</strong> - (a) If you buy 100 shares of Intel common stock, to what are you entitled? (b) What is the most money you can make over the next year? (c) If you pay $30 per share, what is the most you could lose over the year? <em>(Solution at the end.)</em></p>
+</div>
+</div>
+</div>
+</section>
+<section id="stock-market-listings" class="level2">
+<h2 class="anchored" data-anchor-id="stock-market-listings">2.3.3 Stock Market Listings</h2>
+<p><strong>Figure 2.8 - Listing of stocks traded on the New York Stock Exchange</strong> (Oct.&nbsp;8, 2022):</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Symbol</th>
+<th>Close</th>
+<th>Change</th>
+<th>Volume</th>
+<th>52-wk High</th>
+<th>52-wk Low</th>
+<th>Div</th>
+<th>Yield</th>
+<th>P/E</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Herbalife Nutrition</td>
+<td>HLF</td>
+<td>19.93</td>
+<td>-0.66</td>
+<td>716,359</td>
+<td>47.86</td>
+<td>19.30</td>
+<td>-</td>
+<td>-</td>
+<td>6.21</td>
+</tr>
+<tr class="even">
+<td>Hershey</td>
+<td>HSY</td>
+<td>220.52</td>
+<td>-0.13</td>
+<td>947,288</td>
+<td>234.56</td>
+<td>172.72</td>
+<td>4.14</td>
+<td>1.88</td>
+<td>28.06</td>
+</tr>
+<tr class="odd">
+<td>Hess Corp</td>
+<td>HES</td>
+<td>128.20</td>
+<td>-2.18</td>
+<td>3,077,418</td>
+<td>131.83</td>
+<td>68.32</td>
+<td>1.50</td>
+<td>1.17</td>
+<td>27.16</td>
+</tr>
+<tr class="even">
+<td>Hewlett Packard</td>
+<td>HPE</td>
+<td>12.46</td>
+<td>-0.45</td>
+<td>12,885,403</td>
+<td>17.76</td>
+<td>11.90</td>
+<td>0.48</td>
+<td>3.85</td>
+<td>4.45</td>
+</tr>
+<tr class="odd">
+<td>Home Depot</td>
+<td>HD</td>
+<td>284.32</td>
+<td>-6.07</td>
+<td>2,405,956</td>
+<td>420.61</td>
+<td>264.51</td>
+<td>7.60</td>
+<td>2.67</td>
+<td>17.46</td>
+</tr>
+<tr class="even">
+<td>Honda</td>
+<td>HMC</td>
+<td>22.31</td>
+<td>-0.21</td>
+<td>1,196,641</td>
+<td>32.15</td>
+<td>21.53</td>
+<td>-</td>
+<td>-</td>
+<td>8.20</td>
+</tr>
+<tr class="odd">
+<td>Honeywell</td>
+<td>HON</td>
+<td>171.41</td>
+<td>-3.63</td>
+<td>2,959,695</td>
+<td>228.26</td>
+<td>166.63</td>
+<td>4.12</td>
+<td>2.40</td>
+<td>23.38</td>
+</tr>
+</tbody>
+</table>
+<p>Consider the highlighted <strong>Hershey (HSY)</strong> listing: it closed at $220.52, down $0.13 from the prior day, on about 947,000 shares. The <strong>dividend yield</strong> - annual dividend per dollar of price - is <span class="math inline">\(\$4.14/\$220.52 = 1.88\%\)</span>. Dividend yield captures only part of a stock’s return; it ignores prospective <strong>capital gains</strong> (or losses). Low-dividend firms presumably offer greater capital-gain prospects, and yields vary widely across firms.</p>
+<p>The <strong>P/E ratio</strong> (price-to-earnings) is the current price divided by last year’s earnings per share - how much buyers pay per dollar of earnings. Hershey’s P/E is 28.06. Where dividend yield or P/E is blank, the firm pays no dividend or has zero/negative earnings.</p>
+</section>
+<section id="preferred-stock" class="level2">
+<h2 class="anchored" data-anchor-id="preferred-stock">2.3.4 Preferred Stock</h2>
+<p><strong>Preferred stock</strong> blends features of equity and debt. Like a bond, it promises a <strong>fixed stream of income</strong> each year - resembling an infinite-maturity bond (a perpetuity) - and, also like a bond, it carries <strong>no voting power</strong>.</p>
+<p>Yet preferred is an <strong>equity</strong> investment: the firm has <strong>no contractual obligation</strong> to pay preferred dividends, and failure to pay does <em>not</em> trigger bankruptcy (unlike missed interest on debt). Preferred dividends are usually <strong>cumulative</strong> - unpaid dividends accumulate and must be paid in full before any common dividend.</p>
+<ul>
+<li><strong>Tax treatment:</strong> preferred dividends are <em>not</em> tax-deductible for the issuing firm (unlike bond interest). But corporations may <strong>exclude 50%</strong> of dividends received from domestic corporations when computing taxable income, which makes preferred an attractive fixed-income holding for <strong>other corporations</strong> - individual investors, who cannot use the exclusion, generally find preferred yields unattractive. (The publisher’s slides note this exclusion; students should confirm the current statutory percentage.)</li>
+<li><strong>Priority:</strong> preferred ranks after bonds but before common in bankruptcy, yet often sells at lower yields, reflecting the value of the corporate dividend exclusion.</li>
+<li><strong>Variations:</strong> preferred can be <strong>redeemable</strong> (callable), <strong>convertible</strong> into common, or <strong>adjustable-rate</strong> (dividend tied to current market rates).</li>
+</ul>
+</section>
+<section id="depositary-receipts" class="level2">
+<h2 class="anchored" data-anchor-id="depositary-receipts">2.3.5 Depositary Receipts</h2>
+<p><strong>American Depositary Receipts (ADRs)</strong> are certificates traded in U.S. markets that represent ownership in the shares of a foreign company. Each ADR may correspond to a fraction of a share, one share, or several shares. Created to help foreign firms meet U.S. registration requirements, ADRs are the most common way for U.S. investors to directly invest in and trade foreign corporations’ shares.</p>
+<hr>
+</section>
+</section>
+<section id="stock-and-bond-market-indexes" class="level1">
+<h1>2.4 Stock and Bond Market Indexes</h1>
+<section id="stock-market-indexes" class="level2">
+<h2 class="anchored" data-anchor-id="stock-market-indexes">2.4.1 Stock Market Indexes</h2>
+<p>The <strong>Dow Jones Industrial Average</strong> is a staple of the evening news, but it is only one of many indicators and far from the best. Broader indexes are published daily, along with several bond-market indexes and foreign indexes (e.g., the <strong>Nikkei</strong> of Tokyo, the <strong>Financial Times</strong> index of London). Market benchmark portfolios matter for both portfolio construction and performance evaluation. Indexes differ primarily in their <strong>weighting scheme</strong>: price-weighted, market value-weighted, or equally weighted.</p>
+</section>
+<section id="the-dow-jones-industrial-average" class="level2">
+<h2 class="anchored" data-anchor-id="the-dow-jones-industrial-average">2.4.2 The Dow Jones Industrial Average</h2>
+<p>The <strong>DJIA</strong> tracks 30 large “blue-chip” firms and has been computed since 1896. It is a <strong>price-weighted average</strong>: originally the sum of the 30 share prices divided by 30, so the percentage change in the average equals the percentage change in a portfolio holding <strong>one share of each</strong> stock. Because the investment in each firm is proportional to its <strong>share price</strong>, high-priced stocks dominate the average.</p>
+<p>The following tables underpin the worked examples below.</p>
+<p><strong>Table 2.3 - Data to construct stock price indexes</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Stock</th>
+<th>Initial Price</th>
+<th>Final Price</th>
+<th>Shares (millions)</th>
+<th>Initial Value ($M)</th>
+<th>Final Value ($M)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ABC</td>
+<td>$25</td>
+<td>$30</td>
+<td>20</td>
+<td>$500</td>
+<td>$600</td>
+</tr>
+<tr class="even">
+<td>XYZ</td>
+<td>$100</td>
+<td>$90</td>
+<td>1</td>
+<td>$100</td>
+<td>$90</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>$600</strong></td>
+<td><strong>$690</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Table 2.4 - Data to construct stock price indexes after a stock split</strong> (XYZ splits 2-for-1)</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Stock</th>
+<th>Initial Price</th>
+<th>Final Price</th>
+<th>Shares (millions)</th>
+<th>Initial Value ($M)</th>
+<th>Final Value ($M)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ABC</td>
+<td>$25</td>
+<td>$30</td>
+<td>20</td>
+<td>$500</td>
+<td>$600</td>
+</tr>
+<tr class="even">
+<td>XYZ</td>
+<td>$50</td>
+<td>$45</td>
+<td>1</td>
+<td>$100</td>
+<td>$90</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td><strong>$600</strong></td>
+<td><strong>$690</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Example 2.2 - Price-Weighted Average</strong></p>
+<p>Using Table 2.3, a portfolio holding one share of each firm starts at <span class="math inline">\(\$25 + \$100 = \$125\)</span> and ends at <span class="math inline">\(\$30 + \$90 = \$120\)</span>, a <strong>-4%</strong> change. The price-weighted index starts at <span class="math inline">\((25+100)/2 = 62.5\)</span> and ends at <span class="math inline">\((30+90)/2 = 60\)</span>, also <strong>-4%</strong>. Although ABC rose 20% while XYZ fell only 10%, the index dropped, because the higher-priced XYZ carries four times the weight of ABC. A high-priced stock can dominate a price-weighted average.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Example 2.3 - Splits and Price-Weighted Averages</strong></p>
+<p>If XYZ splits 2-for-1, its price falls to $50 but the average should not fall. To keep the index unchanged, the <strong>divisor</strong> is reduced: solve <span class="math inline">\((25+50)/d = 62.5\)</span>, giving <span class="math inline">\(d = 1.20\)</span> (down from 2.0). At period-end, ABC = $30 and XYZ = $45 (the same -10% return), so the average is <span class="math inline">\((30+45)/1.20 = 62.5\)</span> - unchanged, a 0% return rather than the -4% before the split. The split lowers the weight of the poorer-performing XYZ, so the implicit weighting of a price-weighted average is somewhat arbitrary. Substitutions of one firm for another also require a divisor update; by early 2023 the DJIA divisor had fallen to about <strong>0.152</strong>.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Concept Check 2.4</strong> - Suppose XYZ’s final price in Table 2.3 rises to $110 while ABC falls to $20. Find the percentage change in the price-weighted average, and compare it to the return on a portfolio holding one share of each company. <em>(Solution at the end.)</em></p>
+</div>
+</div>
+</div>
+<p>Because the Dow relies on so few firms, its composition is revised periodically to stay representative. Table 2.5 contrasts the 1928 and 2023 members - striking evidence of a century of economic change, as many “bluest of the blue chip” 1928 firms no longer exist.</p>
+<p><strong>Table 2.5 - Companies in the Dow Jones Industrial Average: 1928 and 2023</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dow Industrials in 1928</th>
+<th>Current Dow Company</th>
+<th>Ticker</th>
+<th>Industry</th>
+<th>Year Added</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Allied Chemical</td>
+<td>American Express</td>
+<td>AXP</td>
+<td>Consumer finance</td>
+<td>1982</td>
+</tr>
+<tr class="even">
+<td>American Can</td>
+<td>Procter &amp; Gamble</td>
+<td>PG</td>
+<td>Household products</td>
+<td>1932</td>
+</tr>
+<tr class="odd">
+<td>American Smelting</td>
+<td>Salesforce.com</td>
+<td>CRM</td>
+<td>Business software</td>
+<td>2020</td>
+</tr>
+<tr class="even">
+<td>American Sugar</td>
+<td>Amgen</td>
+<td>AMGN</td>
+<td>Drug manufacturers</td>
+<td>2020</td>
+</tr>
+<tr class="odd">
+<td>American Tobacco</td>
+<td>Goldman Sachs</td>
+<td>GS</td>
+<td>Investment banking</td>
+<td>2013</td>
+</tr>
+<tr class="even">
+<td>Atlantic Refining</td>
+<td>Johnson &amp; Johnson</td>
+<td>JNJ</td>
+<td>Pharmaceuticals</td>
+<td>1997</td>
+</tr>
+<tr class="odd">
+<td>Bethlehem Steel</td>
+<td>McDonald’s</td>
+<td>MCD</td>
+<td>Restaurants</td>
+<td>1985</td>
+</tr>
+<tr class="even">
+<td>Chrysler</td>
+<td>IBM</td>
+<td>IBM</td>
+<td>Computer services</td>
+<td>1979</td>
+</tr>
+<tr class="odd">
+<td>General Electric</td>
+<td>Honeywell Int’l</td>
+<td>HON</td>
+<td>Industrial machinery</td>
+<td>2020</td>
+</tr>
+<tr class="even">
+<td>General Motors</td>
+<td>Intel</td>
+<td>INTC</td>
+<td>Semiconductors</td>
+<td>1999</td>
+</tr>
+<tr class="odd">
+<td>General Railway Signal</td>
+<td>Merck</td>
+<td>MRK</td>
+<td>Pharmaceuticals</td>
+<td>1979</td>
+</tr>
+<tr class="even">
+<td>Goodrich</td>
+<td>Verizon</td>
+<td>VZ</td>
+<td>Telecommunications</td>
+<td>2004</td>
+</tr>
+<tr class="odd">
+<td>International Harvester</td>
+<td>Chevron</td>
+<td>CVX</td>
+<td>Oil and gas</td>
+<td>2008</td>
+</tr>
+<tr class="even">
+<td>International Nickel</td>
+<td>Caterpillar</td>
+<td>CAT</td>
+<td>Construction</td>
+<td>1991</td>
+</tr>
+<tr class="odd">
+<td>Mack Trucks</td>
+<td>Microsoft</td>
+<td>MSFT</td>
+<td>Software</td>
+<td>1999</td>
+</tr>
+<tr class="even">
+<td>Nash Motors</td>
+<td>UnitedHealth Group</td>
+<td>UNH</td>
+<td>Health insurance</td>
+<td>2012</td>
+</tr>
+<tr class="odd">
+<td>North American</td>
+<td>Apple</td>
+<td>AAPL</td>
+<td>Electronic equipment</td>
+<td>2015</td>
+</tr>
+<tr class="even">
+<td>Paramount Publix</td>
+<td>JPMorgan Chase</td>
+<td>JPM</td>
+<td>Banking</td>
+<td>1991</td>
+</tr>
+<tr class="odd">
+<td>Postum Inc</td>
+<td>Travelers</td>
+<td>TRV</td>
+<td>Insurance</td>
+<td>2009</td>
+</tr>
+<tr class="even">
+<td>Radio Corp</td>
+<td>Visa</td>
+<td>V</td>
+<td>Electronic payments</td>
+<td>2013</td>
+</tr>
+<tr class="odd">
+<td>Sears Roebuck</td>
+<td>Home Depot</td>
+<td>HD</td>
+<td>Home improvement retailers</td>
+<td>1999</td>
+</tr>
+<tr class="even">
+<td>Standard Oil (NJ)</td>
+<td>DowDuPont</td>
+<td>DWDP</td>
+<td>Chemicals</td>
+<td>1935</td>
+</tr>
+<tr class="odd">
+<td>Texas Corp</td>
+<td>Disney</td>
+<td>DIS</td>
+<td>Broadcasting and entertainment</td>
+<td>1991</td>
+</tr>
+<tr class="even">
+<td>Texas Gulf Sulphur</td>
+<td>Coca-Cola</td>
+<td>KO</td>
+<td>Beverages</td>
+<td>1987</td>
+</tr>
+<tr class="odd">
+<td>Union Carbide</td>
+<td>Nike</td>
+<td>NKE</td>
+<td>Apparel</td>
+<td>2013</td>
+</tr>
+<tr class="even">
+<td>U.S. Steel</td>
+<td>Walmart</td>
+<td>WMT</td>
+<td>Retailers</td>
+<td>1997</td>
+</tr>
+<tr class="odd">
+<td>Victor Talking Machine</td>
+<td>Boeing</td>
+<td>BA</td>
+<td>Aerospace and defense</td>
+<td>1987</td>
+</tr>
+<tr class="even">
+<td>Westinghouse</td>
+<td>Cisco Systems</td>
+<td>CSCO</td>
+<td>Computer equipment</td>
+<td>2009</td>
+</tr>
+<tr class="odd">
+<td>Wright Aeronautical</td>
+<td>3M</td>
+<td>MMM</td>
+<td>Diversified industrials</td>
+<td>1976</td>
+</tr>
+<tr class="even">
+<td>Woolworth</td>
+<td>Walgreens Boots</td>
+<td>WBA</td>
+<td>Pharmaceuticals</td>
+<td>2018</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="the-standard-poors-500-index" class="level2">
+<h2 class="anchored" data-anchor-id="the-standard-poors-500-index">2.4.3 The Standard &amp; Poor’s 500 Index</h2>
+<p>The <strong>S&amp;P 500</strong> improves on the Dow in two ways: it is broader (about 500 firms), and it is a <strong>market value-weighted index</strong>. Weights are proportional to each firm’s total <strong>market value</strong> (price times shares), so a firm with five times the market value receives five times the weight. The index equals the total market value of its firms relative to a base, and its return equals the return on a portfolio holding all firms <strong>in proportion to market value</strong> (excluding cash dividends).</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Example 2.4 - Value-Weighted Indexes</strong></p>
+<p>Using Table 2.3, total market value rises from $600M to $690M. Setting the base index to 100, year-end value is <span class="math inline">\(100 \times (690/600) = 115\)</span> - a <strong>+15%</strong> return, matching a market-value-weighted portfolio. Unlike the price-weighted index (which fell because high-priced XYZ dominated), the value-weighted index <strong>rose</strong>, because it gives more weight to ABC, the larger-market-value stock. Value-weighted indexes are also <strong>unaffected by stock splits</strong>: XYZ’s total market value is unchanged by a split.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Concept Check 2.5</strong> - Reconsider XYZ and ABC from Concept Check 2.4. Calculate the percentage change in the market value-weighted index, and compare it to a portfolio holding $500 of ABC for every $100 of XYZ. <em>(Solution at the end.)</em></p>
+</div>
+</div>
+</div>
+<p>Investors can buy index exposure cheaply via <strong>index funds</strong> (mutual funds holding shares in index proportions) or <strong>exchange-traded funds (ETFs)</strong>, which trade as a single unit and range from broad global indexes to narrow industry indexes (covered in Chapter 4). Most modern value-weighted indexes actually weight by <strong>free float</strong> - only shares freely tradable among investors, excluding those held by founding families or governments.</p>
+</section>
+<section id="russell-indexes" class="level2">
+<h2 class="anchored" data-anchor-id="russell-indexes">2.4.4 Russell Indexes</h2>
+<p>The <strong>Russell indexes</strong> are a family segmented primarily by size (market capitalization):</p>
+<ul>
+<li><strong>Russell 3000</strong> - the largest 3,000 U.S. stocks.</li>
+<li><strong>Russell 1000</strong> - the largest 1,000 firms in the Russell 3000.</li>
+<li><strong>Russell 2500</strong> - the bottom 2,500 of the Russell 3000 (popular for mid- to small-cap).</li>
+<li>Also the <strong>Russell Top 200</strong>, <strong>Top 50</strong>, and the <strong>Russell Microcap</strong> (stocks ranked 2,001-4,000).</li>
+</ul>
+<p>Their constituents are updated once a year, and the indexes are capitalization weighted.</p>
+</section>
+<section id="other-u.s.-market-value-indexes" class="level2">
+<h2 class="anchored" data-anchor-id="other-u.s.-market-value-indexes">2.4.5 Other U.S. Market Value Indexes</h2>
+<ul>
+<li>The <strong>NYSE</strong> publishes a market value-weighted composite of all NYSE-listed stocks, plus industrial, utility, transportation, and financial subindexes.</li>
+<li><strong>Nasdaq</strong> computes a Composite index of firms on its market; the <strong>Nasdaq 100</strong> is a subset of larger firms accounting for much of the Composite’s capitalization.</li>
+<li>The most inclusive U.S. equity index is the <strong>FT (Financial Times) Wilshire 5000</strong>, covering essentially all actively traded U.S. stocks (once over 5,000 stocks; today about 3,700). A similar comprehensive index is published by <strong>CRSP</strong> (Center for Research in Security Prices, University of Chicago).</li>
+</ul>
+</section>
+<section id="equally-weighted-indexes" class="level2">
+<h2 class="anchored" data-anchor-id="equally-weighted-indexes">2.4.6 Equally Weighted Indexes</h2>
+<p>An <strong>equally weighted index</strong> averages the returns of each stock with equal weight, corresponding to a portfolio that places <strong>equal dollar amounts</strong> in each stock. This differs from price weighting (equal <em>shares</em>) and value weighting (dollars proportional to market value). Crucially, an equally weighted index does <strong>not</strong> correspond to a buy-and-hold strategy: as prices move, dollar weights drift, so maintaining equal weights requires <strong>rebalancing</strong> (selling winners and/or buying losers) each period.</p>
+</section>
+<section id="foreign-and-international-stock-market-indexes" class="level2">
+<h2 class="anchored" data-anchor-id="foreign-and-international-stock-market-indexes">2.4.7 Foreign and International Stock Market Indexes</h2>
+<p>Major foreign indexes include the <strong>Nikkei</strong> (Japan), <strong>FTSE</strong> (U.K., “footsie”), <strong>DAX</strong> (Germany), <strong>Hang Seng</strong> (Hong Kong), and <strong>TSX</strong> (Toronto). A leader in international index construction is <strong>MSCI (Morgan Stanley Capital International)</strong>, which computes dozens of country and regional indexes.</p>
+<p><strong>Table 2.6 - Sample of MSCI stock indexes</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Developed Markets</th>
+<th>Emerging Markets</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Regional indexes</strong></td>
+<td>EAFE (Europe, Australasia, Far East), EMU, Europe, Far East, Kokusai (World ex-Japan), Nordic Countries, North America, World, World ex-U.S.</td>
+<td>Emerging Markets (EM), EM Asia, EM Eastern Europe, EM Europe, EM Europe and Middle East, EM Far East, EM Latin America</td>
+</tr>
+<tr class="even">
+<td><strong>Country indexes</strong></td>
+<td>Australia, Austria, Belgium, Canada, Denmark, Finland, France, Germany, Hong Kong, Ireland, Israel, Italy, Japan, Netherlands, New Zealand, Norway, Portugal, Singapore, Spain, Sweden, Switzerland, U.K., U.S.</td>
+<td>Brazil, Chile, China, Colombia, Czech Republic, Egypt, Greece, Hungary, India, Korea, Malaysia, Mexico, Peru, Philippines, Poland, Russia, South Africa, Taiwan, Thailand, Turkey</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="bond-market-indicators" class="level2">
+<h2 class="anchored" data-anchor-id="bond-market-indicators">2.4.8 Bond Market Indicators</h2>
+<p>Several <strong>bond market indexes</strong> measure performance across bond categories - the best known are those of <strong>Merrill Lynch</strong>, <strong>Barclays</strong>, and the <strong>Citi Broad Investment Grade Bond Index</strong>. Figure 2.9 shows the components of the U.S. fixed-income market near the close of 2022. A key challenge for these indexes is that many bonds <strong>trade infrequently</strong>, so reliable up-to-date prices are hard to obtain; some prices must be estimated from bond-valuation models (so-called <strong>matrix values</strong>), which may differ from actual market prices.</p>
+<div id="fig-fixed-income" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-fixed-income-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/Ch02/Figure_2_9_fixed_income_market.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-fixed-income-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: Figure 2.9 - The U.S. fixed-income market (values in $ billion).
+</figcaption>
+</figure>
+</div>
+<hr>
+</section>
+</section>
+<section id="derivative-markets" class="level1">
+<h1>2.5 Derivative Markets</h1>
+<p>Futures, options, and related <strong>derivative contracts</strong> provide payoffs that depend on the values of other variables - commodity prices, bond and stock prices, interest rates, or index values. Because their values <strong>derive from</strong> those of other assets, they are called <strong>derivative assets</strong> (or contingent claims), covered in detail in Part Five.</p>
+<section id="options" class="level2">
+<h2 class="anchored" data-anchor-id="options">2.5.1 Options</h2>
+<ul>
+<li>A <strong>call option</strong> gives its holder the <strong>right to buy</strong> an asset at a specified <strong>exercise (strike) price</strong> on or before an <strong>expiration date</strong>. Each contract covers 100 shares. The holder exercises only if the market price <strong>exceeds</strong> the exercise price; otherwise the option expires worthless. Calls therefore gain value as the underlying price rises (a bullish vehicle).</li>
+<li>A <strong>put option</strong> gives its holder the <strong>right to sell</strong> an asset at the exercise price on or before expiration. Puts gain value as the underlying price <strong>falls</strong>; the holder exercises only when able to deliver an asset worth less than the exercise price.</li>
+</ul>
+<p><strong>Figure 2.10 - Stock options on Microsoft</strong> (Oct.&nbsp;7, 2022; Microsoft closed at $234.14):</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Expiration</th>
+<th>Strike</th>
+<th>Call</th>
+<th>Put</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>21-Oct-2022</td>
+<td>230</td>
+<td>9.40</td>
+<td>4.92</td>
+</tr>
+<tr class="even">
+<td>21-Oct-2022</td>
+<td>235</td>
+<td>6.47</td>
+<td>7.05</td>
+</tr>
+<tr class="odd">
+<td>21-Oct-2022</td>
+<td>240</td>
+<td>4.15</td>
+<td>9.75</td>
+</tr>
+<tr class="even">
+<td>18-Nov-2022</td>
+<td>230</td>
+<td>14.87</td>
+<td>10.22</td>
+</tr>
+<tr class="odd">
+<td>18-Nov-2022</td>
+<td>235</td>
+<td>12.05</td>
+<td>12.40</td>
+</tr>
+<tr class="even">
+<td>18-Nov-2022</td>
+<td>240</td>
+<td>9.50</td>
+<td>14.90</td>
+</tr>
+</tbody>
+</table>
+<p>Two patterns emerge from the listing:</p>
+<ul>
+<li><strong>Call prices fall, and put prices rise, as the strike increases.</strong> The October 235 call last traded at $6.47 (so one contract on 100 shares costs $647); the 240 call costs only $4.15, because the right to buy at a higher price is less valuable. Conversely, the 235 put costs $7.05 while the 240 put costs $9.75.</li>
+<li><strong>Both calls and puts cost more with more time to expiration.</strong> The 235 call expiring November 18 ($12.05) costs more than the October 21 call ($6.47).</li>
+</ul>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Concept Check 2.6</strong> - What is the per-share profit or loss to an investor who buys the October Microsoft call with exercise price $235 if the stock is $245 at expiration? What about a buyer of the put with the same exercise price and expiration? <em>(Solution at the end.)</em></p>
+</div>
+</div>
+</div>
+</section>
+<section id="futures-contracts" class="level2">
+<h2 class="anchored" data-anchor-id="futures-contracts">2.5.2 Futures Contracts</h2>
+<p>A <strong>futures contract</strong> calls for <strong>delivery</strong> of an asset (or its cash value) at a specified maturity date, for an agreed-upon <strong>futures price</strong> also paid at maturity. The <strong>long position</strong> commits to <em>purchasing</em> the asset; the <strong>short position</strong> commits to <em>delivering</em> it. The long gains when prices rise; the short’s loss equals the long’s gain.</p>
+<p><strong>Figure 2.11 - Corn futures prices</strong> on the Chicago Mercantile Exchange (Oct.&nbsp;7, 2022; each contract = 5,000 bushels):</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Maturity</th>
+<th>Last</th>
+<th>Change</th>
+<th>High</th>
+<th>Low</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dec-22</td>
+<td>6.8300</td>
+<td>0.0500</td>
+<td>6.8450</td>
+<td>6.7140</td>
+</tr>
+<tr class="even">
+<td>Mar-23</td>
+<td>6.9050</td>
+<td>0.0725</td>
+<td>6.9175</td>
+<td>6.7900</td>
+</tr>
+<tr class="odd">
+<td>May-23</td>
+<td>6.9150</td>
+<td>0.0675</td>
+<td>6.9300</td>
+<td>6.8075</td>
+</tr>
+<tr class="even">
+<td>Dec-23</td>
+<td>6.2425</td>
+<td>0.0350</td>
+<td>6.2500</td>
+<td>6.1750</td>
+</tr>
+<tr class="odd">
+<td>Jul-24</td>
+<td>6.3000</td>
+<td>0.0475</td>
+<td>5.6400</td>
+<td>5.6600</td>
+</tr>
+</tbody>
+</table>
+<p>The front (nearest) contract, December 2022, last traded at $6.83 per bushel. If corn sells for $6.85 at expiration, the long earns <span class="math inline">\(5{,}000 \times (\$6.85 - \$6.83) = \$100\)</span>, while the short loses the same amount.</p>
+<p><strong>Options versus futures.</strong> The crucial distinction is <strong>right versus obligation</strong>. A futures contract <strong>obliges</strong> the long to buy at the futures price; a call option merely <strong>conveys the right</strong> to buy at the exercise price - exercised only if the asset is worth more. The call holder therefore has a better position than a long future at the same price, but this advantage has a cost: options must be <strong>purchased</strong> (the price is the <strong>premium</strong>), whereas futures are entered <strong>without cost</strong>. Similarly, a put differs from a short futures position by conveying the <strong>right</strong>, rather than the <strong>obligation</strong>, to sell.</p>
+<hr>
+</section>
+</section>
+<section id="concept-check-solutions" class="level1">
+<h1>Concept Check Solutions</h1>
+<p><strong>2.1</strong> The bid price is 96.2875% of par = $962.875; the asked price is 96.30% = $963.00, corresponding to a yield of 4.254%. The ask price fell 0.018 from the prior day, so it was 96.318, or $963.18, yesterday.</p>
+<p><strong>2.2</strong> A 6% taxable return is equivalent to an after-tax return of <span class="math inline">\(6\%(1-.30) = 4.2\%\)</span>, so you would be better off in the taxable bond. The equivalent taxable yield of the 4% tax-free bond is <span class="math inline">\(4\%/(1-.3) = 5.71\%\)</span> - a taxable bond would need to pay 5.71% to match a 4% tax-free yield.</p>
+<p><strong>2.3</strong> (a) You are entitled to a prorated share of Intel’s dividend payments and to vote in stockholder meetings. (b) Your potential gain is unlimited, because the stock price has no upper bound. (c) Your outlay was <span class="math inline">\(\$30 \times 100 = \$3{,}000\)</span>; because of limited liability, that is the most you can lose.</p>
+<p><strong>2.4</strong> The price-weighted index rises from <span class="math inline">\(62.50\;[=(100+25)/2]\)</span> to <span class="math inline">\(65\;[=(110+20)/2]\)</span>, a gain of 4%. A one-share-each portfolio requires $125 and grows to $130, a return of <span class="math inline">\(4\%\;(=5/125)\)</span> - equal to the index return.</p>
+<p><strong>2.5</strong> The market-value-weighted return equals the change in the stock portfolio’s value. Starting value is <span class="math inline">\(\$100M + \$500M = \$600M\)</span>; it falls to <span class="math inline">\(\$110M + \$400M = \$510M\)</span>, a loss of <span class="math inline">\(90/600 = 15\%\)</span>. The index-portfolio return is a value-weighted average of the two stock returns (weights 1/6 on XYZ and 5/6 on ABC): <span class="math inline">\((1/6)(10\%) + (5/6)(-20\%) = -15\%\)</span>, equal to the value-weighted index return.</p>
+<p><strong>2.6</strong> The call payoff is <span class="math inline">\(\$245 - \$235 = \$10\)</span>; since the call cost $6.47, the profit is <span class="math inline">\(\$10 - \$6.47 = \$3.53\)</span> per share. The put expires worthless (the stock exceeds the exercise price), so the loss is its cost, $7.05 per share.</p>
+<hr>
+</section>
+<section id="summary" class="level1">
+<h1>Summary</h1>
+<ul>
+<li><strong>Money market securities</strong> are very short-term debt obligations - highly marketable, low credit risk, minimal price risk, often in large denominations (accessible to small investors through money market funds).</li>
+<li>Much of U.S. <strong>government borrowing</strong> takes the form of coupon-paying Treasury bonds and notes, issued at or near par and similar in design to corporate bonds.</li>
+<li><strong>Municipal bonds</strong> are distinguished by their tax-exempt interest; the equivalent taxable yield is <span class="math inline">\(r_{\text{muni}}/(1-t)\)</span>.</li>
+<li><strong>Mortgage pass-through securities</strong> pool mortgages and pass principal and interest to owners; government agency pass-throughs are guaranteed, but private-label pools are not.</li>
+<li><strong>Common stock</strong> is an ownership share with one vote per share and a prorated claim on dividends; stockholders are residual claimants.</li>
+<li><strong>Preferred stock</strong> pays a fixed (usually cumulative) dividend but does not trigger bankruptcy if unpaid; adjustable-rate preferred indexes its dividend to a short-term rate.</li>
+<li>Many <strong>stock market indexes</strong> measure overall performance. The Dow Jones averages are price-weighted; broad modern indexes (S&amp;P 500, Nasdaq, Wilshire 5000, Nikkei, FTSE, DAX) are market value-weighted.</li>
+<li>A <strong>call option</strong> is the right to buy at a stipulated exercise price; a <strong>put option</strong> is the right to sell. Calls gain and puts lose value as the underlying rises.</li>
+<li>A <strong>futures contract</strong> is an obligation to buy (long) or sell (short) at a stipulated futures price on a maturity date; the long gains and the short loses when the asset value rises.</li>
+</ul>
+<hr>
+</section>
+<section id="key-terms" class="level1">
+<h1>Key Terms</h1>
+<p>Below are the chapter’s key terms with the textbook’s margin definitions.</p>
+<ul>
+<li><strong>Bankers’ acceptance</strong> - An order to a bank by a customer to pay a sum of money at a future date.</li>
+<li><strong>Call option</strong> - The right to buy an asset at a specified exercise price on or before a specified expiration date.</li>
+<li><strong>Certificate of deposit</strong> - A bank time deposit.</li>
+<li><strong>Commercial paper</strong> - Short-term unsecured debt issued by large corporations.</li>
+<li><strong>Common stocks</strong> - Ownership shares in a publicly held corporation. Shareholders have voting rights and may receive dividends.</li>
+<li><strong>Corporate bonds</strong> - Long-term debt issued by private corporations typically paying semiannual coupons and returning the face value of the bond at maturity.</li>
+<li><strong>Derivative asset</strong> - A security with a payoff that depends on the prices of other securities.</li>
+<li><strong>Equally weighted index</strong> - An index computed from a simple average of returns.</li>
+<li><strong>Eurodollars</strong> - Dollar-denominated deposits at foreign banks or foreign branches of American banks.</li>
+<li><strong>Federal funds</strong> - Funds in the accounts of commercial banks at the Federal Reserve Bank.</li>
+<li><strong>Futures contract</strong> - Obliges traders to purchase or sell an asset at an agreed-upon price at a specified future date.</li>
+<li><strong>London Interbank Offer Rate (LIBOR)</strong> - Lending rate among banks in the London market.</li>
+<li><strong>Market value-weighted index</strong> - Index return equals the weighted average of the returns of each component security, with weights proportional to outstanding market value.</li>
+<li><strong>Money market</strong> - Includes short-term, highly liquid, and relatively low-risk debt instruments.</li>
+<li><strong>Municipal bonds</strong> - Tax-exempt bonds issued by state and local governments.</li>
+<li><strong>Preferred stock</strong> - Nonvoting shares in a corporation, usually paying a fixed stream of dividends.</li>
+<li><strong>Price-weighted average</strong> - An average computed by adding the prices of the stocks and dividing by a “divisor.”</li>
+<li><strong>Put option</strong> - The right to sell an asset at a specified exercise price on or before a specified expiration date.</li>
+<li><strong>Repurchase agreements (repos)</strong> - Short-term sales of securities with an agreement to repurchase the securities at a higher price.</li>
+<li><strong>Secured Overnight Financing Rate (SOFR)</strong> - Rate on collateralized overnight repurchase agreements.</li>
+<li><strong>Treasury bills</strong> - Short-term government securities issued at a discount from face value and returning the face amount at maturity.</li>
+<li><strong>Treasury bonds</strong> - Debt obligations of the federal government with original maturities greater than 10 years.</li>
+<li><strong>Treasury notes</strong> - Debt obligations of the federal government with original maturities from 2 to 10 years.</li>
+</ul>
+<hr>
+<section id="looking-ahead" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="looking-ahead">Looking Ahead</h2>
+<p><strong>Chapter 3 - How Securities Are Traded:</strong> how firms issue securities, how those securities subsequently trade in secondary markets, the mechanics of buying on margin and short selling, and the regulation of securities markets.</p>
+<p><em>Source: Bodie, Kane, and Marcus, Essentials of Investments (2024 Release), Chapter 2, “Asset Classes and Financial Instruments.” Figures reproduced from the chapter and the publisher’s slides.</em></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/clb18\.github\.io\/FIN-3440_Investments");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

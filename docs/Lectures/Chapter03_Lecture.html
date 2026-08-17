@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Prof.&nbsp;Barker">
+<meta name="dcterms.date" content="2026-08-16">
+
+<title>Chapter 3 - How Securities Trade – Investments</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a2e98a8173336b0a3fc6fb521ab0b9ac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Investments</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../syllabus.html"> 
+<span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../cv.html"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Lectures/Chapter00_Lecture.html">Lecture Notes</a></li><li class="breadcrumb-item"><a href="../Lectures/Chapter01_Lecture.html">Elements of Investments</a></li><li class="breadcrumb-item"><a href="../Lectures/Chapter03_Lecture.html">Ch 3 - How Securities Trade</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Lecture Notes</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/Chapter00_Lecture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ch 0 - Problems with Investment Theory</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Elements of Investments</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/Chapter01_Lecture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ch 1 - Background and Issues</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/Chapter02_Lecture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ch 2 - Asset Classes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/Chapter03_Lecture.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Ch 3 - How Securities Trade</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/Chapter04_Lecture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ch 4 - Mutual Funds</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="1">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a>
+  <ul class="collapse">
+  <li><a href="#chapter-roadmap" id="toc-chapter-roadmap" class="nav-link" data-scroll-target="#chapter-roadmap">Chapter Roadmap</a></li>
+  </ul></li>
+  <li><a href="#how-firms-issue-securities" id="toc-how-firms-issue-securities" class="nav-link" data-scroll-target="#how-firms-issue-securities">3.1 How Firms Issue Securities</a>
+  <ul class="collapse">
+  <li><a href="#privately-held-firms" id="toc-privately-held-firms" class="nav-link" data-scroll-target="#privately-held-firms">3.1.1 Privately Held Firms</a></li>
+  <li><a href="#publicly-traded-companies" id="toc-publicly-traded-companies" class="nav-link" data-scroll-target="#publicly-traded-companies">3.1.2 Publicly Traded Companies</a></li>
+  <li><a href="#shelf-registration" id="toc-shelf-registration" class="nav-link" data-scroll-target="#shelf-registration">3.1.3 Shelf Registration</a></li>
+  <li><a href="#initial-public-offerings-ipo" id="toc-initial-public-offerings-ipo" class="nav-link" data-scroll-target="#initial-public-offerings-ipo">3.1.4 Initial Public Offerings (IPO)</a></li>
+  <li><a href="#spacs-versus-traditional-ipos" id="toc-spacs-versus-traditional-ipos" class="nav-link" data-scroll-target="#spacs-versus-traditional-ipos">3.1.5 SPACs versus Traditional IPOs</a></li>
+  </ul></li>
+  <li><a href="#how-securities-are-traded" id="toc-how-securities-are-traded" class="nav-link" data-scroll-target="#how-securities-are-traded">3.2 How Securities Are Traded</a>
+  <ul class="collapse">
+  <li><a href="#types-of-markets" id="toc-types-of-markets" class="nav-link" data-scroll-target="#types-of-markets">3.2.1 Types of Markets</a>
+  <ul class="collapse">
+  <li><a href="#direct-search-markets" id="toc-direct-search-markets" class="nav-link" data-scroll-target="#direct-search-markets">3.2.1.1 Direct Search Markets</a></li>
+  <li><a href="#brokered-markets" id="toc-brokered-markets" class="nav-link" data-scroll-target="#brokered-markets">3.2.1.2 Brokered Markets</a></li>
+  <li><a href="#dealer-markets" id="toc-dealer-markets" class="nav-link" data-scroll-target="#dealer-markets">3.2.1.3 Dealer Markets</a></li>
+  <li><a href="#auction-markets" id="toc-auction-markets" class="nav-link" data-scroll-target="#auction-markets">3.2.1.4 Auction Markets</a></li>
+  </ul></li>
+  <li><a href="#types-of-orders" id="toc-types-of-orders" class="nav-link" data-scroll-target="#types-of-orders">3.2.2 Types of Orders</a>
+  <ul class="collapse">
+  <li><a href="#market-orders" id="toc-market-orders" class="nav-link" data-scroll-target="#market-orders">3.2.2.1 Market Orders</a></li>
+  <li><a href="#price-contingent-orders" id="toc-price-contingent-orders" class="nav-link" data-scroll-target="#price-contingent-orders">3.2.2.2 Price-Contingent Orders</a></li>
+  </ul></li>
+  <li><a href="#trading-mechanisms" id="toc-trading-mechanisms" class="nav-link" data-scroll-target="#trading-mechanisms">3.2.3 Trading Mechanisms</a>
+  <ul class="collapse">
+  <li><a href="#dealer-markets-1" id="toc-dealer-markets-1" class="nav-link" data-scroll-target="#dealer-markets-1">3.2.3.1 Dealer Markets</a></li>
+  <li><a href="#electronic-communication-networks-ecns" id="toc-electronic-communication-networks-ecns" class="nav-link" data-scroll-target="#electronic-communication-networks-ecns">3.2.3.2 Electronic Communication Networks (ECNs)</a></li>
+  <li><a href="#specialistdmm-markets" id="toc-specialistdmm-markets" class="nav-link" data-scroll-target="#specialistdmm-markets">3.2.3.3 Specialist/DMM Markets</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#the-rise-of-electronic-trading" id="toc-the-rise-of-electronic-trading" class="nav-link" data-scroll-target="#the-rise-of-electronic-trading">3.3 The Rise of Electronic Trading</a></li>
+  <li><a href="#u.s.-markets" id="toc-u.s.-markets" class="nav-link" data-scroll-target="#u.s.-markets">3.4 U.S. Markets</a>
+  <ul class="collapse">
+  <li><a href="#nasdaq" id="toc-nasdaq" class="nav-link" data-scroll-target="#nasdaq">3.4.1 Nasdaq</a></li>
+  <li><a href="#the-new-york-stock-exchange" id="toc-the-new-york-stock-exchange" class="nav-link" data-scroll-target="#the-new-york-stock-exchange">3.4.2 The New York Stock Exchange</a></li>
+  <li><a href="#ecns" id="toc-ecns" class="nav-link" data-scroll-target="#ecns">3.4.3 ECNs</a></li>
+  </ul></li>
+  <li><a href="#new-trading-strategies" id="toc-new-trading-strategies" class="nav-link" data-scroll-target="#new-trading-strategies">3.5 New Trading Strategies</a>
+  <ul class="collapse">
+  <li><a href="#algorithmic-trading" id="toc-algorithmic-trading" class="nav-link" data-scroll-target="#algorithmic-trading">3.5.1 Algorithmic Trading</a></li>
+  <li><a href="#high-frequency-trading" id="toc-high-frequency-trading" class="nav-link" data-scroll-target="#high-frequency-trading">3.5.2 High-Frequency Trading</a></li>
+  <li><a href="#dark-pools" id="toc-dark-pools" class="nav-link" data-scroll-target="#dark-pools">3.5.3 Dark Pools</a></li>
+  <li><a href="#internalization" id="toc-internalization" class="nav-link" data-scroll-target="#internalization">3.5.4 Internalization</a></li>
+  <li><a href="#bond-trading" id="toc-bond-trading" class="nav-link" data-scroll-target="#bond-trading">3.5.5 Bond Trading</a></li>
+  </ul></li>
+  <li><a href="#globalization-of-stock-markets" id="toc-globalization-of-stock-markets" class="nav-link" data-scroll-target="#globalization-of-stock-markets">3.6 Globalization of Stock Markets</a></li>
+  <li><a href="#trading-costs" id="toc-trading-costs" class="nav-link" data-scroll-target="#trading-costs">3.7 Trading Costs</a></li>
+  <li><a href="#buying-on-margin" id="toc-buying-on-margin" class="nav-link" data-scroll-target="#buying-on-margin">3.8 Buying on Margin</a></li>
+  <li><a href="#short-sales" id="toc-short-sales" class="nav-link" data-scroll-target="#short-sales">3.9 Short Sales</a></li>
+  <li><a href="#regulation-of-securities-markets" id="toc-regulation-of-securities-markets" class="nav-link" data-scroll-target="#regulation-of-securities-markets">3.10 Regulation of Securities Markets</a>
+  <ul class="collapse">
+  <li><a href="#self-regulation" id="toc-self-regulation" class="nav-link" data-scroll-target="#self-regulation">3.10.1 Self-Regulation</a></li>
+  <li><a href="#sarbanes-oxley-act" id="toc-sarbanes-oxley-act" class="nav-link" data-scroll-target="#sarbanes-oxley-act">3.10.2 Sarbanes-Oxley Act</a></li>
+  <li><a href="#insider-trading" id="toc-insider-trading" class="nav-link" data-scroll-target="#insider-trading">3.10.3 Insider Trading</a></li>
+  </ul></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#key-terms" id="toc-key-terms" class="nav-link" data-scroll-target="#key-terms">Key Terms</a></li>
+  <li><a href="#solutions-to-concept-checks" id="toc-solutions-to-concept-checks" class="nav-link" data-scroll-target="#solutions-to-concept-checks">Solutions to Concept Checks</a>
+  <ul class="collapse">
+  <li><a href="#looking-ahead" id="toc-looking-ahead" class="nav-link" data-scroll-target="#looking-ahead">Looking Ahead</a></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="Chapter03_Lecture.docx"><i class="bi bi-file-word"></i>MS Word</a></li><li><a href="Chapter03_Lecture.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Lectures/Chapter00_Lecture.html">Lecture Notes</a></li><li class="breadcrumb-item"><a href="../Lectures/Chapter01_Lecture.html">Elements of Investments</a></li><li class="breadcrumb-item"><a href="../Lectures/Chapter03_Lecture.html">Ch 3 - How Securities Trade</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Chapter 3 - How Securities Trade</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Prof.&nbsp;Barker </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 16, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level1">
+<h1>Learning Objectives</h1>
+<p>By the end of this chapter, you should be able to:</p>
+<ul>
+<li><strong>LO 3-1</strong> Describe how firms issue securities to the public.</li>
+<li><strong>LO 3-2</strong> Identify various types of orders investors can submit to their brokers.</li>
+<li><strong>LO 3-3</strong> Describe trading practices in dealer markets, formal stock exchanges, and electronic communication networks.</li>
+<li><strong>LO 3-4</strong> Compare the mechanics and investment implications of buying on margin and short-selling.</li>
+</ul>
+<section id="chapter-roadmap" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="chapter-roadmap">Chapter Roadmap</h2>
+<p>This chapter introduces the many venues and procedures available for trading securities. Trading mechanisms range from direct negotiation among market participants to fully automated computer crossing of trade orders.</p>
+<p>The first time a security trades is when it is issued to the public, so we begin with how securities are initially marketed to the public by investment bankers. We then survey how already-issued securities are traded among investors, focusing on the differences between dealer markets, electronic markets, and formal stock exchanges. With that background, we look at specific arenas — the New York Stock Exchange, Nasdaq, and several all-electronic markets — and compare the mechanics of trade execution.</p>
+<p>We then turn to the essentials of some specific transactions, such as <strong>buying on margin</strong> and <strong>short-selling</strong> stocks. We close with important aspects of the regulations governing security trading, including insider trading laws, circuit breakers, and the role of security markets as self-regulating organizations.</p>
+<hr>
+</section>
+</section>
+<section id="how-firms-issue-securities" class="level1">
+<h1>3.1 How Firms Issue Securities</h1>
+<p>Firms regularly need to raise new capital to pay for their investment projects. Broadly speaking, they can raise funds either by borrowing or by selling shares in the firm. Investment bankers are generally hired to manage the sale of these securities in what is called a <strong>primary market</strong> for newly issued securities.</p>
+<p>Once securities are issued, investors may wish to trade them among themselves. For example, selling some of your Apple shares to another investor has no impact on the total number of Apple shares outstanding. Trades in existing securities take place in the so-called <strong>secondary market</strong>.</p>
+<p>Shares of <em>publicly listed</em> firms trade continually on well-known markets such as the New York Stock Exchange or the Nasdaq stock market; these are also called <em>publicly traded</em>, <em>publicly owned</em>, or just <em>public</em> companies. Other firms are <em>private corporations</em>, whose shares are held by small numbers of managers and investors and do not trade in public markets.</p>
+<section id="privately-held-firms" class="level2">
+<h2 class="anchored" data-anchor-id="privately-held-firms">3.1.1 Privately Held Firms</h2>
+<p>A <strong>privately held company</strong> is owned by a relatively small number of shareholders. These firms have fewer obligations to release financial statements and other information to the public. This saves money and frees the firm from disclosing information that might be helpful to competitors. Eliminating quarterly earnings announcements can also give managers more flexibility to pursue long-term goals free of shareholder pressure.</p>
+<p>When private firms wish to raise funds, they can sell shares directly to a small number of institutional or wealthy investors in a <strong>private placement</strong>. Rule 144A of the SEC allows these placements without the extensive and costly registration statements required of a public company. However, shares in privately held firms do not trade in secondary markets such as a stock exchange, which greatly reduces their <strong>liquidity</strong> — the ability to trade an asset at a fair price on short notice — and thus reduces the prices investors will pay for them. Investors demand price concessions to buy illiquid securities.</p>
+<p>Until recently, privately held firms were allowed only up to 499 shareholders, which limited their ability to raise large amounts of capital. The <strong>JOBS (Jumpstart Our Business Startups) Act of 2012</strong> increased from 500 to 2,000 the number of shareholders a company may have before being required to register its common stock with the SEC and file public reports. It also loosened rules limiting how private firms could market shares to the public — for example, making it easier to engage in crowdfunding — and exempted smaller public companies (those with less than $1 billion in annual gross revenues) from Section 404 of the Sarbanes–Oxley Act.</p>
+</section>
+<section id="publicly-traded-companies" class="level2">
+<h2 class="anchored" data-anchor-id="publicly-traded-companies">3.1.2 Publicly Traded Companies</h2>
+<p>When a private firm decides to raise capital from a wide range of investors, it may <strong>go public</strong> — selling its securities to the general public and allowing those investors to freely trade the shares. This first issue of shares to the general public is the firm’s <strong>initial public offering (IPO)</strong>. Later, the firm may issue additional shares; a <em>seasoned equity offering</em> is the sale of additional shares in firms that already are publicly traded.</p>
+<p>Public offerings of both stocks and bonds are typically marketed by investment bankers acting as <strong>underwriters</strong>. A lead firm forms an <em>underwriting syndicate</em> of other investment bankers to share responsibility for the issue. A preliminary registration statement must be filed with the Securities and Exchange Commission (SEC); when the statement is approved by the SEC, it is called the <strong>prospectus</strong>, and the offering price is announced.</p>
+<p>In a typical underwriting arrangement, the investment bankers purchase the securities from the issuing company and resell them to the public. The issuing firm sells to the underwriting syndicate for the public offering price <em>less a spread</em> that compensates the underwriters. This is called a <em>firm commitment</em> because the underwriters bear the risk that they won’t be able to sell the stock at the planned offering price.</p>
+<div id="fig-underwriting" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Flowchart from issuing firm to lead underwriter to four investment bankers to investors, grouped as an underwriting syndicate.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-underwriting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/Ch03/Figure_3_1_Underwriting.png" class="img-fluid figure-img" style="width:70.0%" alt="Flowchart from issuing firm to lead underwriter to four investment bankers to investors, grouped as an underwriting syndicate.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-underwriting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Figure 3.1 — Relationship among a firm issuing securities, the underwriters, and the public. The issuing firm sells to a lead underwriter, who forms an underwriting syndicate of investment bankers (A–D) that resell the securities to investors.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="shelf-registration" class="level2">
+<h2 class="anchored" data-anchor-id="shelf-registration">3.1.3 Shelf Registration</h2>
+<p>In 1982, the SEC approved <strong>Rule 415</strong>, which allows firms that are already publicly traded to register securities and gradually sell them to the public for the next few years following the initial registration. Because the securities are already registered, they can be sold on short notice — even a 24-hour notice — with little additional paperwork, and in small amounts without incurring substantial flotation costs. The securities are “on the shelf,” ready to be issued, which gives rise to the term <em>shelf registration</em>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Concept Check 3.1
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Why does it make sense for shelf registration to be limited in time?</p>
+</div>
+</div>
+</section>
+<section id="initial-public-offerings-ipo" class="level2">
+<h2 class="anchored" data-anchor-id="initial-public-offerings-ipo">3.1.4 Initial Public Offerings (IPO)</h2>
+<p>Once the SEC has commented on the registration statement and a preliminary prospectus has been distributed, investment bankers organize <strong>road shows</strong> to publicize the imminent offering. Road shows serve two purposes: they generate interest among potential investors, and they provide information to the issuing firm and its underwriters about the price at which the securities can be marketed. Large investors communicate their interest — these indications are called a <em>book</em>, and the process of polling potential investors is <strong>bookbuilding</strong>.</p>
+<p>Because IPO shares are allocated in part based on the strength of each investor’s expressed interest, investors have an incentive to reveal their optimism truthfully. In turn, the underwriter offers the security at a bargain price to induce participation in bookbuilding. As a result, IPOs are commonly <strong>underpriced</strong> relative to the price at which they could be marketed, reflected in the price jumps that occur when shares first trade publicly.</p>
+<p>For example, Instacart’s 2023 IPO issued about 22 million shares at $30; the stock closed that day at $33.70, about 12% above the offering price. While the explicit costs of an IPO tend to be around 7% of funds raised, underpricing is another cost — the money “left on the table.” Not all IPOs are underpriced, however: Lyft’s shares fell more than 40% below the offering price within two months, and Facebook’s 2012 IPO fell about 15% below its $38 offer price within a week. Despite typically attractive first-day returns (averaging over 18% between 1980 and 2020), IPOs have historically been poor long-term investments, underperforming the broad market over three-year holding periods.</p>
+<p>An interesting but little-used alternative to a traditional IPO is a <strong>direct listing</strong>, in which a previously private company floats existing shares on the market but does <em>not</em> raise funds by issuing new shares. Notable direct listings include Spotify (2018), Slack (2019), ZipRecruiter (2021), and Coinbase (2021). Direct listings save the costs of an IPO but forgo after-market support such as underwriter-arranged <em>lock-up periods</em> that stabilize post-issuance prices.</p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch03/Figure_3_2a_European_IPOs.png" class="img-fluid figure-img" alt="Bar chart of average first-day IPO returns by European country, from Russia (~2%) to Greece (~50%)."></p>
+<figcaption>Figure 3.2, Panel A — Average first-day returns on (mostly) European IPOs, 1980–2022. Source: Professor Jay Ritter.</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch03/Figure_3_2b_NonEuropean_IPOs.png" class="img-fluid figure-img" alt="Bar chart of average first-day IPO returns by non-European country, from Argentina (~5%) to UAE (~180%)."></p>
+<figcaption>Figure 3.2, Panel B — Average first-day returns on non-European IPOs, 1980–2022. Source: Professor Jay Ritter.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>The results consistently indicate that, around the world, IPOs are marketed to investors at attractive prices.</p>
+</section>
+<section id="spacs-versus-traditional-ipos" class="level2">
+<h2 class="anchored" data-anchor-id="spacs-versus-traditional-ipos">3.1.5 SPACs versus Traditional IPOs</h2>
+<p>While IPOs are the conventional way to go public, 2021 was in large part the year of the <strong>special purpose acquisition company (SPAC)</strong>. The sponsor of a SPAC raises funds in its own IPO and goes public with <em>no underlying commercial operations</em>, then seeks to acquire a private company. If a suitable acquisition is not found within two years, the money must be returned to early investors. Because the ultimate acquisition is unknown when the SPAC raises funds, SPACs are often called <em>blank-check firms</em>, and the reputation of the sponsor is crucial.</p>
+<p>The advantage is that an attractive target can be taken public much faster, with less information disclosure, and at lower cost than a traditional IPO. As an already publicly traded firm, a SPAC is also allowed to make more extensive business projections than would be permitted for a firm in a traditional IPO. Founders and early SPAC investors usually receive special compensation and the right to withdraw funds before a deal goes through, which limits their risk. Listings of new SPACs accounted for a bit more than half of the roughly $300 billion raised in IPOs in 2021, but falling stock prices and rising interest rates in 2022 froze the market, and many SPACs were forced to liquidate. Regulators, particularly the SEC, have grown concerned about an uneven playing field for insiders versus regular investors.</p>
+<hr>
+</section>
+</section>
+<section id="how-securities-are-traded" class="level1">
+<h1>3.2 How Securities Are Traded</h1>
+<p>Financial markets develop to meet the needs of particular traders — bringing together buyers and sellers at low cost, providing adequate liquidity, minimizing the time to trade, promoting price continuity, updating asset prices, and reducing the information costs of investing. Without organized markets, any household wishing to invest would have to find others wishing to sell.</p>
+<section id="types-of-markets" class="level2">
+<h2 class="anchored" data-anchor-id="types-of-markets">3.2.1 Types of Markets</h2>
+<p>We can differentiate four types of markets: direct search markets, brokered markets, dealer markets, and auction markets.</p>
+<section id="direct-search-markets" class="level3">
+<h3 class="anchored" data-anchor-id="direct-search-markets">3.2.1.1 Direct Search Markets</h3>
+<p>A <strong>direct search market</strong> is the least organized market. Buyers and sellers must seek each other out directly — for example, selling used furniture by advertising on Craigslist or Facebook Marketplace. Such markets are characterized by sporadic participation and nonstandard goods, so it would not pay for most people or firms to specialize in them.</p>
+</section>
+<section id="brokered-markets" class="level3">
+<h3 class="anchored" data-anchor-id="brokered-markets">3.2.1.2 Brokered Markets</h3>
+<p>The next level of organization is a <strong>brokered market</strong>. Where trading in a good is active, brokers find it profitable to offer search services to buyers and sellers. A good example is the real estate market. The <em>primary market</em>, where new issues of securities are offered to the public, is another example of a brokered market: investment bankers act as brokers seeking investors to purchase securities directly from the issuing corporation.</p>
+</section>
+<section id="dealer-markets" class="level3">
+<h3 class="anchored" data-anchor-id="dealer-markets">3.2.1.3 Dealer Markets</h3>
+<p>When trading activity in a particular type of asset increases, <strong>dealer markets</strong> arise. Dealers specialize in various assets, purchase these assets for their own accounts, and later sell them for a profit from their inventory. The spreads between dealers’ buy (bid) and sell (asked) prices are a source of profit. Dealer markets save traders on search costs. Most bonds and most foreign exchange trade in over-the-counter dealer markets.</p>
+</section>
+<section id="auction-markets" class="level3">
+<h3 class="anchored" data-anchor-id="auction-markets">3.2.1.4 Auction Markets</h3>
+<p>The most integrated market is an <strong>auction market</strong>, in which all traders converge at one place (physically or electronically) to buy or sell an asset. The New York Stock Exchange (NYSE) is an example. An advantage of auction markets over dealer markets is that one need not search across dealers to find the best price; if all participants converge, they can arrive at mutually agreeable prices and save the bid–ask spread.</p>
+<p>Note that both over-the-counter dealer markets and stock exchanges are <em>secondary</em> markets, organized for investors to trade existing securities among themselves.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Concept Check 3.2
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Many assets trade in more than one type of market. What types of markets do the following trade in?</p>
+<ol type="a">
+<li>Used cars</li>
+<li>Paintings</li>
+<li>Rare coins</li>
+</ol>
+</div>
+</div>
+</section>
+</section>
+<section id="types-of-orders" class="level2">
+<h2 class="anchored" data-anchor-id="types-of-orders">3.2.2 Types of Orders</h2>
+<p>Broadly speaking, there are two types of orders: market orders and orders contingent on price.</p>
+<section id="market-orders" class="level3">
+<h3 class="anchored" data-anchor-id="market-orders">3.2.2.1 Market Orders</h3>
+<p><strong>Market orders</strong> are buy or sell orders to be executed immediately at current market prices. For example, a broker might report that the best <strong>bid price</strong> for Microsoft is $230.79 and the best <strong>ask price</strong> is $230.84, so the <strong>bid–ask spread</strong> is $0.05. An order to buy 100 shares “at market” would be filled at $230.84, and an order to “sell at market” at $230.79.</p>
+<p>This simple scenario has a few complications. Posted quotes are commitments to trade only up to a specified number of shares, so a large order may be filled at multiple prices. Figure 3.3 shows average <em>depth</em> (the total number of shares offered at the best bid and ask prices) over time; depth is considerably higher for large stocks than for smaller stocks, and depth is another component of liquidity. In addition, another trader may beat you to the quote, or the best quote may change before your order arrives.</p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch03/Figure_3_3a_Depth_Median.png" class="img-fluid figure-img" alt="Line chart of displayed market depth for the median stock, rising from about $40,000 in the mid-2000s to roughly $120,000 by 2013."></p>
+<figcaption>Figure 3.3, Panel A — Average market depth, median stock (stratified by market capitalization), 2003–2013.</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch03/Figure_3_3b_Depth_Large.png" class="img-fluid figure-img" alt="Line chart of displayed market depth for the largest stocks, rising from about $300,000 to roughly $1,000,000 with large swings."></p>
+<figcaption>Figure 3.3, Panel B — Average market depth, large stocks (above 95th percentile), 2003–2013.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="price-contingent-orders" class="level3">
+<h3 class="anchored" data-anchor-id="price-contingent-orders">3.2.2.2 Price-Contingent Orders</h3>
+<p>Investors may also place orders specifying the prices at which they are willing to trade. A <strong>limit buy order</strong> instructs the broker to buy shares if and when they can be obtained at or below a stipulated price. A <strong>limit sell order</strong> instructs the broker to sell if and when the price rises above a specified limit. A collection of limit orders waiting to be executed is called a <em>limit order book</em>. (A <em>stop order</em> is a related price-contingent order that is not to be executed until a specified price point is hit.)</p>
+<p><strong>Figure 3.4</strong> is a portion of the limit order book for Microsoft (ticker MSFT) taken from the CBOE electronic exchange on October 14, 2022. The best orders are at the top of the list — the highest buy price and the lowest sell price, called the <em>inside quotes</em>. Here the inside spread is only 5 cents, but order sizes at the inside quotes are fairly small, so investors interested in larger trades face an <em>effective</em> spread greater than the nominal one.</p>
+<table class="caption-top table">
+<caption>Figure 3.4 — A portion of the limit order book for Microsoft on CBOE Global Markets, October 14, 2022. Source: markets.cboe.com.</caption>
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Bid Price</th>
+<th style="text-align: center;">Bid Shares</th>
+<th style="text-align: center;">Ask Price</th>
+<th style="text-align: center;">Ask Shares</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">230.79</td>
+<td style="text-align: center;">50</td>
+<td style="text-align: center;">230.84</td>
+<td style="text-align: center;">200</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">230.75</td>
+<td style="text-align: center;">100</td>
+<td style="text-align: center;">230.85</td>
+<td style="text-align: center;">250</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">230.74</td>
+<td style="text-align: center;">200</td>
+<td style="text-align: center;">230.87</td>
+<td style="text-align: center;">50</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">230.72</td>
+<td style="text-align: center;">50</td>
+<td style="text-align: center;">230.88</td>
+<td style="text-align: center;">50</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">230.69</td>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">230.89</td>
+<td style="text-align: center;">50</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Concept Check 3.3
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>What type of trading order might you give your broker in each of the following circumstances?</p>
+<ol type="a">
+<li>You want to buy shares of Intel to diversify your portfolio. You believe the share price is approximately at “fair” value, and you want the trade done quickly and cheaply.</li>
+<li>You want to buy shares of Intel but believe the current stock price is too high. If shares could be obtained 5% lower than the current value, you would like to buy.</li>
+<li>You believe your shares of FedEx may be priced generously and are thinking about selling, but a short-lived price increase of a few dollars would fully convince you they are overpriced and you would want to sell immediately.</li>
+</ol>
+</div>
+</div>
+</section>
+</section>
+<section id="trading-mechanisms" class="level2">
+<h2 class="anchored" data-anchor-id="trading-mechanisms">3.2.3 Trading Mechanisms</h2>
+<p>Broadly speaking, there are three trading systems employed in the United States: over-the-counter dealer markets, electronic communication networks, and specialist/designated market maker (DMM) markets. Electronic trading is by far the most prevalent.</p>
+<section id="dealer-markets-1" class="level3">
+<h3 class="anchored" data-anchor-id="dealer-markets-1">3.2.3.1 Dealer Markets</h3>
+<p>Tens of thousands of securities trade on the <strong>over-the-counter (OTC) market</strong>. Thousands of brokers register with the SEC as security dealers who quote prices at which they are willing to buy or sell; a broker then executes a trade by contacting a dealer with an attractive quote. Before 1971, all OTC quotations were recorded manually and published daily on so-called <em>pink sheets</em>. In 1971, the National Association of Securities Dealers introduced its Automated Quotations System (Nasdaq) to link brokers and dealers in a computer network. While originally more of a price quotation system, what is now called the <strong>Nasdaq Stock Market</strong> allows automated electronic execution of trades at quoted prices, and the vast majority of trades are executed electronically.</p>
+</section>
+<section id="electronic-communication-networks-ecns" class="level3">
+<h3 class="anchored" data-anchor-id="electronic-communication-networks-ecns">3.2.3.2 Electronic Communication Networks (ECNs)</h3>
+<p><strong>Electronic communication networks (ECNs)</strong> allow participants to post market and limit orders over computer networks, with the limit order book available to all participants. Orders that can be “crossed” — matched against another order — are executed automatically without requiring a broker’s intervention. ECNs are therefore true trading systems, not merely price quotation systems.</p>
+<p>ECNs register with the SEC as broker-dealers and are subject to <em>Regulation ATS</em> (for Alternative Trading System). Subscribers are typically institutional investors, broker-dealers, and market makers; individual investors must hire a broker who participates in the ECN. ECNs offer several advantages: trades are automatically crossed at a modest cost (typically less than a penny per share), execution is fast, and the systems offer considerable anonymity.</p>
+</section>
+<section id="specialistdmm-markets" class="level3">
+<h3 class="anchored" data-anchor-id="specialistdmm-markets">3.2.3.3 Specialist/DMM Markets</h3>
+<p>A <strong>market maker</strong> is a trader that quotes both a bid and an ask price to the public, providing liquidity so other traders can move into and out of positions quickly and cheaply. A <strong>designated market maker (DMM)</strong> is a market maker that accepts the obligation to commit its own capital to provide quotes and help maintain a “fair and orderly market.” When the limit order book is thin and the spread becomes too wide, the DMM is expected to post narrower bid and ask prices from its own inventory, and to support the “weak” side of the market when buy and sell orders are imbalanced.</p>
+<p>DMMs replaced what were formerly called <em>specialist</em> firms at the NYSE. Unlike the specialists they replaced, DMMs are not given advanced looks at the trading orders of other participants. While most NYSE trading is electronic, the exchange touts the DMM system as offering human intervention to maintain a smooth-functioning market during periods of stress and high volatility — most valuable at market open and close.</p>
+<hr>
+</section>
+</section>
+</section>
+<section id="the-rise-of-electronic-trading" class="level1">
+<h1>3.3 The Rise of Electronic Trading</h1>
+<p>When first established, Nasdaq was primarily an over-the-counter dealer market and the NYSE was a specialist market, but today both are primarily electronic. These changes were driven by an interaction of new technologies and new regulations that allowed brokers to compete for business, broke the hold dealers once had on best-price information, forced integration of markets, and allowed securities to trade in ever-smaller price increments (called <em>tick sizes</em>). The resulting competition drove the cost of trade execution to a tiny fraction of its value just a few decades ago. A timeline of the major changes:</p>
+<ul>
+<li><strong>1969</strong> — Instinet, the first ECN, is established.</li>
+<li><strong>1975</strong> — Fixed commissions on the NYSE are eliminated; Congress amends the Securities Exchange Act to create the National Market System (NMS) to partially centralize trading.</li>
+<li><strong>1994</strong> — A scandal reveals Nasdaq dealers colluding to maintain wide bid–ask spreads (better quotes were not made available to the public). In response, the SEC institutes new order-handling rules requiring published dealer quotes to reflect customers’ limit orders, Nasdaq integrates ECN quotes into its display, and the SEC adopts Regulation ATS, letting ECNs register as stock exchanges. Bid–ask spreads narrow.</li>
+<li><strong>1997</strong> — The SEC allows the minimum tick size to fall from one-eighth to one-sixteenth of a dollar.</li>
+<li><strong>2000</strong> — The National Association of Securities Dealers (NASD) spins off the Nasdaq Stock Market as a separate entity, which evolves into a centralized limit-order matching system.</li>
+<li><strong>2001</strong> — “Decimalization” allows the tick size to fall to 1 cent; bid–ask spreads fall dramatically again.</li>
+<li><strong>2006</strong> — The NYSE acquires the electronic Archipelago Exchange and renames it NYSE Arca.</li>
+<li><strong>2005/2007</strong> — The SEC adopts Regulation NMS (implemented 2007), requiring exchanges to honor quotes of other exchanges when they can be executed automatically. An exchange that could not handle a quote electronically would be labeled a “slow market” and could be ignored.</li>
+</ul>
+<p><strong>Figure 3.5</strong> shows estimates of the “effective spread” (the cost of a transaction) during three periods defined by the minimum tick size. Effective spread falls dramatically along with the minimum tick size. By 2015, quoted bid–ask spreads on large stocks were typically only 1 cent, and the median spread across all stocks was about 5 cents.</p>
+<div id="fig-spread" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Line chart of effective spread from 1993 to 2003, falling across the eighths, sixteenths, and decimal regimes.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-spread-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/Ch03/Figure_3_5_Effective_Spread.png" class="img-fluid figure-img" style="width:80.0%" alt="Line chart of effective spread from 1993 to 2003, falling across the eighths, sixteenths, and decimal regimes.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-spread-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Figure 3.5 — The effective spread (measured in dollars per share) fell dramatically as the minimum tick size fell (value-weighted average of NYSE-listed shares). Source: Chordia, Roll, and Subrahmanyam (2008).
+</figcaption>
+</figure>
+</div>
+<p>In the wake of Reg NMS, the NYSE lost its effective monopoly in trading its own listed stocks, and its share in the trading of NYSE-listed stocks fell from about 75% to 20% by the end of the decade. Trading today is overwhelmingly electronic, at least for stocks; bonds are still traded primarily in more traditional dealer markets.</p>
+<hr>
+</section>
+<section id="u.s.-markets" class="level1">
+<h1>3.4 U.S. Markets</h1>
+<p>The NYSE and the Nasdaq Stock Market remain the best-known U.S. stock markets, but ECNs have steadily increased their market share. <strong>Figure 3.6</strong> shows the comparative trading volume of NYSE-listed shares on the NYSE and Nasdaq as well as the major ECNs (BATS, NYSE Arca, and Direct Edge). Since the underlying study was published, BATS and Direct Edge merged to create BATS Global Markets, which was in turn acquired by the CBOE. The “Other” category — now about 40% — includes so-called <em>dark pools</em> and <em>internalization</em> of order flow by brokerage firms.</p>
+<div id="fig-share" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Line chart showing the NYSE's share of trading in its own listed shares falling from about 80% in 2004 to about 22% in 2012, as ECNs and 'Other' venues rise.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-share-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/Ch03/Figure_3_6_Market_Share.png" class="img-fluid figure-img" style="width:80.0%" alt="Line chart showing the NYSE's share of trading in its own listed shares falling from about 80% in 2004 to about 22% in 2012, as ECNs and 'Other' venues rise.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-share-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Figure 3.6 — Market share of trading in NYSE-listed shares, 2004–2012. Source: Angel, Harris, and Spatt (2011).
+</figcaption>
+</figure>
+</div>
+<section id="nasdaq" class="level2">
+<h2 class="anchored" data-anchor-id="nasdaq">3.4.1 Nasdaq</h2>
+<p>The Nasdaq Stock Market lists around 3,300 firms and has steadily introduced ever-more-sophisticated trading platforms; the current version, the <em>Nasdaq Market Center</em>, consolidates Nasdaq’s previous electronic markets into one integrated system. In 2007, Nasdaq merged with OMX (a Swedish-Finnish company controlling seven Nordic and Baltic exchanges) to form Nasdaq OMX Group.</p>
+<p>Nasdaq has three levels of subscribers:</p>
+<ul>
+<li><strong>Level 3 subscribers</strong> are registered market makers — the highest level. They make a market in securities, maintain inventories, and post bid and ask prices at which they commit to trade. They can enter and change quotes continually, have the fastest execution, and profit from the bid–ask spread.</li>
+<li><strong>Level 2 subscribers</strong> receive all bid and ask quotes but cannot enter their own quotes. They can see which market makers offer the best prices; these tend to be brokerage firms that execute trades for clients but do not deal for their own account.</li>
+<li><strong>Level 1 subscribers</strong> receive only inside quotes (the best bid and ask) but do not see how many shares are offered; these tend to be investors who want information on current prices.</li>
+</ul>
+</section>
+<section id="the-new-york-stock-exchange" class="level2">
+<h2 class="anchored" data-anchor-id="the-new-york-stock-exchange">3.4.2 The New York Stock Exchange</h2>
+<p>The NYSE is the largest U.S. <strong>stock exchange</strong> as measured by the market value of listed firms, and daily trading volume commonly exceeds 4 billion shares. In 2006 the NYSE merged with the Archipelago Exchange to form the NYSE Group, then merged with Euronext in 2007 to form NYSE Euronext; it acquired the American Stock Exchange in 2008 (renamed NYSE Amex). In 2013, NYSE Euronext was acquired by Intercontinental Exchange (ICE), whose main business had been energy-futures trading.</p>
+<p>The NYSE was long committed to its specialist trading system, but it transitioned to electronic trading beginning in 1976 with its DOT (Designated Order Turnaround) and later SuperDOT systems, then Direct+ (2000), and the NYSE Hybrid Market (2006), which allowed brokers to send orders either for immediate electronic execution or to the specialist for possible price improvement. The Hybrid system let the NYSE qualify as a <em>fast market</em> under Reg NMS while still offering human intervention for more complicated trades. By contrast, NYSE Arca is fully electronic.</p>
+</section>
+<section id="ecns" class="level2">
+<h2 class="anchored" data-anchor-id="ecns">3.4.3 ECNs</h2>
+<p>Over time, more fully automated markets have gained market share at the expense of less automated ones, particularly the NYSE. Brokers affiliated with an ECN can enter orders in the limit order book; as orders are received, the system determines whether there is a matching order and, if so, immediately crosses the trade. Following Reg NMS, ECNs began listing limit orders on other networks, and traders could sift through the limit order books of many ECNs and route orders to the market with the best prices. These cross-market links became the impetus for high-frequency trading strategies that profit from small, transitory price discrepancies across markets.</p>
+<p><strong>Latency</strong> refers to the time it takes to accept, process, and deliver a trading order. CBOE Global Markets, which acquired the BATS platform, advertises average latency times of about 100 microseconds (0.0001 second).</p>
+<hr>
+</section>
+</section>
+<section id="new-trading-strategies" class="level1">
+<h1>3.5 New Trading Strategies</h1>
+<p>The marriage of electronic trading mechanisms with computer technology has had far-ranging impacts on trading strategies and tools.</p>
+<section id="algorithmic-trading" class="level2">
+<h2 class="anchored" data-anchor-id="algorithmic-trading">3.5.1 Algorithmic Trading</h2>
+<p><strong>Algorithmic trading</strong> is the use of computer programs to make trading decisions. Well over half of all equity volume in the United States is believed to be initiated by computer algorithms. Many of these trades exploit very small discrepancies in security prices and entail numerous, rapid cross-market price comparisons that would not have been feasible before decimalization of the minimum tick size. Some algorithmic trades exploit very-short-term trends; others use <em>pairs trading</em>, in which normal price relations between pairs (or groups) of stocks are temporarily disrupted; still others exploit discrepancies between stock prices and stock-index futures. Some algorithmic trading resembles traditional market making — buying at the bid and selling at the ask — but these traders are not registered market makers and have no obligation to maintain quotes, so if they abandon the market during turbulence, the shock to liquidity can be disruptive.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>On the Market Front — The Flash Crash of 2010
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>At 2:42 p.m. New York time on May 6, 2010, the Dow Jones Industrial Average — already down about 300 points amid concerns about the European debt crisis — dropped an <em>additional</em> 600 points in the next five minutes, then recovered most of that within 20 minutes. Individual securities were even more disrupted: the iShares Russell 1000 Value Fund temporarily fell from $59 to 8 cents, and Accenture traded at 1 cent, while price quotes for Apple and Hewlett-Packard momentarily rose above $100,000. An SEC report pointed to a $4 billion sale of index futures by a mutual fund; as prices tumbled, many algorithmic programs withdrew from the market, and liquidity evaporated. The SEC has since experimented with <strong>circuit breakers</strong>: for example, a 7% decline in the S&amp;P 500 (before 3:25 p.m.) halts trading for 15 minutes, and a 20% decline halts trading for the remainder of the day. A <em>limit-up, limit-down</em> rule prevents individual stocks from trading outside time-varying price bands.</p>
+</div>
+</div>
+</section>
+<section id="high-frequency-trading" class="level2">
+<h2 class="anchored" data-anchor-id="high-frequency-trading">3.5.2 High-Frequency Trading</h2>
+<p><strong>High-frequency trading</strong> is a subset of algorithmic trading that relies on computer programs to make extremely rapid decisions, competing for trades that offer very small profits which, if numerous enough, accumulate to big money. One strategy is a form of market making; another relies on cross-market arbitrage, buying at one price and simultaneously selling at a slightly higher price, with the advantage going to firms quickest to identify and execute. Some strategies combine artificial intelligence with high-speed trading, using natural language processing on electronic news feeds to trade on announcements faster than any human could.</p>
+<p>Because execution times are measured in milliseconds and even microseconds, trading firms “co-locate” their trading centers next to the exchanges’ computer systems. As a calculation of why co-location matters: even light travels only 186 miles in one millisecond, so an order originating in Chicago would take almost five milliseconds to reach New York and could not compete with one launched from a co-located facility. This is a new version of an old phenomenon — brokerage firms once located their headquarters in New York to be near the NYSE.</p>
+</section>
+<section id="dark-pools" class="level2">
+<h2 class="anchored" data-anchor-id="dark-pools">3.5.3 Dark Pools</h2>
+<p>Many large traders seek anonymity, fearing that if others see them executing a large program, prices will move against them. Very large trades — called <strong>blocks</strong>, usually defined as more than 10,000 shares — were traditionally brought to “block houses” specializing in matching block buyers and sellers.</p>
+<p>Block trading today has largely been displaced by <strong>dark pools</strong>, trading systems in which participants can buy or sell large blocks without showing their hand. Limit orders are not visible to the general public, traders’ identities can be kept private, and trades are not reported until after they are crossed. Many dark pools simply match buyers and sellers at the midpoint of the bid and ask reported on other markets. Because these orders never appear in the consolidated limit order book (which displays the <em>national best bid and offer</em>, or NBBO), they do not contribute to <em>price discovery</em>, and dark pools have been criticized for exacerbating market fragmentation. Concerns also linger about whether dark pools truly exclude better-informed traders such as high-frequency traders, as illustrated by accusations against Pipeline LLC (2011) and Barclays (2014).</p>
+</section>
+<section id="internalization" class="level2">
+<h2 class="anchored" data-anchor-id="internalization">3.5.4 Internalization</h2>
+<p><strong>Order internalization</strong> is a second major drain of trades away from exchanges: brokers match buy and sell orders internally rather than bringing them to exchanges. By doing so, the brokerage captures the bid–ask spread for itself and avoids paying exchange access fees charged under <em>maker/taker pricing</em> (market orders that “take” liquidity pay an access fee of about 0.3 cent per share, while limit orders that “make” liquidity receive a rebate of about 0.2 cent per share, with the exchange keeping about 0.1 cent). Together with dark pools, off-exchange trading now accounts for about 40% of trades, raising concerns that market fragmentation means prices may not reflect the full picture of supply and demand.</p>
+</section>
+<section id="bond-trading" class="level2">
+<h2 class="anchored" data-anchor-id="bond-trading">3.5.5 Bond Trading</h2>
+<p>In 2006, the NYSE expanded its bond trading system to include the debt issues of any NYSE-listed firm and expanded its electronic bond-trading platform. Nevertheless, the vast majority of bond trading occurs in the OTC market among bond dealers linked by a computer quotation system, even for bonds listed on the NYSE. New electronic platforms (for example, MarketAxess) now connect buyers and sellers directly but have not yet displaced the traditional dealer market. A key impediment is lack of standardization: a single company may have dozens of different bond issues differing by coupon, maturity, and seniority, and any one may trade only a few times a year. As a result, the corporate bond market is often quite “thin,” subject to a type of liquidity risk, since it can be difficult to sell one’s holdings quickly.</p>
+<hr>
+</section>
+</section>
+<section id="globalization-of-stock-markets" class="level1">
+<h1>3.6 Globalization of Stock Markets</h1>
+<p><strong>Figure 3.7</strong> shows the market capitalization of firms listed on major stock exchanges around the world. By this measure, NYSE Euronext is by far the largest equity market. All major stock markets today are effectively electronic.</p>
+<div id="fig-worldcap" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Bar chart of world stock exchange market capitalization, led by NYSE (~$27.5T) and Nasdaq-US (~$24T).">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-worldcap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/Ch03/Figure_3_7_World_MarketCap.png" class="img-fluid figure-img" style="width:80.0%" alt="Bar chart of world stock exchange market capitalization, led by NYSE (~$27.5T) and Nasdaq-US (~$24T).">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-worldcap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Figure 3.7 — Market capitalization of major world stock exchanges, 2021 ($ trillion). Source: World Federation of Exchanges.
+</figcaption>
+</figure>
+</div>
+<p>Securities markets have come under increasing pressure to make international alliances or mergers, much of it due to electronic trading. As traders increasingly view stock markets as networks linking them to other traders, it becomes more important for exchanges to provide the cheapest and most efficient mechanism for executing and clearing trades. This argues for global alliances that facilitate cross-border trading, benefit from economies of scale, and eventually offer 24-hour global markets. The result has been a broad trend toward market consolidation, leaving a few giant exchanges: ICE (operating NYSE Euronext), Nasdaq, the LSE (London Stock Exchange Group), Deutsche Börse, the CME Group, the TSE (Tokyo Stock Exchange), and HKEX (Hong Kong Stock Exchange).</p>
+<hr>
+</section>
+<section id="trading-costs" class="level1">
+<h1>3.7 Trading Costs</h1>
+<p>Part of the cost of trading a security is obvious and explicit: a broker’s <strong>commission</strong>. Individuals can choose between two kinds of brokers. <strong>Full-service brokers</strong> provide a variety of services — executing orders, holding securities for safekeeping, extending margin loans, facilitating short sales, and offering research, analyses, and specific buy/sell recommendations. Some customers establish a <em>discretionary account</em>, allowing the broker to make buy and sell decisions; this requires trust, since an unscrupulous broker could <em>churn</em> an account (trade excessively to generate commissions). <strong>Discount brokers</strong> provide “no-frills” services — buying and selling securities, holding them, offering margin loans, and facilitating short sales — with price quotations as their main information service.</p>
+<p>Stock trading fees have fallen dramatically; several firms (Charles Schwab, E*Trade, Fidelity, Vanguard) have reduced trading commissions to zero. Online brokers instead earn income largely from interest on customer funds and from <strong>payment for order flow</strong> — passing customers’ orders to high-frequency traders willing to pay for the opportunity to profit from the bid–ask spread. This practice is controversial because it may present a conflict of interest, though firms note that SEC rules prohibit executing trades at prices worse than the national best bid or offer.</p>
+<p>Beyond the explicit commission, there is an implicit cost — the dealer’s <strong>bid–ask spread</strong>, which ranges from a cent or so for the largest stocks to about 5 cents for average-sized stocks to considerably more for small stocks. Dealers who post quotes face an <em>adverse selection</em> problem: if their posted prices are wrong, they attract the most trading interest exactly when it hurts them, since they have effectively issued a free option to better-informed traders. Dealers therefore trade off the spread’s profit against the expected loss from dealing with more sophisticated traders. This explains why well-known stocks, for which information is abundant, have lower spreads, while smaller, lesser-known, and less-researched stocks have higher spreads. A further implicit cost is the price concession an investor may make for trading in quantities greater than those associated with the posted bid or ask.</p>
+<hr>
+</section>
+<section id="buying-on-margin" class="level1">
+<h1>3.8 Buying on Margin</h1>
+<p>When purchasing securities, investors have easy access to debt financing called <em>broker’s call loans</em>; taking advantage of these loans is called <strong>buying on margin</strong>. Purchasing on margin means the investor borrows part of the purchase price from the broker. The <strong>margin</strong> in the account is the portion of the purchase price contributed by the investor. Brokers borrow from banks at the <em>call money rate</em> to finance these purchases, then charge clients that rate plus a service charge. All securities purchased on margin must be maintained with the brokerage firm in <em>street name</em>, as collateral for the loan.</p>
+<p>The Federal Reserve’s Board of Governors limits margin borrowing. The <strong>initial margin requirement (Regulation T)</strong> is 50%, meaning at least 50% of the purchase price must be paid in cash, with the rest borrowed. Equivalently, <span class="math inline">\(1 - \text{IMR}\)</span> is the maximum percent the investor can borrow.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Example 3.1 — Margin
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The <em>percentage margin</em> is the ratio of the net worth (or “equity value”) of the account to the market value of the securities. Suppose an investor pays $6,000 toward $10,000 worth of stock (100 shares at $100), borrowing the remaining $4,000. The initial balance sheet is:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Assets</th>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Liabilities and Owners’ Equity</th>
+<th style="text-align: right;"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Value of stock</td>
+<td style="text-align: right;">$10,000</td>
+<td style="text-align: left;">Loan from broker</td>
+<td style="text-align: right;">$4,000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;">Equity</td>
+<td style="text-align: right;">$6,000</td>
+</tr>
+</tbody>
+</table>
+<p><span class="math display">\[\text{Margin} = \frac{\text{Equity in account}}{\text{Value of stock}} = \frac{\$6{,}000}{\$10{,}000} = 0.60,\ \text{or } 60\%\]</span></p>
+<p>If the price declines to $70 per share, the balance sheet becomes:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Assets</th>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Liabilities and Owners’ Equity</th>
+<th style="text-align: right;"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Value of stock</td>
+<td style="text-align: right;">$7,000</td>
+<td style="text-align: left;">Loan from broker</td>
+<td style="text-align: right;">$4,000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;">Equity</td>
+<td style="text-align: right;">$3,000</td>
+</tr>
+</tbody>
+</table>
+<p>The assets fall by the full decrease in stock value, as does the equity:</p>
+<p><span class="math display">\[\text{Margin} = \frac{\$3{,}000}{\$7{,}000} = 0.43,\ \text{or } 43\%\]</span></p>
+</div>
+</div>
+<p>If the stock value fell below $4,000, owners’ equity would become negative — the stock would no longer provide sufficient collateral. To guard against this, the broker sets a <strong>maintenance margin</strong>. If the percentage margin falls below the maintenance level, the broker issues a <strong>margin call</strong> requiring the investor to add cash or securities. If the investor does not act, the broker may sell securities from the account to restore the margin.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Example 3.2 — Maintenance Margin
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Suppose the maintenance margin is 30%. How far could the stock price fall before a margin call? Let <span class="math inline">\(P\)</span> be the price. The value of 100 shares is <span class="math inline">\(100P\)</span>, and the equity is <span class="math inline">\(100P - \$4{,}000\)</span>. Setting the percentage margin equal to 0.30:</p>
+<p><span class="math display">\[\frac{100P - 4{,}000}{100P} = 0.30\]</span></p>
+<p>which implies <span class="math inline">\(P = \$57.14\)</span>. If the price falls below $57.14 per share, the investor receives a margin call.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Concept Check 3.4
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Suppose the maintenance margin in Example 3.2 is 40%. How far can the stock price fall before the investor gets a margin call?</p>
+</div>
+</div>
+<p><strong>Why buy on margin?</strong> Investors buy on margin when they wish to invest more than their own money allows, achieving greater upside potential but also greater downside risk. Suppose an investor is bullish on Fincorp stock at $100 per share. With $10,000 to invest and an expected 30% price increase, buying 100 shares outright yields a 30% return. But if the investor borrows another $10,000 at a 9% margin loan rate and buys 200 shares ($20,000):</p>
+<ul>
+<li>If the stock rises 30%, the 200 shares are worth $26,000. After repaying $10,900 of principal and interest, $15,100 remains, a return of <span class="math inline">\((\$15{,}100 - \$10{,}000)/\$10{,}000 = 51\%\)</span>.</li>
+<li>If the stock <em>falls</em> 30%, the 200 shares are worth $14,000, leaving $3,100 after the $10,900 repayment, a return of <span class="math inline">\((\$3{,}100 - \$10{,}000)/\$10{,}000 = -69\%\)</span>.</li>
+</ul>
+<p>Table 3.1 summarizes these results. If there is no change in the stock price, the investor loses 9%, the cost of the loan.</p>
+<table class="caption-top table">
+<caption>Table 3.1 — Illustration of buying stock on margin. *Assuming the investor buys $20,000 of stock by borrowing $10,000 at 9% per year. A negative cash flow implies a cash outflow.</caption>
+<colgroup>
+<col style="width: 30%">
+<col style="width: 24%">
+<col style="width: 24%">
+<col style="width: 22%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Change in Stock Price</th>
+<th style="text-align: center;">End-of-Year Value of Shares</th>
+<th style="text-align: center;">Repayment of Principal and Interest*</th>
+<th style="text-align: center;">Investor’s Rate of Return</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">30% increase</td>
+<td style="text-align: center;">$26,000</td>
+<td style="text-align: center;">$10,900</td>
+<td style="text-align: center;">51%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">No change</td>
+<td style="text-align: center;">20,000</td>
+<td style="text-align: center;">10,900</td>
+<td style="text-align: center;">−9%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">30% decrease</td>
+<td style="text-align: center;">14,000</td>
+<td style="text-align: center;">10,900</td>
+<td style="text-align: center;">−69%</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Concept Check 3.5
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Suppose that in the Fincorp example the investor borrows only $5,000 at the same 9% interest rate. What will the rate of return be if the stock price increases by 30%? If it falls by 30%? If it remains unchanged?</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="short-sales" class="level1">
+<h1>3.9 Short Sales</h1>
+<p>An investor who is bullish on a firm buys shares and later sells them, hopefully at a higher price. A bearish investor who wants to bet against a company can enter a <strong>short sale</strong>, which profits from a <em>decline</em> in a security’s price. In a short sale, you <em>first sell and then buy</em> the shares: the short-seller borrows a share from a broker and sells it, then later purchases a share to replace the one borrowed — called <em>covering the short position</em>.</p>
+<p>The short-seller anticipates the price will fall so the share can be bought back at a lower price. Short-sellers must not only replace the shares but also pay the lender any dividends paid during the short sale. In practice, the loaned shares are provided by the short-seller’s brokerage firm, which holds securities of its other investors in street name. If the brokerage cannot locate new shares to replace those sold, the short-seller must repay the loan immediately by buying shares in the market. Exchange rules require that proceeds from a short sale be kept on account with the broker, and short-sellers must post <strong>margin</strong> (cash or collateral) to cover potential losses should the price rise. (The initial margin for a short sale is usually 50%, more for low-priced stocks. The SEC eliminated the “uptick rule” in July 2007.)</p>
+<table class="caption-top table">
+<caption>Table 3.2, Panel A — Purchase of stock. Profit = (Ending price + Dividend) − Initial price.</caption>
+<colgroup>
+<col style="width: 12%">
+<col style="width: 57%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Time</th>
+<th style="text-align: left;">Action</th>
+<th style="text-align: center;">Cash Flow*</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">Buy share</td>
+<td style="text-align: center;">−Initial price</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">Receive dividend, sell share</td>
+<td style="text-align: center;">Ending price + Dividend</td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<caption>Table 3.2, Panel B — Short sale of stock. Profit = Initial price − (Ending price + Dividend). *A negative cash flow implies a cash outflow.</caption>
+<colgroup>
+<col style="width: 12%">
+<col style="width: 57%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Time</th>
+<th style="text-align: left;">Action</th>
+<th style="text-align: center;">Cash Flow*</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">0</td>
+<td style="text-align: left;">Borrow share; sell it</td>
+<td style="text-align: center;">+Initial price</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">Repay dividend and buy share to replace the one borrowed</td>
+<td style="text-align: center;">−(Ending price + Dividend)</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>On the Market Front — The GameStop Short Squeeze
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In late 2020, GameStop was a struggling company whose stock was being shorted by several hedge funds. When the former CEO of Chewy joined the board, its prospects seemed to brighten, and it became a “meme stock” on the r/WallStreetBets subreddit and among traders on Robinhood. The price rose from about $17 at the start of January 2021 to an intraday high of $438 on January 28. As the price rose, more than 100% of the public float had been sold short, and losses on short positions soared until a <em>short squeeze</em> occurred — there were not enough shares available to satisfy all the shorts wanting to liquidate. Losses to short sellers were reportedly around $6 billion. When the clearinghouse required Robinhood to post additional collateral, the brokerage halted trading of several companies, and by February 2 the stock had fallen below $100.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Example 3.3 — Short Sales
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Suppose you are bearish on Dot Bomb stock at $100 per share and short 1,000 shares. The $100,000 cash proceeds are credited to your account. With a 50% margin requirement, you must have other cash or securities worth at least $50,000. Suppose you have $50,000 in Treasury bills:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 15%">
+<col style="width: 48%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Assets</th>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Liabilities and Owners’ Equity</th>
+<th style="text-align: right;"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Cash</td>
+<td style="text-align: right;">$100,000</td>
+<td style="text-align: left;">Short position in Dot Bomb (1,000 shares owed)</td>
+<td style="text-align: right;">$100,000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">T-bills</td>
+<td style="text-align: right;">50,000</td>
+<td style="text-align: left;">Equity</td>
+<td style="text-align: right;">50,000</td>
+</tr>
+</tbody>
+</table>
+<p><span class="math display">\[\text{Percentage margin} = \frac{\text{Equity}}{\text{Value of shares owed}} = \frac{\$50{,}000}{\$100{,}000} = 0.50\]</span></p>
+<p>If Dot Bomb falls to $70, you cover by buying 1,000 shares for $70,000. Because your account was credited $100,000 when the shares were sold, your profit is $30,000 — the decline in share price times the number of shares sold short.</p>
+</div>
+</div>
+<p>Like investors who buy on margin, a short-seller must be concerned about margin calls: if the price <em>rises</em>, the margin in the account falls; if it reaches the maintenance level, the short-seller receives a margin call.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Example 3.4 — Margin Calls on Short Positions
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Suppose the maintenance margin is 30%. Let <span class="math inline">\(P\)</span> be the price of Dot Bomb. The value of shares you must repay is <span class="math inline">\(1{,}000P\)</span>, and the equity is <span class="math inline">\(\$150{,}000 - 1{,}000P\)</span>. Setting the short-position margin ratio equal to 0.30:</p>
+<p><span class="math display">\[\frac{150{,}000 - 1{,}000P}{1{,}000P} = 0.30\]</span></p>
+<p>which implies <span class="math inline">\(P = \$115.38\)</span>. If Dot Bomb rises above $115.38 per share, you get a margin call and must either add cash or cover your short.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Concept Check 3.6
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li>Construct the balance sheet if Dot Bomb goes up to $110.</li>
+<li>If the short-position maintenance margin in Example 3.4 is 40%, how far can the stock price rise before the investor gets a margin call?</li>
+</ol>
+</div>
+</div>
+<hr>
+</section>
+<section id="regulation-of-securities-markets" class="level1">
+<h1>3.10 Regulation of Securities Markets</h1>
+<p>Trading in U.S. securities markets is regulated by a myriad of laws. The major governing legislation is the <strong>Securities Act of 1933</strong> and the <strong>Securities Exchange Act of 1934</strong>. The 1933 act requires full disclosure of relevant information relating to the issue of new securities, including registration and issuance of a prospectus. SEC approval is <em>not</em> an endorsement of the security as a good investment; the SEC cares only that relevant facts are disclosed. The 1934 act established the Securities and Exchange Commission to administer the 1933 act and extended the disclosure principle by requiring periodic disclosure by firms with already-issued securities.</p>
+<p>The 1934 act also empowers the SEC to register and regulate securities exchanges, OTC trading, brokers, and dealers. The SEC shares responsibility with other agencies: the <strong>Commodity Futures Trading Commission (CFTC)</strong> regulates futures markets, and the <strong>Federal Reserve</strong> has broad responsibility for the health of the financial system, setting margin requirements and regulating bank lending to market participants. The <strong>Securities Investor Protection Act of 1970</strong> established the Securities Investor Protection Corporation (SIPC) to protect investors from losses if their brokerage firms fail, up to $500,000 per customer. Security trading is also subject to state laws — known as <em>blue sky laws</em> — many of which were unified through the Uniform Securities Act of 1956.</p>
+<section id="self-regulation" class="level2">
+<h2 class="anchored" data-anchor-id="self-regulation">3.10.1 Self-Regulation</h2>
+<p>In addition to government regulation, there is considerable self-regulation of the securities market. The most important overseer is the <strong>Financial Industry Regulatory Authority (FINRA)</strong>, the largest nongovernmental regulator of securities firms in the United States, formed in 2007 through the consolidation of the NASD with the self-regulatory arm of the NYSE. FINRA examines securities firms, writes and enforces rules concerning trading practices, and administers a dispute resolution forum. There is also self-regulation within the community of investment professionals: for example, the <strong>CFA Institute</strong> has developed standards of professional conduct governing members with the Chartered Financial Analyst (CFA) designation, spanning professionalism, integrity of capital markets, duties to clients and employers, investment analysis and recommendations, conflicts of interest, and responsibilities as CFA Institute members.</p>
+</section>
+<section id="sarbanes-oxley-act" class="level2">
+<h2 class="anchored" data-anchor-id="sarbanes-oxley-act">3.10.2 Sarbanes-Oxley Act</h2>
+<p>The scandals of 2000–2002 centered on three broad practices: allocations of shares in IPOs, tainted securities research put out to the public, and — most importantly — misleading financial statements and accounting practices. The <strong>Sarbanes-Oxley Act (SOX)</strong>, passed by Congress in 2002, responded with several key provisions:</p>
+<ul>
+<li>It created the <strong>Public Company Accounting Oversight Board</strong> to oversee the auditing of public companies.</li>
+<li>It required independent financial experts to serve on the audit committees of a firm’s board of directors.</li>
+<li>CEOs and CFOs must personally certify that their firms’ financial reports fairly represent the operations and financial condition of the company, subject to personal penalties if misleading.</li>
+<li>Auditors may no longer provide several other services to their clients, to prevent consulting profits from influencing audit quality.</li>
+<li>The board of directors must be composed of independent directors and hold regular meetings without company management present.</li>
+</ul>
+<p>More recently there has been push-back on SOX, with some observers arguing that compliance costs are too onerous, especially for smaller firms (the 2012 JOBS Act relieved many smaller firms of some obligations). A related contentious issue is <em>rules-based</em> regulation (specifying exactly what is or is not allowed — generally the U.S. approach) versus <em>principles-based</em> regulation (relying on a less explicitly defined set of understandings — the more popular model worldwide).</p>
+</section>
+<section id="insider-trading" class="level2">
+<h2 class="anchored" data-anchor-id="insider-trading">3.10.3 Insider Trading</h2>
+<p>Regulations also prohibit insider trading. It is illegal to transact in securities to profit from <strong>inside information</strong> — private information held by officers, directors, or major stockholders that has not yet been divulged to the public. The definition of insiders can be ambiguous: while a chief financial officer is clearly an insider, it is less clear whether a firm’s biggest supplier — who may deduce the firm’s prospects from changes in orders — should be considered one. These ambiguities plague security analysts, whose job is to uncover as much information as possible.</p>
+<p>The SEC requires officers, directors, and major stockholders to report all transactions in their firm’s stock and publishes a compendium of insider trades, informing the public of any implicit vote of confidence. Evidence that insiders do exploit their knowledge comes in three forms: well-publicized convictions in insider trading schemes; “leakage” of information before public announcements (for example, share prices of firms rising a few days <em>before</em> dividend-increase announcements); and studies of returns earned on insider trades — Jaffe (1974) found that when insider purchasers exceeded insider sellers by three or more, the stock outperformed its benchmark over the following eight months by about 5%.</p>
+<hr>
+</section>
+</section>
+<section id="summary" class="level1">
+<h1>Summary</h1>
+<ul>
+<li>Firms issue securities to raise the capital necessary to finance their investments. Investment bankers market these securities to the public on the primary market, generally acting as underwriters who purchase the securities from the firm and resell them at a markup. Before the securities may be sold, the firm must publish an SEC-approved prospectus.</li>
+<li>Already-issued securities are traded on the secondary market — in organized stock markets or, primarily for bonds, on the over-the-counter market. Brokerage firms with access to exchanges charge commissions for executing trades.</li>
+<li>Trading may take place in dealer markets, via electronic communication networks, or in specialist/designated market maker markets. In dealer markets, security dealers post bid and ask prices at which they are willing to trade. In electronic markets, the existing book of limit orders provides the terms at which trades can be executed, and mutually agreeable offers are automatically crossed.</li>
+<li>Nasdaq was traditionally a dealer market and the NYSE was traditionally a specialist market. Today, the overwhelming majority of trades on both exchanges are electronic.</li>
+<li>Buying on margin means borrowing money from a broker to buy more securities than can be purchased with one’s own money alone. This magnifies both upside potential and downside risk; if equity falls below the required maintenance level, the investor gets a margin call.</li>
+<li>Short-selling is the practice of selling securities the seller does not own. The short-seller borrows the securities from a broker, sells them, and may be required to cover the short position on demand. Proceeds are kept in escrow by the broker, and the broker usually requires the short-seller to post margin.</li>
+<li>Securities trading is regulated by the SEC, by other government agencies, and through self-regulation of the exchanges. Many important regulations concern full disclosure, and insider trading rules prohibit traders from profiting from inside information.</li>
+</ul>
+<hr>
+</section>
+<section id="key-terms" class="level1">
+<h1>Key Terms</h1>
+<p><strong>primary market</strong> — Market for new issues of securities.</p>
+<p><strong>secondary market</strong> — Markets in which previously issued securities are traded among investors.</p>
+<p><strong>private placement</strong> — Primary offerings in which shares are sold directly to a small group of institutional or wealthy investors.</p>
+<p><strong>initial public offering (IPO)</strong> — First public sale of stock by a formerly private company.</p>
+<p><strong>underwriters</strong> — Underwriters purchase securities from the issuing company and resell them to the public.</p>
+<p><strong>prospectus</strong> — A description of the firm and the security it is issuing.</p>
+<p><strong>direct listing</strong> — A previously private company floats existing shares on the stock market but does not raise funds by issuing new shares to the public.</p>
+<p><strong>special purpose acquisition company (SPAC)</strong> — A publicly listed company with cash but no current underlying business activity that seeks to acquire a private firm, thereby taking it public without engaging in a traditional IPO.</p>
+<p><strong>dealer markets</strong> — Markets in which traders specializing in particular assets buy and sell for their own accounts.</p>
+<p><strong>auction market</strong> — An exchange or electronic platform where all traders can convene to buy or sell an asset.</p>
+<p><strong>bid price</strong> — The price at which a dealer or other trader is willing to purchase a security.</p>
+<p><strong>ask (or asked) price</strong> — The price at which a dealer or other trader will sell a security.</p>
+<p><strong>bid–ask spread</strong> — The difference between the bid and asked prices.</p>
+<p><strong>limit buy order</strong> — An order specifying a price at which an investor is willing to buy a security.</p>
+<p><strong>limit sell order</strong> — An order specifying a price at which an investor is willing to sell a security.</p>
+<p><strong>over-the-counter (OTC) market</strong> — An informal network of brokers and dealers who negotiate sales of securities.</p>
+<p><strong>Nasdaq Stock Market</strong> — The computer-linked price quotation and trade execution system.</p>
+<p><strong>electronic communication networks (ECNs)</strong> — Computer networks that allow direct trading without the need for market makers.</p>
+<p><strong>designated market maker</strong> — A market maker designated by the exchange to commit its own capital to provide quotes and help maintain a “fair and orderly market” by trading from its own inventory of shares.</p>
+<p><strong>stock exchanges</strong> — Secondary markets where already-issued securities are bought and sold by members.</p>
+<p><strong>latency</strong> — The time it takes to accept, process, and deliver a trading order.</p>
+<p><strong>algorithmic trading</strong> — The use of computer programs to make rapid trading decisions.</p>
+<p><strong>high-frequency trading</strong> — A subset of algorithmic trading that relies on computer programs to make very rapid trading decisions.</p>
+<p><strong>blocks</strong> — Large transactions in which at least 10,000 shares of stock are bought or sold.</p>
+<p><strong>dark pools</strong> — Electronic trading networks where participants can anonymously buy or sell large blocks of securities.</p>
+<p><strong>margin</strong> — Describes securities purchased with money borrowed in part from a broker. The margin is the net worth of the investor’s account.</p>
+<p><strong>short sale</strong> — The sale of shares not owned by the investor but borrowed through a broker and later purchased to replace the loan.</p>
+<p><strong>inside information</strong> — Nonpublic knowledge about a corporation possessed by corporate officers, major owners, or other individuals with privileged access to information about the firm.</p>
+<hr>
+</section>
+<section id="solutions-to-concept-checks" class="level1">
+<h1>Solutions to Concept Checks</h1>
+<p><strong>3.1</strong> Limited-time shelf registration was introduced as a compromise between saving issue costs and providing disclosure. Allowing unlimited shelf registration would circumvent “blue sky” laws that ensure proper disclosure as the financial circumstances of the firm change over time.</p>
+<p><strong>3.2</strong></p>
+<ol type="a">
+<li>Used cars trade in dealer markets (used-car lots or auto dealerships) and in direct search markets when individuals advertise on websites such as Craigslist.</li>
+<li>Paintings trade in broker markets (clients commission brokers to buy or sell art), in dealer markets at art galleries, and in auction markets.</li>
+<li>Rare coins trade in dealer markets (coin shops or shows), but also in auctions and in direct search markets when individuals advertise they want to buy or sell coins.</li>
+</ol>
+<p><strong>3.3</strong></p>
+<ol type="a">
+<li>You should give your broker a market order. It will be executed immediately and is the cheapest type of order in terms of brokerage fees.</li>
+<li>You should give your broker a limit order to buy, which will be executed only if the shares can be obtained at a price about 5% below the current price.</li>
+<li>You should give your broker a limit-sell order, which will be executed if the share price rises above the level at which you are convinced the firm is overvalued.</li>
+</ol>
+<p><strong>3.4</strong> Solving</p>
+<p><span class="math display">\[\frac{100P - \$4{,}000}{100P} = 0.4\]</span></p>
+<p>implies <span class="math inline">\(P = \$66.67\)</span> per share.</p>
+<p><strong>3.5</strong> The investor will purchase 150 shares, with a rate of return as follows:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 55%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Year-End Change in Price</th>
+<th style="text-align: center;">Year-End Value of Shares</th>
+<th style="text-align: center;">Repayment of Principal and Interest</th>
+<th style="text-align: center;">Investor’s Rate of Return</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">30%</td>
+<td style="text-align: center;">$19,500</td>
+<td style="text-align: center;">$5,450</td>
+<td style="text-align: center;">40.5%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">No change</td>
+<td style="text-align: center;">15,000</td>
+<td style="text-align: center;">5,450</td>
+<td style="text-align: center;">−4.5%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">−30%</td>
+<td style="text-align: center;">10,500</td>
+<td style="text-align: center;">5,450</td>
+<td style="text-align: center;">−49.5%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>3.6</strong></p>
+<ol type="a">
+<li>Once Dot Bomb stock increases to $110, your balance sheet will be:</li>
+</ol>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Assets</th>
+<th style="text-align: right;"></th>
+<th style="text-align: left;">Liabilities and Owners’ Equity</th>
+<th style="text-align: right;"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Cash</td>
+<td style="text-align: right;">$100,000</td>
+<td style="text-align: left;">Short position in Dot Bomb</td>
+<td style="text-align: right;">$110,000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">T-bills</td>
+<td style="text-align: right;">50,000</td>
+<td style="text-align: left;">Equity</td>
+<td style="text-align: right;">40,000</td>
+</tr>
+</tbody>
+</table>
+<ol start="2" type="a">
+<li>Solving</li>
+</ol>
+<p><span class="math display">\[\frac{\$150{,}000 - 1{,}000P}{1{,}000P} = 0.4\]</span></p>
+<p>implies <span class="math inline">\(P = \$107.14\)</span> per share.</p>
+<hr>
+<section id="looking-ahead" class="level2">
+<h2 class="anchored" data-anchor-id="looking-ahead">Looking Ahead</h2>
+<p><strong>Chapter 4 — Mutual Funds and Other Investment Companies:</strong> a closer look at investment companies and the pooled investment vehicles — mutual funds, ETFs, and others — through which many investors access the markets described in this chapter.</p>
+<p>Please review Chapter 3, attempt the assigned problem sets, and bring questions to office hours.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/clb18\.github\.io\/FIN-3440_Investments");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
