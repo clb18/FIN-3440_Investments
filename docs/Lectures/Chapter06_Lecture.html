@@ -1,0 +1,2109 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Prof.&nbsp;Barker">
+<meta name="dcterms.date" content="2026-09-19">
+
+<title>Chapter 6 - Efficient Diversification – Investments</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a2e98a8173336b0a3fc6fb521ab0b9ac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Investments</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../syllabus.html"> 
+<span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../cv.html"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Lectures/Chapter00_Lecture.html">Lecture Notes</a></li><li class="breadcrumb-item"><a href="../Lectures/Chapter05_Lecture.html">Portfolio Theory</a></li><li class="breadcrumb-item"><a href="../Lectures/Chapter06_Lecture.html">Ch 6 - Efficient Diversification</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Lecture Notes</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/Chapter00_Lecture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ch 0 - Problems with Investment Theory</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Elements of Investments</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/Chapter01_Lecture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ch 1 - Background and Issues</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/Chapter02_Lecture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ch 2 - Asset Classes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/Chapter03_Lecture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ch 3 - How Securities Trade</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/Chapter04_Lecture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ch 4 - Mutual Funds</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Portfolio Theory</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/Chapter05_Lecture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ch 5 - Risk and Return</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/Chapter06_Lecture.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Ch 6 - Efficient Diversification</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="1">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#chapter-roadmap" id="toc-chapter-roadmap" class="nav-link" data-scroll-target="#chapter-roadmap">Chapter Roadmap</a></li>
+  </ul></li>
+  <li><a href="#diversification-and-portfolio-risk" id="toc-diversification-and-portfolio-risk" class="nav-link" data-scroll-target="#diversification-and-portfolio-risk">6.1 Diversification and Portfolio Risk</a>
+  <ul>
+  <li><a href="#adding-a-second-security" id="toc-adding-a-second-security" class="nav-link" data-scroll-target="#adding-a-second-security">Adding a second security</a></li>
+  <li><a href="#adding-many-securities" id="toc-adding-many-securities" class="nav-link" data-scroll-target="#adding-many-securities">Adding many securities</a></li>
+  <li><a href="#figure-6.1---portfolio-risk-as-a-function-of-the-number-of-stocks" id="toc-figure-6.1---portfolio-risk-as-a-function-of-the-number-of-stocks" class="nav-link" data-scroll-target="#figure-6.1---portfolio-risk-as-a-function-of-the-number-of-stocks">Figure 6.1 - Portfolio risk as a function of the number of stocks</a></li>
+  <li><a href="#figure-6.2---empirical-evidence" id="toc-figure-6.2---empirical-evidence" class="nav-link" data-scroll-target="#figure-6.2---empirical-evidence">Figure 6.2 - Empirical evidence</a></li>
+  <li><a href="#on-the-market-front-dangerous-401k-plans" id="toc-on-the-market-front-dangerous-401k-plans" class="nav-link" data-scroll-target="#on-the-market-front-dangerous-401k-plans">On the Market Front: Dangerous 401(k) Plans</a></li>
+  <li><a href="#international-diversification" id="toc-international-diversification" class="nav-link" data-scroll-target="#international-diversification">International diversification</a></li>
+  </ul></li>
+  <li><a href="#asset-allocation-with-two-risky-assets" id="toc-asset-allocation-with-two-risky-assets" class="nav-link" data-scroll-target="#asset-allocation-with-two-risky-assets">6.2 Asset Allocation with Two Risky Assets</a>
+  <ul>
+  <li><a href="#covariance-and-correlation" id="toc-covariance-and-correlation" class="nav-link" data-scroll-target="#covariance-and-correlation">6.2.1 Covariance and Correlation</a>
+  <ul class="collapse">
+  <li><a href="#scenario-analysis-spreadsheet-6.1" id="toc-scenario-analysis-spreadsheet-6.1" class="nav-link" data-scroll-target="#scenario-analysis-spreadsheet-6.1">Scenario analysis (Spreadsheet 6.1)</a></li>
+  <li><a href="#a-portfolio-of-the-two-funds-spreadsheet-6.3" id="toc-a-portfolio-of-the-two-funds-spreadsheet-6.3" class="nav-link" data-scroll-target="#a-portfolio-of-the-two-funds-spreadsheet-6.3">A portfolio of the two funds (Spreadsheet 6.3)</a></li>
+  <li><a href="#measuring-co-movement-covariance-and-correlation" id="toc-measuring-co-movement-covariance-and-correlation" class="nav-link" data-scroll-target="#measuring-co-movement-covariance-and-correlation">Measuring co-movement: covariance and correlation</a></li>
+  </ul></li>
+  <li><a href="#the-three-rules-of-two-risky-assets-portfolios" id="toc-the-three-rules-of-two-risky-assets-portfolios" class="nav-link" data-scroll-target="#the-three-rules-of-two-risky-assets-portfolios">6.2.2 The Three Rules of Two-Risky-Assets Portfolios</a></li>
+  <li><a href="#the-risk-return-trade-off-with-two-risky-assets-portfolios" id="toc-the-risk-return-trade-off-with-two-risky-assets-portfolios" class="nav-link" data-scroll-target="#the-risk-return-trade-off-with-two-risky-assets-portfolios">6.2.3 The Risk-Return Trade-Off with Two-Risky-Assets Portfolios</a>
+  <ul class="collapse">
+  <li><a href="#the-minimum-variance-portfolio" id="toc-the-minimum-variance-portfolio" class="nav-link" data-scroll-target="#the-minimum-variance-portfolio">The minimum-variance portfolio</a></li>
+  <li><a href="#the-investment-opportunity-set" id="toc-the-investment-opportunity-set" class="nav-link" data-scroll-target="#the-investment-opportunity-set">The investment opportunity set</a></li>
+  </ul></li>
+  <li><a href="#the-mean-variance-criterion" id="toc-the-mean-variance-criterion" class="nav-link" data-scroll-target="#the-mean-variance-criterion">6.2.4 The Mean-Variance Criterion</a>
+  <ul class="collapse">
+  <li><a href="#the-role-of-correlation" id="toc-the-role-of-correlation" class="nav-link" data-scroll-target="#the-role-of-correlation">The role of correlation</a></li>
+  <li><a href="#spreadsheet-6.6---opportunity-sets-for-various-correlations" id="toc-spreadsheet-6.6---opportunity-sets-for-various-correlations" class="nav-link" data-scroll-target="#spreadsheet-6.6---opportunity-sets-for-various-correlations">Spreadsheet 6.6 - Opportunity sets for various correlations</a></li>
+  </ul></li>
+  <li><a href="#using-historical-data" id="toc-using-historical-data" class="nav-link" data-scroll-target="#using-historical-data">6.2.5 Using Historical Data</a>
+  <ul class="collapse">
+  <li><a href="#two-comments-on-example-6.2" id="toc-two-comments-on-example-6.2" class="nav-link" data-scroll-target="#two-comments-on-example-6.2">Two comments on Example 6.2</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#the-optimal-risky-portfolio-with-a-risk-free-asset" id="toc-the-optimal-risky-portfolio-with-a-risk-free-asset" class="nav-link" data-scroll-target="#the-optimal-risky-portfolio-with-a-risk-free-asset">6.3 The Optimal Risky Portfolio with a Risk-Free Asset</a>
+  <ul>
+  <li><a href="#comparing-two-cals" id="toc-comparing-two-cals" class="nav-link" data-scroll-target="#comparing-two-cals">Comparing two CALs</a></li>
+  <li><a href="#the-optimal-risky-portfolio" id="toc-the-optimal-risky-portfolio" class="nav-link" data-scroll-target="#the-optimal-risky-portfolio">The optimal risky portfolio</a></li>
+  <li><a href="#the-complete-portfolio" id="toc-the-complete-portfolio" class="nav-link" data-scroll-target="#the-complete-portfolio">The complete portfolio</a></li>
+  </ul></li>
+  <li><a href="#efficient-diversification-with-many-risky-assets" id="toc-efficient-diversification-with-many-risky-assets" class="nav-link" data-scroll-target="#efficient-diversification-with-many-risky-assets">6.4 Efficient Diversification with Many Risky Assets</a>
+  <ul>
+  <li><a href="#the-efficient-frontier-of-risky-assets" id="toc-the-efficient-frontier-of-risky-assets" class="nav-link" data-scroll-target="#the-efficient-frontier-of-risky-assets">6.4.1 The Efficient Frontier of Risky Assets</a>
+  <ul class="collapse">
+  <li><a href="#the-markowitz-model" id="toc-the-markowitz-model" class="nav-link" data-scroll-target="#the-markowitz-model">The Markowitz model</a></li>
+  <li><a href="#two-equivalent-ways-to-produce-the-frontier-figure-6.10-panels-b-and-c" id="toc-two-equivalent-ways-to-produce-the-frontier-figure-6.10-panels-b-and-c" class="nav-link" data-scroll-target="#two-equivalent-ways-to-produce-the-frontier-figure-6.10-panels-b-and-c">Two equivalent ways to produce the frontier (Figure 6.10, Panels B and C)</a></li>
+  <li><a href="#constraints-in-practice" id="toc-constraints-in-practice" class="nav-link" data-scroll-target="#constraints-in-practice">Constraints in practice</a></li>
+  </ul></li>
+  <li><a href="#choosing-the-optimal-risky-portfolio" id="toc-choosing-the-optimal-risky-portfolio" class="nav-link" data-scroll-target="#choosing-the-optimal-risky-portfolio">6.4.2 Choosing the Optimal Risky Portfolio</a></li>
+  <li><a href="#the-preferred-complete-portfolio-and-a-separation-property" id="toc-the-preferred-complete-portfolio-and-a-separation-property" class="nav-link" data-scroll-target="#the-preferred-complete-portfolio-and-a-separation-property">6.4.3 The Preferred Complete Portfolio and a Separation Property</a></li>
+  <li><a href="#constructing-the-optimal-risky-portfolio-an-illustration" id="toc-constructing-the-optimal-risky-portfolio-an-illustration" class="nav-link" data-scroll-target="#constructing-the-optimal-risky-portfolio-an-illustration">6.4.4 Constructing the Optimal Risky Portfolio: An Illustration</a></li>
+  </ul></li>
+  <li><a href="#a-single-index-stock-market" id="toc-a-single-index-stock-market" class="nav-link" data-scroll-target="#a-single-index-stock-market">6.5 A Single-Index Stock Market</a>
+  <ul>
+  <li><a href="#the-intuition-u.s.-steel-against-the-market" id="toc-the-intuition-u.s.-steel-against-the-market" class="nav-link" data-scroll-target="#the-intuition-u.s.-steel-against-the-market">The intuition: U.S. Steel against the market</a></li>
+  <li><a href="#the-index-model-equation" id="toc-the-index-model-equation" class="nav-link" data-scroll-target="#the-index-model-equation">The index model equation</a></li>
+  <li><a href="#why-investors-care-about-alpha" id="toc-why-investors-care-about-alpha" class="nav-link" data-scroll-target="#why-investors-care-about-alpha">Why investors care about alpha</a></li>
+  <li><a href="#beta-of-the-market-and-average-beta" id="toc-beta-of-the-market-and-average-beta" class="nav-link" data-scroll-target="#beta-of-the-market-and-average-beta">Beta of the market and average beta</a></li>
+  <li><a href="#the-three-components-of-excess-return" id="toc-the-three-components-of-excess-return" class="nav-link" data-scroll-target="#the-three-components-of-excess-return">The three components of excess return</a></li>
+  <li><a href="#statistical-interpretation-of-the-single-index-model" id="toc-statistical-interpretation-of-the-single-index-model" class="nav-link" data-scroll-target="#statistical-interpretation-of-the-single-index-model">6.5.1 Statistical Interpretation of the Single-Index Model</a>
+  <ul class="collapse">
+  <li><a href="#r-square" id="toc-r-square" class="nav-link" data-scroll-target="#r-square">R-square</a></li>
+  <li><a href="#various-scatter-diagrams-figure-6.13" id="toc-various-scatter-diagrams-figure-6.13" class="nav-link" data-scroll-target="#various-scatter-diagrams-figure-6.13">Various scatter diagrams (Figure 6.13)</a></li>
+  <li><a href="#diversification-in-a-single-index-market-powerpoint" id="toc-diversification-in-a-single-index-market-powerpoint" class="nav-link" data-scroll-target="#diversification-in-a-single-index-market-powerpoint">Diversification in a single-index market (PowerPoint)</a></li>
+  </ul></li>
+  <li><a href="#learning-from-the-index-model" id="toc-learning-from-the-index-model" class="nav-link" data-scroll-target="#learning-from-the-index-model">6.5.2 Learning from the Index Model</a>
+  <ul class="collapse">
+  <li><a href="#regressions-for-well-known-companies-table-6.2" id="toc-regressions-for-well-known-companies-table-6.2" class="nav-link" data-scroll-target="#regressions-for-well-known-companies-table-6.2">Regressions for well-known companies (Table 6.2)</a></li>
+  <li><a href="#excel-applications-estimating-the-index-model" id="toc-excel-applications-estimating-the-index-model" class="nav-link" data-scroll-target="#excel-applications-estimating-the-index-model">Excel Applications: Estimating the Index Model</a></li>
+  <li><a href="#predicting-betas" id="toc-predicting-betas" class="nav-link" data-scroll-target="#predicting-betas">Predicting betas</a></li>
+  </ul></li>
+  <li><a href="#using-security-analysis-with-the-index-model" id="toc-using-security-analysis-with-the-index-model" class="nav-link" data-scroll-target="#using-security-analysis-with-the-index-model">6.5.3 Using Security Analysis with the Index Model</a>
+  <ul class="collapse">
+  <li><a href="#interpreting-the-results" id="toc-interpreting-the-results" class="nav-link" data-scroll-target="#interpreting-the-results">Interpreting the results</a></li>
+  <li><a href="#more-than-one-analyzed-stock-the-active-portfolio" id="toc-more-than-one-analyzed-stock-the-active-portfolio" class="nav-link" data-scroll-target="#more-than-one-analyzed-stock-the-active-portfolio">More than one analyzed stock: the active portfolio</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#risk-pooling-risk-sharing-and-time-diversification" id="toc-risk-pooling-risk-sharing-and-time-diversification" class="nav-link" data-scroll-target="#risk-pooling-risk-sharing-and-time-diversification">6.6 Risk Pooling, Risk Sharing, and Time Diversification</a>
+  <ul>
+  <li><a href="#risk-pooling-the-insurance-company" id="toc-risk-pooling-the-insurance-company" class="nav-link" data-scroll-target="#risk-pooling-the-insurance-company">Risk pooling: the insurance company</a></li>
+  <li><a href="#risk-sharing" id="toc-risk-sharing" class="nav-link" data-scroll-target="#risk-sharing">Risk sharing</a></li>
+  <li><a href="#application-to-stock-portfolios" id="toc-application-to-stock-portfolios" class="nav-link" data-scroll-target="#application-to-stock-portfolios">Application to stock portfolios</a></li>
+  <li><a href="#time-diversification" id="toc-time-diversification" class="nav-link" data-scroll-target="#time-diversification">6.6.1 Time Diversification</a>
+  <ul class="collapse">
+  <li><a href="#the-fallacy-of-time-diversification-a-concrete-example" id="toc-the-fallacy-of-time-diversification-a-concrete-example" class="nav-link" data-scroll-target="#the-fallacy-of-time-diversification-a-concrete-example">The fallacy of time diversification: a concrete example</a></li>
+  <li><a href="#table-6.4---investment-risk-for-different-horizons" id="toc-table-6.4---investment-risk-for-different-horizons" class="nav-link" data-scroll-target="#table-6.4---investment-risk-for-different-horizons">Table 6.4 - Investment risk for different horizons</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#chapter-summary" id="toc-chapter-summary" class="nav-link" data-scroll-target="#chapter-summary">Chapter Summary</a></li>
+  <li><a href="#key-formulas" id="toc-key-formulas" class="nav-link" data-scroll-target="#key-formulas">Key Formulas</a></li>
+  <li><a href="#key-terms" id="toc-key-terms" class="nav-link" data-scroll-target="#key-terms">Key Terms</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="Chapter06_Lecture.docx"><i class="bi bi-file-word"></i>MS Word</a></li><li><a href="Chapter06_Lecture.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Lectures/Chapter00_Lecture.html">Lecture Notes</a></li><li class="breadcrumb-item"><a href="../Lectures/Chapter05_Lecture.html">Portfolio Theory</a></li><li class="breadcrumb-item"><a href="../Lectures/Chapter06_Lecture.html">Ch 6 - Efficient Diversification</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Chapter 6 - Efficient Diversification</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Prof.&nbsp;Barker </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 19, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<!--
+SOURCING NOTE: All content in this file is drawn only from Bodie, Kane & Marcus, Essentials of Investments (2024 Release), Chapter 6,
+and the publisher's Chapter 6 PowerPoint. No outside material, no new visuals, and no executable code chunks.
+Figures are extracted from the PowerPoint or cropped from the chapter PDF and are stored in ../assets/images/Ch06/
+-->
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p><strong>“Don’t put all your eggs in one basket.”</strong></p>
+<p>The adage is age-old and obviously predates formal economic theory. However, a rigorous model showing how to make the most of the power of diversification was not devised until 1952, a feat for which <strong>Harry Markowitz</strong> won the Nobel Prize in Economics.</p>
+<p>This chapter describes how investors can construct the <strong>best possible risky portfolio</strong>. The key concept is <strong>efficient diversification</strong>.</p>
+<section id="learning-objectives" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<ul>
+<li><strong>LO 6-1</strong> Show how covariance and correlation affect the power of diversification to reduce portfolio risk.</li>
+<li><strong>LO 6-2</strong> Calculate mean, variance, and covariance using either historical data or scenario analysis.</li>
+<li><strong>LO 6-3</strong> Construct efficient portfolios and use the Sharpe ratio to evaluate portfolio efficiency.</li>
+<li><strong>LO 6-4</strong> Calculate the composition of the optimal risky portfolio.</li>
+<li><strong>LO 6-5</strong> Use index models to analyze the risk and return characteristics of securities and portfolios.</li>
+<li><strong>LO 6-6</strong> Understand the effect of investment horizon on portfolio risk.</li>
+</ul>
+</section>
+<section id="chapter-roadmap" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="chapter-roadmap">Chapter Roadmap</h2>
+<p>The chapter follows a <strong>top-down approach</strong>:</p>
+<ol type="1">
+<li><strong>Diversification and Portfolio Risk</strong> - a bird’s-eye view of how diversification reduces the variability of portfolio returns.</li>
+<li><strong>Asset Allocation with Two Risky Assets</strong> - covariance, correlation, and the risk-return trade-off, using a bond fund and a stock fund.</li>
+<li><strong>The Optimal Risky Portfolio with a Risk-Free Asset</strong> - reintroducing T-bills to complete the asset allocation problem across stocks, bonds, and T-bills.</li>
+<li><strong>Efficient Diversification with Many Risky Assets</strong> - generalizing to security selection among many risky assets: the efficient frontier and the separation property.</li>
+<li><strong>A Single-Index Stock Market</strong> - index models that simplify the search for efficient portfolios and help interpret the risk of individual securities.</li>
+<li><strong>Risk Pooling, Risk Sharing, and Time Diversification</strong> - the common fallacy that long-term investment horizons mitigate the impact of asset risk. The chapter shows that “time diversification” is in fact an illusion.</li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="diversification-and-portfolio-risk" class="level1">
+<h1>6.1 Diversification and Portfolio Risk</h1>
+<p>Suppose your risky portfolio comprises only <strong>one stock</strong>, say, Digital Computer Corporation. What are the sources of risk affecting this “portfolio”?</p>
+<p>There are two broad sources of uncertainty:</p>
+<ol type="1">
+<li><strong>Risk from general economic conditions</strong> - business cycles, inflation, interest rates, exchange rates, and so forth. None of these macroeconomic factors can be predicted with certainty, and all affect Digital stock.</li>
+<li><strong>Firm-specific influences</strong> - for example, Digital’s success in R&amp;D, its management style and philosophy, and so on. Firm-specific factors are those that affect Digital without noticeably affecting other firms.</li>
+</ol>
+<section id="adding-a-second-security" class="level2">
+<h2 class="anchored" data-anchor-id="adding-a-second-security">Adding a second security</h2>
+<p>Now consider investing half of the risky portfolio in ExxonMobil and leaving the other half in Digital. Because the firm-specific influences on the two stocks are unrelated (statistically speaking, uncorrelated), this strategy should <strong>reduce portfolio risk</strong>. For example, when oil prices fall, hurting ExxonMobil, computer prices might rise, helping Digital. The two effects are offsetting, which stabilizes portfolio return.</p>
+</section>
+<section id="adding-many-securities" class="level2">
+<h2 class="anchored" data-anchor-id="adding-many-securities">Adding many securities</h2>
+<p>Diversifying into many more securities continues to reduce exposure to firm-specific factors, so portfolio volatility should continue to fall. Ultimately, however, <strong>there is no way to avoid all risk</strong>. To the extent that virtually all securities are affected by common macroeconomic factors, we cannot eliminate exposure to general economic risk, no matter how many stocks we hold.</p>
+</section>
+<section id="figure-6.1---portfolio-risk-as-a-function-of-the-number-of-stocks" class="level2">
+<h2 class="anchored" data-anchor-id="figure-6.1---portfolio-risk-as-a-function-of-the-number-of-stocks">Figure 6.1 - Portfolio risk as a function of the number of stocks</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch06/Fig6_1_Risk_vs_Number_of_Stocks.png" class="img-fluid figure-img" style="width:85.0%"></p>
+<figcaption>Figure 6.1: Portfolio risk as a function of the number of stocks in the portfolio. Panel A shows firm-specific risk only; Panel B shows market and unique risk.</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Panel A - all risk is firm-specific.</strong> Diversification can reduce risk to arbitrarily low levels. With all risk sources independent, and with investment spread across many securities, exposure to any particular source of risk is negligible. This is an application of the <strong>law of large numbers</strong>. Risk reduction by spreading exposure across many independent risk sources is called the <strong>insurance principle</strong>.</li>
+<li><strong>Panel B - market and unique risk.</strong> When a common source of risk affects all firms, even extensive diversification cannot eliminate all risk. Portfolio standard deviation falls as the number of securities increases, but it is not reduced to zero.</li>
+</ul>
+<p><strong>Two kinds of risk:</strong></p>
+<ul>
+<li><strong>Market risk</strong> (also called <strong>systematic risk</strong> or <strong>nondiversifiable risk</strong>): the risk that remains even after diversification; risk attributable to marketwide risk sources.</li>
+<li><strong>Unique risk</strong> (also called <strong>firm-specific risk</strong>, <strong>nonsystematic risk</strong>, or <strong>diversifiable risk</strong>): the risk that <em>can</em> be eliminated by diversification.</li>
+</ul>
+</section>
+<section id="figure-6.2---empirical-evidence" class="level2">
+<h2 class="anchored" data-anchor-id="figure-6.2---empirical-evidence">Figure 6.2 - Empirical evidence</h2>
+<p>This distinction is well borne out empirically. Figure 6.2 shows the average standard deviations of equally weighted portfolios constructed by selecting stocks at random as a function of the number of stocks in the portfolio.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch06/Fig6_2_Risk_vs_Diversification.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption>Figure 6.2: Portfolio risk as a function of the number of stocks in the portfolio (an update of a plot that first appeared in Evans and Archer, Journal of Finance, December 1968).</figcaption>
+</figure>
+</div>
+<p>On average, portfolio risk does fall with diversification, but <strong>the power of diversification to reduce risk is limited by common sources of risk</strong>. (Per the PowerPoint’s description of the figure, the curve starts near 27.5% for a one-stock portfolio, falls to about 17% at five stocks, and then levels out at roughly 15-16%.)</p>
+</section>
+<section id="on-the-market-front-dangerous-401k-plans" class="level2">
+<h2 class="anchored" data-anchor-id="on-the-market-front-dangerous-401k-plans">On the Market Front: Dangerous 401(k) Plans</h2>
+<p>For many individuals, the 401(k) plan is the major source of retirement savings. The employee puts aside a given percentage of wages, sheltering income from current taxation, and the employer commonly matches some fraction of that contribution (for example, 6% of salary from the employee plus an additional 3% from the employer). In many plans the savings are invested in shares of the company stock. It sounds like a win-win arrangement. <strong>What could go wrong? Plenty.</strong> Concentrating your portfolio in your company stock increases risk in two ways:</p>
+<ol type="1">
+<li><strong>Excess volatility.</strong> Focusing your investments in any single company rather than a diversified portfolio almost never makes sense. A single stock typically has more than double the volatility of a diversified portfolio, and much of that volatility does not even translate to higher average returns.</li>
+<li><strong>Doubling down on one firm.</strong> If your company implodes, you can lose your source of earnings income at the same time that your investment portfolio is decimated. The employees of Lehman Brothers, whose 401(k) plans entailed massive positions in the company stock, saw their plans wiped out along with their jobs when Lehman failed.</li>
+</ol>
+</section>
+<section id="international-diversification" class="level2">
+<h2 class="anchored" data-anchor-id="international-diversification">International diversification</h2>
+<p>General macroeconomic conditions in the United States do not move in lockstep with those in other countries. <strong>International diversification</strong> may further reduce portfolio risk, but here too, global economic and political factors affecting all countries to various degrees will limit the extent of risk reduction.</p>
+<hr>
+</section>
+</section>
+<section id="asset-allocation-with-two-risky-assets" class="level1">
+<h1>6.2 Asset Allocation with Two Risky Assets</h1>
+<p>The last section considered naive diversification using equally weighted portfolios. It is time now to tackle <strong>efficient diversification</strong>, whereby we construct portfolios that provide the <strong>lowest possible risk for any given level of expected return</strong>.</p>
+<p>Portfolios of two risky assets are relatively easy to analyze, and they illustrate the principles and considerations that apply to portfolios of many assets. So we begin with a two-asset risky portfolio, where the two assets are a <strong>bond fund</strong> and a <strong>stock fund</strong>. Once we understand these, we reintroduce the risk-free asset. This will complete the asset allocation problem across the three key asset classes: <strong>stocks, bonds, and T-bills</strong>. Constructing efficient portfolios of many risky securities is a straightforward extension of this stripped-down exercise.</p>
+<section id="covariance-and-correlation" class="level2">
+<h2 class="anchored" data-anchor-id="covariance-and-correlation">6.2.1 Covariance and Correlation</h2>
+<p>To optimally construct a portfolio from risky assets, we need to understand how the uncertainties of asset returns interact. <strong>Portfolio risk depends crucially on the extent to which the returns on the two assets vary either in tandem or in opposition.</strong> A simple scenario analysis shows why.</p>
+<section id="scenario-analysis-spreadsheet-6.1" class="level3">
+<h3 class="anchored" data-anchor-id="scenario-analysis-spreadsheet-6.1">Scenario analysis (Spreadsheet 6.1)</h3>
+<p>The scenario analysis posits four possible scenarios for the economy: a severe recession, a mild recession, normal growth, and a boom.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch06/Spreadsheet6_1_Capital_Market_Expectations.png" class="img-fluid figure-img" style="width:85.0%"></p>
+<figcaption>Spreadsheet 6.1: Capital market expectations for the stock and bond funds</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Stocks</strong> follow the broad economy, returning −37%, −11%, 14%, and 30% in the four scenarios.</li>
+<li><strong>Bonds</strong> perform best in a mild recession, returning 15% (falling interest rates result in capital gains), and in normal growth, returning 8%. They suffer from defaults in a severe recession (−9%) and from inflation, which leads to higher nominal interest rates, in the boom scenario (−5%).</li>
+<li>Bonds outperform stocks in both recession scenarios; stocks outperform bonds in both normal growth and boom.</li>
+</ul>
+<p>The <strong>expected return</strong> on each fund equals the probability-weighted average of the outcomes in the four scenarios: the <strong>stock fund’s expected return is 10%</strong> and the <strong>bond fund’s is 5%</strong>.</p>
+<p>As seen in Chapter 5, the <strong>variance</strong> is the probability-weighted average of the squared deviations of actual returns from the expected return; the <strong>standard deviation</strong> is the square root of the variance. These values are computed in Spreadsheet 6.2.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch06/Spreadsheet6_2_Variance_SD.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>Spreadsheet 6.2: Variance and standard deviation of returns</figcaption>
+</figure>
+</div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Fund</th>
+<th>Variance</th>
+<th>Standard Deviation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Stock</td>
+<td>347.10</td>
+<td>18.63%</td>
+</tr>
+<tr class="even">
+<td>Bond</td>
+<td>68.40</td>
+<td>8.27%</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="a-portfolio-of-the-two-funds-spreadsheet-6.3" class="level3">
+<h3 class="anchored" data-anchor-id="a-portfolio-of-the-two-funds-spreadsheet-6.3">A portfolio of the two funds (Spreadsheet 6.3)</h3>
+<p>What about portfolios constructed by mixing the stock and bond funds? Consider a portfolio with <strong>40% in stocks and 60% in bonds</strong>. The portfolio return is the weighted average of the returns on each fund, with weights equal to the proportion of the portfolio invested in each fund. For example:</p>
+<p><span class="math display">\[\text{Portfolio return in mild recession} = 0.40 \times (-11\%) + 0.60 \times 15\% = 4.6\%\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch06/Spreadsheet6_3_Portfolio_Performance.png" class="img-fluid figure-img" style="width:85.0%"></p>
+<figcaption>Spreadsheet 6.3: Performance of a portfolio invested 40% in the stock fund and 60% in the bond fund</figcaption>
+</figure>
+</div>
+<p>Notice that while the portfolio’s expected return (7.00%) is just the weighted average of the expected returns of the two assets, <strong>portfolio volatility is actually lower than that of either component fund</strong>: the standard deviation of the diversified portfolio, <strong>6.65%</strong>, is considerably smaller than that of stocks (18.63%) and even smaller than that of bonds (8.27%).</p>
+<p>The low risk of the portfolio is due to the <strong>inverse relationship</strong> between the performances of the stock and bond funds. In a mild recession, stocks fare poorly, but this is offset by the large positive return of the bond fund. Conversely, in the boom scenario, bond prices fall, but stocks do very well. Portfolio risk is reduced because variations in the returns of the two assets are generally offsetting.</p>
+</section>
+<section id="measuring-co-movement-covariance-and-correlation" class="level3">
+<h3 class="anchored" data-anchor-id="measuring-co-movement-covariance-and-correlation">Measuring co-movement: covariance and correlation</h3>
+<p>The natural question is how to <strong>measure the tendency of the returns on two assets to vary either in tandem or in opposition</strong> to each other. The statistics that provide this measure are the <strong>covariance</strong> and the <strong>correlation coefficient</strong>.</p>
+<p>Covariance is calculated in a manner similar to the variance. But instead of squaring the deviation of an asset return from its expected value, we multiply it by the deviation of the <em>other</em> asset’s return from <em>its</em> expectation. The sign and magnitude of this product depend on whether deviations from the mean move together (both positive or both negative in the same scenarios) and whether they are small or large at the same time.</p>
+<p>Spreadsheet 6.4 starts with the deviation of each fund’s return from its expected value. The product of deviations is positive if both asset returns exceed their respective means or both fall short of them, and negative if one asset exceeds its mean when the other falls short. In a mild recession, the stock fund return falls short of its expected value by 21% while the bond fund return exceeds its mean by 10%, so the product of deviations is −21 × 10 = −210, a negative value because one asset (stocks) performs poorly while the other (bonds) performs well.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch06/Spreadsheet6_4_Covariance.png" class="img-fluid figure-img" style="width:85.0%"></p>
+<figcaption>Spreadsheet 6.4: Covariance between the returns of the stock and bond funds</figcaption>
+</figure>
+</div>
+<p>The probability-weighted average of the products is the <strong>covariance</strong>, which measures the average tendency of the asset returns to vary in tandem (to co-vary). Each scenario is “indexed” by <span class="math inline">\(i\)</span>, which ranges from 1 to <span class="math inline">\(n\)</span> (here, <span class="math inline">\(n = 4\)</span>), and the probability of each scenario is <span class="math inline">\(p(i)\)</span>.</p>
+<p><strong>Equation 6.1 - Covariance</strong></p>
+<p><span class="math display">\[\text{Cov}(r_S, r_B) = \sum_{i=1}^{n} p(i)\,[r_S(i) - E(r_S)]\,[r_B(i) - E(r_B)]\]</span></p>
+<p>The covariance of the stock and bond funds is <strong>−74.8</strong>. The negative value indicates that the two assets, on average, vary inversely: when one performs well, the other tends to perform poorly.</p>
+<p>Like variance, the unit of covariance is percent squared, which makes its magnitude hard to interpret. An easier statistic to interpret is the <strong>correlation coefficient</strong> (Greek letter rho, <span class="math inline">\(\rho\)</span>), the covariance divided by the product of the standard deviations of the returns on each fund.</p>
+<p><strong>Equation 6.2 - Correlation coefficient</strong></p>
+<p><span class="math display">\[\rho_{SB} = \frac{\text{Cov}(r_S, r_B)}{\sigma_S \sigma_B} = \frac{-74.8}{18.63 \times 8.27} = -0.49\]</span></p>
+<p>Correlation is a pure number and ranges from <strong>−1 to +1</strong>:</p>
+<ul>
+<li><strong>−1:</strong> one asset’s return varies perfectly inversely with the other’s; you could predict 100% of the variability of one asset’s return if you knew the return on the other.</li>
+<li><strong>+1:</strong> perfect positive correlation.</li>
+<li><strong>0:</strong> the returns on the two assets are unrelated.</li>
+</ul>
+<p>The correlation of −0.49 confirms the tendency of the stock and bond fund returns to vary inversely.</p>
+<p>Whenever the covariance is called for in a calculation, we can replace it with an expression using the correlation coefficient:</p>
+<p><strong>Equation 6.3</strong></p>
+<p><span class="math display">\[\text{Cov}(r_S, r_B) = \rho_{SB}\,\sigma_S\,\sigma_B\]</span></p>
+<p>We are now ready to derive the risk and return features of portfolios of risky assets.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Concept Check 6.1">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Concept Check 6.1
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Suppose the rates of return of the bond portfolio in the four scenarios of Spreadsheet 6.1 are −10% in a severe recession, 10% in a mild recession, 7% in a normal period, and 2% in a boom. The stock returns in the four scenarios are −37%, −11%, 14%, and 30%. What are the covariance and correlation coefficient between the rates of return on the two portfolios?</p>
+<p><strong>Solution (as printed in the text):</strong> Recalculating Spreadsheets 6.1 and 6.4 shows that the <strong>covariance is now −5.80</strong> and the <strong>correlation coefficient is −0.07</strong>.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="the-three-rules-of-two-risky-assets-portfolios" class="level2">
+<h2 class="anchored" data-anchor-id="the-three-rules-of-two-risky-assets-portfolios">6.2.2 The Three Rules of Two-Risky-Assets Portfolios</h2>
+<p>Suppose a proportion <span class="math inline">\(w_B\)</span> is invested in the bond fund and the remainder, <span class="math inline">\(1 - w_B\)</span>, denoted <span class="math inline">\(w_S\)</span>, is invested in the stock fund. The properties of the portfolio are determined by three rules governing combinations of random variables.</p>
+<p><strong>Rule 1: The rate of return on a portfolio is the weighted average of returns on the component securities, with the portfolio proportions as weights.</strong></p>
+<p><strong>Equation 6.4</strong></p>
+<p><span class="math display">\[r_P = w_B r_B + w_S r_S\]</span></p>
+<p><strong>Rule 2: The expected rate of return on a portfolio is similarly the weighted average of the expected returns on the component securities, with the portfolio proportions as weights.</strong></p>
+<p><strong>Equation 6.5</strong></p>
+<p><span class="math display">\[E(r_P) = w_B E(r_B) + w_S E(r_S)\]</span></p>
+<p>Rules 1 and 2 say that a portfolio’s actual return and its expected return are both <strong>linear</strong> functions of the component security returns and portfolio weights. This is <em>not</em> so for portfolio variance, as the third rule shows.</p>
+<p><strong>Rule 3: The variance of the rate of return on a two-risky-assets portfolio is:</strong></p>
+<p><strong>Equation 6.6</strong></p>
+<p><span class="math display">\[\sigma_P^2 = (w_B \sigma_B)^2 + (w_S \sigma_S)^2 + 2(w_B \sigma_B)(w_S \sigma_S)\rho_{BS}\]</span></p>
+<p>where <span class="math inline">\(\rho_{BS}\)</span> is the correlation coefficient between the returns on the stock and bond funds. Notice that Equation 6.3 implies we may replace the last term with <span class="math inline">\(2 w_B w_S \text{Cov}(r_B, r_S)\)</span>.</p>
+<p><strong>Interpreting Rule 3.</strong> The variance of a portfolio is the <em>sum</em> of the contributions of the component-security variances <em>plus</em> a term that involves the correlation coefficient (and, hence, covariance) between the returns on the component securities. When the correlation between the component securities is small or negative, there is a greater tendency for returns on the two assets to offset each other, which reduces portfolio risk. <strong>Equation 6.6 tells us that portfolio variance is lower when the correlation coefficient is lower.</strong></p>
+<p>The formula for portfolio variance is more complicated than the one for portfolio return, but this complication has a virtue: <strong>a tremendous potential for gains from diversification.</strong></p>
+</section>
+<section id="the-risk-return-trade-off-with-two-risky-assets-portfolios" class="level2">
+<h2 class="anchored" data-anchor-id="the-risk-return-trade-off-with-two-risky-assets-portfolios">6.2.3 The Risk-Return Trade-Off with Two-Risky-Assets Portfolios</h2>
+<p>We can assess the benefit from diversification by using Rules 2 and 3 to compare the risk and expected return of a better-diversified portfolio to a less-diversified benchmark. Suppose an investor estimates the following input data:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Input</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(E(r_B)\)</span></td>
+<td>5%</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\sigma_B\)</span></td>
+<td>8%</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(E(r_S)\)</span></td>
+<td>10%</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\sigma_S\)</span></td>
+<td>19%</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\rho_{BS}\)</span></td>
+<td>0.2</td>
+</tr>
+</tbody>
+</table>
+<p>Currently, all funds are invested in the bond fund, but the investor ponders a portfolio invested <strong>40% in stocks and 60% in bonds</strong>.</p>
+<ul>
+<li><strong>Expected return (Rule 2):</strong> <span class="math inline">\(E(r_P) = 0.4 \times 10\% + 0.6 \times 5\% = 7\%\)</span>, an increase of 2% compared to a bond-only investment.</li>
+<li><strong>Standard deviation (Rule 3):</strong></li>
+</ul>
+<p><span class="math display">\[\sigma_P = \sqrt{(0.4 \times 19)^2 + (0.6 \times 8)^2 + 2(0.4 \times 19)(0.6 \times 8)(0.2)} = 9.76\%\]</span></p>
+<p>This is less than the weighted average of the component standard deviations: <span class="math inline">\(0.4 \times 19 + 0.6 \times 8 = 12.40\%\)</span>. The difference of <strong>2.64%</strong> reflects the benefits of diversification. This benefit is <strong>cost-free</strong> in the sense that diversification allows us to experience the full contribution of the stock’s higher expected return, while keeping the portfolio standard deviation below the average of the component standard deviations.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Example 6.1 - Benefits from Diversification">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Example 6.1 - Benefits from Diversification
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Suppose we invest <strong>85% in bonds and only 15% in stocks</strong>. This portfolio has an expected return greater than bonds, <span class="math inline">\((0.85 \times 5) + (0.15 \times 10) = 5.75\%\)</span>, and, at the same time, a standard deviation less than bonds. Using Equation 6.6, the portfolio variance is:</p>
+<p><span class="math display">\[(0.85 \times 8)^2 + (0.15 \times 19)^2 + 2(0.85 \times 8)(0.15 \times 19)(0.2) = 62.1\]</span></p>
+<p>and the portfolio standard deviation is <span class="math inline">\(\sqrt{62.1} = 7.88\%\)</span>, which is less than the standard deviation of either bonds or stocks alone. <strong>Taking on a more volatile asset (stocks) actually reduces portfolio risk!</strong> Such is the power of diversification.</p>
+</div>
+</div>
+<section id="the-minimum-variance-portfolio" class="level3">
+<h3 class="anchored" data-anchor-id="the-minimum-variance-portfolio">The minimum-variance portfolio</h3>
+<p>We can find investment proportions that reduce portfolio risk even further. The <strong>risk-minimizing proportions are 90.8% in bonds and 9.2% in stocks</strong>. With these proportions, the portfolio standard deviation is <strong>7.80%</strong> and the portfolio’s expected return is <strong>5.46%</strong>.</p>
+<p>The formula for the weight in bonds in the minimum-variance (and hence minimum standard deviation) portfolio (footnote 1 of the text) is:</p>
+<p><span class="math display">\[w_B = \frac{\sigma_S^2 - \sigma_B \sigma_S \rho_{BS}}{\sigma_S^2 + \sigma_B^2 - 2\sigma_B \sigma_S \rho_{BS}}, \qquad w_S = 1 - w_B\]</span></p>
+<p>When the correlation is zero, the variance-minimizing weight simplifies to the ratio of stock variance to the sum of the variances of stocks and bonds: <span class="math inline">\(w_B = \dfrac{\sigma_S^2}{\sigma_S^2 + \sigma_B^2}\)</span>.</p>
+<p>Is this portfolio preferable to the one in Example 6.1, with 15% in the stock fund? <strong>That depends on how the investor trades off risk against return</strong>, because the portfolio with the lower variance also has a lower expected return.</p>
+</section>
+<section id="the-investment-opportunity-set" class="level3">
+<h3 class="anchored" data-anchor-id="the-investment-opportunity-set">The investment opportunity set</h3>
+<p>What the analyst can and should do is show investors the entire <strong>investment opportunity set</strong>: the set of all attainable combinations of risk and return offered by portfolios formed using the available assets in differing proportions. We find it using Spreadsheet 6.5. Columns A and B set out several different proportions for investments in the stock and bond funds. The next columns present the portfolio expected return and standard deviation corresponding to each allocation. These risk-return combinations are plotted in Figure 6.3.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch06/Spreadsheet6_5_Opportunity_Set.png" class="img-fluid figure-img" style="width:85.0%"></p>
+<figcaption>Spreadsheet 6.5: The investment opportunity set with the stock and bond funds. Negative weights indicate short positions; the highlighted row (row 9) is the minimum-variance portfolio.</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="the-mean-variance-criterion" class="level2">
+<h2 class="anchored" data-anchor-id="the-mean-variance-criterion">6.2.4 The Mean-Variance Criterion</h2>
+<p>Investors desire portfolios that lie to the <strong>“northwest”</strong> in Figure 6.3: portfolios with high expected returns (toward the “north”) and low volatility (to the “west”). These preferences mean we can compare portfolios using the <strong>mean-variance criterion</strong>:</p>
+<blockquote class="blockquote">
+<p>Portfolio A is considered superior to portfolio B if it has higher mean return and lower volatility (variance or standard deviation):</p>
+<p><span class="math inline">\(E(r_A) \ge E(r_B)\)</span> and <span class="math inline">\(\sigma_A \le \sigma_B\)</span></p>
+</blockquote>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch06/Fig6_3_Opportunity_Set.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption>Figure 6.3: The investment opportunity set with the stock and bond funds</figcaption>
+</figure>
+</div>
+<p>Graphically, portfolio A will lie to the northwest of B, and given a choice between them, <strong>all investors would choose A</strong>. For example, the stock fund in Figure 6.3 <strong>dominates</strong> portfolio Z.</p>
+<p><strong>Efficient vs.&nbsp;inefficient portions of the curve:</strong></p>
+<ul>
+<li>Portfolios that lie <strong>below the minimum-variance portfolio</strong> can be rejected out of hand as <strong>inefficient</strong>. Any portfolio on the downward-sloping portion of the curve (including the bond fund) is “dominated” by the portfolio that lies directly above it on the upward-sloping portion, because that portfolio has higher expected return and equal standard deviation.</li>
+<li>The best choice among portfolios on the <strong>upward-sloping</strong> portion is not as obvious because, in this region, higher expected return is accompanied by greater risk. (This more challenging question is taken up later in the chapter.)</li>
+</ul>
+<section id="the-role-of-correlation" class="level3">
+<h3 class="anchored" data-anchor-id="the-role-of-correlation">The role of correlation</h3>
+<p>So far we have assumed a correlation of 0.2 between stock and bond returns. Diversification is less effective when correlations are higher.</p>
+<p><strong>Perfect positive correlation (<span class="math inline">\(\rho_{BS} = 1\)</span>).</strong> Equation 6.6 simplifies by “completing the square”:</p>
+<p><span class="math display">\[\sigma_P^2 = w_B^2\sigma_B^2 + w_S^2\sigma_S^2 + 2w_B\sigma_B w_S\sigma_S = (w_B\sigma_B + w_S\sigma_S)^2\]</span></p>
+<p><span class="math display">\[\sigma_P = w_B\sigma_B + w_S\sigma_S\]</span></p>
+<p>In this special case the portfolio standard deviation is a weighted average of the component security standard deviations. In this (and <em>only</em> this) circumstance, <strong>there are no gains to be had from diversification</strong>. The opportunity set is a straight line through the component securities (Figure 6.4), no portfolio can be discarded as inefficient, and the choice among portfolios depends only on risk aversion.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch06/Fig6_4_Correlation_Opportunity_Sets.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption>Figure 6.4: Investment opportunity sets for bonds and stocks with various correlation coefficients</figcaption>
+</figure>
+</div>
+<p>Perfect positive correlation is the <strong>only</strong> case in which there is no benefit from diversification. Whenever <span class="math inline">\(\rho &lt; 1\)</span>, the portfolio standard deviation is less than the weighted average of the standard deviations of the component securities. Therefore, <strong>there are benefits to diversification whenever asset returns are less than perfectly positively correlated.</strong></p>
+<p>A realistic correlation coefficient between stocks and bonds based on historical experience is around <strong>0.20</strong>, which is why Figure 6.4 includes a graph for <span class="math inline">\(\rho_{BS} = 0.2\)</span>. As the figure illustrates, <span class="math inline">\(\rho_{BS} = 0.2\)</span> is a lot better for diversification than perfect positive correlation and a bit worse than zero correlation.</p>
+<p><strong>Perfect negative correlation (<span class="math inline">\(\rho_{BS} = -1\)</span>).</strong> Negative correlation delivers even greater diversification benefits. Substituting <span class="math inline">\(\rho_{BS} = -1\)</span> in Equation 6.6 and completing the square gives <span class="math inline">\(\sigma_P^2 = (w_B\sigma_B - w_S\sigma_S)^2\)</span>, and therefore:</p>
+<p><strong>Equation 6.7</strong></p>
+<p><span class="math display">\[\sigma_P = \text{ABS}[w_B\sigma_B - w_S\sigma_S]\]</span></p>
+<p>The right-hand side is the absolute value of <span class="math inline">\(w_B\sigma_B - w_S\sigma_S\)</span> because standard deviation cannot be negative. With perfect negative correlation, the benefits from diversification stretch to the limit: Equation 6.7 can be solved for the proportions that reduce the portfolio standard deviation <strong>all the way to zero</strong>. The proportion in bonds that does this when <span class="math inline">\(\rho = -1\)</span> (footnote 2 of the text) is:</p>
+<p><span class="math display">\[w_B = \frac{\sigma_S}{\sigma_B + \sigma_S}\]</span></p>
+<p>With our data this happens when <span class="math inline">\(w_B = 70.37\%\)</span>. While exposing us to zero risk, investing 29.63% in stocks (rather than all in bonds) still increases the portfolio expected return from 5% to 6.48%. Of course, we can hardly expect results this attractive in reality.</p>
+</section>
+<section id="spreadsheet-6.6---opportunity-sets-for-various-correlations" class="level3">
+<h3 class="anchored" data-anchor-id="spreadsheet-6.6---opportunity-sets-for-various-correlations">Spreadsheet 6.6 - Opportunity sets for various correlations</h3>
+<p>Spreadsheet 6.6 enumerates some of the points on the various opportunity sets in Figure 6.4.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch06/Spreadsheet6_6_Various_Correlations.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>Spreadsheet 6.6: Investment opportunity set for stocks and bonds with various correlation coefficients</figcaption>
+</figure>
+</div>
+<p>Notes accompanying the spreadsheet:</p>
+<ul>
+<li>As the correlation coefficient grows, the minimum-variance portfolio requires a smaller position in stocks (even a negative position for higher correlations), and the performance of this portfolio becomes less attractive.</li>
+<li>With a correlation of 0.5 or higher, minimum variance is achieved with a <strong>short position in stocks</strong>. The standard deviation is lower than that of bonds, but the mean is lower as well.</li>
+<li>With perfect positive correlation, you can drive the standard deviation to zero by taking a large short position in stocks. The mean return is then as low as 1.36%.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Concept Check 6.2">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Concept Check 6.2
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Suppose that for some reason you are required to invest 50% of your portfolio in bonds and 50% in stocks. Use the assumed values for mean returns and standard deviations in Spreadsheet 6.5 to answer the following questions.</p>
+<ol type="a">
+<li>If the standard deviation of your portfolio is 10%, what must be the correlation coefficient between stock and bond returns?</li>
+<li>What is the expected rate of return on your portfolio?</li>
+<li>Now suppose that the correlation between stock and bond returns is 0.22 instead of the value you found in part (a) but that you are free to choose whatever portfolio proportions you desire. Are you likely to be better or worse off than you were in part (a)?</li>
+</ol>
+<p><strong>Solution (as printed in the text):</strong></p>
+<ol type="a">
+<li>Using Equation 6.6 with <span class="math inline">\(\sigma_B = 8\)</span>, <span class="math inline">\(\sigma_S = 19\)</span>, <span class="math inline">\(w_B = 0.5\)</span>, and <span class="math inline">\(w_S = 0.5\)</span>: <span class="math inline">\(10^2 = (0.5 \times 8)^2 + (0.5 \times 19)^2 + 2(0.5 \times 8)(0.5 \times 19)\rho_{BS}\)</span>, which yields <span class="math inline">\(\rho = -0.0822\)</span>.</li>
+<li>Using Equation 6.5: <span class="math inline">\(E(r_P) = (0.5 \times 5) + (0.5 \times 10) = 7.5\%\)</span>.</li>
+<li>On the one hand, you should be happier with a correlation of 0.17 than with 0.22 because the lower correlation implies greater benefits from diversification and means that, for any level of expected return, there will be lower risk. On the other hand, the constraint that you must hold 50% of the portfolio in bonds represents a cost to you as it prevents you from choosing the risk-return trade-off most suited to your tastes. Unless you would choose to hold about 50% of the portfolio in bonds anyway, you are better off with the slightly higher correlation but with the ability to choose your own portfolio weights.</li>
+</ol>
+</div>
+</div>
+</section>
+</section>
+<section id="using-historical-data" class="level2">
+<h2 class="anchored" data-anchor-id="using-historical-data">6.2.5 Using Historical Data</h2>
+<p>We have seen that portfolio risk and return depend on the means and variances of the component securities as well as on the covariance between their returns. Scenario analysis (Spreadsheets 6.1-6.4) is one way to estimate these inputs. An alternative approach is to <strong>estimate them from historical data</strong>. The rationale is that <strong>variability and covariability change slowly over time</strong>, so if we estimate these statistics from recent data, our estimates will provide useful predictions for the near future.</p>
+<ul>
+<li>The estimate of <strong>variance</strong> based on historical returns is the average value of the squared deviations around the sample average.</li>
+<li>The estimate of the <strong>covariance</strong> is the average value of the cross-product of deviations.</li>
+<li>As in scenario analysis, the focus for risk is on <strong>deviations of returns from their average value</strong>. Instead of mean returns from scenario analysis, we use average returns during the sample period.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled" title="Example 6.2 - Using Historical Data to Estimate Means, Standard Deviations, Covariance, and Correlation">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Example 6.2 - Using Historical Data to Estimate Means, Standard Deviations, Covariance, and Correlation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Consider 10 annual returns for two mutual funds. Although this sample period is far shorter than most analysts would use, for the sake of illustration we pretend it is adequate to estimate mean returns and relevant risk statistics with acceptable precision. In practice, analysts would use higher-frequency data (e.g., monthly or even daily data) to estimate risk coefficients and might, as well, supplement historical data with fundamental analysis to forecast future returns.</p>
+<p>The spreadsheet starts with the raw return data in columns B and C. Standard Excel functions give average returns, standard deviation, covariance, and correlation (<code>AVERAGE</code>, <code>STDEV.P</code>, <code>COVAR</code>, <code>CORREL</code>). Cell F14 confirms that covariance is the average value of the cross-product of the two assets’ deviations from their mean returns.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch06/Example6_2_Historical_Data.png" class="img-fluid figure-img" style="width:90.0%"></p>
+<figcaption>Example 6.2: Historical returns and the estimated risk statistics</figcaption>
+</figure>
+</div>
+<p>The average returns and standard deviations are similar to those from the scenario analysis (stock fund: average 10.00%, SD 19.00%; bond fund: average 5.00%, SD 8.00%; covariance 30.08). However, the <strong>correlation between stock and bond returns is low but positive (0.20)</strong>, which is more consistent with historical experience than the strongly negative correlation of −0.49 implied by the scenario analysis.</p>
+</div>
+</div>
+<section id="two-comments-on-example-6.2" class="level3">
+<h3 class="anchored" data-anchor-id="two-comments-on-example-6.2">Two comments on Example 6.2</h3>
+<ol type="1">
+<li><strong>Degrees of freedom.</strong> When variance is estimated from a sample of <span class="math inline">\(n\)</span> observed returns, it is common to divide the squared deviations by <span class="math inline">\(n - 1\)</span> rather than by <span class="math inline">\(n\)</span>. This is because we take deviations from an estimated average return rather than the true (but unknown) expected return; this procedure is said to adjust for a “lost degree of freedom.” In Excel, <code>STDEV.P</code> divides by <span class="math inline">\(n\)</span>, while <code>STDEV.S</code> uses <span class="math inline">\(n - 1\)</span>. Excel’s covariance and correlation functions both use <span class="math inline">\(n\)</span>. Example 6.2 ignored this fine point and divided by <span class="math inline">\(n\)</span> throughout. The correction is negligible when there are plentiful observations; for example, with 60 returns (five years of monthly data), dividing by 60 versus 59 affects variance or covariance by a multiple of only 1.017.</li>
+<li><strong>Reliability of historical estimates.</strong> Estimates of variance and covariance from past data are generally reliable forecasts (at least for the short term). However, <strong>averages of past returns typically provide highly noisy (imprecise) forecasts of future expected returns.</strong> The example uses past averages from small samples because the objective is to demonstrate the methodology. In practice, professional investors spend most of their resources on macroeconomic and security analysis to improve their estimates of mean returns.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled" title="Concept Check 6.3">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Concept Check 6.3
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The text presents returns on various pairs of stocks in several periods. In part A, a scatter diagram of the returns on the first pair of stocks is shown. Draw (or prepare in Excel) similar scatter diagrams for cases B through E. Match up your diagrams (A-E) to the following list of correlation coefficients by choosing the correlation that best describes the relationship between the returns on the two stocks: <span class="math inline">\(\rho = -1, 0, 0.2, 0.5, 1.0\)</span>.</p>
+<p><strong>Solution (as printed in the text):</strong></p>
+<ul>
+<li><strong>Diagram A:</strong> an exact mirror image between the pattern of points 1, 2, 3 versus 3, 4, 5, so the correlation coefficient is <strong>zero</strong>.</li>
+<li><strong>Diagram B:</strong> perfect positive correlation (<strong>+1</strong>).</li>
+<li><strong>Diagram C:</strong> perfect negative correlation (<strong>−1</strong>).</li>
+<li><strong>Diagrams D and E:</strong> both show a general positive correlation, but scatter D is tighter. Therefore D is associated with a correlation of about <strong>0.5</strong> (the exact correlation is 0.54), and E with a correlation of about <strong>0.2</strong> (the exact correlation is 0.23).</li>
+</ul>
+</div>
+</div>
+<hr>
+</section>
+</section>
+</section>
+<section id="the-optimal-risky-portfolio-with-a-risk-free-asset" class="level1">
+<h1>6.3 The Optimal Risky Portfolio with a Risk-Free Asset</h1>
+<p>Now we expand the asset allocation problem to include a <strong>risk-free asset</strong>. When choosing their capital allocation between risky and risk-free portfolios, investors naturally want to work with the risky portfolio that offers the greatest reward for assuming risk. This is the portfolio with the highest <strong>reward-to-volatility, or Sharpe, ratio</strong>. The higher the Sharpe ratio, the greater is the expected return corresponding to any level of volatility. Therefore, our next step is to construct a risky portfolio combining the major asset classes (in our example, a bond fund and a stock fund) that provides the <strong>highest possible Sharpe ratio</strong>.</p>
+<p>We continue to use the input data from Spreadsheet 6.5, but now suppose we can also invest in <strong>T-bills yielding 3%</strong>. When we add the risk-free asset to a risky portfolio constructed from stocks and bonds, the resulting opportunity set is the straight line called the <strong>CAL (capital allocation line)</strong> in Chapter 5. We now consider various CALs constructed from risk-free bills and a variety of possible risky portfolios, each formed by combining the stock and bond funds in alternative proportions.</p>
+<section id="comparing-two-cals" class="level2">
+<h2 class="anchored" data-anchor-id="comparing-two-cals">Comparing two CALs</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch06/Fig6_5_Two_CALs.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption>Figure 6.5: The opportunity set of stocks, bonds, and a risk-free asset with two capital allocation lines</figcaption>
+</figure>
+</div>
+<p>We start in Figure 6.5 with the opportunity set of risky assets constructed only from the bond and stock funds. The lowest-variance risky portfolio is labeled <strong>MIN</strong> (the minimum-variance portfolio). <span class="math inline">\(\text{CAL}_{MIN}\)</span> is drawn through it and shows the risk-return trade-off with various positions in T-bills and portfolio MIN. It is immediately evident that we could do better (obtain a higher Sharpe ratio) by using portfolio <strong>A</strong> instead of MIN as the risky portfolio. <span class="math inline">\(\text{CAL}_A\)</span> dominates <span class="math inline">\(\text{CAL}_{MIN}\)</span> in the sense that it offers a higher expected return for any level of volatility.</p>
+<p><strong>The slope of the CAL corresponding to a risky portfolio <span class="math inline">\(P\)</span> is the Sharpe ratio of that portfolio, that is, the ratio of its expected excess return to its standard deviation:</strong></p>
+<p><strong>Equation 6.8 - Sharpe ratio</strong></p>
+<p><span class="math display">\[S_P = \frac{E(r_P) - r_f}{\sigma_P}\]</span></p>
+<p>With a T-bill rate of 3%, the Sharpe ratios of portfolios A and MIN can be found and compared. Portfolio A, with a weight in the stock fund of 0.2, offers an expected return of 6% with a standard deviation of 8.07%.</p>
+<p><strong>Equation 6.9</strong></p>
+<p><span class="math display">\[S_{MIN} = \frac{5.46 - 3}{7.80} = 0.32 \qquad S_A = \frac{6 - 3}{8.07} = 0.37\]</span></p>
+<p>The higher ratio for portfolio A compared to MIN measures the improvement it offers in the risk-return trade-off.</p>
+</section>
+<section id="the-optimal-risky-portfolio" class="level2">
+<h2 class="anchored" data-anchor-id="the-optimal-risky-portfolio">The optimal risky portfolio</h2>
+<p>But why stop at portfolio A? We can continue to ratchet the CAL upward until it reaches the ultimate point of <strong>tangency</strong> with the investment opportunity set. This produces the CAL with the <strong>highest feasible Sharpe ratio</strong>. The tangency portfolio is the <strong>optimal risky portfolio</strong> (denoted portfolio <span class="math inline">\(O\)</span>) to mix with T-bills; in general, the optimal risky portfolio is the one that generates the <strong>steepest CAL</strong>.</p>
+<p>To find the composition of <span class="math inline">\(O\)</span>, we search for weights in the stock and bond funds that maximize the portfolio’s Sharpe ratio. With only two risky assets, we can solve for the optimal weights using the following formula (the text notes that it can be obtained using calculus: write the Sharpe ratio as a function of <span class="math inline">\(w_B\)</span> and <span class="math inline">\(w_S = 1 - w_B\)</span>, set the derivative with respect to <span class="math inline">\(w_B\)</span> equal to zero, and solve for the optimal <span class="math inline">\(w_B\)</span>):</p>
+<p><strong>Equation 6.10</strong></p>
+<p><span class="math display">\[w_B = \frac{[E(r_B) - r_f]\sigma_S^2 - [E(r_S) - r_f]\sigma_B\sigma_S\rho_{BS}}{[E(r_B) - r_f]\sigma_S^2 + [E(r_S) - r_f]\sigma_B^2 - [E(r_B) - r_f + E(r_S) - r_f]\sigma_B\sigma_S\rho_{BS}}\]</span></p>
+<p><span class="math display">\[w_S = 1 - w_B\]</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch06/Fig6_6_Optimal_CAL.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption>Figure 6.6: The optimal capital allocation line with bonds, stocks, and T-bills</figcaption>
+</figure>
+</div>
+<p>Using the risk premiums of the stock and bond funds, their standard deviations, and the correlation between their returns in Equation 6.10:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Result</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Weight in bonds, <span class="math inline">\(w_B(O)\)</span></td>
+<td>0.568</td>
+</tr>
+<tr class="even">
+<td>Weight in stocks, <span class="math inline">\(w_S(O)\)</span></td>
+<td>0.432</td>
+</tr>
+<tr class="odd">
+<td>Expected return, <span class="math inline">\(E(r_O)\)</span></td>
+<td>7.16%</td>
+</tr>
+<tr class="even">
+<td>Standard deviation, <span class="math inline">\(\sigma_O\)</span></td>
+<td>10.15%</td>
+</tr>
+<tr class="odd">
+<td>Sharpe ratio, <span class="math inline">\(S_O\)</span></td>
+<td><span class="math inline">\(\dfrac{7.16 - 3}{10.15} = 0.41\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>The Sharpe ratio of the optimal portfolio (0.41) is significantly higher than those provided by either the bond or stock portfolios alone.</p>
+</section>
+<section id="the-complete-portfolio" class="level2">
+<h2 class="anchored" data-anchor-id="the-complete-portfolio">The complete portfolio</h2>
+<p>In the last chapter, we saw that the preferred <strong>complete portfolio</strong> formed by combining a risky portfolio with a risk-free asset depends on <strong>risk aversion</strong>. More risk-averse investors prefer low-risk portfolios despite the lower expected return, while more risk-tolerant investors choose higher-risk, higher-expected-return portfolios. <strong>Both types of investors, however, will choose portfolio <span class="math inline">\(O\)</span> as their risky portfolio</strong>, as it provides the highest return <em>per unit of risk</em> (the steepest CAL). Investors differ only in their allocation of investment funds between portfolio <span class="math inline">\(O\)</span> and the risk-free asset.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch06/Fig6_7_Complete_Portfolio.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption>Figure 6.7: The complete portfolio</figcaption>
+</figure>
+</div>
+<p>Figure 6.7 shows one possible choice for the preferred complete portfolio, <span class="math inline">\(C\)</span>. The investor places <strong>55% of wealth in portfolio <span class="math inline">\(O\)</span> and 45% in Treasury bills</strong>. The rate of return and volatility are:</p>
+<p><span class="math display">\[E(r_C) = 3\% \times 0.45 + 7.16\% \times 0.55 = 5.29\%\]</span></p>
+<p><span class="math display">\[\sigma_C = 0.55 \times 10.15\% = 5.58\%\]</span></p>
+<p>Because portfolio <span class="math inline">\(O\)</span> is a mix of the bond fund and stock fund with weights of 56.8% and 43.2%, the overall asset allocation of the complete portfolio is:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Asset</th>
+<th>Calculation</th>
+<th>Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Weight in risk-free asset</td>
+<td></td>
+<td>45.00%</td>
+</tr>
+<tr class="even">
+<td>Weight in bond fund</td>
+<td>0.568 × 55% =</td>
+<td>31.24</td>
+</tr>
+<tr class="odd">
+<td>Weight in stock fund</td>
+<td>0.432 × 55% =</td>
+<td>23.76</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td></td>
+<td><strong>100.00%</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch06/Fig6_8_Complete_Portfolio_Composition.png" class="img-fluid figure-img" style="width:55.0%"></p>
+<figcaption>Figure 6.8: The composition of the complete portfolio: The solution to the asset allocation problem</figcaption>
+</figure>
+</div>
+<p>Figure 6.8 depicts the overall asset allocation. The allocation reflects considerations of both <strong>efficient diversification</strong> (the construction of the optimal risky portfolio, <span class="math inline">\(O\)</span>) and <strong>risk aversion</strong> (the allocation of funds between the risk-free asset and the risky portfolio <span class="math inline">\(O\)</span> to form the complete portfolio, <span class="math inline">\(C\)</span>).</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Concept Check 6.4">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Concept Check 6.4
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A universe of securities includes a risky stock (<span class="math inline">\(X\)</span>), a stock-index fund (<span class="math inline">\(M\)</span>), and T-bills. The data for the universe are:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Security</th>
+<th>Expected Return</th>
+<th>Standard Deviation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(X\)</span></td>
+<td>15%</td>
+<td>50%</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(M\)</span></td>
+<td>10</td>
+<td>20</td>
+</tr>
+<tr class="odd">
+<td>T-bills</td>
+<td>5</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>The correlation coefficient between <span class="math inline">\(X\)</span> and <span class="math inline">\(M\)</span> is −0.2.</p>
+<ol type="a">
+<li>Draw the opportunity set of securities <span class="math inline">\(X\)</span> and <span class="math inline">\(M\)</span>.</li>
+<li>Find the optimal risky portfolio (<span class="math inline">\(O\)</span>) and its expected return, standard deviation, and Sharpe ratio. Compare with the Sharpe ratios of <span class="math inline">\(X\)</span> and <span class="math inline">\(M\)</span>, each taken individually.</li>
+<li>Find the slope of the CAL generated by T-bills and portfolio <span class="math inline">\(O\)</span>.</li>
+<li>Suppose an investor places 2/9 (i.e., 22.22%) of the complete portfolio in the risky portfolio <span class="math inline">\(O\)</span> and the remainder in T-bills. Calculate the composition of the complete portfolio and its expected return, standard deviation, and Sharpe ratio.</li>
+</ol>
+<p><strong>Solution (as printed in the text):</strong></p>
+<ol type="a">
+<li>Implementing Equations 6.5 and 6.6 generates the data for the graph (Spreadsheet 6.7 and Figure 6.14 in the text).</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch06/Fig6_14_Concept_Check_6_4.png" class="img-fluid figure-img" style="width:65.0%"></p>
+<figcaption>Figure 6.14: For Concept Check 6.4, plot of mean return versus standard deviation</figcaption>
+</figure>
+</div>
+<ol start="2" type="a">
+<li>Implementing the formulas of Spreadsheet 6.6 generates the optimal risky portfolio (<span class="math inline">\(O\)</span>) and the minimum-variance portfolio. The optimal risky portfolio has <strong>weights of about 0.26 in <span class="math inline">\(X\)</span> and 0.74 in <span class="math inline">\(M\)</span></strong>, with an <strong>expected return of 11.28%</strong> and a <strong>standard deviation of 17.59%</strong>.</li>
+<li>The slope of the CAL equals the risk premium of the optimal risky portfolio divided by its standard deviation: <span class="math inline">\((11.28 - 5)/17.59 = 0.357\)</span>.</li>
+<li>The mean of the complete portfolio is <span class="math inline">\(0.2222 \times 11.28 + 0.7778 \times 5 = 6.395\%\)</span>, and its standard deviation is <span class="math inline">\(0.2222 \times 17.58 = 3.91\%\)</span>. Sharpe ratio <span class="math inline">\(= (6.395 - 5)/3.91 = 0.357\)</span>. The composition of the complete portfolio is <span class="math inline">\(0.2222 \times 0.26 = 0.06\)</span> (6%) in <span class="math inline">\(X\)</span>, <span class="math inline">\(0.2222 \times 0.74 = 0.16\)</span> (16%) in <span class="math inline">\(M\)</span>, and <strong>78% in T-bills</strong>.</li>
+</ol>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="efficient-diversification-with-many-risky-assets" class="level1">
+<h1>6.4 Efficient Diversification with Many Risky Assets</h1>
+<p>We extend the two-risky-assets methodology to many risky assets in <strong>three steps</strong>:</p>
+<ol type="1">
+<li>Generalize the two-risky-assets opportunity set to allow for many assets.</li>
+<li>Determine the optimal risky portfolio, <span class="math inline">\(O\)</span>, that supports the steepest CAL, that is, maximizes the Sharpe ratio.</li>
+<li>Choose a complete portfolio on <span class="math inline">\(\text{CAL}_O\)</span> based on risk aversion by mixing the risk-free asset with the optimal risky portfolio.</li>
+</ol>
+<section id="the-efficient-frontier-of-risky-assets" class="level2">
+<h2 class="anchored" data-anchor-id="the-efficient-frontier-of-risky-assets">6.4.1 The Efficient Frontier of Risky Assets</h2>
+<p>To get a sense of how additional risky assets can improve investment opportunities, look at Figure 6.9. Points <strong>A, B, and C</strong> represent the expected returns and standard deviations of three stocks.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch06/Fig6_9_Three_Stocks.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption>Figure 6.9: Portfolios constructed with three stocks (A, B, and C)</figcaption>
+</figure>
+</div>
+<ul>
+<li>The curve passing through A and B shows the risk-return combinations of portfolios formed from those two stocks. Similarly, the curve through B and C shows portfolios formed from those two stocks.</li>
+<li>Point <strong>E</strong> is on the AB curve and point <strong>F</strong> is on the BC curve; these are two portfolios chosen from the AB and BC combinations.</li>
+<li>The curve passing through E and F represents portfolios constructed from portfolios E and F. Because E and F are themselves constructed from A, B, and C, this curve shows some of the portfolios constructed from these <em>three</em> stocks. Curve EF <strong>extends the investment opportunity set to the northwest</strong>, which is the desired direction.</li>
+</ul>
+<p>We can continue to take other points (each representing portfolios) from these curves and further combine them into new portfolios, shifting the opportunity set even farther to the northwest. This process would work even better with more stocks. The boundary, or “envelope,” of all the curves thus developed will lie quite away from the individual stocks in the northwesterly direction, as shown in Figure 6.10.</p>
+<section id="the-markowitz-model" class="level3">
+<h3 class="anchored" data-anchor-id="the-markowitz-model">The Markowitz model</h3>
+<p>The analytical technique to derive the efficient set of risky assets was developed by <strong>Harry Markowitz</strong> and is often referred to as the <strong>Markowitz model</strong>. The first step is to determine the <strong>risk-return opportunity set</strong>. The aim is to construct from the universe of available securities the <strong>northwestern-most portfolios</strong> in terms of expected return and standard deviation. The input data are the <strong>expected returns and standard deviations of each asset</strong> in the universe, along with the <strong>correlation coefficients between each pair of assets</strong>. The plot that connects all the northwestern-most portfolios is called the <strong>efficient frontier</strong> of risky assets. It represents the set of portfolios offering the highest possible expected rate of return for each level of portfolio standard deviation. These portfolios may be viewed as <em>efficiently diversified</em>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch06/Fig6_10_Efficient_Frontier.png" class="img-fluid figure-img" style="width:65.0%"></p>
+<figcaption>Figure 6.10 (Panel A): The efficient frontier of risky assets and individual assets</figcaption>
+</figure>
+</div>
+</section>
+<section id="two-equivalent-ways-to-produce-the-frontier-figure-6.10-panels-b-and-c" class="level3">
+<h3 class="anchored" data-anchor-id="two-equivalent-ways-to-produce-the-frontier-figure-6.10-panels-b-and-c">Two equivalent ways to produce the frontier (Figure 6.10, Panels B and C)</h3>
+<p>The PowerPoint lists <strong>three methods</strong> for finding the efficient frontier: (1) maximize the risk premium for any level of standard deviation, (2) minimize the standard deviation for any level of risk premium, and (3) maximize the Sharpe ratio (discussed under Section 6.4.2). The text illustrates the first two in Panels B and C of Figure 6.10.</p>
+<p><strong>Method 1 - Maximize expected return for any level of risk (Panel B).</strong> Choose a target value for standard deviation, for example SD = 12%, and search for the portfolio with the highest possible expected return consistent with this level of volatility. The optimization software is given an assignment to maximize expected return subject to two constraints:</p>
+<ol type="1">
+<li>The portfolio weights must sum to 1 (the <strong>feasibility constraint</strong>, because any legitimate portfolio must have weights that sum to 100%).</li>
+<li>The portfolio SD must match the targeted value, <span class="math inline">\(\sigma = 12\%\)</span>.</li>
+</ol>
+<p>The software searches over all portfolios with <span class="math inline">\(\sigma = 12\%\)</span> and finds the highest feasible portfolio on the vertical line drawn at <span class="math inline">\(\sigma = 12\%\)</span>; that portfolio is at the top of the vertical arrow rising from SD = 12%. The horizontal tracer line indicates that for this portfolio <span class="math inline">\(E(r) = 10\%\)</span>. This is one point on the efficient frontier. Repeat for other target levels of volatility and “connect the dots” to draw the frontier.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch06/Fig6_10_Panel_B_Maximize_Return.png" class="img-fluid figure-img" style="width:65.0%"></p>
+<figcaption>Figure 6.10 (Panel B): Maximize <span class="math inline">\(E(r)\)</span> for any choice of standard deviation</figcaption>
+</figure>
+</div>
+<p><strong>Method 2 - Minimize volatility for any level of expected return (Panel C).</strong> Draw a few <em>horizontal</em> lines above the <strong>global minimum-variance portfolio <span class="math inline">\(G\)</span></strong> (portfolios lying below <span class="math inline">\(G\)</span> are inefficient because they offer a <em>lower</em> expected return and <em>higher</em> variance than <span class="math inline">\(G\)</span>). In Panel C, the first horizontal line is at an expected return of 10%. The software’s assignment is now to minimize the SD subject to the feasibility constraint, but with the constraint on SD replaced by a constraint on the portfolio’s expected return: <span class="math inline">\(E(r) = 10\%\)</span>. So we seek the portfolio farthest to the left along the horizontal line at 10%, the one with the lowest SD consistent with an expected return of 10%. From Panel B, this portfolio must be at <span class="math inline">\(\sigma = 12\%\)</span>. Repeat with other expected returns, then connect the dots to get the frontier of Figure 6.10.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch06/Fig6_10_Panel_C_Minimize_SD.png" class="img-fluid figure-img" style="width:65.0%"></p>
+<figcaption>Figure 6.10 (Panel C): Minimize standard deviation for each choice of <span class="math inline">\(E(r)\)</span></figcaption>
+</figure>
+</div>
+</section>
+<section id="constraints-in-practice" class="level3">
+<h3 class="anchored" data-anchor-id="constraints-in-practice">Constraints in practice</h3>
+<p>In practice, various additional constraints may preclude an investor from choosing portfolios on the efficient frontier:</p>
+<ul>
+<li><strong>Short-sale restrictions.</strong> If an institution is prohibited from taking short positions in any asset, the manager must add constraints to the optimization program that rule out negative (short) positions: all asset weights in the optimal portfolio must be greater than or equal to zero.</li>
+<li><strong>Minimum dividend yield.</strong> Input data must include a set of expected dividend yields, and the program is given the constraint that the expected portfolio dividend yield will equal or exceed the desired level.</li>
+<li><strong>Socially responsible investing (SRI).</strong> SRI rules out investments in firms engaged in businesses deemed objectionable (for example, tobacco or arms production); SRI would constrain portfolio weights on such firms to be zero.</li>
+<li><strong>ESG (environmental, social, and governance-focused) investing.</strong> A similar orientation to SRI (see Chapter 1). While the two overlap considerably, SRI investors tend to impose more absolute restrictions on portfolio choice to reflect their ethical concerns, whereas ESG investors tend to be comparatively more focused on long-term sustainable business prospects that might be enhanced by environmentally and socially sound practices.</li>
+</ul>
+<p>In principle, portfolio managers can tailor an efficient frontier to meet any particular objective. Of course, <strong>any constraint carries a price tag</strong>: an efficient frontier subject to additional constraints will offer a <em>lower</em> Sharpe ratio. Deriving and graphing the efficient frontier with any number of assets and any set of constraints is quite straightforward, and for a not-too-large number of assets it can be computed and graphed even with a spreadsheet program.</p>
+</section>
+</section>
+<section id="choosing-the-optimal-risky-portfolio" class="level2">
+<h2 class="anchored" data-anchor-id="choosing-the-optimal-risky-portfolio">6.4.2 Choosing the Optimal Risky Portfolio</h2>
+<p>The second step of the optimization plan involves the <strong>risk-free asset</strong>. Using the risk-free rate, we search for the capital allocation line with the highest Sharpe ratio (the steepest slope), just as in Figures 6.5 and 6.6.</p>
+<p>The CAL formed from the optimal risky portfolio (<span class="math inline">\(O\)</span>) will be <strong>tangent to the efficient frontier</strong> of risky assets. Because this CAL lies above all other feasible CALs, portfolio <span class="math inline">\(O\)</span> is the optimal risky portfolio.</p>
+<p>There is yet another way to find the best risky portfolio. Because the optimal portfolio is the one that maximizes the Sharpe ratio, rather than solving for the entire efficient frontier, we can proceed directly: ask the optimization program to <strong>maximize the Sharpe ratio subject only to the feasibility constraint</strong> (that portfolio weights sum to 1). The portfolio providing the highest possible Sharpe ratio is the optimal portfolio <span class="math inline">\(O\)</span>. While this last approach does not produce the entire minimum-variance frontier, in many applications only the optimal risky portfolio is necessary.</p>
+</section>
+<section id="the-preferred-complete-portfolio-and-a-separation-property" class="level2">
+<h2 class="anchored" data-anchor-id="the-preferred-complete-portfolio-and-a-separation-property">6.4.3 The Preferred Complete Portfolio and a Separation Property</h2>
+<p>Finally, each investor chooses the appropriate mix between the optimal risky portfolio (<span class="math inline">\(O\)</span>) and T-bills, exactly as in Figure 6.7.</p>
+<p>A portfolio manager will offer the <strong>same risky portfolio (<span class="math inline">\(O\)</span>) to all clients</strong>, no matter what their degrees of risk aversion. Risk aversion comes into play only when clients select their desired point on the CAL. This result is called a <strong>separation property</strong>, introduced by <strong>James Tobin (1958)</strong>. Its name reflects the fact that portfolio choice can be separated into two independent tasks:</p>
+<ol type="1">
+<li><strong>Determining the optimal risky portfolio (<span class="math inline">\(O\)</span>)</strong> is purely <em>technical</em>. Given the input data, the best risky portfolio is the same for all clients regardless of risk aversion.</li>
+<li><strong>Constructing the complete portfolio</strong> from bills and portfolio <span class="math inline">\(O\)</span> is <em>personal</em> and depends on risk aversion. Here the client is the decision maker.</li>
+</ol>
+<p>In practice, optimal risky portfolios for different clients may vary because of constraints on short sales, dividend yield, tax considerations, or other client preferences. Our analysis, though, suggests that <strong>a few portfolios may be sufficient to serve the demands of a wide range of investors</strong>. We see here the theoretical basis of the <strong>mutual fund industry</strong>.</p>
+<p><strong>Where the real competition is.</strong> The (computerized) optimization technique is the easiest part of portfolio construction. When different managers use different input data, they develop different efficient frontiers and offer different “optimal” portfolios. Therefore, the real arena of competition among portfolio managers is in the <strong>sophisticated security analysis that produces the input estimates</strong>. The rule of <strong>GIGO (garbage in-garbage out)</strong> applies fully to portfolio selection. If the quality of security analysis is poor, a passive portfolio such as a market-index fund will yield better results than an active portfolio tilted toward seemingly favorable securities.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Concept Check 6.5">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Concept Check 6.5
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Two portfolio managers work for competing investment management houses. Each employs security analysts to prepare input data for the construction of the optimal portfolio. When all is completed, the efficient frontier obtained by manager A dominates that of manager B in that A’s optimal risky portfolio lies northwest of B’s. Is the more attractive efficient frontier asserted by manager A evidence that she really employs better security analysts?</p>
+<p><strong>Solution (as printed in the text):</strong> Efficient frontiers derived by portfolio managers depend on forecasts of the rates of return on various securities and estimates of risk (standard deviations and correlation coefficients). The forecasts themselves do not control outcomes. Thus, to prefer a manager with a rosier forecast (northwesterly frontier) is tantamount to rewarding the bearers of good news and punishing the bearers of bad news. What the investor wants is to reward bearers of <em>accurate</em> news. Investors should monitor forecasts of portfolio managers on a regular basis to develop a track record of their forecasting accuracy. Portfolio choices of the more accurate forecasters will, in the long run, outperform the field.</p>
+</div>
+</div>
+</section>
+<section id="constructing-the-optimal-risky-portfolio-an-illustration" class="level2">
+<h2 class="anchored" data-anchor-id="constructing-the-optimal-risky-portfolio-an-illustration">6.4.4 Constructing the Optimal Risky Portfolio: An Illustration</h2>
+<p>To illustrate how the optimal risky portfolio might be constructed, suppose an analyst wished to construct an <strong>efficiently diversified global portfolio</strong> using the stock market indices of <strong>six countries</strong> (U.S., U.K., France, Germany, Japan, and China).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch06/Table6_1_International_Diversification.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>Table 6.1: Efficient frontiers for international diversification with and without short sales and CAL with short sales</figcaption>
+</figure>
+</div>
+<p><strong>Panel A of Table 6.1 - the input list.</strong> The standard deviations and the correlation matrix are estimated from historical data, while forecasts of risk premiums are generated from fundamental analysis. The U.S. index portfolio has the highest Sharpe ratio (0.4013). Given this, one might be tempted to conclude that U.S. investors would not have benefited much from international diversification. But even in this sample period, <strong>diversification is beneficial</strong>.</p>
+<p><strong>Panel B - the efficient frontier (short sales allowed).</strong> First the <strong>global minimum-variance portfolio <span class="math inline">\(G\)</span></strong> is generated by minimizing the standard deviation (SD) with just the feasibility constraint; then portfolio <span class="math inline">\(O\)</span> is found by maximizing the Sharpe ratio subject only to the same constraint. To fill out the curve, more risk premiums are chosen and, for each, portfolio volatility is minimized. In all, there are 13 points used to draw the graph in Figure 6.11, one of which is the maximum-Sharpe-ratio portfolio, <span class="math inline">\(O\)</span>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch06/Fig6_11_Efficient_Frontiers_CAL.png" class="img-fluid figure-img" style="width:85.0%"></p>
+<figcaption>Figure 6.11: Efficient frontiers and CAL from Table 6.1</figcaption>
+</figure>
+</div>
+<p>The results are striking:</p>
+<ul>
+<li><strong>Portfolio <span class="math inline">\(G\)</span>.</strong> The SD of the global minimum-variance portfolio, <strong>10.94%</strong>, is far lower than that of the lowest-variance country (the U.K., SD of 14.93%). <span class="math inline">\(G\)</span> is formed by taking <strong>short positions in Germany and France</strong>, as well as a large position in the relatively low-risk U.K. The Sharpe ratio of this portfolio is higher than that of all countries but the U.S. Still, even this portfolio will be rejected in favor of the highest Sharpe-ratio portfolio.</li>
+<li><strong>Portfolio <span class="math inline">\(O\)</span>.</strong> It attains a Sharpe ratio of <strong>0.4477</strong>, compared to the U.S. ratio of 0.4013, a significant improvement that can be verified from the CAL shown in Panel C.</li>
+</ul>
+<p><strong>Panel C - the CAL.</strong> The points are selected to have the same SD as those of the efficient frontier portfolios, so the risk premium for each equals the SD times the Sharpe ratio of portfolio <span class="math inline">\(O\)</span> (footnote 4: because <span class="math inline">\(S = \text{risk premium}/\text{SD}\)</span>, we can rearrange to show that <span class="math inline">\(\text{SD} = \text{risk premium}/S_O\)</span>; the CAL has the same slope everywhere, equal to the Sharpe ratio of portfolio <span class="math inline">\(O\)</span> that supports it). Portfolio (9) on the CAL has the same risk premium as the U.S., 6%, but an SD of <strong>13.41%</strong>, fully 1.5% less than the 14.95% SD of the U.S. All this is achieved while still investing <strong>76.51% of the portfolio in the U.S.</strong>, although it does require a <strong>large short position in France (−29.99%)</strong>.</p>
+<p><strong>Panel D - no short sales.</strong> Many institutional investors are prohibited from taking short positions, and individuals may be averse to large short positions because the unlimited upward potential of stock prices implies unlimited potential losses on short sales. Panel D shows the efficient frontier when an additional constraint is applied to each portfolio: <strong>all weights must be nonnegative</strong>.</p>
+<p><strong>Comparing the two frontiers in Figure 6.11.</strong> The no-short-sale frontier is clearly <strong>inferior on both ends</strong>. This is because both very-low-return and very-high-return frontier portfolios will typically entail short positions:</p>
+<ul>
+<li>At the <strong>low-return/low-volatility end</strong>, efficient portfolios take short positions in stocks with a high correlation and low-risk premium that can reduce variance with low impact on expected return.</li>
+<li>At the <strong>high expected return end</strong>, we find short positions in low-risk-premium stocks in favor of larger positions in high-risk-premium stocks.</li>
+</ul>
+<p>Therefore, the short-sale-constrained efficient frontier diverges further from the unconstrained frontier for extreme risk premiums.</p>
+<hr>
+</section>
+</section>
+<section id="a-single-index-stock-market" class="level1">
+<h1>6.5 A Single-Index Stock Market</h1>
+<p>We started this chapter with the distinction between systematic and firm-specific risk. <strong>Systematic risk</strong> is macroeconomic, affecting all securities, while <strong>firm-specific risk</strong> factors affect only one particular firm or, at most, a cluster of firms. <strong>Index models</strong> are statistical tools designed to estimate these two components of risk for a particular security or portfolio. The first to use an index model to explain the benefits of diversification was another Nobel Prize winner, <strong>William F. Sharpe (1963)</strong>. (His major work, the capital asset pricing model, is introduced in the next chapter.)</p>
+<p><strong>Why index models? Practicality.</strong> To construct the efficient frontier from a universe of 100 securities, we would need to estimate:</p>
+<ul>
+<li>100 expected returns,</li>
+<li>100 variances, and</li>
+<li><span class="math inline">\(100 \times 99/2 = 4{,}950\)</span> covariances.</li>
+</ul>
+<p>And a universe of 100 securities is actually quite small. A universe of 1,000 securities would require <span class="math inline">\(1{,}000 \times 999/2 = 499{,}500\)</span> covariances, as well as 1,000 expected returns and variances. <strong>The index model asserts that one common systematic factor is responsible for all the covariability of stock returns, with all other variability due to firm-specific factors.</strong> This assumption dramatically simplifies the analysis.</p>
+<section id="the-intuition-u.s.-steel-against-the-market" class="level2">
+<h2 class="anchored" data-anchor-id="the-intuition-u.s.-steel-against-the-market">The intuition: U.S. Steel against the market</h2>
+<p>The intuition can be seen in Figure 6.12. We begin with a historical sample of paired observations of <strong>excess returns</strong> on the market index and shares in a particular security, here U.S. Steel. Figure 6.12 has 60 pairs of monthly excess returns, one for each month in a five-year sample. Each dot represents the pair of returns in one particular month. For example, in June 2019, U.S. Steel’s excess return was 29.92% while the market’s was 6.93%.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch06/Fig6_12_US_Steel_Scatter.png" class="img-fluid figure-img" style="width:65.0%"></p>
+<figcaption>Figure 6.12: Scatter diagram for U.S. Steel against the market index, and the security market line (monthly data, January 2018-December 2022)</figcaption>
+</figure>
+</div>
+<p>To describe the typical relation between the return on U.S. Steel and the return on the market index, we fit a straight line through the <strong>scatter diagram</strong>. This “line of best fit” shows a <strong>positive relation</strong> between the company’s return and the market’s, evidence of the importance of broad market conditions on the performance of U.S. Steel’s stock.</p>
+<ul>
+<li>The <strong>slope</strong> of the line reflects the sensitivity of the company’s return to market conditions. A steeper line implies that its rate of return is more responsive to the market return.</li>
+<li>The <strong>scatter of points around the line</strong> shows that market conditions are not the entire story. If returns perfectly tracked those of the market, all return pairs would lie exactly on the line. The scatter is evidence that <strong>firm-specific events</strong> also have a significant impact on the stock return.</li>
+</ul>
+</section>
+<section id="the-index-model-equation" class="level2">
+<h2 class="anchored" data-anchor-id="the-index-model-equation">The index model equation</h2>
+<p>We use <span class="math inline">\(R_i\)</span> to denote an <strong>excess return</strong>, so the market index <span class="math inline">\(M\)</span> has an excess return of <span class="math inline">\(R_M = r_M - r_f\)</span>, and (using U.S. Steel’s ticker symbol, <span class="math inline">\(X\)</span>) the company’s excess return is <span class="math inline">\(R_X = r_X - r_f\)</span>. We estimate the line using a <strong>single-variable linear regression</strong>: regress U.S. Steel’s excess return on the excess return of the index, <span class="math inline">\(R_M\)</span>. More generally, for any stock <span class="math inline">\(i\)</span>, with <span class="math inline">\(R_i(t)\)</span> the excess return in month <span class="math inline">\(t\)</span> and <span class="math inline">\(R_M(t)\)</span> the market index excess return, the index model is the following regression equation:</p>
+<p><strong>Equation 6.11 - The index model</strong></p>
+<p><span class="math display">\[R_i(t) = \alpha_i + \beta_i R_M(t) + e_i(t)\]</span></p>
+<ul>
+<li><strong>Alpha (<span class="math inline">\(\alpha_i\)</span>)</strong> - the intercept. It is the security’s expected excess return when the market excess return is zero (the vertical intercept in Figure 6.12). It can also be thought of as the expected excess return on the stock beyond the return that can be attributed to the performance of the broad stock market.</li>
+<li><strong>Beta (<span class="math inline">\(\beta_i\)</span>)</strong> - the slope (the security’s beta coefficient). It is the amount by which the security return tends to increase or decrease for every 1% increase or decrease in the return on the index, and therefore measures the security’s sensitivity to marketwide economic shocks. <strong>Beta is a natural measure of systematic risk.</strong></li>
+<li><strong>Residual (<span class="math inline">\(e_i(t)\)</span>)</strong> - the zero-mean, firm-specific surprise in the security return in month <span class="math inline">\(t\)</span>. The greater the residuals (positive or negative), the wider the scatter of returns around the line. This scatter reflects the impact of <strong>firm-specific, or residual, risk</strong>. Both residual risk and systematic risk contribute to the total volatility of returns.</li>
+</ul>
+<p><em>Why excess returns?</em> We use excess returns rather than total returns in both Equation 6.11 and Figure 6.12 because we treat risk-free T-bills as an alternative parking place for the investor’s funds. You will be happy to have moved funds from the risk-free asset to a risky alternative only if the <em>excess</em> return turns out to be positive. Nevertheless, practitioners often use a “modified” index model that uses total rather than excess returns, most commonly with daily data, where the daily rate of return on bills (about 0.01% per day) makes total and excess returns almost indistinguishable.</p>
+<p>For U.S. Steel, the estimated regression is:</p>
+<p><strong>Equation 6.12 - U.S. Steel’s security characteristic line (SCL)</strong></p>
+<p><span class="math display">\[R_X(t) = -0.33 + 2.0805\,R_M(t) + e_i(t)\]</span></p>
+<p>This regression line “best fits” the data in the scatter diagram, and is called U.S. Steel’s <strong>security characteristic line (SCL)</strong>. It tells us that, on average, the company stock rose an additional <strong>2.0805%</strong> for every additional 1% return in the stock market index. The average value of the residual is zero, but the intercept is negative, so in a month when the market was “flat” (excess return of zero), U.S. Steel’s excess return would be predicted to be <strong>−0.33%</strong>.</p>
+</section>
+<section id="why-investors-care-about-alpha" class="level2">
+<h2 class="anchored" data-anchor-id="why-investors-care-about-alpha">Why investors care about alpha</h2>
+<p>Investors naturally are attracted to stocks with <strong>positive alphas</strong>, as positive values imply higher average excess returns (risk premiums) without the “cost” of any additional exposure to market risk. For example, <span class="math inline">\(\alpha\)</span> may be large if you think a security is underpriced and therefore offers an attractive expected return. The next chapter shows that when security prices are in equilibrium, such attractive opportunities ought to be competed away, in which case <span class="math inline">\(\alpha\)</span> will be driven to zero. But for now, assume that security analysts come up with their own estimates of alpha. If managers believe they can do a superior job of security analysis, they will be confident in their ability to find stocks with nonzero alphas.</p>
+</section>
+<section id="beta-of-the-market-and-average-beta" class="level2">
+<h2 class="anchored" data-anchor-id="beta-of-the-market-and-average-beta">Beta of the market and average beta</h2>
+<p>There is little “theory” in the index model so far; it is merely a way to <em>describe</em> the typical relation between market returns and returns on particular firms.</p>
+<ul>
+<li>The average beta of all stocks in the economy is 1; the average response of a stock to changes in a market index composed of all stocks must be 1-for-1. (Footnote 6: only the <em>weighted</em> average of betas, using market values as weights, will be 1, because the market index is value-weighted. The simple average of betas of individual securities against a value-weighted index such as the S&amp;P 500 will be greater than 1, pushed up by the general tendency of smaller firms to have higher betas.)</li>
+<li>The beta of the market index is, by definition, <strong>1</strong>.</li>
+<li><strong>Cyclical</strong> or <strong>aggressive</strong> stocks have higher-than-average sensitivity to the broad economy and betas <strong>greater than 1</strong>.</li>
+<li><strong>Defensive</strong> stocks have betas <strong>less than 1</strong>; their returns respond less than 1-for-1 to market returns.</li>
+</ul>
+<p>While the index model is mostly descriptive, it helps address two important theoretical questions: (1) What relation might we expect between a stock’s beta and its expected return? and (2) What value for alpha should we expect to observe when markets are in equilibrium? The text takes these up in the next chapter.</p>
+</section>
+<section id="the-three-components-of-excess-return" class="level2">
+<h2 class="anchored" data-anchor-id="the-three-components-of-excess-return">The three components of excess return</h2>
+<p>The index model separates the realized rate of return on a security into <strong>macro (systematic)</strong> and <strong>micro (firm-specific)</strong> components. The excess rate of return on each security is the sum of three components:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 73%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Symbol</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. The component of excess return due to movements in the overall market (as represented by the index <span class="math inline">\(R_M\)</span>); <span class="math inline">\(\beta_i\)</span> is the security’s responsiveness to the market</td>
+<td><span class="math inline">\(\beta_i R_M\)</span></td>
+</tr>
+<tr class="even">
+<td>2. The component attributable to unexpected events that are relevant only to this security (firm-specific)</td>
+<td><span class="math inline">\(e_i\)</span></td>
+</tr>
+<tr class="odd">
+<td>3. The stock’s expected excess return if the market factor is neutral, that is, if the market index excess return is zero</td>
+<td><span class="math inline">\(\alpha_i\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Because the firm-specific component of the stock return is uncorrelated with the market return, the variance of the excess return of the stock can be written as:</p>
+<p><strong>Equation 6.13 - Decomposition of variance</strong></p>
+<p><span class="math display">\[\begin{aligned}
+\text{Variance}(R_i) &amp;= \text{Variance}(\alpha_i + \beta_i R_M + e_i) \\
+&amp;= \text{Variance}(\beta_i R_M) + \text{Variance}(e_i) \\
+&amp;= \beta_i^2 \sigma_M^2 + \sigma^2(e_i) \\
+&amp;= \text{Systematic risk} + \text{Firm-specific risk}
+\end{aligned}\]</span></p>
+<p>(Footnote 7: the covariance between <span class="math inline">\(R_M\)</span> and <span class="math inline">\(e\)</span> is zero. Also, because <span class="math inline">\(\alpha_i\)</span> is not random, it has no bearing on the variance of <span class="math inline">\(R_i\)</span>.)</p>
+<p>Therefore, the total variance of the rate of return of each security is a sum of two components:</p>
+<ol type="1">
+<li><strong>The variance attributable to the uncertainty of the entire market.</strong> This depends on both the variance of <span class="math inline">\(R_M\)</span>, denoted <span class="math inline">\(\sigma_M^2\)</span>, <em>and</em> the beta of the stock.</li>
+<li><strong>The variance of the firm-specific return, <span class="math inline">\(e_i\)</span>,</strong> which is independent of market performance.</li>
+</ol>
+</section>
+<section id="statistical-interpretation-of-the-single-index-model" class="level2">
+<h2 class="anchored" data-anchor-id="statistical-interpretation-of-the-single-index-model">6.5.1 Statistical Interpretation of the Single-Index Model</h2>
+<p>Equation 6.11 may be interpreted as a <strong>single-variable regression equation</strong> of <span class="math inline">\(R_i\)</span> on the market excess return <span class="math inline">\(R_M\)</span>:</p>
+<ul>
+<li>The excess return on the security (<span class="math inline">\(R_i\)</span>) is the <strong>dependent variable</strong> to be explained by the regression.</li>
+<li>The <strong>intercept</strong> is <span class="math inline">\(\alpha_i\)</span>.</li>
+<li>The <strong>regression (slope) coefficient</strong> is <span class="math inline">\(\beta_i\)</span>, multiplying the <strong>independent (explanatory) variable</strong> <span class="math inline">\(R_M\)</span>.</li>
+<li>The <strong>residual</strong> (unexplained) return is <span class="math inline">\(e_i\)</span>.</li>
+</ul>
+<p>However, the regression line does not represent <em>actual</em> returns; points on the scatter diagram almost never lie exactly on the line. Rather, the line represents <strong>average tendencies</strong>: it shows the <em>expectation</em> of U.S. Steel’s excess return, <span class="math inline">\(R_X\)</span>, given the market’s excess return, <span class="math inline">\(R_M\)</span>.</p>
+<p><strong>Equation 6.14 - The regression line</strong></p>
+<p><span class="math display">\[E(R_X \mid R_M) = \alpha_X + \beta_X R_M\]</span></p>
+<p>This reads: the expectation of <span class="math inline">\(R_X\)</span> given a value of <span class="math inline">\(R_M\)</span> equals the intercept plus the slope coefficient times the value of <span class="math inline">\(R_M\)</span>.</p>
+<p><strong>Worked example (June 2019).</strong> When the market excess return was 6.93%, we would have predicted U.S. Steel’s excess return to be <span class="math inline">\(-0.33\% + 2.0805 \times 6.93\% = 14.09\%\)</span>. In fact, its actual excess return was 29.92%, resulting in a large positive <strong>residual of 15.83%</strong>, as shown in Figure 6.12. The firm must have had very good firm-specific news in that month.</p>
+<section id="r-square" class="level3">
+<h3 class="anchored" data-anchor-id="r-square">R-square</h3>
+<p>The dispersion of the scatter of actual returns about the regression line is measured by the variance of the residuals, <span class="math inline">\(\sigma^2(e)\)</span>. The magnitude of this firm-specific risk varies across securities. One way to measure the relative importance of systematic risk is the ratio of systematic variance to total variance, called the <strong>R-square</strong> of the regression line (the PowerPoint denotes this ratio <span class="math inline">\(\rho^2\)</span>):</p>
+<p><strong>Equation 6.15</strong></p>
+<p><span class="math display">\[R\text{-square} = \frac{\text{Systematic (or explained) variance}}{\text{Total variance}} = \frac{\beta_X^2 \sigma_M^2}{\sigma_X^2} = \frac{\beta_X^2 \sigma_M^2}{\beta_X^2 \sigma_M^2 + \sigma^2(e_X)}\]</span></p>
+<ul>
+<li>R-square is the proportion of total variance that can be attributed to market fluctuations. When residual variance is lower, R-square is higher.</li>
+<li>In the limit, if <span class="math inline">\(\sigma^2(e)\)</span> were zero, R-square would be 1.0: with no firm-specific risk at all, the market index excess return would fully explain the excess return on the stock.</li>
+<li>In general, the R-square is the <strong>square of the correlation coefficient</strong> between the market and stock returns.</li>
+<li>If beta is <em>negative</em>, when the market goes up the stock is more likely to go down (a negative correlation). Nevertheless, knowing the market return conveys information about the stock’s return, so the R-square is still above zero.</li>
+<li>At either extreme, for a correlation coefficient of 1 or −1, the return on the security is fully determined by the return on the market index, R-square is 1, and all points of the scatter diagram lie exactly on the line of best fit.</li>
+</ul>
+<p><strong>Interpretation.</strong> A <strong>high R-square</strong> (equivalently, a correlation coefficient with high absolute value) tells us that <strong>systematic factors dominate firm-specific factors</strong> in determining the return on the stock. <strong>Low R-squares</strong> imply that the market plays a relatively unimportant part in explaining the variance of the stock’s return; in this case, <strong>firm-specific factors dominate</strong>.</p>
+</section>
+<section id="various-scatter-diagrams-figure-6.13" class="level3">
+<h3 class="anchored" data-anchor-id="various-scatter-diagrams-figure-6.13">Various scatter diagrams (Figure 6.13)</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch06/Fig6_13_Various_Scatter_Diagrams.png" class="img-fluid figure-img" style="width:85.0%"></p>
+<figcaption>Figure 6.13: Various scatter diagrams</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Concept Check 6.6">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Concept Check 6.6
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Interpret the eight scatter diagrams of Figure 6.13 in terms of systematic risk, diversifiable risk, and the intercept.</p>
+<p><strong>Solution (as printed in the text):</strong></p>
+<ol type="a">
+<li><strong>Beta</strong> (the slope coefficient of the security on the factor): Securities <span class="math inline">\(R_1\)</span>-<span class="math inline">\(R_6\)</span> have a positive beta. These securities move, on average, in the same direction as the market (<span class="math inline">\(R_M\)</span>). <span class="math inline">\(R_1\)</span>, <span class="math inline">\(R_2\)</span>, <span class="math inline">\(R_6\)</span> have large betas, so they are “aggressive” in that they carry more systematic risk than <span class="math inline">\(R_3\)</span>, <span class="math inline">\(R_4\)</span>, <span class="math inline">\(R_5\)</span>, which are “defensive.” <span class="math inline">\(R_7\)</span> and <span class="math inline">\(R_8\)</span> have a negative beta; these are <strong>hedge assets</strong> that carry negative systematic risk.</li>
+<li><strong>Intercept</strong> (the expected excess return when the market is neutral): <span class="math inline">\(R_1\)</span>, <span class="math inline">\(R_4\)</span>, <span class="math inline">\(R_8\)</span> have a positive intercept, while <span class="math inline">\(R_2\)</span>, <span class="math inline">\(R_3\)</span>, <span class="math inline">\(R_5\)</span>, <span class="math inline">\(R_6\)</span>, <span class="math inline">\(R_7\)</span> have negative intercepts. To the extent that one believes these intercepts will persist, a positive value is preferred.</li>
+<li><strong>Residual variance</strong> (the nonsystematic risk): <span class="math inline">\(R_2\)</span>, <span class="math inline">\(R_3\)</span>, <span class="math inline">\(R_7\)</span> have a relatively low residual variance. With sufficient diversification, residual risk eventually will be eliminated, and, hence, the difference in the residual variance is of little economic concern.</li>
+<li><strong>Total variance</strong> (the sum of systematic and nonsystematic risk): <span class="math inline">\(R_3\)</span> has a low beta and low residual variance, so its total variance will be low. <span class="math inline">\(R_1\)</span>, <span class="math inline">\(R_6\)</span> have high betas and high residual variance, so their total variance will be high. But <span class="math inline">\(R_4\)</span> has a low beta and high residual variance, while <span class="math inline">\(R_2\)</span> has a high beta with a low residual variance. In sum, <strong>total variance often will misrepresent systematic risk, which is the part that matters.</strong></li>
+</ol>
+</div>
+</div>
+</section>
+<section id="diversification-in-a-single-index-market-powerpoint" class="level3">
+<h3 class="anchored" data-anchor-id="diversification-in-a-single-index-market-powerpoint">Diversification in a single-index market (PowerPoint)</h3>
+<p>The PowerPoint adds how diversification works within the single-index framework. In a portfolio of <span class="math inline">\(n\)</span> securities with weights <span class="math inline">\(w_i\)</span> (where <span class="math inline">\(\sum w_i = 1\)</span>), each security has nonsystematic risk <span class="math inline">\(\sigma^2_{e_i}\)</span>. The nonsystematic portion of the portfolio return and the portfolio’s nonsystematic variance are:</p>
+<p><span class="math display">\[e_P = \sum_{i=1}^{n} w_i e_i \qquad\qquad \sigma^2_{e_P} = \sum_{i=1}^{n} w_i^2 \sigma^2_{e_i}\]</span></p>
+</section>
+</section>
+<section id="learning-from-the-index-model" class="level2">
+<h2 class="anchored" data-anchor-id="learning-from-the-index-model">6.5.2 Learning from the Index Model</h2>
+<p>Example 6.3 illustrates how to use a spreadsheet to estimate the single-index model from historical data.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Example 6.3 - Estimating the Index Model Using Historical Data">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Example 6.3 - Estimating the Index Model Using Historical Data
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The spreadsheet sets up a regression analysis to estimate the parameters of the index model regression. Twelve months of hypothetical returns for two stocks (ABC and XYZ) and the market index are entered, along with the risk-free rate, and excess rates of return are calculated in columns G through I. Then, in Excel, go to the <strong>Data</strong> tab, click <strong>Data Analysis</strong>, and choose the <strong>Regression</strong> tool. The tool asks for the range for the left-hand side variable (the Y range), the right-hand side variable (the X range), and the location for the regression output. For stock ABC, the Y range is H4:H15 and the X range is G4:G15.</p>
+<p>The regression output includes <strong>R-square</strong> (cell D22), the <strong>standard deviation of the regression residuals</strong> (called <em>standard error</em>, cell D24), the estimated <strong>alpha</strong> and <strong>beta</strong> (cells D29 and D30), and measures of the precision of those estimates (standard error of the coefficients, t-statistic, and p-value).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch06/Example6_3_Index_Model_Spreadsheet.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>Example 6.3: Spreadsheet and regression output for stock ABC</figcaption>
+</figure>
+</div>
+<p><strong>ABC has low systematic risk, with a beta of only 0.525.</strong> Its R-square is 0.252, indicating that only 25.2% of the variance in its returns was driven by movements in the market index. (Alpha is 0.34%.)</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Concept Check 6.7">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Concept Check 6.7
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li>What is the regression line of XYZ in Example 6.3?</li>
+<li>Does ABC or XYZ have greater systematic risk?</li>
+<li>What proportion of the variance of XYZ is firm-specific risk?</li>
+</ol>
+<p><strong>Solution (as printed in the text):</strong></p>
+<ol type="a">
+<li>To obtain the characteristic line of XYZ, continue the spreadsheet of Example 6.3 and run a regression of the excess return of XYZ on the excess return of the market-index fund. The regression output shows a slope coefficient of 0.992 and an intercept of 0.83%; hence, the characteristic line is <span class="math inline">\(R_{XYZ} = 0.83 + 0.992\,R_{Market}\)</span>.</li>
+<li>The beta of ABC is 0.525, less than XYZ’s 0.992, implying that <strong>ABC has less systematic risk</strong>.</li>
+<li>The regression of XYZ on the market index shows an R-square of 0.845. Hence, the proportion of variance that is firm-specific (nonsystematic) is 0.155, or <strong>15.5%</strong>.</li>
+</ol>
+</div>
+</div>
+<section id="regressions-for-well-known-companies-table-6.2" class="level3">
+<h3 class="anchored" data-anchor-id="regressions-for-well-known-companies-table-6.2">Regressions for well-known companies (Table 6.2)</h3>
+<p>In Example 6.3, index model regressions were estimated in Excel by collecting a sample of monthly observations of excess returns on each firm and the market index, then fitting the “best” straight line through the scatter. The slope is the estimate of the firm’s beta; the intercept is its alpha; and the scatter of residuals around the line reflects the standard deviation of the firm-specific (residual) risk. Table 6.2 shows index model regressions for a sample of well-known companies.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch06/Table6_2_Index_Model_Estimates.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>Table 6.2: Index model estimates: Regressions of excess stock returns on the excess return of the broad market index over 60 months, 2018-2022</figcaption>
+</figure>
+</div>
+<p>What the table shows:</p>
+<ul>
+<li><strong>Betas.</strong> The average beta of the firms is <strong>1.03</strong>, almost identical to the expected value of 1.0, so the model seems to provide reasonable estimates of systematic risk. Firms with high exposure to the state of the macroeconomy (e.g., U.S. Steel, Marathon Oil, and Boeing) have betas greater than 1. Firms whose business is less sensitive to the macroeconomy (e.g., Newmont Mining, Campbell Soup, and Coca-Cola) have betas less than 1. In almost all cases, the regression beta is far greater than twice its standard error, so the <em>t</em>-statistic for beta is far above 2 and we can easily reject the hypothesis that the true beta is zero: there is strong evidence that returns on these stocks are driven in part by the performance of the broad market.</li>
+<li><strong>Alphas.</strong> Alpha for this sample ranged from −0.9% per month to 1.3% per month, but the average alpha was close to zero. Because this nonmarket risk premium was about zero, these firms, on average, were neither underpriced nor overpriced. Some did better than expected at the beginning of the period and others did worse, but there was no obvious systematic tendency to out- or underperform initial expectations. Moreover, the alpha estimates were generally small compared to the statistical uncertainty surrounding their true values: in only one firm was the estimate of alpha more than twice its standard error. The alpha estimates, by and large, are <strong>not statistically significant</strong>, and one generally could not reject the hypothesis that the true values were zero.</li>
+<li><strong>Firm-specific risk.</strong> The <em>Residual Standard Deviation</em> column measures firm-specific risk, and it is high, <strong>averaging 7.5% per month</strong>. Anyone who concentrates a portfolio in just one or a few securities bears an enormous amount of volatility that can easily be diversified.</li>
+<li><strong>R-square.</strong> On average, only <strong>38.3%</strong> of return variance is due to the market, implying that <strong>62.7%</strong> is due to firm-specific factors. Diversified portfolios will have far lower residual standard deviations and far higher R-squares (a point the text returns to in the next chapter).</li>
+</ul>
+</section>
+<section id="excel-applications-estimating-the-index-model" class="level3">
+<h3 class="anchored" data-anchor-id="excel-applications-estimating-the-index-model">Excel Applications: Estimating the Index Model</h3>
+<p>The chapter’s Excel Applications box provides a spreadsheet of monthly returns for three stocks (Ford, Walmart, and Bank of America), the market index, and the T-bill rate over the three-year period 2007-2009, which spans the financial crisis. It poses two questions: (1) What were the betas of each of these firms? (2) In light of each firm’s exposure to the financial crisis, do the relative sizes of the betas make intuitive sense?</p>
+</section>
+<section id="predicting-betas" class="level3">
+<h3 class="anchored" data-anchor-id="predicting-betas">Predicting betas</h3>
+<p>As an empirical rule, betas exhibit a statistical property called <strong>mean reversion</strong>: high-<span class="math inline">\(\beta\)</span> securities (<span class="math inline">\(\beta &gt; 1\)</span>) tend to exhibit a lower <span class="math inline">\(\beta\)</span> in the future, while low-<span class="math inline">\(\beta\)</span> securities (<span class="math inline">\(\beta &lt; 1\)</span>) exhibit a higher <span class="math inline">\(\beta\)</span> in future periods. Researchers who desire predictions of future betas often adjust beta estimates from historical data to account for regression toward 1.</p>
+<p>A simple way to account for mean reversion is to forecast beta as a weighted average of the sample estimate and the average beta, which must be 1. A common back-of-the-envelope weighting scheme is <strong>⅔ on the sample estimate and ⅓ on the value 1</strong>. For example, if past data yield a beta estimate of 0.65:</p>
+<p><span class="math display">\[\text{Adjusted beta} = \tfrac{2}{3} \times 0.65 + \tfrac{1}{3} \times 1 = 0.77\]</span></p>
+<p>The final forecast of beta is closer to 1 than the sample estimate. The last column of Table 6.2 shows the adjusted beta for each firm.</p>
+<p>A more sophisticated adjustment would base the weight on the sample beta’s statistical quality (a more precise estimate would get a higher weight). However, statistical estimates of beta from past data are generally <strong>not precise</strong> because there is a lot of “noise” in the data due to firm-specific events. The problem is less severe with portfolios because diversification reduces firm-specific variance. Longer time series of returns are not a solution because <strong>betas change over time</strong> and old data can provide a misleading guide to current betas.</p>
+</section>
+</section>
+<section id="using-security-analysis-with-the-index-model" class="level2">
+<h2 class="anchored" data-anchor-id="using-security-analysis-with-the-index-model">6.5.3 Using Security Analysis with the Index Model</h2>
+<p>Imagine that you are a portfolio manager in charge of the endowment of a small charity. Absent the resources to engage in security analysis, you would choose a <strong>passive portfolio</strong> comprising an index fund and T-bills. Denote the index portfolio as <span class="math inline">\(M\)</span>. You estimate its standard deviation as <span class="math inline">\(\sigma_M\)</span> and acquire a forecast of its risk premium as <span class="math inline">\(R_M\)</span>. Now suppose you have the resources to perform fundamental analysis on <strong>just one stock, say Google</strong>. You forecast Google’s risk premium as <span class="math inline">\(R_G\)</span> and estimate its beta (<span class="math inline">\(\beta_G\)</span>) and residual SD, <span class="math inline">\(\sigma(e_G)\)</span>. How should you proceed?</p>
+<p><strong>Treynor and Black (1973)</strong> proposed an elegant solution using estimates from the index model. The investor is viewed as mixing <strong>two risky securities</strong>: the passive index, <span class="math inline">\(M\)</span>, and the single analyzed stock, Google. The goal is to find the mix that yields the <strong>highest possible Sharpe ratio</strong>. Equation 6.10 already gives an expression for the optimal weights, but the index model allows a simpler one.</p>
+<p>Your forecast of <span class="math inline">\(R_G\)</span> implies that Google’s alpha is <span class="math inline">\(\alpha_G = R_G - \beta_G R_M\)</span>. Two key statistics, <span class="math inline">\(\alpha_G/\sigma^2(e_G)\)</span> and <span class="math inline">\(R_M/\sigma_M^2\)</span>, are used to find the position of Google in the optimal risky portfolio in two steps.</p>
+<p><strong>Step 1.</strong></p>
+<p><strong>Equation 6.16</strong></p>
+<p><span class="math display">\[w_G^0 = \frac{\alpha_G/\sigma^2(e_G)}{R_M/\sigma_M^2}\]</span></p>
+<p><strong>Step 2</strong> - adjust the value from Equation 6.16 for the beta of Google:</p>
+<p><strong>Equation 6.17</strong></p>
+<p><span class="math display">\[w_G^* = \frac{w_G^0}{1 + w_G^0(1 - \beta_G)}; \qquad w_M^* = 1 - w_G^*\]</span></p>
+<p>The Sharpe ratio of this portfolio (<span class="math inline">\(S_O\)</span>) exceeds that of the passive portfolio <span class="math inline">\(M\)</span> (<span class="math inline">\(S_M\)</span>) according to:</p>
+<p><strong>Equation 6.18</strong></p>
+<p><span class="math display">\[S_O^2 - S_M^2 = \left[\frac{\alpha_G}{\sigma(e_G)}\right]^2\]</span></p>
+<section id="interpreting-the-results" class="level3">
+<h3 class="anchored" data-anchor-id="interpreting-the-results">Interpreting the results</h3>
+<ul>
+<li><strong>Equation 6.16</strong> says the optimal position in Google entails a <strong>trade-off between alpha and potentially diversifiable risk</strong>. If Google seems underpriced, offering a positive alpha, it becomes attractive to add it. But by concentrating the portfolio in Google, the investor incurs a higher-than-necessary level of otherwise diversifiable risk. The higher the ratio of alpha to residual risk, the more Google the investor will be willing to hold.</li>
+<li><strong>Equation 6.18</strong> says the improvement to the risky portfolio’s Sharpe ratio compared to the purely passive market index portfolio is a function of the ratio <span class="math inline">\(\alpha_G/\sigma(e_G)\)</span>, which is called Google’s <strong>information ratio</strong>. (Footnote 8: some writers define the information ratio as excess return per unit of nonsystematic standard deviation and use <em>appraisal ratio</em> for the ratio of alpha to nonsystematic risk. The text consistently defines the information ratio as the ratio of alpha to the standard deviation of residual returns, but usage varies.)</li>
+</ul>
+</section>
+<section id="more-than-one-analyzed-stock-the-active-portfolio" class="level3">
+<h3 class="anchored" data-anchor-id="more-than-one-analyzed-stock-the-active-portfolio">More than one analyzed stock: the active portfolio</h3>
+<p>The value of the Treynor-Black model can be dramatic when you analyze <strong>more than one stock</strong>. The diversifiable risk of the active portfolio falls as it comprises more securities, thus improving its information ratio and allowing investors to comfortably assume greater exposure to it. In the previous example, Google alone comprises the entire <strong>active portfolio</strong>. If you analyze several stocks, a portfolio of these stocks makes up your active portfolio, which is then mixed with the passive index. You use the alpha, beta, and residual SD of the <em>active portfolio</em> in Equations 6.16, 6.17, and 6.18 to obtain the weights of the optimal portfolio, <span class="math inline">\(O\)</span>, and its Sharpe ratio. The only remaining task is to determine the exact composition of the active portfolio, as well as its alpha, beta, and residual standard deviation.</p>
+<p>Suppose that, in addition to analyzing Google, you analyze Digital’s stock (<span class="math inline">\(D\)</span>) and estimate its alpha, beta, and residual variance. The sum of the alpha-to-residual-variance ratios over all stocks in the active portfolio is:</p>
+<p><strong>Equation 6.19</strong></p>
+<p><span class="math display">\[\sum_i \alpha_i/\sigma^2(e_i) = \alpha_G/\sigma^2(e_G) + \alpha_D/\sigma^2(e_D)\]</span></p>
+<p>Treynor and Black showed that the optimal weights of Google and Digital in the active portfolio, <span class="math inline">\(A\)</span>, are:</p>
+<p><strong>Equation 6.20</strong></p>
+<p><span class="math display">\[w_{GA} = \frac{\alpha_G/\sigma^2(e_G)}{\sum_i \alpha_i/\sigma^2(e_i)}; \qquad w_{DA} = \frac{\alpha_D/\sigma^2(e_D)}{\sum_i \alpha_i/\sigma^2(e_i)}\]</span></p>
+<p>Again the active portfolio entails <strong>two offsetting considerations</strong>: a stock with a higher alpha calls for a high weight to take advantage of its attractive expected return, but a high residual variance leads us to temper the position to avoid bearing firm-specific risk.</p>
+<p>The alpha and beta of the active portfolio are weighted averages of each component stock’s alpha and beta, and the residual variance is the weighted sum of each stock’s residual variance, using the <em>squared</em> portfolio weights:</p>
+<p><strong>Equation 6.21</strong></p>
+<!-- Note: the printed Equation 6.21 uses the subscripts GA and DA on the alphas/betas (alpha_GA, beta_GA, etc.); here they are written as each stock's own alpha and beta (alpha_G, alpha_D, beta_G, beta_D), consistent with the sentence in the text and Table 6.3. Flag for instructor review. -->
+<p><span class="math display">\[\alpha_A = w_{GA}\alpha_G + w_{DA}\alpha_D; \qquad \beta_A = w_{GA}\beta_G + w_{DA}\beta_D\]</span></p>
+<p><span class="math display">\[\sigma^2(e_A) = w_{GA}^2\sigma^2(e_G) + w_{DA}^2\sigma^2(e_D)\]</span></p>
+<p>Given these parameters, Equations 6.16-6.18 determine the weight of the active portfolio in the optimal portfolio and the Sharpe ratio it achieves.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Example 6.4 - The Treynor-Black Model">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Example 6.4 - The Treynor-Black Model
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Suppose your benchmark passive position is the <strong>S&amp;P 500 Index</strong>. The input list in Panel A of Table 6.3 includes the data for the passive index as well as the two stocks, Google and Digital. Both stocks have positive alpha values, so you would expect the optimal portfolio to be tilted toward these stocks. However, the tilt will be limited to avoid excessive exposure to otherwise diversifiable firm-specific risk. The optimal trade-off maximizes the Sharpe ratio, and the Treynor-Black model accomplishes this task.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch06/Table6_3_Treynor_Black.png" class="img-fluid figure-img" style="width:100.0%"></p>
+<figcaption>Table 6.3: Construction of optimal portfolios using the index model</figcaption>
+</figure>
+</div>
+<p><strong>Panel B - Google only in the active portfolio.</strong> Google has an information ratio of <span class="math inline">\(1.04/9.01 = 0.115\)</span>. This “portfolio” is combined with the passive index to form the optimal risky portfolio using Equations 6.16-6.18. The optimal portfolio achieves a <strong>Sharpe ratio of 0.20</strong>, compared with <strong>0.16</strong> for the passive index. It is invested <strong>43.64% in Google and 56.36% in the S&amp;P 500</strong>.</p>
+<p><strong>Panel C - Google and Digital in the active portfolio.</strong> The optimal weights of each stock in the active portfolio are <strong>55.53% in Google and 44.47% in Digital</strong>. This gives the active portfolio an information ratio of <strong>0.14</strong>, which improves the Sharpe ratio of the optimal portfolio to <strong>0.24</strong>. The optimal portfolio invests <strong>91.73% in the active portfolio and 8.27% in the index</strong>. This large tilt is acceptable because the residual standard deviation of the active portfolio (6.28%) is far less than that of either stock. Finally, the optimal portfolio weight in Google is <strong>50.94%</strong> and in Digital <strong>40.79%</strong>. Notice that the weight in Google is now <em>larger</em> than its weight without Digital! This, too, is a result of diversification within the active position that allows a larger tilt toward Google’s large alpha.</p>
+</div>
+</div>
+<!-- Note: the printed text of Example 6.4 says "The calculations in Table 6.2 show..."; the calculations are in Table 6.3. Flag for instructor review. -->
+<hr>
+</section>
+</section>
+</section>
+<section id="risk-pooling-risk-sharing-and-time-diversification" class="level1">
+<h1>6.6 Risk Pooling, Risk Sharing, and Time Diversification</h1>
+<p>So far, portfolio investment has been envisioned for “one period,” without saying how long that period may be. It might seem that we can take it to be of any length, so that the analysis applies equally to short-term and long-term investments. Yet many contend that investing over long periods provides <strong>“time diversification”</strong>: even though the market index may underperform bills in any particular year, the law of averages implies that, because of its positive risk premium, the market will surely outperform bills over long investment periods. Therefore, they argue, longer-horizon investors can prudently allocate higher proportions of their portfolios to the market.</p>
+<p><strong>Is this a valid argument? Not necessarily.</strong> The question brings up subtle questions about how diversification works. This section reconsiders the arguments underlying how diversification brings about risk reduction and then shows why the notion of time diversification is based on a misinterpretation of the theory of portfolio diversification.</p>
+<section id="risk-pooling-the-insurance-company" class="level2">
+<h2 class="anchored" data-anchor-id="risk-pooling-the-insurance-company">Risk pooling: the insurance company</h2>
+<p>Consider an insurance company selling many identical fire insurance policies. The payoff on any particular policy is a random amount, $<span class="math inline">\(x\)</span>, where the variance of <span class="math inline">\(x\)</span> is <span class="math inline">\(\sigma^2\)</span>. The company’s total payout equals the sum of the payout on each individual policy, <span class="math inline">\(\sum_{i=1}^{n} x_i\)</span>. One might think that if the firm sold <span class="math inline">\(n\)</span> uncorrelated policies, it would diversify away practically all risk. But this argument is not quite right.</p>
+<p>When the risk of a fire across different policyholders is uncorrelated, the variance of total payouts is just the sum of the individual policy variances (all covariance terms are zero):</p>
+<p><strong>Equation 6.22</strong></p>
+<p><span class="math display">\[\text{Var}\left(\sum_{i=1}^{n} x_i\right) = n\sigma^2\]</span></p>
+<p>In contrast, the variance of the <em>average</em> payoff across policies is:</p>
+<p><strong>Equation 6.23</strong></p>
+<p><span class="math display">\[\text{Var}\left(\frac{1}{n}\sum_{i=1}^{n} x_i\right) = \frac{1}{n^2} \times n\sigma^2 = \frac{\sigma^2}{n}\]</span></p>
+<p>The standard deviation of the average payoff is <span class="math inline">\(\sigma/\sqrt{n}\)</span>. As the firm writes more and more policies, <span class="math inline">\(n\)</span> increases and the uncertainty in the <strong>average</strong> payoff becomes progressively smaller, eventually approaching zero.</p>
+<p><strong>But is the insurance company’s profit really getting safer?</strong> A few seconds of thought should convince you that this cannot possibly be the case. How can assuming exposure to an additional uncorrelated risky policy reduce risk? That would be like saying that a gambler who returns to the roulette table for one more spin is reducing risk by diversifying across many bets. The <em>average</em> payoff per bet may become more predictable, but the <em>total amount</em> won or lost will necessarily be more uncertain. Likewise, while the variance of the average insurance policy payoff decreases with the number of policies (Equation 6.23), the variance of the <strong>total</strong> payoff actually becomes <em>more</em> uncertain (Equation 6.22).</p>
+<p>Thus, <strong>risk pooling</strong> (pooling together many independent sources of risk) is only part of the business model of the insurance industry. An additional, essential part of the strategy is <strong>risk sharing</strong>.</p>
+</section>
+<section id="risk-sharing" class="level2">
+<h2 class="anchored" data-anchor-id="risk-sharing">Risk sharing</h2>
+<p>Suppose the insurance company sells <span class="math inline">\(n\)</span> policies. Now the firm goes public and sells shares to investors. Say there are <span class="math inline">\(n\)</span> investors, each purchasing one share so that each owns <span class="math inline">\(1/n\)</span> of the firm. As <span class="math inline">\(n\)</span> increases, each investor’s investment is unchanged: while there are more policies, that larger risk pool is dispersed across additional shareholders. With total payouts of <span class="math inline">\(\sum x_i\)</span>, the variance of each investor’s exposure is:</p>
+<p><span class="math display">\[\text{Var}\left(\frac{1}{n}\sum_{i=1}^{n} x_i\right) = \frac{1}{n^2} \times n\sigma^2 = \frac{\sigma^2}{n}\]</span></p>
+<p>which <strong>does</strong> approach zero as <span class="math inline">\(n\)</span> increases.</p>
+<p><strong>Risk sharing is the key complement to risk pooling.</strong> As more and more policies are pooled together, they are shared by ever-more investors, preventing any individual’s total risk from growing with the number of policies. As more policies are added to the insured pool, each investor’s exposure to any single policy shrinks. <strong>The law of averages does work, but you must make sure not to inadvertently scale up your bet as you “diversify” across many sources of risk.</strong></p>
+</section>
+<section id="application-to-stock-portfolios" class="level2">
+<h2 class="anchored" data-anchor-id="application-to-stock-portfolios">Application to stock portfolios</h2>
+<p>This argument is crucial for understanding diversification of stock portfolios. <strong>Diversifying a portfolio means dividing a <em>fixed</em> investment budget across many assets.</strong> Throughout the chapter, we specified a (fixed) size of investor wealth and focused only on how to apportion that wealth across different assets.</p>
+<p>If a portfolio of $100,000 exclusively invested in Microsoft is to be diversified, that fixed $100,000 must be divided between shares of Microsoft and shares of (say) Amazon as well as many other firms. An investor who currently has $100,000 invested in Microsoft would <em>not</em> reduce total risk by adding another $100,000 investment in Amazon. That would put more money at risk, just as selling more policies without spreading the exposure across more investors would increase, not decrease, the variance of insurance company returns. <strong>True diversification requires that a given investment budget be allocated across a large number of different assets, thus limiting the exposure to any one security.</strong></p>
+</section>
+<section id="time-diversification" class="level2">
+<h2 class="anchored" data-anchor-id="time-diversification">6.6.1 Time Diversification</h2>
+<p>What does this analysis imply about time diversification and the risk of long-term investments? Think about a <strong>one-year investment in a stock index as analogous to a firm that sells one insurance policy</strong>. Extending your horizon to a second year is like selling a second policy. What does this do to your risk? Your <em>average</em> return per year may be more predictable, but by putting your money at risk for an additional year, the uncertainty of your <em>cumulative</em> return surely increases. This is like an insurance company that engages in risk pooling, but not risk sharing. As it piles on more bets, risk must increase. <strong>Longer horizons alone do not reduce risk.</strong></p>
+<p>True diversification means holding fixed the total funds put at risk, and then spreading exposure across multiple sources of uncertainty. In the context of extending the time horizon, this would require that a two-year investor place only <em>half</em> as much in the stock market each year as a one-year investor. This halves the exposure to each year’s uncertain events, just as risk sharing with another investor would reduce each investor’s exposure to each policy by half.</p>
+<section id="the-fallacy-of-time-diversification-a-concrete-example" class="level3">
+<h3 class="anchored" data-anchor-id="the-fallacy-of-time-diversification-a-concrete-example">The fallacy of time diversification: a concrete example</h3>
+<p>Assume that:</p>
+<ul>
+<li>Market returns are <strong>independent from year to year</strong>, with a <strong>mean annual return of 5%</strong> and a <strong>standard deviation of 30%</strong>.</li>
+<li>The <strong>risk-free rate is zero</strong>, so the question of whether stocks outperform bills is equivalent to whether the stock return is positive.</li>
+<li>Returns are <strong>continuously compounded</strong>, so the total (cumulative) return after <span class="math inline">\(n\)</span> years is just the sum of the year-by-year continuously compounded returns.</li>
+</ul>
+<p>Then the variance of the cumulative return is <span class="math inline">\(n\)</span> times the annual variance, and the standard deviation is <span class="math inline">\(\sqrt{n}\)</span> times the one-year standard deviation. On the other hand, the standard deviation of the <em>average</em> return is <span class="math inline">\(1/\sqrt{n}\)</span> times the one-year standard deviation. These are effectively the same relations found in Equations 6.22 and 6.23.</p>
+<p>The PowerPoint frames this as “Why the Unending Confusion?”: the vast majority of financial advisers believe stocks are less risky if held for the long run. Over a horizon of <span class="math inline">\(T\)</span> years, the <strong>risk premium grows at the rate of the horizon, <span class="math inline">\(T\)</span></strong>; the <strong>standard deviation grows at <span class="math inline">\(\sqrt{T}\)</span></strong>; and the <strong>Sharpe ratio, <span class="math inline">\(S_1\sqrt{T}\)</span>, grows with the investment horizon</strong> (where <span class="math inline">\(S_1\)</span> is the one-year Sharpe ratio).</p>
+</section>
+<section id="table-6.4---investment-risk-for-different-horizons" class="level3">
+<h3 class="anchored" data-anchor-id="table-6.4---investment-risk-for-different-horizons">Table 6.4 - Investment risk for different horizons</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 37%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Investment Horizon (years)</th>
+<th>1</th>
+<th>10</th>
+<th>30</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Mean of average return</td>
+<td>0.050</td>
+<td>0.050</td>
+<td>0.050</td>
+<td>= 0.05</td>
+</tr>
+<tr class="even">
+<td>2. Mean of total return</td>
+<td>0.050</td>
+<td>0.500</td>
+<td>1.500</td>
+<td>= 0.05*T</td>
+</tr>
+<tr class="odd">
+<td>3. Std Dev of total return</td>
+<td>0.300</td>
+<td>0.949</td>
+<td>1.643</td>
+<td>= 0.30<span class="math inline">\(\sqrt{T}\)</span></td>
+</tr>
+<tr class="even">
+<td>4. Std Dev of average return</td>
+<td>0.300</td>
+<td>0.095</td>
+<td>0.055</td>
+<td>= 0.30/<span class="math inline">\(\sqrt{T}\)</span></td>
+</tr>
+<tr class="odd">
+<td>5. Prob(return &gt; 0)</td>
+<td>0.566</td>
+<td>0.701</td>
+<td>0.819</td>
+<td>From normal distribution</td>
+</tr>
+<tr class="even">
+<td>6. 1% VaR total return</td>
+<td>−0.648</td>
+<td>−1.707</td>
+<td>−2.323</td>
+<td>Continuously compounded cumulative return</td>
+</tr>
+<tr class="odd">
+<td>7. Cumulative loss at 1% VaR</td>
+<td>0.477</td>
+<td>0.819</td>
+<td>0.902</td>
+<td>= 1 − exp(cumulative return from line 6)</td>
+</tr>
+<tr class="even">
+<td>8. 0.1% VaR total return</td>
+<td>−0.877</td>
+<td>−2.432</td>
+<td>−3.578</td>
+<td>Continuously compounded return</td>
+</tr>
+<tr class="odd">
+<td>9. Cumulative loss at 0.1% VaR</td>
+<td>0.584</td>
+<td>0.912</td>
+<td>0.972</td>
+<td>= 1 − exp(cumulative return from line 7)</td>
+</tr>
+</tbody>
+</table>
+<!-- Note: the printed textbook Table 6.4 shows 0.050 for line 2 at the 10-year horizon; the PowerPoint shows 0.500, which is consistent with the "= 0.05*T" comment, and is the value used above. Also, the printed comment on line 9 refers to "line 7" (the PowerPoint repeats this); the calculation appears to use line 8. Flag both for instructor review. -->
+<p><strong>Reading the table:</strong></p>
+<ul>
+<li>The mean return per year is 0.05 (line 1), so the expected total (cumulative) return is 0.05 times the time horizon (line 2).</li>
+<li>The standard deviation of <strong>cumulative</strong> returns <em>increases</em> in proportion to the square root of the investment horizon, while the standard deviation of the <strong>average</strong> return <em>falls</em> with the square root of the horizon (lines 3 and 4).</li>
+<li>Because expected return is positive while the standard deviation of the average return falls with the horizon, <strong>the probability that the average return will be positive increases as the time horizon extends</strong>. Assuming normally distributed returns, that probability can be calculated exactly (line 5), and it approaches 100% as the horizon gets ever longer. This is the essence of the argument that time diversification reduces risk.</li>
+</ul>
+<p><strong>But probabilities do not tell the entire story.</strong> We also need to ask <em>how bad performance can be</em> if it falls in the left tail of the distribution. Because the standard deviation of the total return increases with investment horizon (line 3), the magnitude of underperformance in the event of underperformance is progressively worse. For example:</p>
+<ul>
+<li>The <strong>1% VaR (value at risk)</strong> for the one-year horizon entails a loss of <strong>47.7%</strong> of invested funds.</li>
+<li>The 1% VaR at a <strong>30-year horizon</strong> is a catastrophic cumulative loss of <strong>90.2%</strong> (line 7).</li>
+<li>Performance is even more extreme for the 0.1% VaR.</li>
+</ul>
+<p><strong>Clearly, investment returns are not safer at long horizons, and time diversification is only an illusion.</strong></p>
+<hr>
+</section>
+</section>
+</section>
+<section id="chapter-summary" class="level1">
+<h1>Chapter Summary</h1>
+<ul>
+<li>The <strong>expected rate of return</strong> of a portfolio is the weighted average of the component-asset expected returns with the investment proportions as weights.</li>
+<li>The <strong>variance</strong> of a portfolio is the sum of the contributions of the component-security variances <em>plus</em> terms involving the covariance among assets.</li>
+<li>Even if correlations are positive, the portfolio standard deviation will be less than the weighted average of the component standard deviations, as long as the assets are not <em>perfectly</em> positively correlated. Thus, portfolio diversification reduces risk as long as assets are less than perfectly correlated.</li>
+<li>The contribution of an asset to portfolio variance depends on its correlation with the other assets in the portfolio as well as on its own variance. An asset that is perfectly negatively correlated with a portfolio can be used to reduce the portfolio variance to zero. Thus, it can serve as a perfect hedge.</li>
+<li>The <strong>efficient frontier</strong> shows the set of portfolios that maximizes portfolio expected return for a given level of portfolio standard deviation. Rational investors will choose a portfolio on the efficient frontier.</li>
+<li>A portfolio manager identifies the efficient frontier by first establishing estimates for the expected returns and standard deviations and determining the correlations among them. The input data are then fed into an optimization program that produces the investment proportions, expected returns, and standard deviations of the portfolios on the efficient frontier.</li>
+<li>In practice, portfolio managers will identify different efficient portfolios because of differences in the methods and quality of security analysis. Managers compete on the quality of their security analysis relative to their management fees.</li>
+<li>If a risk-free asset is available and input data are identical, all investors will choose the same portfolio on the efficient frontier, the one that is tangent to the CAL. This is the risky portfolio with the highest Sharpe ratio. All investors with identical input data will hold the identical risky portfolio, differing only in how much each allocates to this optimal portfolio versus to the risk-free asset. This result is characterized as the <strong>separation principle</strong> of portfolio selection.</li>
+<li>The <strong>single-index model</strong> expresses the excess return on a security as a function of the market excess return: <span class="math inline">\(R_i = \alpha_i + \beta_i R_M + e_i\)</span>. This equation can also be interpreted as a regression of the security excess return on the market index excess return. The regression line has intercept <span class="math inline">\(\alpha_i\)</span> and slope <span class="math inline">\(\beta_i\)</span> and is called the <strong>security characteristic line</strong>.</li>
+<li>In a single-index model, the variance of the rate of return on a security or portfolio can be decomposed into systematic and firm-specific risk. The systematic component of variance equals <span class="math inline">\(\beta^2\)</span> times the variance of the market excess return. The firm-specific component is the variance of the residual term in the index-model equation.</li>
+<li>The <strong>information ratio</strong> is the ratio of alpha to the standard deviation of firm-specific risk. Shares with higher alphas are more attractive, as they provide a higher expected return for any level of systematic risk. But tilting portfolios toward individual firms exposes the investor to higher levels of residual (firm-specific) risk that could be diversified. A share with a higher information ratio offers a better risk-return trade-off and calls for a larger weight in an active portfolio. The <strong>Treynor-Black model</strong> uses the index model to form optimal active positions.</li>
+<li><strong>Time diversification</strong> is the notion that longer time horizons provide diversification across different investment periods and therefore reduce risk. This notion is based on a misinterpretation of how diversification works. Longer horizons make cumulative investment results <em>more</em>, not less, risky.</li>
+</ul>
+<hr>
+</section>
+<section id="key-formulas" class="level1">
+<h1>Key Formulas</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 65%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Concept</th>
+<th>Formula</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Expected rate of return on a portfolio</td>
+<td><span class="math inline">\(E(r_P) = w_B E(r_B) + w_S E(r_S)\)</span></td>
+</tr>
+<tr class="even">
+<td>Variance of the return on a portfolio</td>
+<td><span class="math inline">\(\sigma_P^2 = (w_B\sigma_B)^2 + (w_S\sigma_S)^2 + 2(w_B\sigma_B)(w_S\sigma_S)\rho_{BS}\)</span></td>
+</tr>
+<tr class="odd">
+<td>Sharpe ratio of a portfolio</td>
+<td><span class="math inline">\(S_P = \dfrac{E(r_P) - r_f}{\sigma_P}\)</span></td>
+</tr>
+<tr class="even">
+<td>Portfolio weights that maximize the Sharpe ratio (two risky assets, <span class="math inline">\(B\)</span> and <span class="math inline">\(S\)</span>, and a risk-free asset)</td>
+<td><span class="math inline">\(w_B = \dfrac{[E(r_B) - r_f]\sigma_S^2 - [E(r_S) - r_f]\sigma_B\sigma_S\rho_{BS}}{[E(r_B) - r_f]\sigma_S^2 + [E(r_S) - r_f]\sigma_B^2 - [E(r_B) - r_f + E(r_S) - r_f]\sigma_B\sigma_S\rho_{BS}}\)</span>, <span class="math inline">\(\quad w_S = 1 - w_B\)</span></td>
+</tr>
+<tr class="odd">
+<td>The index-model equation</td>
+<td><span class="math inline">\(R_i = \alpha_i + \beta_i R_M + e_i\)</span></td>
+</tr>
+<tr class="even">
+<td>Decomposition of variance based on the index-model equation</td>
+<td><span class="math inline">\(\text{Var}(R_i) = \beta_i^2\sigma_M^2 + \sigma^2(e_i)\)</span></td>
+</tr>
+<tr class="odd">
+<td>Percent of security variance explained by the index return</td>
+<td><span class="math inline">\(R\text{-square} = \dfrac{\text{Systematic (or explained) variance}}{\text{Total variance}} = \dfrac{\beta_i^2\sigma_M^2}{\sigma_i^2} = \dfrac{\beta_i^2\sigma_M^2}{\beta_i^2\sigma_M^2 + \sigma^2(e_i)}\)</span></td>
+</tr>
+<tr class="even">
+<td>Optimal position in the active portfolio, <span class="math inline">\(A\)</span></td>
+<td><span class="math inline">\(w_A^* = \dfrac{w_A^0}{1 + w_A^0(1 - \beta_A)}\)</span>, <span class="math inline">\(\quad w_M^* = 1 - w_A^*\)</span>, <span class="math inline">\(\quad w_A^0 = \dfrac{\alpha_A/\sigma^2(e_A)}{R_M/\sigma_M^2}\)</span></td>
+</tr>
+<tr class="odd">
+<td>Optimal weight of a security, <span class="math inline">\(G\)</span>, in the active portfolio, <span class="math inline">\(A\)</span></td>
+<td><span class="math inline">\(w_{GA} = \dfrac{\alpha_G}{\sum_i \alpha_i/\sigma^2(e_i)}\)</span> (as printed in the Key Formulas list; see Equation 6.20 for the full form with <span class="math inline">\(\sigma^2(e_G)\)</span> in the numerator)</td>
+</tr>
+</tbody>
+</table>
+<!-- Note: the printed Key Formulas list shows the numerator of w_GA as alpha_G only (no residual variance), whereas Equation 6.20 in the chapter body shows alpha_G / sigma^2(e_G). Flag for instructor review. -->
+<hr>
+</section>
+<section id="key-terms" class="level1">
+<h1>Key Terms</h1>
+<p>The following terms are listed at the end of Chapter 6, with the definitions given in the textbook margins (page numbers in parentheses).</p>
+<p><strong>active portfolio</strong> (181)<br>
+The portfolio formed by optimally combining analyzed stocks.</p>
+<p><strong>alpha</strong> (174)<br>
+A stock’s expected excess return beyond that consistent with its beta and the market’s excess return.</p>
+<p><strong>beta</strong> (174)<br>
+The sensitivity of a security’s return to the return on the market index.</p>
+<p><strong>diversifiable risk</strong> (152)<br>
+Risk that can be eliminated by diversification. <em>(Textbook margin definition shared with unique risk, firm-specific risk, and nonsystematic risk.)</em></p>
+<p><strong>efficient frontier</strong> (167)<br>
+Graph representing a set of portfolios that maximizes expected return at each level of portfolio volatility.</p>
+<p><strong>excess return</strong> (174)<br>
+Rate of return in excess of the risk-free rate.</p>
+<p><strong>firm-specific risk</strong> (152)<br>
+Risk that can be eliminated by diversification. <em>(Shared margin definition; see also <strong>firm-specific or residual risk</strong>, p.&nbsp;174, below.)</em></p>
+<p><strong>firm-specific or residual risk</strong> (174)<br>
+Component of return variance that is independent of the market factor.</p>
+<p><strong>index model</strong> (173)<br>
+Model that relates stock returns to returns on both a broad market index and firm-specific factors.</p>
+<p><strong>information ratio</strong> (181)<br>
+Ratio of alpha to the standard deviation of the residual.</p>
+<p><strong>investment opportunity set</strong> (158)<br>
+Set of available portfolio risk-return combinations.</p>
+<p><strong>market risk</strong> (152)<br>
+Risk factors common to the whole economy. <em>(Textbook margin definition shared with systematic risk and nondiversifiable risk.)</em></p>
+<p><strong>nondiversifiable risk</strong> (152)<br>
+Risk factors common to the whole economy. <em>(Shared margin definition with market risk and systematic risk.)</em></p>
+<p><strong>nonsystematic risk</strong> (152)<br>
+Risk that can be eliminated by diversification. <em>(Shared margin definition with unique risk, firm-specific risk, and diversifiable risk.)</em></p>
+<p><strong>optimal risky portfolio</strong> (164)<br>
+The best combination of risky assets to be mixed with safe assets when forming the complete portfolio.</p>
+<p><strong>residual risk</strong> (174)<br>
+Component of return variance that is independent of the market factor. <em>(See <strong>firm-specific or residual risk</strong>.)</em></p>
+<p><strong>security characteristic line (SCL)</strong> (174)<br>
+Plot of a security’s predicted excess return given the excess return of the market.</p>
+<p><strong>separation property</strong> (170)<br>
+The property that implies portfolio choice can be separated into two independent tasks: (1) determination of the optimal risky portfolio, which is a purely technical problem, and (2) the personal choice of the best mix of the risky portfolio and the risk-free asset.</p>
+<p><strong>systematic risk</strong> (152, 174)<br>
+Risk factors common to the whole economy (p.&nbsp;152, shared with market risk and nondiversifiable risk). Also defined on p.&nbsp;174 as: The portion of risk common to the entire economy, also known as market risk or nondiversifiable risk.</p>
+<p><strong>unique risk</strong> (152)<br>
+Risk that can be eliminated by diversification. <em>(Textbook margin definition shared with firm-specific risk, nonsystematic risk, and diversifiable risk.)</em></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/clb18\.github\.io\/FIN-3440_Investments");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

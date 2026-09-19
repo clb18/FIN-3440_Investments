@@ -45,7 +45,8 @@ website:
             contents:
               - text: "Ch 5 - Risk and Return" 
                 href: Lectures/Chapter05_Lecture.qmd
-      
+              - text: "Ch 6 - Efficient Diversification" 
+                href: Lectures/Chapter06_Lecture.qmd
 format:
   html:
     code-fold: true
