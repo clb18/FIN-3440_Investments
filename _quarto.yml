@@ -41,10 +41,10 @@ website:
                 href: Lectures/Chapter03_Lecture.qmd
               - text: "Ch 4 - Mutual Funds"
                 href: Lectures/Chapter04_Lecture.qmd
-        #- section: Portfolio Theory
-          #contents:
-              #- text: 
-                #href:
+          - section: Portfolio Theory
+            contents:
+              - text: "Ch 5 - Risk and Return" 
+                href: Lectures/Chapter05_Lecture.qmd
       
 format:
   html:
