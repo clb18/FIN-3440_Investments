@@ -1,0 +1,1942 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Prof.&nbsp;Barker">
+<meta name="dcterms.date" content="2026-10-04">
+
+<title>Chapter 7 - Capital Asset Pricing and Arbitrage Pricing Theory – Investments</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a2e98a8173336b0a3fc6fb521ab0b9ac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Investments</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../syllabus.html"> 
+<span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../cv.html"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Lectures/Chapter00_Lecture.html">Lecture Notes</a></li><li class="breadcrumb-item"><a href="../Lectures/Chapter05_Lecture.html">Portfolio Theory</a></li><li class="breadcrumb-item"><a href="../Lectures/Chapter07_Lecture.html">Ch 7 - Capital Asset Pricing and Arbitrage Pricing Theory</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Lecture Notes</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/Chapter00_Lecture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ch 0 - Problems with Investment Theory</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Elements of Investments</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/Chapter01_Lecture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ch 1 - Background and Issues</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/Chapter02_Lecture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ch 2 - Asset Classes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/Chapter03_Lecture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ch 3 - How Securities Trade</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/Chapter04_Lecture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ch 4 - Mutual Funds</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Portfolio Theory</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/Chapter05_Lecture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ch 5 - Risk and Return</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/Chapter06_Lecture.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Ch 6 - Efficient Diversification</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Lectures/Chapter07_Lecture.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Ch 7 - Capital Asset Pricing and Arbitrage Pricing Theory</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="1">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
+  <ul>
+  <li><a href="#chapter-roadmap" id="toc-chapter-roadmap" class="nav-link" data-scroll-target="#chapter-roadmap">Chapter Roadmap</a></li>
+  </ul></li>
+  <li><a href="#the-capital-asset-pricing-model" id="toc-the-capital-asset-pricing-model" class="nav-link" data-scroll-target="#the-capital-asset-pricing-model">7.1 The Capital Asset Pricing Model</a>
+  <ul>
+  <li><a href="#the-model-assumptions-and-implications" id="toc-the-model-assumptions-and-implications" class="nav-link" data-scroll-target="#the-model-assumptions-and-implications">7.1.1 The Model: Assumptions and Implications</a>
+  <ul class="collapse">
+  <li><a href="#summary-of-the-equilibrium" id="toc-summary-of-the-equilibrium" class="nav-link" data-scroll-target="#summary-of-the-equilibrium">Summary of the equilibrium</a></li>
+  </ul></li>
+  <li><a href="#why-all-investors-would-hold-the-market-portfolio" id="toc-why-all-investors-would-hold-the-market-portfolio" class="nav-link" data-scroll-target="#why-all-investors-would-hold-the-market-portfolio">7.1.2 Why All Investors Would Hold the Market Portfolio</a></li>
+  <li><a href="#the-passive-strategy-is-efficient" id="toc-the-passive-strategy-is-efficient" class="nav-link" data-scroll-target="#the-passive-strategy-is-efficient">7.1.3 The Passive Strategy Is Efficient</a></li>
+  <li><a href="#the-risk-premium-of-the-market-portfolio" id="toc-the-risk-premium-of-the-market-portfolio" class="nav-link" data-scroll-target="#the-risk-premium-of-the-market-portfolio">7.1.4 The Risk Premium of the Market Portfolio</a></li>
+  <li><a href="#expected-returns-on-individual-securities" id="toc-expected-returns-on-individual-securities" class="nav-link" data-scroll-target="#expected-returns-on-individual-securities">7.1.5 Expected Returns on Individual Securities</a>
+  <ul class="collapse">
+  <li><a href="#active-portfolios-do-not-invalidate-the-capm" id="toc-active-portfolios-do-not-invalidate-the-capm" class="nav-link" data-scroll-target="#active-portfolios-do-not-invalidate-the-capm">Active portfolios do not invalidate the CAPM</a></li>
+  <li><a href="#portfolio-betas" id="toc-portfolio-betas" class="nav-link" data-scroll-target="#portfolio-betas">Portfolio betas</a></li>
+  <li><a href="#a-word-of-caution" id="toc-a-word-of-caution" class="nav-link" data-scroll-target="#a-word-of-caution">A word of caution</a></li>
+  </ul></li>
+  <li><a href="#the-security-market-line" id="toc-the-security-market-line" class="nav-link" data-scroll-target="#the-security-market-line">7.1.6 The Security Market Line</a>
+  <ul class="collapse">
+  <li><a href="#sml-versus-cml" id="toc-sml-versus-cml" class="nav-link" data-scroll-target="#sml-versus-cml">SML versus CML</a></li>
+  <li><a href="#fairly-priced-underpriced-and-overpriced-assets" id="toc-fairly-priced-underpriced-and-overpriced-assets" class="nav-link" data-scroll-target="#fairly-priced-underpriced-and-overpriced-assets">Fairly priced, underpriced, and overpriced assets</a></li>
+  </ul></li>
+  <li><a href="#applications-of-the-capm" id="toc-applications-of-the-capm" class="nav-link" data-scroll-target="#applications-of-the-capm">7.1.7 Applications of the CAPM</a></li>
+  </ul></li>
+  <li><a href="#the-capm-and-index-models" id="toc-the-capm-and-index-models" class="nav-link" data-scroll-target="#the-capm-and-index-models">7.2 The CAPM and Index Models</a>
+  <ul>
+  <li><a href="#testing-the-capms-central-prediction" id="toc-testing-the-capms-central-prediction" class="nav-link" data-scroll-target="#testing-the-capms-central-prediction">Testing the CAPM’s central prediction</a></li>
+  <li><a href="#estimating-the-index-model-and-the-scl-from-the-chapter-powerpoint" id="toc-estimating-the-index-model-and-the-scl-from-the-chapter-powerpoint" class="nav-link" data-scroll-target="#estimating-the-index-model-and-the-scl-from-the-chapter-powerpoint">Estimating the index model and the SCL (from the chapter PowerPoint)</a></li>
+  <li><a href="#a-drawback-rolls-critique" id="toc-a-drawback-rolls-critique" class="nav-link" data-scroll-target="#a-drawback-rolls-critique">A drawback: Roll’s critique</a></li>
+  <li><a href="#persistent-positive-alphas" id="toc-persistent-positive-alphas" class="nav-link" data-scroll-target="#persistent-positive-alphas">Persistent positive alphas</a></li>
+  </ul></li>
+  <li><a href="#how-well-does-the-capm-predict-risk-premiums" id="toc-how-well-does-the-capm-predict-risk-premiums" class="nav-link" data-scroll-target="#how-well-does-the-capm-predict-risk-premiums">7.3 How Well Does the CAPM Predict Risk Premiums?</a>
+  <ul>
+  <li><a href="#the-evidence" id="toc-the-evidence" class="nav-link" data-scroll-target="#the-evidence">The evidence</a></li>
+  <li><a href="#beta-is-not-dead" id="toc-beta-is-not-dead" class="nav-link" data-scroll-target="#beta-is-not-dead">Beta is not dead</a></li>
+  </ul></li>
+  <li><a href="#multifactor-models-and-the-capm" id="toc-multifactor-models-and-the-capm" class="nav-link" data-scroll-target="#multifactor-models-and-the-capm">7.4 Multifactor Models and the CAPM</a>
+  <ul>
+  <li><a href="#a-two-factor-illustration" id="toc-a-two-factor-illustration" class="nav-link" data-scroll-target="#a-two-factor-illustration">A two-factor illustration</a></li>
+  <li><a href="#which-additional-factors" id="toc-which-additional-factors" class="nav-link" data-scroll-target="#which-additional-factors">Which additional factors?</a></li>
+  <li><a href="#the-fama-french-three-factor-model" id="toc-the-fama-french-three-factor-model" class="nav-link" data-scroll-target="#the-fama-french-three-factor-model">7.4.1 The Fama-French Three-Factor Model</a></li>
+  <li><a href="#estimating-a-three-factor-sml" id="toc-estimating-a-three-factor-sml" class="nav-link" data-scroll-target="#estimating-a-three-factor-sml">7.4.2 Estimating a Three-Factor SML</a>
+  <ul class="collapse">
+  <li><a href="#using-the-three-factor-model-to-estimate-an-expected-return" id="toc-using-the-three-factor-model-to-estimate-an-expected-return" class="nav-link" data-scroll-target="#using-the-three-factor-model-to-estimate-an-expected-return">Using the three-factor model to estimate an expected return</a></li>
+  </ul></li>
+  <li><a href="#multifactor-models-and-the-validity-of-the-capm" id="toc-multifactor-models-and-the-validity-of-the-capm" class="nav-link" data-scroll-target="#multifactor-models-and-the-validity-of-the-capm">7.4.3 Multifactor Models and the Validity of the CAPM</a></li>
+  </ul></li>
+  <li><a href="#arbitrage-pricing-theory" id="toc-arbitrage-pricing-theory" class="nav-link" data-scroll-target="#arbitrage-pricing-theory">7.5 Arbitrage Pricing Theory</a>
+  <ul>
+  <li><a href="#diversification-in-a-single-index-security-market" id="toc-diversification-in-a-single-index-security-market" class="nav-link" data-scroll-target="#diversification-in-a-single-index-security-market">7.5.1 Diversification in a Single-Index Security Market</a></li>
+  <li><a href="#well-diversified-portfolios" id="toc-well-diversified-portfolios" class="nav-link" data-scroll-target="#well-diversified-portfolios">7.5.2 Well-Diversified Portfolios</a></li>
+  <li><a href="#the-security-market-line-of-the-apt" id="toc-the-security-market-line-of-the-apt" class="nav-link" data-scroll-target="#the-security-market-line-of-the-apt">7.5.3 The Security Market Line of the APT</a></li>
+  <li><a href="#individual-assets-and-the-apt" id="toc-individual-assets-and-the-apt" class="nav-link" data-scroll-target="#individual-assets-and-the-apt">7.5.4 Individual Assets and the APT</a></li>
+  <li><a href="#well-diversified-portfolios-in-practice" id="toc-well-diversified-portfolios-in-practice" class="nav-link" data-scroll-target="#well-diversified-portfolios-in-practice">7.5.5 Well-Diversified Portfolios in Practice</a></li>
+  <li><a href="#the-apt-and-the-capm" id="toc-the-apt-and-the-capm" class="nav-link" data-scroll-target="#the-apt-and-the-capm">7.5.6 The APT and the CAPM</a></li>
+  <li><a href="#multifactor-generalization-of-the-apt" id="toc-multifactor-generalization-of-the-apt" class="nav-link" data-scroll-target="#multifactor-generalization-of-the-apt">7.5.7 Multifactor Generalization of the APT</a>
+  <ul class="collapse">
+  <li><a href="#an-arbitrage-when-the-multifactor-sml-is-violated" id="toc-an-arbitrage-when-the-multifactor-sml-is-violated" class="nav-link" data-scroll-target="#an-arbitrage-when-the-multifactor-sml-is-violated">An arbitrage when the multifactor SML is violated</a></li>
+  </ul></li>
+  <li><a href="#smart-betas-and-multifactor-models" id="toc-smart-betas-and-multifactor-models" class="nav-link" data-scroll-target="#smart-betas-and-multifactor-models">7.5.8 Smart Betas and Multifactor Models</a></li>
+  </ul></li>
+  <li><a href="#chapter-summary" id="toc-chapter-summary" class="nav-link" data-scroll-target="#chapter-summary">Chapter Summary</a></li>
+  <li><a href="#key-terms" id="toc-key-terms" class="nav-link" data-scroll-target="#key-terms">Key Terms</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="Chapter07_Lecture.docx"><i class="bi bi-file-word"></i>MS Word</a></li><li><a href="Chapter07_Lecture.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Lectures/Chapter00_Lecture.html">Lecture Notes</a></li><li class="breadcrumb-item"><a href="../Lectures/Chapter05_Lecture.html">Portfolio Theory</a></li><li class="breadcrumb-item"><a href="../Lectures/Chapter07_Lecture.html">Ch 7 - Capital Asset Pricing and Arbitrage Pricing Theory</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Chapter 7 - Capital Asset Pricing and Arbitrage Pricing Theory</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Prof.&nbsp;Barker </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 4, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<!--
+SOURCES: All content is drawn only from (1) Bodie, Kane & Marcus, Essentials of Investments (2024 Release), Chapter 7,
+and (2) the publisher's Chapter 7 PowerPoint. Figures 7.1-7.4 are the publisher's PowerPoint images.
+No new charts, graphs, or code have been created.
+
+INSTRUCTOR NOTE: Table 7.2 t-statistics for the single-index model differ between the textbook and the PowerPoint
+(slide 20). Textbook: intercept -0.159, market 5.655. PowerPoint: 0.371 and 6.468. The textbook values are used below.
+-->
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p><strong>Learning Objectives</strong></p>
+<p>By the end of this chapter you should be able to:</p>
+<ul>
+<li><strong>LO 7-1:</strong> Use the implications of capital market theory to estimate security risk premiums.</li>
+<li><strong>LO 7-2:</strong> Construct and use the security market line.</li>
+<li><strong>LO 7-3:</strong> Specify and use a multifactor security market line.</li>
+<li><strong>LO 7-4:</strong> Take advantage of an arbitrage opportunity with a portfolio that includes mispriced securities.</li>
+<li><strong>LO 7-5:</strong> Use arbitrage pricing theory with more than one factor to identify mispriced securities.</li>
+</ul>
+<p>The <strong>capital asset pricing model</strong>, almost always referred to as the <strong>CAPM</strong>, is a centerpiece of modern financial economics. The model predicts the relationship we should observe between the <strong>risk of an asset</strong> and its <strong>expected return</strong>. This relationship serves two vital functions:</p>
+<ol type="1">
+<li>It provides a <strong>benchmark rate of return</strong> for evaluating possible investments. For example, a security analyst might want to know whether a stock’s expected return is more or less than its “fair” return given its risk.</li>
+<li>It helps us make an educated guess as to the <strong>expected return on assets that have not yet been traded</strong> in the marketplace. For example, how do we price an initial public offering of stock? How will a major new investment project affect the return investors require on a company’s stock?</li>
+</ol>
+<p>Although the CAPM does not fully withstand empirical tests, it is widely used because of the insight it offers. <strong>All generalizations of the model retain its central conclusion: only systematic risk will be rewarded with a risk premium.</strong> The best way to measure that systematic risk can be subtle, but all the more complex cousins of the basic CAPM can be viewed as variations on this crucial theme.</p>
+<p>The chapter also covers two extensions:</p>
+<ul>
+<li><strong>Multifactor models</strong>, which allow for multiple sources of risk and give richer descriptions of the risk-return relationship.</li>
+<li><strong>Arbitrage pricing theory (APT)</strong>, an alternative derivation of the risk-return relationship. <em>Arbitrage</em> is the exploitation of security mispricing to earn risk-free economic profits. The most basic principle of capital market theory is that prices ought to be aligned to eliminate risk-free profit opportunities. If actual prices allowed for arbitrage, the resulting trading would put strong pressure on security prices until equilibrium is restored. This <strong>no-arbitrage principle</strong> leads to a risk-return relationship like that of the CAPM, and the simple APT is easily extended to multiple sources of systematic risk.</li>
+</ul>
+<section id="chapter-roadmap" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="chapter-roadmap">Chapter Roadmap</h2>
+<ol type="1">
+<li><strong>7.1 The Capital Asset Pricing Model</strong> - assumptions, the market portfolio, the security market line, and applications</li>
+<li><strong>7.2 The CAPM and Index Models</strong> - how to put the CAPM to an empirical test</li>
+<li><strong>7.3 How Well Does the CAPM Predict Risk Premiums?</strong> - the evidence and its limits</li>
+<li><strong>7.4 Multifactor Models and the CAPM</strong> - including the Fama-French three-factor model</li>
+<li><strong>7.5 Arbitrage Pricing Theory</strong> - no-arbitrage pricing, well-diversified portfolios, and smart betas</li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="the-capital-asset-pricing-model" class="level1">
+<h1>7.1 The Capital Asset Pricing Model</h1>
+<p>Historically, the CAPM was developed <strong>before</strong> the index model introduced in the previous chapter (Equation 6.11). The index model was widely adopted as a natural description of the stock market immediately after the CAPM because the CAPM’s implications so neatly match the intuition underlying the model. So it makes sense to use the index model to help understand the lessons of the CAPM.</p>
+<p>The index model describes the relationship between the excess return on an individual stock, <span class="math inline">\(R_i\)</span>, and that of a broad market-index portfolio, <span class="math inline">\(R_M\)</span>:</p>
+<p><span class="math display">\[R_i = \alpha_i + \beta_i R_M + e_i\]</span></p>
+<p>where <span class="math inline">\(e_i\)</span> is zero-mean “noise,” or <strong>firm-specific risk</strong>. The expected excess return on a stock, given the market’s excess return, is therefore:</p>
+<p><span class="math display">\[E(R_i | R_M) = \beta_i R_M + \alpha_i\]</span></p>
+<p>According to this equation, there are <strong>two paths to a positive risk premium</strong>:</p>
+<ol type="1">
+<li><strong>Positive beta.</strong> A stock with a positive beta “inherits” some of the market’s risk premium. But there is a cost: the positive beta also means the stock is exposed to <strong>systematic risk</strong>. Higher betas imply higher risk premiums, but also higher market risk. This trade-off is “neutral”: the higher reward that accompanies higher beta is exactly the same as one would realize by moving along the capital market line, shifting from bills into the market index. It is neither better nor worse than a <strong>passive indexing strategy</strong>.</li>
+<li><strong>Positive alpha.</strong> Investing in stocks with positive alphas would be a <strong>cost-free benefit</strong>. Higher alphas imply higher expected returns <em>without</em> a corresponding increase in risk.</li>
+</ol>
+<p><strong>What does this mean to portfolio managers?</strong> Hunt for positive-alpha stocks, don’t invest in negative-alpha stocks, and, better yet, sell short negative-alpha stocks if short sales are feasible.</p>
+<p>But investor demand for a positive-alpha stock will increase its price. As the price rises, other things being equal, its expected return falls, reducing and ultimately eliminating the very alpha that created the excess demand. Conversely, the drop in demand for a negative-alpha stock will reduce its price, pushing its alpha back toward zero. In the end, buying and selling pressure will leave <strong>most securities with zero alpha values most of the time</strong>. Put another way, <em>unless and until your own analysis of a stock tells you otherwise, you should assume alpha is zero.</em></p>
+<p>When alphas are all zero, there is no reward from bearing firm-specific risk; the only way to earn a higher expected return than the bill rate is by bearing <strong>systematic risk</strong>. The equilibrium risk premium is determined solely by systematic risk, as measured by beta. With no reward to bearing diversifiable risk, the best portfolio is the one that completely eliminates it, which is an <strong>indexed portfolio that mimics the broad market</strong>. These are the conclusions of the CAPM.</p>
+<section id="the-model-assumptions-and-implications" class="level2">
+<h2 class="anchored" data-anchor-id="the-model-assumptions-and-implications">7.1.1 The Model: Assumptions and Implications</h2>
+<p>The CAPM is based on <strong>two sets of assumptions</strong>, listed in Table 7.1.</p>
+<ul>
+<li>The first set pertains to <strong>investor behavior</strong>. It lets us assume that investors are alike in most important ways: they are all mean-variance optimizers with a common time horizon and a common set of information, reflected in their use of an identical input list.</li>
+<li>The second set pertains to <strong>market structure</strong>, asserting that markets are well-functioning with few impediments to trading.</li>
+</ul>
+<p><strong>Table 7.1 The Assumptions of the CAPM</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 66%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Assumption</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1. Investor behavior</strong></td>
+<td><strong>a.</strong> Investors are rational, mean-variance optimizers.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><strong>b.</strong> Their common planning horizon is a single period.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><strong>c.</strong> Investors all use identical input lists, an assumption often termed <em>homogeneous expectations</em>. Homogeneous expectations are consistent with the assumption that all relevant information is publicly available.</td>
+</tr>
+<tr class="even">
+<td><strong>2. Market structure</strong></td>
+<td><strong>a.</strong> All assets are publicly held and trade on public exchanges.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><strong>b.</strong> Investors can borrow or lend at a common risk-free rate, and they can take short positions on traded securities.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><strong>c.</strong> No taxes.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><strong>d.</strong> No transaction costs.</td>
+</tr>
+</tbody>
+</table>
+<p>Even a cursory look at these assumptions shows that they are fairly strong, and one may justifiably wonder whether a theory derived from them will withstand empirical tests. Later in the chapter we turn to some generalizations of the model.</p>
+<p>Still, the simple CAPM is a good place to start. While the appropriate quantification of risk and the exact risk-return trade-off may differ across more sophisticated variants, <strong>its central implication, that risk premia will be proportional to systematic risk and independent of firm-specific risk, remains valid in all of its extensions.</strong> In part because of this commonality, the simple CAPM remains in wide use despite its empirical shortcomings.</p>
+<section id="summary-of-the-equilibrium" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="summary-of-the-equilibrium">Summary of the equilibrium</h3>
+<ol type="1">
+<li><p><strong>All investors will choose to hold the market portfolio (M)</strong>, which includes all assets in the investable universe. (For simplicity, we refer to all assets as stocks.) The proportion of each stock in the market portfolio equals the market value of the stock (price per share times shares outstanding) divided by the total market value of all stocks.</p></li>
+<li><p><strong>The market portfolio will be on the efficient frontier.</strong> Moreover, it will be the <em>optimal risky portfolio</em>, the tangency point of the capital allocation line (CAL) to the efficient frontier. As a result, the <strong>capital market line (CML)</strong>, the line from the risk-free rate through the market portfolio, is also the best attainable capital allocation line. All investors hold M as their optimal risky portfolio, differing only in the amount invested in it versus in the risk-free asset.</p></li>
+<li><p><strong>The risk premium on the market portfolio</strong> will be proportional to the variance of the market portfolio and investors’ typical degree of risk aversion:</p>
+<p><span class="math display">\[E(r_M) - r_f = A\sigma_M^2 \tag{7.1}\]</span></p>
+<p>where <span class="math inline">\(\sigma_M\)</span> is the standard deviation of the return on the market portfolio and <span class="math inline">\(A\)</span> represents the degree of risk aversion of the average investor.</p></li>
+<li><p><strong>The risk premium on individual assets</strong> will equal the product of the risk premium on the market portfolio and the <strong>beta coefficient</strong> of the security on the market portfolio. Beta measures the extent to which returns respond to the market portfolio. In the index model, beta is the regression (slope) coefficient of the security return on the market return, representing sensitivity to fluctuations in the overall security market.</p></li>
+</ol>
+</section>
+</section>
+<section id="why-all-investors-would-hold-the-market-portfolio" class="level2">
+<h2 class="anchored" data-anchor-id="why-all-investors-would-hold-the-market-portfolio">7.1.2 Why All Investors Would Hold the Market Portfolio</h2>
+<p>We begin by assuming that all investors optimize their portfolios using the <strong>Markowitz model</strong> of efficient diversification. Each investor uses an input list (expected returns, variances, and covariances) to draw an efficient frontier using all available risky assets and identifies the efficient risky portfolio, <strong>P</strong>, by drawing the tangent CAL to the frontier, as in Figure 7.1.</p>
+<p>This framework uses Assumptions 1(a) (mean-variance optimizers), 2(a) (all assets trade and can be held in portfolios), and 2(b) (investors can borrow or lend at the risk-free rate and so can select portfolios along the CAL of the tangency portfolio).</p>
+<p>The CAPM asks what would happen if all investors shared an identical investable universe and used the same input list. A common input list requires Assumption 1(c), but it also relies on Assumption 1(b) (a common investment horizon). It also implicitly assumes that investor choices will not be affected by differences in tax rates or trading costs (Assumptions 2[c] and 2[d]).</p>
+<ul>
+<li>Investors derive <strong>identical efficient frontiers</strong> of risky assets.</li>
+<li>Facing the same risk-free rate, they draw an <strong>identical tangent CAL</strong>, and all arrive at the <strong>same risky portfolio, P</strong>. All investors therefore choose the same set of weights for each risky asset.</li>
+</ul>
+<p><strong>A key insight of the CAPM:</strong> the market portfolio is the aggregation of all investors’ risky portfolios, each of which is identical, so it too must have those same weights. (This relies on Assumption 2[a], because all assets must be tradable and included in investors’ portfolios.) If all investors choose the same risky portfolio, it must be the <strong>market portfolio</strong>, the value-weighted portfolio of all assets in the investable universe. The proportion of each stock equals its market capitalization divided by the sum of the market capitalization of all stocks. For example, if Microsoft is 1% of each investor’s common risky portfolio, then Microsoft also constitutes 1% of the market portfolio.</p>
+<p>We conclude that the capital allocation line based on each investor’s optimal risky portfolio is, in fact, also the <strong>capital market line</strong>, as depicted in Figure 7.1.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch07/Fig7_1_Efficient_Frontier_CML.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption>Figure 7.1 The Efficient Frontier and the Capital Market Line</figcaption>
+</figure>
+</div>
+<p><em>Source: Bodie, Kane &amp; Marcus, Essentials of Investments (2024 Release), Figure 7.1.</em></p>
+</section>
+<section id="the-passive-strategy-is-efficient" class="level2">
+<h2 class="anchored" data-anchor-id="the-passive-strategy-is-efficient">7.1.3 The Passive Strategy Is Efficient</h2>
+<p>The CAPM implies that a <strong>passive strategy</strong>, using the CML as the optimal CAL, is a powerful alternative to an active strategy.</p>
+<ul>
+<li>The market portfolio proportions are the result of investors’ buy and sell orders, which cease only when there is no more profit to be made.</li>
+<li>In the simple world of the CAPM, <strong>active investors use precious resources</strong> to conduct security analysis. A <strong>passive investor receives a “free ride”</strong> by simply investing in the market portfolio and benefiting from the efficiency of that portfolio.</li>
+<li>In the absence of private information (Assumption 1[c]), an investor whose risky portfolio is anything other than the market will end up on a CAL that is <strong>inferior</strong> to the CML used by passive investors.</li>
+</ul>
+<p>This result is sometimes called the <strong>mutual fund theorem</strong>. It implies that only one mutual fund of risky assets, the market index fund, is sufficient to satisfy the investment demands of all investors. It is another incarnation of the <strong>separation property</strong> discussed in Chapter 6. If all investors would hold a market-index mutual fund, they would not object if all stocks were replaced with shares of a single mutual fund holding the market portfolio. We can therefore separate portfolio selection into two components:</p>
+<ol type="1">
+<li>a <strong>technical side</strong>, in which an efficient mutual fund is created by professional managers, and</li>
+<li>a <strong>personal side</strong>, in which an investor’s risk aversion determines the allocation of the complete portfolio between the mutual fund and the risk-free asset.</li>
+</ol>
+<p>All investors agree that the mutual fund they want to hold is invested in the market portfolio.</p>
+<p><strong>In reality</strong>, different investment managers do create risky portfolios that differ from the market index, in part because of different input lists. Nevertheless, the practical significance of the mutual fund theorem is that a passive investor, even one who does not engage in security analysis, may view the market index as a <strong>reasonable first approximation to an efficient risky portfolio</strong>.</p>
+<p><strong>Questions posed in the chapter PowerPoint:</strong></p>
+<ul>
+<li>If a passive strategy is costless and efficient, why follow an active strategy?</li>
+<li>If no one does security analysis, what brings about the efficiency of the market portfolio?</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Concept Check 7.1">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Concept Check 7.1
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If only some investors perform security analysis while all others hold the market portfolio, would the CML still be the efficient CAL for investors who do not engage in security analysis? Explain.</p>
+<p><strong>Textbook solution:</strong> The CML would still represent efficient investments. We can characterize the entire population by two representative investors. One is the “uninformed” investor, who does not engage in security analysis and holds the market portfolio, while the other optimizes using the Markowitz algorithm with input from security analysis. The uninformed investor does not know what input the informed investor uses to make portfolio purchases. The uninformed investor knows, however, that if the other investor is informed, the market portfolio proportions will be optimal. Therefore, to depart from these proportions would constitute an uninformed bet, which will, on average, reduce the efficiency of diversification with no compensating improvement in expected returns.</p>
+</div>
+</div>
+</section>
+<section id="the-risk-premium-of-the-market-portfolio" class="level2">
+<h2 class="anchored" data-anchor-id="the-risk-premium-of-the-market-portfolio">7.1.4 The Risk Premium of the Market Portfolio</h2>
+<p>In Chapter 5 we showed how individual investors decide how much to invest in the risky portfolio when they also have access to risk-free assets. Now we ask: what can we deduce about the <strong>equilibrium risk premium of portfolio M</strong>?</p>
+<p>Equation 7.1 states that the equilibrium risk premium of the market portfolio, <span class="math inline">\(E(r_M) - r_f\)</span>, is proportional to the <strong>degree of risk aversion of the average investor</strong> and to the <strong>risk of the market portfolio</strong>, <span class="math inline">\(\sigma_M^2\)</span>.</p>
+<p><strong>Why?</strong></p>
+<ul>
+<li>When investors purchase stocks, their demand drives up prices, thereby reducing expected rates of return and risk premiums.</li>
+<li>When risk premiums fall, investors move some of their funds from the risky market portfolio into the risk-free asset.</li>
+<li>In equilibrium, the risk premium on the market portfolio must be <strong>just high enough to induce investors to hold the available supply of stocks</strong>. If the risk premium is too high, there will be excess demand for securities and prices will rise; if it is too low, investors will not hold enough stock to absorb the supply and prices will fall.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled" title="Example 7.1 - Market Risk, the Risk Premium, and Risk Aversion">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Example 7.1 - Market Risk, the Risk Premium, and Risk Aversion
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Suppose the risk-free rate is 3%, the average investor has a risk-aversion coefficient of <span class="math inline">\(A = 2\)</span>, and the standard deviation of the market portfolio is 20%. (To use Equation 7.1, returns must be expressed in decimal form rather than as percentages.) The equilibrium market risk premium is:</p>
+<p><span class="math display">\[A\sigma_M^2 = 2 \times 0.20^2 = 0.08\]</span></p>
+<p>So the expected rate of return on the market must be:</p>
+<p><span class="math display">\[E(r_M) = r_f + \text{Equilibrium risk premium} = 0.03 + 0.08 = 0.11 = 11\%\]</span></p>
+<p>If investors were more risk averse, it would take a higher risk premium to induce them to hold shares. For example, if the average degree of risk aversion were 3, the equilibrium market risk premium would be <span class="math inline">\(3 \times 0.20^2 = 0.12\)</span>, or 12%, and the expected return would be 15%.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Concept Check 7.2">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Concept Check 7.2
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Historical data for the S&amp;P 500 Index indicates that the standard deviation of returns has been about 20%. If the coefficient of risk aversion were 3.5, what risk premium would have been consistent with this historical standard deviation?</p>
+<p><strong>Textbook solution:</strong> Equation 7.1 tells us that for the historical standard deviation and a coefficient of risk aversion of 3.5, the risk premium would be:</p>
+<p><span class="math display">\[E(r_M) - r_f = A\sigma_M^2 = 3.5 \times 0.20^2 = 0.14 = 14\%\]</span></p>
+</div>
+</div>
+</section>
+<section id="expected-returns-on-individual-securities" class="level2">
+<h2 class="anchored" data-anchor-id="expected-returns-on-individual-securities">7.1.5 Expected Returns on Individual Securities</h2>
+<p>The contribution of a single security to the systematic risk of a portfolio depends on its <strong>beta</strong> (Section 6.5, Equation 6.13). Beta tells us how strongly the security responds to market-wide shocks.</p>
+<ul>
+<li><strong>Aggressive</strong> stocks, with betas greater than 1, exaggerate the response of the portfolio to broad market movements.</li>
+<li><strong>Defensive</strong> stocks, with betas below 1, dampen the response.</li>
+</ul>
+<p>As investors diversify, their exposure to the firm-specific risk of any individual security steadily diminishes, but their exposure to market-wide movements remains (the lesson of Figure 6.1 in the previous chapter). What matters to diversified investors is the <strong>systematic risk of the portfolio</strong> and the contribution each stock makes to that risk. Investors look for stocks with the best incremental reward (risk premium) compared to incremental systematic risk. In equilibrium, the <strong>ratio of reward to risk should be equalized across all stocks</strong>. Comparing one particular stock, Digital Computer, to the market index (with a beta of 1):</p>
+<p><span class="math display">\[\frac{E(r_M) - r_f}{1} = \frac{E(r_D) - r_f}{\beta_D}\]</span></p>
+<p>Rearranging gives the CAPM’s <strong>expected return-beta relationship</strong>:</p>
+<p><span class="math display">\[E(r_D) = r_f + \beta_D\left[E(r_M) - r_f\right] \tag{7.2}\]</span></p>
+<p>In words, an asset’s risk premium equals the asset’s systematic risk measure (its beta) times the risk premium of the (benchmark) market portfolio. This is the most familiar expression of the CAPM.</p>
+<ul>
+<li>The total expected rate of return is the sum of the <strong>risk-free rate</strong> (compensation for “waiting,” i.e., the time value of money) plus a <strong>risk premium</strong> (compensation for “worrying” about investment returns).</li>
+<li>The risk premium is the product of a benchmark risk premium (that of the broad market portfolio) and the relative risk of the particular asset, as measured by its beta.</li>
+</ul>
+<p><strong>Notice what the risk premium does <em>not</em> depend on: the total volatility of the stock.</strong> For example, a firm developing a new drug that may be a great success or a total failure may have extremely high variance, but investors in its shares will not, for that reason, demand a high expected return. The success of the firm is largely independent of macroeconomic risk and the return on the rest of their portfolio, so its contribution to overall portfolio risk is low and does not warrant a large risk premium. <strong>The CAPM predicts that only systematic risk should be “priced,” that is, command a risk premium; firm-specific risk should not be priced.</strong></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Example 7.2 - Expected Returns and Risk Premiums">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Example 7.2 - Expected Returns and Risk Premiums
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Suppose the risk premium of the market portfolio is 8%, and we estimate the beta of Digital as <span class="math inline">\(\beta_D = 1.2\)</span>. The predicted risk premium for the stock is <span class="math inline">\(1.2 \times 8\% = 9.6\%\)</span>. If the T-bill rate were 3%, the expected rate of return would be <span class="math inline">\(3\% + 9.6\% = 12.6\%\)</span>, or, using Equation 7.2 directly:</p>
+<p><span class="math display">\[E(r_D) = r_f + \beta_D[\text{Market risk premium}] = 3\% + 1.2 \times 8\% = 12.6\%\]</span></p>
+<p>If Digital’s beta were only 1.1, its required risk premium would be only 8.8%. Similarly, if the market risk premium were only 6% and <span class="math inline">\(\beta_D = 1.2\)</span>, Digital’s risk premium would be only 7.2%.</p>
+</div>
+</div>
+<section id="active-portfolios-do-not-invalidate-the-capm" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="active-portfolios-do-not-invalidate-the-capm">Active portfolios do not invalidate the CAPM</h3>
+<p>The fact that many investors hold active portfolios that differ from the market portfolio does not necessarily invalidate the CAPM. Any highly diversified portfolio can shed almost all firm-specific risk and will be subject only to systematic risk. Even if one does not hold the precise market portfolio, a well-diversified portfolio will be so highly correlated with the market that a stock’s beta relative to the market is still a useful risk measure.</p>
+<p>Researchers have also shown that <strong>modified versions of the CAPM</strong> hold despite differences among individuals that cause them to hold different portfolios. <strong>Brennan (1970)</strong> examines differences in investors’ personal tax rates; <strong>Mayers (1972)</strong> looks at nontraded assets such as human capital (earning power). Both find that although the market portfolio is no longer each investor’s optimal risky portfolio, a modified version of the mean-beta relationship still holds.</p>
+</section>
+<section id="portfolio-betas" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="portfolio-betas">Portfolio betas</h3>
+<p>If the mean-beta relationship holds for each individual asset, it must hold for any combination of assets. <strong>The beta of a portfolio is the weighted average of the betas of the stocks in the portfolio</strong>, using the portfolio proportions as weights. Beta therefore also predicts a portfolio’s risk premium in accordance with Equation 7.2.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Example 7.3 - Portfolio Beta and Risk Premium">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Example 7.3 - Portfolio Beta and Risk Premium
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Consider the following portfolio:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 19%">
+<col style="width: 23%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Asset</th>
+<th>Beta</th>
+<th>Risk Premium</th>
+<th>Portfolio Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Microsoft</td>
+<td>1.2</td>
+<td>9.0%</td>
+<td>0.5</td>
+</tr>
+<tr class="even">
+<td>American Electric Power</td>
+<td>0.8</td>
+<td>6.0%</td>
+<td>0.3</td>
+</tr>
+<tr class="odd">
+<td>Gold</td>
+<td>0.0</td>
+<td>0.0%</td>
+<td>0.2</td>
+</tr>
+<tr class="even">
+<td><strong>Portfolio</strong></td>
+<td><strong>0.84</strong></td>
+<td><strong>?</strong></td>
+<td><strong>1.0</strong></td>
+</tr>
+</tbody>
+</table>
+<p>If the market risk premium is 7.5%, the CAPM predicts that the risk premium on each stock is its beta times 7.5%, and the risk premium on the portfolio is <span class="math inline">\(0.84 \times 7.5\% = 6.3\%\)</span>. This is the same result obtained by taking the weighted average of the risk premiums of the individual assets.</p>
+</div>
+</div>
+</section>
+<section id="a-word-of-caution" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="a-word-of-caution">A word of caution</h3>
+<p>We often hear that a well-managed firm will provide a high rate of return. This is true when referring to the firm’s <strong>accounting return</strong> on investments in plant and equipment. The CAPM, however, predicts returns on investments in the <strong>securities</strong> of the firm that trade in capital markets.</p>
+<p>Say everyone knows a firm is well run. Its stock price will be bid up, and returns to investors who buy at that price will not be extreme. Security prices reflect public information about a firm’s prospects, but only the risk of the company (as measured by beta) should affect expected returns. <strong>In a rational market, investors receive high expected returns only if they bear systematic risk.</strong></p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Concept Check 7.3">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Concept Check 7.3
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Suppose the risk premium on the market portfolio is estimated at 8% with a standard deviation of 22%. What is the risk premium on a portfolio invested 25% in GM with a beta of 0.8 and 75% in Digital with a beta of 1.2?</p>
+<p><strong>Textbook solution:</strong> <span class="math inline">\(\beta_{Digital} = 1.2\)</span>, <span class="math inline">\(\beta_{GM} = 0.8\)</span>. Given the investment proportions, the portfolio beta is</p>
+<p><span class="math display">\[\beta_P = w_{Digital}\beta_{Digital} + w_{GM}\beta_{GM} = (0.75 \times 1.2) + (0.25 \times 0.8) = 1.1\]</span></p>
+<p>and the risk premium of the portfolio will be</p>
+<p><span class="math display">\[E(r_P) - r_f = \beta_P[E(r_M) - r_f] = 1.1 \times 8\% = 8.8\%\]</span></p>
+</div>
+</div>
+</section>
+</section>
+<section id="the-security-market-line" class="level2">
+<h2 class="anchored" data-anchor-id="the-security-market-line">7.1.6 The Security Market Line</h2>
+<p>The expected return-beta relationship, or mean-beta relationship, is a <strong>reward-risk equation</strong>. The beta of a security is the appropriate measure of its risk because beta determines the security’s contribution to the variance of the efficiently diversified optimal risky portfolio.</p>
+<p>The mean-beta relationship is represented by the <strong>security market line (SML)</strong> in Figure 7.2, where we assume a T-bill rate of 6% and a market expected return of 14%.</p>
+<ul>
+<li>The <strong>slope</strong> of the SML is the market risk premium, 8%.</li>
+<li>At the point where <span class="math inline">\(\beta = 1\)</span> (the beta of the market portfolio), we can read off the vertical axis the market’s expected return.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch07/Fig7_2_SML_Positive_Alpha_Stock.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption>Figure 7.2 The Security Market Line and a Positive-Alpha Stock. The risk-free rate in this figure is assumed to be 6% while the market expected return is 14%.</figcaption>
+</figure>
+</div>
+<p><em>Source: Bodie, Kane &amp; Marcus, Essentials of Investments (2024 Release), Figure 7.2.</em></p>
+<section id="sml-versus-cml" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="sml-versus-cml">SML versus CML</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 37%">
+<col style="width: 31%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>Capital Market Line (CML)</strong></th>
+<th><strong>Security Market Line (SML)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Graphs</strong></td>
+<td>Risk premiums of <em>efficient complete portfolios</em> (the market portfolio and the risk-free asset)</td>
+<td>Risk premiums of <em>individual assets</em> (and portfolios)</td>
+</tr>
+<tr class="even">
+<td><strong>As a function of</strong></td>
+<td>Portfolio standard deviation</td>
+<td>Asset beta</td>
+</tr>
+<tr class="odd">
+<td><strong>Why that risk measure?</strong></td>
+<td>Standard deviation is a valid measure of risk for portfolios that are candidates for an investor’s complete portfolio</td>
+<td>The relevant risk of an individual asset held in a diversified portfolio is its beta, not its standard deviation</td>
+</tr>
+<tr class="even">
+<td><strong>Valid for</strong></td>
+<td>Efficient complete portfolios</td>
+<td>Both individual assets and portfolios</td>
+</tr>
+</tbody>
+</table>
+<p>The SML offers a <strong>benchmark for evaluation of investment performance</strong>. It provides the expected rate of return investors demand as compensation for both beta risk and the time value of money.</p>
+</section>
+<section id="fairly-priced-underpriced-and-overpriced-assets" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="fairly-priced-underpriced-and-overpriced-assets">Fairly priced, underpriced, and overpriced assets</h3>
+<p>Because the SML is the graphical representation of the mean-beta relationship:</p>
+<ul>
+<li><strong>Fairly priced</strong> assets plot exactly <em>on</em> the SML. Their expected returns are commensurate with their risk.</li>
+<li><strong>Underpriced</strong> stocks plot <em>above</em> the SML: given beta, their expected returns are greater than predicted by the CAPM.</li>
+<li><strong>Overpriced</strong> stocks plot <em>below</em> the SML.</li>
+</ul>
+<p>The difference between the fair (equilibrium) and the actual expected rate of return on a stock is the <strong>alpha</strong>, denoted <span class="math inline">\(\alpha\)</span>. The expected return on a mispriced security (one with a nonzero alpha) is:</p>
+<p><span class="math display">\[E(r) = \alpha + r_f + \beta\left[E(r_M) - r_f\right]\]</span></p>
+<p>The PowerPoint describes alpha as the abnormal rate of return on a security in excess of that predicted by an equilibrium model (the CAPM).</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Example 7.4 - The Alpha of a Security">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Example 7.4 - The Alpha of a Security
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Continue to assume that the expected return on the market is 14% and the T-bill rate is 6%. If a stock has a beta of 1.2, the SML would predict an expected return of:</p>
+<p><span class="math display">\[E(r) = r_f + \beta[E(r_M) - r_f] = 6 + 1.2(14 - 6) = 15.6\%\]</span></p>
+<p>If one believes the stock’s expected return is actually 17%, then its implied alpha would be <strong>1.4%</strong>, as shown in Figure 7.2. If instead the expected return were only 15%, the stock alpha would be negative, <strong>-0.6%</strong>.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="applications-of-the-capm" class="level2">
+<h2 class="anchored" data-anchor-id="applications-of-the-capm">7.1.7 Applications of the CAPM</h2>
+<p>The CAPM has three main applications in the chapter.</p>
+<p><strong>1. Investment management.</strong> The SML provides a benchmark to assess the expected return commensurate with an asset’s risk. Suppose a money manager uses security analysis to derive an independent assessment of expected return. (Here we depart from the simple CAPM world, in that active investors apply their own analysis to derive a private “input list.”) If a stock is perceived to be a good buy, or underpriced, it will provide a <strong>positive alpha</strong>: an expected return in excess of the equilibrium return stipulated by the SML.</p>
+<p><strong>2. Capital budgeting.</strong> When a firm is considering a new project, the SML provides the <strong>required return</strong> demanded of the project. This is the cutoff internal rate of return (IRR), or <strong>“hurdle rate,”</strong> for the project.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Example 7.5 - The CAPM and Capital Budgeting">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Example 7.5 - The CAPM and Capital Budgeting
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Silverado Springs Inc.&nbsp;is considering a new spring-water bottling plant. The business plan forecasts an internal rate of return of 14% on the investment. The beta of similar products is 1.3. If the risk-free rate is 4% and the market risk premium is estimated at 8%, the hurdle rate for the project should be:</p>
+<p><span class="math display">\[4 + 1.3 \times 8 = 14.4\%\]</span></p>
+<p>Because the IRR is less than the risk-adjusted discount or hurdle rate, the project has a negative net present value and ought to be rejected.</p>
+</div>
+</div>
+<p><strong>3. Utility rate-making.</strong> The issue here is the rate of return a regulated utility should be allowed to earn on its investment in plant and equipment.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Example 7.6 - The CAPM and Regulation">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Example 7.6 - The CAPM and Regulation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Suppose shareholder equity invested in a utility is $100 million and the equity beta is 0.6. If the T-bill rate is 2% and the market risk premium is 8%, then a fair annual profit will be <span class="math inline">\(2 + (0.6 \times 8) = 6.8\%\)</span> of $100 million, or <strong>$6.8 million</strong>. Because regulators accept the CAPM, they will allow the utility to set prices at a level expected to generate these profits.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Concept Check 7.4">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Concept Check 7.4
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>a.</strong> Stock XYZ has an expected return of 12% and <span class="math inline">\(\beta = 1\)</span>. Stock ABC is expected to return 13% with a beta of 1.5. The market’s expected return is 11% and <span class="math inline">\(r_f = 5\%\)</span>. According to the CAPM, which stock is a better buy? What is the alpha of each stock? Plot the SML and the two stocks. Show the alphas of each on the graph.</p>
+<p><strong>b.</strong> The risk-free rate is 2% and the expected return on the market portfolio is 10%. A firm considers a project with an estimated beta of 1.3. What is the required rate of return on the project? If the IRR of the project is 13%, what is the project alpha?</p>
+<p><strong>Textbook solution:</strong></p>
+<p><strong>a.</strong> The alpha of a stock is its expected return in excess of that required by the CAPM:</p>
+<p><span class="math display">\[\alpha = E(r) - \{r_f + \beta[E(r_M) - r_f]\}\]</span></p>
+<p><span class="math display">\[\alpha_{XYZ} = 12 - [5 + 1.0(11 - 5)] = 1\%\]</span></p>
+<p><span class="math display">\[\alpha_{ABC} = 13 - [5 + 1.5(11 - 5)] = -1\%\]</span></p>
+<p>XYZ has a positive alpha and ABC a negative alpha. (The textbook also asks for a plot of the SML and the two stocks; no new graph is created here.)</p>
+<p><strong>b.</strong> The project-specific required rate of return is determined by the project beta coupled with the market risk premium and the risk-free rate. An acceptable expected rate of return for the project is:</p>
+<p><span class="math display">\[r_f + \beta[E(r_M) - r_f] = 2 + 1.3(10 - 2) = 12.4\%\]</span></p>
+<p>which becomes the project’s <strong>hurdle rate</strong>. If the IRR of the project is 13%, then it is desirable. Any project (of similar beta) with an IRR less than 12.4% should be rejected.</p>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="the-capm-and-index-models" class="level1">
+<h1>7.2 The CAPM and Index Models</h1>
+<p>The CAPM has <strong>two limitations</strong>:</p>
+<ol type="1">
+<li>It relies on the <strong>theoretical market portfolio</strong>, which includes all assets (including real estate, human capital, foreign stocks, etc.).</li>
+<li>It applies to <strong>expected</strong> as opposed to actual returns.</li>
+</ol>
+<p>To implement and test the CAPM, we cast it in the form of an <strong>index model</strong> and use <strong>realized</strong> returns. The index model replaces the theoretical all-inclusive portfolio with an index such as the S&amp;P 500 or the broader market index introduced in Chapter 5. The composition and rate of return of these indexes are unambiguous and widely published, and therefore provide a clear benchmark for performance evaluation.</p>
+<section id="testing-the-capms-central-prediction" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="testing-the-capms-central-prediction">Testing the CAPM’s central prediction</h3>
+<p>The central prediction of the CAPM is that <strong>the market portfolio is mean-variance efficient</strong>. An index model can be used to test this hypothesis by verifying that an index designed to represent the full market is mean-variance efficient. To test mean-variance efficiency of an index, we must show that its <strong>Sharpe ratio is not surpassed by any other portfolio</strong>. Tests of this question are examined in the next chapter.</p>
+<p>The SML is the most common way to pose the implications of the CAPM: a stock’s risk premium is the product of its beta and the market risk premium. This can also be tested using the index model from the last chapter, restated here as Equation 7.3:</p>
+<p><span class="math display">\[r_{it} - r_{ft} = \alpha_i + \beta_i(r_{Mt} - r_{ft}) + e_{it} \tag{7.3}\]</span></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 73%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(r_{it}\)</span></td>
+<td>Holding-period return (HPR) on asset <em>i</em> in period <em>t</em> (<em>i</em>: asset; <em>t</em>: period)</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\alpha_i\)</span></td>
+<td>Intercept of the security characteristic line</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\beta_i\)</span></td>
+<td>Slope of the security characteristic line</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(r_{Mt}\)</span></td>
+<td>Index return in period <em>t</em> (the index proxies for the market portfolio)</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(e_{it}\)</span></td>
+<td>Firm-specific effects (the firm-specific outcome for that period)</td>
+</tr>
+</tbody>
+</table>
+<p>Equation 7.3 states that the realized excess return on any stock is the sum of three pieces: the realized excess return due to marketwide factors, <span class="math inline">\(\beta_i(r_{Mt} - r_{ft})\)</span>; a nonmarket risk premium, <span class="math inline">\(\alpha_i\)</span>; and a firm-specific outcome for that period, <span class="math inline">\(e_{it}\)</span>. Because the expectation of the firm-specific residual is zero, the expected excess return (risk premium) of stock <em>i</em> is given by Equation 7.4:</p>
+<p><span class="math display">\[E(r_i) - r_f = \alpha_i + \beta_i[E(r_M) - r_f] \tag{7.4}\]</span></p>
+<p>The CAPM’s expected return-beta relationship, rearranged very slightly from Equation 7.2, states that in any period:</p>
+<p><span class="math display">\[E(r_i) - r_f = \beta_i[E(r_M) - r_f] \tag{7.5}\]</span></p>
+<p><strong>Comparing Equation 7.4 to Equation 7.5, the prediction of the CAPM is that for every stock, <span class="math inline">\(\alpha_i = 0\)</span>.</strong></p>
+<p>The logic of the CAPM is that the only reason for a stock to offer an expected return greater than the risk-free rate is that it imposes systematic risk for which the investor must be compensated. A positive alpha, however, promises reward without risk. Investors will relentlessly pursue positive-alpha stocks and bid up their prices; at those higher prices, expected rates of return will be lower. Symmetrically, investors will shun or short-sell negative-alpha stocks, driving down their prices and driving up their expected returns. This rebalancing continues until all alpha values are driven to zero. At that point, investors will be content to fully diversify and eliminate unique risk, that is, to hold the broadest possible market portfolio. <strong>When all stocks have zero alphas, the market portfolio is the optimal risky portfolio.</strong></p>
+<p>If you estimate the index model regression, Equation 7.3, you will find that in any particular sample period some firms will do better than investors initially expected and display positive alphas; others will disappoint and show negative alphas. <strong>But if the CAPM is correct, average alphas should be zero.</strong></p>
+</section>
+<section id="estimating-the-index-model-and-the-scl-from-the-chapter-powerpoint" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="estimating-the-index-model-and-the-scl-from-the-chapter-powerpoint">Estimating the index model and the SCL (from the chapter PowerPoint)</h3>
+<ul>
+<li>The PowerPoint illustrates estimating the index model using Google’s excess returns. The <strong>residual</strong> is the actual return minus the predicted return for Google.</li>
+<li><strong>Security characteristic line (SCL):</strong> the PowerPoint describes this as a plot of a security’s expected excess return over the risk-free rate as a function of the excess return on the market. The chapter summary adds that, in a single-index security market, a security’s beta can be estimated from a regression of the security’s excess return on the index’s excess return; this regression line is the SCL, and its intercept, alpha, represents the average excess return on the security when the index excess return is zero.</li>
+<li><strong>Predicting betas (mean reversion):</strong> betas move toward the mean over time. To predict future betas, adjust estimates from historical data to account for regression toward 1.0.</li>
+</ul>
+</section>
+<section id="a-drawback-rolls-critique" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="a-drawback-rolls-critique">A drawback: Roll’s critique</h3>
+<p>Operationalizing the CAPM as an index model has a drawback. If intercepts of regressions of returns on an index differ substantially from zero, you cannot tell whether it is because you have chosen a <strong>bad index to proxy for the market</strong> or because the <strong>theory is not useful</strong>. This problem was first pointed out by <strong>Richard Roll (1977)</strong> and is called <strong>Roll’s critique</strong>, discussed in the next section.</p>
+</section>
+<section id="persistent-positive-alphas" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="persistent-positive-alphas">Persistent positive alphas</h3>
+<p>In actuality, some instances of persistent, positive, significant CAPM alpha values have been identified (discussed in Chapter 8). Among these are:</p>
+<ol type="1">
+<li><strong>Small versus large stocks</strong></li>
+<li>Stocks of companies that have <strong>recently announced unexpectedly good earnings</strong></li>
+<li>Stocks with <strong>high ratios of book value to market value</strong></li>
+<li>Stocks with <strong>“momentum”</strong> that have experienced recent advances in price</li>
+</ol>
+<p>These results pose meaningful challenges to the model.</p>
+<hr>
+</section>
+</section>
+<section id="how-well-does-the-capm-predict-risk-premiums" class="level1">
+<h1>7.3 How Well Does the CAPM Predict Risk Premiums?</h1>
+<p>In many ways, portfolio theory and the CAPM have become accepted tools in the practitioner community.</p>
+<ul>
+<li>Many investment professionals think about the distinction between firm-specific and systematic risk and are comfortable with the use of <strong>beta</strong> to measure systematic risk.</li>
+<li>One extensive survey (Graham and Harvey, 2001) found that about <strong>three-quarters of financial managers use the CAPM</strong> when estimating the cost of capital.</li>
+<li>In the asset management industry, <strong>alpha</strong> is regularly computed.</li>
+<li>On the other hand, compensation of portfolio managers is rarely based on alpha or other theoretically appropriate risk-adjusted measures (see Chapter 18).</li>
+</ul>
+<p>Part of the problem derives from the <strong>mixed success of the CAPM</strong> in explaining variation in rates of return across assets.</p>
+<section id="the-evidence" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="the-evidence">The evidence</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 66%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Study</th>
+<th>Finding</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Sharpe (1964)</strong></td>
+<td>The CAPM was first published and “took the world of finance by storm.”</td>
+</tr>
+<tr class="even">
+<td><strong>Black, Jensen, and Scholes (1972); Fama and MacBeth (1973)</strong></td>
+<td>Early tests were <em>partially</em> supportive: average returns were higher for higher-beta portfolios, but the reward for beta risk was <em>less</em> than predicted by the simple CAPM.</td>
+</tr>
+<tr class="odd">
+<td><strong>Roll (1977)</strong>, “A Critique of Capital Asset Pricing Tests”</td>
+<td>The <strong>true market portfolio can never be observed</strong>. The usual stock market indexes used as proxies actually exclude the majority of investor wealth: real estate, fixed-income securities, foreign investments, and the value of human capital. Without a good measure of the return on a broad measure of investor assets, the theory is necessarily untestable. This resulted in popular articles such as “Is Beta Dead?”</td>
+</tr>
+<tr class="even">
+<td><strong>Fama and French (1992)</strong></td>
+<td>Dealt the CAPM an even harsher blow: certain characteristics of the firm, namely <strong>size</strong> and the <strong>ratio of market to book value</strong>, were far more useful in predicting future returns than beta.</td>
+</tr>
+<tr class="odd">
+<td><strong>Amihud and Mendelson (1986)</strong></td>
+<td><strong>Liquidity</strong>, a different kind of risk factor, was ignored for a long time. It is difficult to measure and incorporate in portfolio management, but there is ample evidence that trading mechanisms on stock exchanges affect the liquidity of assets and significantly affect their market value.</td>
+</tr>
+</tbody>
+</table>
+<p>Although Roll is absolutely correct on theoretical grounds, more recent research suggests that the error introduced by using a broad market index as a proxy for the true, unobserved market portfolio is perhaps not even the greatest problem of the CAPM. It seems clear from the Fama-French and follow-up studies that <strong>beta does not tell the whole story of risk</strong>: there seem to be risk factors that affect security returns beyond beta’s one-dimensional measurement of market sensitivity. The next section introduces a theory of risk premiums that explicitly allows for multiple risk factors.</p>
+</section>
+<section id="beta-is-not-dead" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="beta-is-not-dead">Beta is not dead</h3>
+<p>The CAPM is not a perfect model, and it will continue to be refined. Still, the logic of the model is compelling and captures the two key points made by all of its more sophisticated variants:</p>
+<ol type="1">
+<li>The crucial distinction between <strong>diversifiable risk</strong> and <strong>systematic risk</strong> that cannot be avoided by diversification.</li>
+<li>Investors will demand a <strong>premium for bearing nondiversifiable risk</strong>.</li>
+</ol>
+<p>The CAPM therefore provides a useful framework for thinking rigorously about the relationship between security risk and return.</p>
+<p><strong>The CAPM and the real world (from the chapter PowerPoint):</strong></p>
+<ul>
+<li>The CAPM is false based on the validity of its assumptions.</li>
+<li>It is nonetheless a useful predictor of expected returns, but it is untestable as a theory.</li>
+<li>Its principles are still valid: investors should diversify, systematic risk is the risk that matters, and a well-diversified risky portfolio can be suitable for a wide range of investors.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="multifactor-models-and-the-capm" class="level1">
+<h1>7.4 Multifactor Models and the CAPM</h1>
+<p>The index model allows us to decompose stock variance into <strong>systematic risk</strong> and <strong>firm-specific risk</strong> that can be diversified in large portfolios. In the index model, the return on the market portfolio summarizes the aggregate impact of macroeconomic factors. In reality, however, systematic risk is not due to one source but derives from uncertainty in a number of economywide factors, such as <strong>business-cycle risk, interest or inflation rate risk, energy price risk</strong>, and so on. A more explicit representation of systematic risk, allowing stocks to exhibit different sensitivities to its various facets, would be a useful refinement of the single-factor model. <strong>Merton (1973)</strong> was the first to show how the CAPM could be extended to allow for multiple sources of systematic risk.</p>
+<p><strong>Multifactor models</strong> (models of security returns that respond to several systematic factors) can be expected to provide better descriptions of security returns. Merton’s model results in a <strong>multifactor security market line</strong> in which extra-market risk factors capture the impact of important dimensions of systematic risk that investors wish to hedge.</p>
+<section id="a-two-factor-illustration" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="a-two-factor-illustration">A two-factor illustration</h3>
+<p>Suppose the two most important macroeconomic sources of risk are:</p>
+<ol type="1">
+<li>the state of the <strong>business cycle</strong>, reflected in returns on a broad market index, and</li>
+<li><strong>unanticipated changes in interest rates</strong>, captured by returns on a Treasury-bond portfolio.</li>
+</ol>
+<p>The return on any stock will respond both to sources of macro risk and to its own firm-specific influences. We can expand the single-index model (Equation 7.3) as follows, using uppercase <em>R</em> to denote excess returns:</p>
+<p><span class="math display">\[R_{it} = \alpha_i + \beta_{iM}R_{Mt} + \beta_{iTB}R_{TBt} + e_{it} \tag{7.6}\]</span></p>
+<p>where <span class="math inline">\(\beta_{iTB}\)</span> is the sensitivity of stock <em>i</em>’s excess return to that of the T-bond portfolio and <span class="math inline">\(R_{TBt}\)</span> is the excess return of the T-bond portfolio in period <em>t</em>.</p>
+<p>A multifactor index model gives rise to a <strong>multifactor security market line</strong> in which the risk premium is determined by the exposure to each systematic risk factor and by a risk premium associated with each of those factors. In the two-factor economy of Equation 7.6, the expected rate of return on a security is the sum of three terms:</p>
+<ol type="1">
+<li>The <strong>risk-free rate</strong> of return.</li>
+<li>The security’s sensitivity to the market index (its <strong>market beta</strong>, <span class="math inline">\(\beta_{iM}\)</span>) times the risk premium of the index, <span class="math inline">\([E(r_M) - r_f]\)</span>.</li>
+<li>The security’s sensitivity to interest rate risk (its <strong>T-bond beta</strong>, <span class="math inline">\(\beta_{iTB}\)</span>) times the risk premium of the T-bond portfolio, <span class="math inline">\([E(r_{TB}) - r_f]\)</span>.</li>
+</ol>
+<p>This is the <strong>two-factor security market line</strong> for security <em>i</em>:</p>
+<p><span class="math display">\[E(r_i) = r_f + \beta_{iM}\left[E(r_M) - r_f\right] + \beta_{iTB}\left[E(r_{TB}) - r_f\right] \tag{7.7}\]</span></p>
+<p>Equation 7.7 is an expansion of the simple security market line. Once we generalize the single-index SML to multiple risk sources, each with its own risk premium, the insights are similar.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Example 7.7 - A Two-Factor SML">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Example 7.7 - A Two-Factor SML
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Northeast Airlines has a market beta of 1.2 and a T-bond beta of 0.7. Suppose the risk premium of the market index is 6%, while that of the T-bond portfolio is 3%. The overall risk premium on Northeast stock is the sum of the risk premiums required as compensation for each source of systematic risk.</p>
+<ul>
+<li>Market risk: <span class="math inline">\(1.2 \times 6\% = 7.2\%\)</span></li>
+<li>Interest rate risk: <span class="math inline">\(0.7 \times 3\% = 2.1\%\)</span></li>
+<li>Total risk premium: <span class="math inline">\(7.2 + 2.1 = 9.3\%\)</span></li>
+</ul>
+<p>If the risk-free rate is 4%, the expected return should be:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Risk-free rate</td>
+<td>4.0%</td>
+</tr>
+<tr class="even">
+<td>+ Risk premium for exposure to market risk</td>
+<td>7.2%</td>
+</tr>
+<tr class="odd">
+<td>+ Risk premium for exposure to interest rate risk</td>
+<td>2.1%</td>
+</tr>
+<tr class="even">
+<td><strong>Total expected return</strong></td>
+<td><strong>13.3%</strong></td>
+</tr>
+</tbody>
+</table>
+<p>More concisely: <span class="math inline">\(E(r) = 4\% + 1.2 \times 6\% + 0.7 \times 3\% = 13.3\%\)</span></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Concept Check 7.5">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Concept Check 7.5
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Suppose the risk premiums in Example 7.7 were <span class="math inline">\(E(r_M) - r_f = 4\%\)</span> and <span class="math inline">\(E(r_{TB}) - r_f = 2\%\)</span>. What would be the equilibrium expected rate of return on Northeast Airlines?</p>
+<p><strong>Textbook solution:</strong> Use Equation 7.7 to find that <span class="math inline">\(E(r) = 4\% + 1.2 \times 4\% + 0.7 \times 2\% = 10.2\%\)</span>.</p>
+</div>
+</div>
+</section>
+<section id="which-additional-factors" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="which-additional-factors">Which additional factors?</h3>
+<p>The multifactor model gives us a richer way to think about risk exposures and compensation for those exposures. But what are the relevant additional systematic factors? Economic theory suggests factors that affect investor welfare in <strong>three possible ways</strong>:</p>
+<ol type="1">
+<li>Factors correlated with <strong>prices of important consumption goods</strong>, such as housing or energy.</li>
+<li>Factors correlated with <strong>future investment opportunities</strong>, such as interest rates, return volatility, or risk premiums.</li>
+<li>Factors correlated with the <strong>general state of the economy</strong>, such as industrial production and employment.</li>
+</ol>
+<p>Multifactor equations employing likely candidates for these theoretically plausible factors have <strong>not produced sufficient improvement</strong> over the explanatory power of the single-factor model. Instead, the most common approach to multifactor models today follows the work of <strong>Eugene Fama and Kenneth French (1992)</strong>, who proposed extra-market factors based on <strong>empirical success in predicting excess returns</strong>.</p>
+</section>
+<section id="the-fama-french-three-factor-model" class="level2">
+<h2 class="anchored" data-anchor-id="the-fama-french-three-factor-model">7.4.1 The Fama-French Three-Factor Model</h2>
+<p>Fama and French proposed a three-factor model to explain average returns that has become a standard tool for empirical studies of asset returns. In addition to the market index, they propose as return benchmarks portfolios formed on the basis of <strong>firm size</strong> and <strong>book-to-market (B/M) ratio</strong>. These factors are motivated by the observation that average returns on stocks of small firms and firms with high ratios of book value to market value of equity have been <strong>higher than predicted by the CAPM</strong>.</p>
+<ul>
+<li>Firms with a <strong>high</strong> book-to-market ratio disproportionately include relatively mature firms, which derive a larger share of their market value from assets already in place rather than growth opportunities. This group is often called <strong>value stocks</strong>.</li>
+<li><strong>Low-B/M</strong> companies are viewed as <strong>growth firms</strong> whose market values derive from anticipated growth in future cash flows rather than from assets already in place.</li>
+<li>Considerable evidence (reviewed in the following chapter) suggests that value stocks have offered a higher average rate of return than growth stocks; the differential is known as the <strong>value premium</strong>.</li>
+</ul>
+<p>Fama and French do not view firm size or the book-to-market ratio as directly dictating a firm’s risk premium. Instead, they view these factors as <strong>proxies for more fundamental sources of risk</strong> that are not fully captured by the security’s CAPM beta. These extra-market factors may be interpreted as portfolios that provide exposure to fundamental risk factors, whatever they may be.</p>
+<p><strong>Why might these factors capture systematic risk?</strong></p>
+<ul>
+<li><strong>Book-to-market:</strong> A high B/M ratio, which can result from large investments in fixed assets, may imply higher systematic risk than indicated by historically estimated beta. When the economy tanks, these assets cannot be used at full capacity, and a large share of their value may be lost.</li>
+<li><strong>Size:</strong> Shares of large firms may be less risky than those of small firms, other things being equal, because they are covered by more analysts and there is more accurate information about them. With better-informed investors, prices more accurately reflect true value and are less susceptible to systematic as well as firm-specific fluctuations. With deeper pockets and greater debt capacity, large firms can also better withstand economic downturns. On both counts, stock in small firms will command higher risk premiums than indicated by beta alone.</li>
+</ul>
+</section>
+<section id="estimating-a-three-factor-sml" class="level2">
+<h2 class="anchored" data-anchor-id="estimating-a-three-factor-sml">7.4.2 Estimating a Three-Factor SML</h2>
+<p>Fama and French measure the <strong>size factor</strong> as the difference in returns of firms with low market values (low-cap firms) versus those with high market values (“high-cap” firms), denoted <strong>SMB (small minus big)</strong>. Their proxy for the <strong>value-versus-growth factor</strong> is the difference in returns of stocks with high versus low ratios of book-to-market value, denoted <strong>HML (high minus low)</strong>.</p>
+<p>Taking the difference in returns between two portfolios has an economic interpretation. The SMB return equals the return from a long position in small stocks, financed with a short position in large stocks. This is a portfolio that entails <strong>no net investment</strong>. (The profit on the overall position is measured per dollar invested in the small-cap firms, or equivalently per dollar shorted in the large-cap firms. The market excess return also corresponds to a zero-net-investment portfolio: every dollar invested in the market is financed with a short position in, that is, borrowing at, the risk-free rate.)</p>
+<p>The chapter estimates a three-factor model for U.S. Steel (ticker symbol X) by generalizing regression Equation 7.3:</p>
+<p><span class="math display">\[r_{Xt} - r_{ft} = \alpha_X + \beta_{XM}(r_{Mt} - r_{ft}) + \beta_{X,SMB}\,r_{SMB,t} + \beta_{X,HML}\,r_{HML,t} + e_{Xt} \tag{7.8}\]</span></p>
+<p>The three betas measure U.S. Steel’s sensitivities to the three hypothesized sources of systematic risk: the <strong>market (M)</strong>, the <strong>value-versus-growth factor (HML)</strong>, and the <strong>size factor (SMB)</strong>. This model is the <strong>Fama-French three-factor model</strong> (PowerPoint slide 19 notes three aspects of a successful specification: a higher adjusted R-square, a lower residual standard deviation, and a smaller value of alpha).</p>
+<p><strong>Table 7.2 Estimates of Single-Index and Three-Factor Fama-French Regressions for U.S. Steel, Monthly Data, 5 Years Ending in 2022</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 19%">
+<col style="width: 19%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Single-Index: Coefficient</th>
+<th>Single-Index: <em>t</em>-Statistic</th>
+<th>Three-Factor: Coefficient</th>
+<th>Three-Factor: <em>t</em>-Statistic</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Intercept (alpha, %)</td>
+<td>-0.328</td>
+<td>-0.159</td>
+<td>-0.111</td>
+<td>-0.055</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(r_M - r_f\)</span></td>
+<td>2.080</td>
+<td>5.655</td>
+<td>1.921</td>
+<td>5.077</td>
+</tr>
+<tr class="odd">
+<td>SMB</td>
+<td></td>
+<td></td>
+<td>0.916</td>
+<td>1.192</td>
+</tr>
+<tr class="even">
+<td>HML</td>
+<td></td>
+<td></td>
+<td>0.799</td>
+<td>1.745</td>
+</tr>
+<tr class="odd">
+<td>R-square</td>
+<td>0.355</td>
+<td></td>
+<td>0.400</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Residual std dev (%)</td>
+<td>15.830%</td>
+<td></td>
+<td>15.537%</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><em>Source: Author’s calculations (Bodie, Kane &amp; Marcus, Table 7.2).</em></p>
+<p>The intercept in each regression is the estimate of (monthly) alpha over the sample period. The coefficient on the market index excess return is the estimate of U.S. Steel’s market risk, while the coefficients on SMB and HML are estimates of the betas against the two extra-market risk factors.</p>
+<p><strong>Interpreting the results.</strong> The extra-market risk factors do not add much to U.S. Steel’s risk profile.</p>
+<ul>
+<li>U.S. Steel is only a moderately large firm. Its roughly $5.5 billion market capitalization in early 2023 puts it between the 50th and 60th size percentile. Its beta against SMB is not even close to statistical significance.</li>
+<li>Its book-to-market ratio, about 1.8, is quite high, in the top decile. Given that ratio, its positive beta on HML is not surprising, but it too is not statistically significant.</li>
+<li>Adding the two factors neither increases the R-square meaningfully nor reduces the standard deviation of the unexplained residuals.</li>
+<li>We conclude that for U.S. Steel, the standard market beta (highly significant, with a <em>t</em>-statistic above 5) is the primary determinant of systematic risk. Other firms will have their own unique configuration of exposures to the various risk factors.</li>
+</ul>
+<section id="using-the-three-factor-model-to-estimate-an-expected-return" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="using-the-three-factor-model-to-estimate-an-expected-return">Using the three-factor model to estimate an expected return</h3>
+<p>Using the three-factor model to estimate expected returns requires <strong>forecasts of the premiums on the two extra-market risk factors</strong> as well as that on the market index. The chapter takes simple historical averages as estimates of factor risk premiums:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Factor</th>
+<th>Historical-average risk premium</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Market index</td>
+<td>8.55%</td>
+</tr>
+<tr class="even">
+<td>SMB</td>
+<td>2.92%</td>
+</tr>
+<tr class="odd">
+<td>HML</td>
+<td>4.44%</td>
+</tr>
+</tbody>
+</table>
+<p>If the risk-free rate is 2%, U.S. Steel’s expected return using the estimates in Table 7.2 is:</p>
+<p><span class="math display">\[E(r_X) = r_f + \beta_{X,M}[E(r_M) - r_f] + \beta_{X,SMB}E(r_{SMB}) + \beta_{X,HML}E(r_{HML})\]</span></p>
+<p><span class="math display">\[= 2\% + 1.921 \times 8.55\% + 0.916 \times 2.92\% + 0.799 \times 4.44\% = 24.65\%\]</span></p>
+<p>If, instead, we used the beta estimate from the single-index model, we would obtain a somewhat lower expected return:</p>
+<p><span class="math display">\[r_f + \beta[E(r_M) - r_f] = 2\% + 2.080 \times 8.55\% = 19.79\%\]</span></p>
+<p>The slightly lower beta against the market index in the three-factor model is more than offset by the positive betas against the two extra-market risk factors.</p>
+<p><strong>Notes:</strong></p>
+<ul>
+<li>In neither case do we add the regression estimate of alpha to the forecast of expected return. <strong>Equilibrium expected returns depend only on risk; the expectation of alpha in market equilibrium must be zero.</strong> A security may have outperformed its benchmark in a particular sample period (a positive alpha), but we would not expect that performance to continue. As an empirical matter, individual firm alphas show virtually no persistence over time.</li>
+<li>When estimating Equation 7.8, we subtract the risk-free return from the market return but <strong>not</strong> from the returns on the SMB or HML portfolios. This is because the SMB and HML factors are <em>already</em> risk premiums, for size or book-to-market, respectively. The factor data are available from Kenneth French’s website.</li>
+</ul>
+</section>
+</section>
+<section id="multifactor-models-and-the-validity-of-the-capm" class="level2">
+<h2 class="anchored" data-anchor-id="multifactor-models-and-the-validity-of-the-capm">7.4.3 Multifactor Models and the Validity of the CAPM</h2>
+<p>The single-index CAPM fails empirical tests because its empirical representation, the single-index model, inadequately explains returns on too many securities. In short, <strong>too many statistically significant alphas</strong> (which the CAPM says should be zero) show up in single-index regressions. Despite this failure, it is still widely used in the industry.</p>
+<p>Multifactor models such as the Fama-French model may also be tested by the prevalence of significant alpha values. <strong>The three-factor model shows a material improvement over the single-index model</strong> in that regard.</p>
+<p>But the use of multi-index models comes at a price: they require <strong>forecasts of the additional factor returns</strong>. If forecasts of those additional factors are themselves subject to forecast error, these models can be less accurate than the theoretically inferior single-index model. Nevertheless, multifactor models have a definite appeal because it is clear that real-world risk is multifaceted.</p>
+<p>The original Fama-French model has spawned a “cottage industry” generating new factor portfolios beyond SMB and HML, including, but not limited to, <strong>momentum</strong> or <strong>liquidity</strong> factors. These developments are surveyed in the next chapter.</p>
+<hr>
+</section>
+</section>
+<section id="arbitrage-pricing-theory" class="level1">
+<h1>7.5 Arbitrage Pricing Theory</h1>
+<p>One reason for skepticism about the validity of the CAPM is the <strong>unrealistic nature of its assumptions</strong>. Most unappealing are Assumptions 1(a)-1(c), namely, that all investors are identical in every way but wealth and risk aversion. For this reason, as well as for its economic insights, an alternative approach to asset pricing called <strong>arbitrage pricing theory (APT)</strong> is of great interest.</p>
+<p><strong>Arbitrage</strong> is the act of exploiting mispricing of two or more securities to achieve risk-free profits. As a trivial example, consider a security that is priced differently in two markets. A long position in the cheaper market financed by a short position in the expensive market will lead to a sure profit. As investors avidly pursue this strategy, prices are forced back into alignment, so arbitrage opportunities vanish almost as quickly as they materialize.</p>
+<p>The first to apply this concept to equilibrium security returns was <strong>Ross (1976)</strong>, who developed the APT. The APT depends on the observation that well-functioning capital markets preclude arbitrage opportunities. A violation of the APT’s pricing relationships will cause extremely strong pressure to restore them even if only a limited number of investors become aware of the discrepancy. Ross’s accomplishment was to derive the equilibrium rates of return that would prevail in a market where prices are aligned to obey the <strong>“no-arbitrage rule.”</strong></p>
+<p><strong>PowerPoint summary of the key ideas:</strong></p>
+<ul>
+<li><em>Arbitrage:</em> relative mispricing creates riskless profit.</li>
+<li><em>APT:</em> risk-return relationships from no-arbitrage considerations in large capital markets.</li>
+<li><em>Well-diversified portfolio:</em> nonsystematic risk is negligible.</li>
+<li><em>Arbitrage portfolio:</em> a positive-return, zero-net-investment, risk-free portfolio.</li>
+</ul>
+<section id="diversification-in-a-single-index-security-market" class="level2">
+<h2 class="anchored" data-anchor-id="diversification-in-a-single-index-security-market">7.5.1 Diversification in a Single-Index Security Market</h2>
+<p>Imagine a portfolio formed from securities whose returns follow the single-index model (Equation 7.3). What are the systematic and nonsystematic variances of this portfolio?</p>
+<p><strong>Systematic risk.</strong></p>
+<ul>
+<li>The beta of the portfolio is a simple average of the individual security betas; call that average beta <span class="math inline">\(\bar{\beta}\)</span>. The <strong>systematic variance</strong> equals <span class="math inline">\(\bar{\beta}^2\sigma_M^2\)</span>. The market variance and the beta of the portfolio determine its market risk.</li>
+<li>The systematic component of each security’s return, <span class="math inline">\(\beta_i R_M\)</span>, is determined completely by the market factor and is therefore perfectly correlated with the systematic part of any other security’s return. Hence <strong>there are no diversification effects on systematic risk no matter how many securities are involved</strong>. A single security has the same systematic risk as a diversified portfolio with the same beta. The number of securities makes no difference.</li>
+</ul>
+<p><strong>Firm-specific (nonsystematic) risk.</strong> It is quite different here. Consider a portfolio of <em>n</em> securities with weights <span class="math inline">\(w_i\)</span> in each. The nonsystematic portion of the portfolio return is:</p>
+<p><span class="math display">\[e_P = \sum_{i=1}^{n} w_i e_i\]</span></p>
+<p>Because the firm-specific terms, <span class="math inline">\(e_i\)</span>, are uncorrelated, the portfolio nonsystematic variance is the weighted sum of the individual firm-specific variances:</p>
+<p><span class="math display">\[\sigma^2(e_P) = \sum_{i=1}^{n} w_i^2 \sigma^2(e_i) \tag{7.9}\]</span></p>
+<p>(Multiplying a random variable by a constant multiplies its variance by the square of the constant, and the variance of the sum equals the sum of the variances because, by assumption in the index model, all covariances are zero.)</p>
+<p>Each individual nonsystematic variance is multiplied by the <strong>square of the portfolio weight</strong>. With diversified portfolios, the squared weights are very small. For example, if <span class="math inline">\(w_i = 0.01\)</span> (a portfolio with 100 securities), then <span class="math inline">\(w_i^2 = 0.0001\)</span>. The sum in Equation 7.9 is therefore far less than the average firm-specific variance of the stocks in the portfolio. <strong>The impact of nonsystematic risk becomes ever smaller as the number of securities grows and the portfolio becomes more diversified.</strong></p>
+<p>Figure 7.3 shows this effect. The red dots are the monthly returns over a five-year period for a single stock, Intel, versus the return on the market index. The dark blue dots are for a diversified stock mutual fund, Vanguard’s Growth &amp; Income Fund. During the period, both the stock and the fund had virtually identical betas, but their nonsystematic risk differed considerably: the scatter of Intel’s returns falls considerably further from the regression line than does the mutual fund’s, for which diversification has virtually eliminated residual risk.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch07/Fig7_3_Intel_vs_Mutual_Fund_Scatter.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption>Figure 7.3 Scatter Diagram for a Single Stock (Intel) and a Diversified Mutual Fund (Vanguard Growth and Income). The fund exhibits much smaller scatter around the regression line.</figcaption>
+</figure>
+</div>
+<p><em>Source: Bodie, Kane &amp; Marcus, Essentials of Investments (2024 Release), Figure 7.3.</em></p>
+<p><strong>In sum:</strong> the number of securities in the portfolio has no bearing on systematic risk; only average beta matters. In contrast, firm-specific risk becomes increasingly irrelevant as the portfolio becomes more diversified. Risk premiums should depend only on systematic risk that cannot be diversified; firm-specific risk should not command a risk premium because it is easily eliminated. Risk premiums should therefore depend on the security’s beta, not on its firm-specific risk. This is the basis of the APT’s security market line.</p>
+</section>
+<section id="well-diversified-portfolios" class="level2">
+<h2 class="anchored" data-anchor-id="well-diversified-portfolios">7.5.2 Well-Diversified Portfolios</h2>
+<p>Equation 7.9 tells us that as diversification progresses, that is, as the weight in each security approaches zero, the nonsystematic variance of the portfolio approaches zero. We define a <strong>well-diversified portfolio</strong> as one for which each weight, <span class="math inline">\(w_i\)</span>, is small enough that, for practical purposes, the nonsystematic variance, <span class="math inline">\(\sigma^2(e_P)\)</span>, is negligible.</p>
+<p>Because the expected value of <span class="math inline">\(e_P\)</span> for any well-diversified portfolio is zero, and its variance is also effectively zero, any realized value of <span class="math inline">\(e_P\)</span> will be virtually zero. For a well-diversified portfolio, we can therefore drop the residual term from the index model equation, which becomes:</p>
+<p><span class="math display">\[r_P = r_f + \alpha_P + \beta_P(r_M - r_f) \tag{7.10}\]</span></p>
+<p>The solid line in Figure 7.4, Panel A, plots the excess return of a well-diversified portfolio P with <span class="math inline">\(E(r_P) - r_f = E(R_P) = 10\%\)</span> and <span class="math inline">\(\beta_P = 1\)</span> for various realizations of the market excess return. Panel B is a similar graph for a single stock (S) with <span class="math inline">\(\beta_S = 1\)</span>. The undiversified stock is subject to nonsystematic risk, seen in a <strong>scatter of points around the line</strong>. The well-diversified portfolio’s return, in contrast, is <strong>determined completely by the systematic factor</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/images/Ch07/Fig7_4_Security_Characteristic_Lines.png" class="img-fluid figure-img" style="width:85.0%"></p>
+<figcaption>Figure 7.4 Security Characteristic Lines. Panel A: well-diversified portfolio, P. Panel B: single stock, S.</figcaption>
+</figure>
+</div>
+<p><em>Source: Bodie, Kane &amp; Marcus, Essentials of Investments (2024 Release), Figure 7.4.</em></p>
+</section>
+<section id="the-security-market-line-of-the-apt" class="level2">
+<h2 class="anchored" data-anchor-id="the-security-market-line-of-the-apt">7.5.3 The Security Market Line of the APT</h2>
+<p>Suppose you form a well-diversified portfolio with a beta of 0.7. According to Equation 7.10, its return in any period would be <span class="math inline">\(r_P = r_f + \alpha_P + 0.7(r_M - r_f)\)</span>.</p>
+<p>Now consider another portfolio constructed by mixing the market index and T-bills with weights of 0.7 and 0.3. This is a <strong>mimicking portfolio</strong> because it duplicates the systematic exposure of portfolio P. Its return is <span class="math inline">\(0.3r_f + 0.7r_M\)</span>, which can be rewritten as <span class="math inline">\(r_f + 0.7(r_M - r_f)\)</span>.</p>
+<p>Now suppose you buy $1 of portfolio P and sell $1 worth of the mimicking portfolio. Your net investment is <strong>zero</strong>, and your proceeds are <strong>riskless</strong>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Position</th>
+<th>Return</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Long $1 in portfolio P</td>
+<td><span class="math inline">\(\$1 \times [r_f + \alpha_P + 0.7(r_M - r_f)]\)</span></td>
+</tr>
+<tr class="even">
+<td>Short $1 in mimicking portfolio</td>
+<td><span class="math inline">\(-\$1 \times [r_f + 0.7(r_M - r_f)]\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>Net profit</strong></td>
+<td><span class="math inline">\(\$1 \times \alpha_P\)</span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>If <span class="math inline">\(\alpha_P\)</span> were <strong>positive</strong>, investors would pursue this strategy (riskless, zero net investment) at an infinitely large scale and make an infinitely large profit.</li>
+<li>If <span class="math inline">\(\alpha_P\)</span> were <strong>negative</strong>, investors would do the reverse, selling portfolio P and buying the mimicking portfolio, again clearing a risk-free profit.</li>
+<li>These large-scale investments would continue until alpha was driven to zero. No matter what the beta of portfolio P, we could pursue this same strategy.</li>
+</ul>
+<p>We conclude that <span class="math inline">\(\alpha_P\)</span> in Equation 7.10 must be zero if capital markets are to rule out easy arbitrage opportunities. Setting <span class="math inline">\(\alpha_P = 0\)</span> and taking expectations in Equation 7.10 gives the expected return on the portfolio:</p>
+<p><span class="math display">\[E(r_P) = r_f + \beta_P\left[E(r_M) - r_f\right] \tag{7.11}\]</span></p>
+<p><strong>This is the familiar expected return-beta relation of the CAPM!</strong> Its message, that beta and not firm-specific risk should drive asset risk premiums, should not be surprising in light of our earlier conclusion that firm-specific risk can be eliminated through diversification. Equation 7.11 establishes that <strong>the SML of the CAPM must also apply to well-diversified portfolios simply by virtue of the no-arbitrage requirement of the APT.</strong></p>
+</section>
+<section id="individual-assets-and-the-apt" class="level2">
+<h2 class="anchored" data-anchor-id="individual-assets-and-the-apt">7.5.4 Individual Assets and the APT</h2>
+<p>We have shown that if arbitrage opportunities are to be ruled out, each well-diversified portfolio’s expected return must satisfy the SML predicted by the CAPM. Does this tell us anything about the expected returns on the component stocks? <strong>If this relationship is to be satisfied by all well-diversified portfolios, it must be satisfied by almost all individual securities</strong>, although a rigorous proof is somewhat difficult. The chapter illustrates the argument less formally:</p>
+<ol type="1">
+<li>Suppose the expected return-beta relationship is violated for all single assets. Now create a well-diversified portfolio from these assets. The chances that the relationship holds for the portfolio, in spite of generally not holding for individual assets, are small (though perhaps the violations offset one another).</li>
+<li>Construct yet another well-diversified portfolio. The chances that <em>this</em> portfolio also fulfills the no-arbitrage relationship are smaller still.</li>
+<li>Continue with another well-diversified portfolio, and so on. If the relationship has to hold for each of these different well-diversified portfolios, it must be <strong>virtually certain</strong> that it holds for all but a small number of individual securities.</li>
+</ol>
+<p><strong>Why “virtually certain” rather than “surely”?</strong> To qualify as well diversified, a portfolio must have very small positions in all securities. If only one security violates the expected return-beta relationship, the effect on a well-diversified portfolio will be too small to be of importance, and meaningful arbitrage opportunities will not arise. But if <em>many</em> securities violate the relationship, it will no longer hold for well-diversified portfolios, and arbitrage opportunities will be available.</p>
+<p><strong>Conclusion:</strong> the no-arbitrage condition in a single-index security market implies the expected return-beta relationship for <strong>all well-diversified portfolios</strong> and for <strong>all but possibly a small number of individual securities</strong>.</p>
+</section>
+<section id="well-diversified-portfolios-in-practice" class="level2">
+<h2 class="anchored" data-anchor-id="well-diversified-portfolios-in-practice">7.5.5 Well-Diversified Portfolios in Practice</h2>
+<p>What is the effect of diversification on portfolio standard deviation in practice, where portfolio size is not unlimited? Consider the residual standard deviation of a 1,000-stock portfolio with equal weights on each component stock. If the annualized residual standard deviation for each stock is <span class="math inline">\(\sigma(e_i) = 40\%\)</span>, the portfolio achieves a small but still not negligible standard deviation of:</p>
+<p><span class="math display">\[\frac{40\%}{\sqrt{1{,}000}} = 1.26\%\]</span></p>
+<p>What is a “large” portfolio? Many widely held ETFs or mutual funds hold hundreds of different shares, but few hold more than 1,000. For plausible portfolios, even broad diversification is not likely to achieve the risk reduction of the APT’s “well-diversified” ideal. <strong>This is a shortcoming in the model.</strong> On the other hand, even the levels of residual risk attainable in practice should make the APT’s security market line at the very least a good approximation to the risk-return relation.</p>
+</section>
+<section id="the-apt-and-the-capm" class="level2">
+<h2 class="anchored" data-anchor-id="the-apt-and-the-capm">7.5.6 The APT and the CAPM</h2>
+<p>The APT serves many of the same functions as the CAPM. It gives us a <strong>benchmark for rates of return</strong> that can be used in capital budgeting, security valuation, or investment performance evaluation. It also highlights the crucial distinction between <strong>nondiversifiable risk</strong>, which requires a reward in the form of a risk premium, and <strong>diversifiable risk</strong>, which does not.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 38%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>APT</strong></th>
+<th><strong>CAPM</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Basis</strong></td>
+<td>Appeals to a more compelling <strong>arbitrage strategy</strong>; a rational capital market will preclude arbitrage opportunities</td>
+<td>Relies on <strong>marginal trade-offs between risk and return</strong> in the mean-variance efficient portfolio</td>
+</tr>
+<tr class="even">
+<td><strong>Investor assumptions</strong></td>
+<td>Does <strong>not</strong> require that almost all investors be mean-variance optimizers</td>
+<td>Requires mean-variance optimizing investors (and the other assumptions in Table 7.1)</td>
+</tr>
+<tr class="odd">
+<td><strong>Benchmark portfolio</strong></td>
+<td>A <strong>well-diversified, observable index portfolio</strong>, rather than the elusive, impossible-to-observe market portfolio of all assets</td>
+<td>The unobservable market portfolio of all assets. When it is replaced with a broad but observable index, we can no longer be sure the index is an adequate benchmark for the SML</td>
+</tr>
+<tr class="even">
+<td><strong>Which securities?</strong></td>
+<td>The expected return-beta relationship holds for all well-diversified portfolios and <strong>all but perhaps a small number of securities</strong>. Because it is built on well-diversified portfolios, it cannot rule out a violation for any particular asset. Even large portfolios may have nonnegligible residual risk</td>
+<td>An <strong>unequivocal</strong> statement on the expected return-beta relationship for <strong>all</strong> securities</td>
+</tr>
+</tbody>
+</table>
+<p><strong>In spite of the APT’s apparent advantages, it does not fully dominate the CAPM.</strong> In the end, it is noteworthy and comforting that despite the different paths they take, <strong>both models arrive at the same security market line</strong>. Most important, both highlight the distinction between firm-specific and systematic risk, which is at the heart of all modern models of risk and return.</p>
+</section>
+<section id="multifactor-generalization-of-the-apt" class="level2">
+<h2 class="anchored" data-anchor-id="multifactor-generalization-of-the-apt">7.5.7 Multifactor Generalization of the APT</h2>
+<p>So far we have examined the APT in a one-factor world. In reality, there are several sources of systematic risk, such as uncertainty in the business cycle, interest rates, and energy prices. Exposure to any of these factors will affect a stock’s appropriate expected return, and the APT can be generalized to accommodate these multiple sources of risk in a manner much like the multifactor CAPM.</p>
+<p>Expand the single-index model of Equation 7.3 to a <strong>two-index model</strong>:</p>
+<p><span class="math display">\[r_{it} - r_{ft} = \alpha_i + \beta_{i1}(r_{M1,t} - r_{ft}) + \beta_{i2}(r_{M2,t} - r_{ft}) + e_{it} \tag{7.12}\]</span></p>
+<p>where <span class="math inline">\(r_{M1} - r_f\)</span> and <span class="math inline">\(r_{M2} - r_f\)</span> are the excess returns on <strong>“factor portfolios”</strong> designed to track the two systematic factors. Factor 1 might be, for example, unanticipated changes in industrial production, while factor 2 might represent unanticipated changes in short-term interest rates.</p>
+<p>We assume again that there are many securities available with any combination of betas. This implies that we can form <strong>well-diversified factor portfolios</strong> with a beta of 1 on one factor and 0 on all others. A factor portfolio with a beta of 1 on the first factor has a rate of return of <span class="math inline">\(r_{M1}\)</span>; one with a beta of 1 on the second factor has a rate of return of <span class="math inline">\(r_{M2}\)</span>; and so on. Factor portfolios serve as the benchmark portfolios for a multifactor generalization of the security market line relationship.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Example 7.8 - Multifactor SML">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Example 7.8 - Multifactor SML
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Suppose the two factor portfolios, here called portfolios 1 and 2, have expected returns <span class="math inline">\(E(r_1) = 10\%\)</span> and <span class="math inline">\(E(r_2) = 12\%\)</span>. The risk-free rate is 4%. The risk premium on the first factor portfolio is therefore <strong>6%</strong>, while that on the second factor portfolio is <strong>8%</strong>.</p>
+<p>Now consider an arbitrary well-diversified portfolio (P) with beta on the first factor <span class="math inline">\(\beta_{P1} = 0.5\)</span> and on the second factor <span class="math inline">\(\beta_{P2} = 0.75\)</span>. Like the multifactor CAPM, the multifactor APT states that the portfolio risk premium must equal the sum of the risk premiums required as compensation for each source of systematic risk.</p>
+<ul>
+<li>Factor 1: <span class="math inline">\(\beta_{P1}[E(r_1) - r_f] = 0.5(10\% - 4\%) = 3\%\)</span></li>
+<li>Factor 2: <span class="math inline">\(\beta_{P2}[E(r_2) - r_f] = 0.75(12\% - 4\%) = 6\%\)</span></li>
+<li>Total risk premium: <span class="math inline">\(3 + 6 = 9\%\)</span></li>
+</ul>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Risk-free rate</td>
+<td>4%</td>
+</tr>
+<tr class="even">
+<td>+ Risk premium for exposure to factor 1</td>
+<td>3%</td>
+</tr>
+<tr class="odd">
+<td>+ Risk premium for exposure to factor 2</td>
+<td>6%</td>
+</tr>
+<tr class="even">
+<td><strong>Total expected return</strong></td>
+<td><strong>13%</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="an-arbitrage-when-the-multifactor-sml-is-violated" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="an-arbitrage-when-the-multifactor-sml-is-violated">An arbitrage when the multifactor SML is violated</h3>
+<p>If the actual expected return on portfolio P in Example 7.8 were not 13%, there would be an arbitrage opportunity. Suppose portfolio P actually has an expected return of <strong>15%</strong>, and therefore a positive alpha of <strong>2%</strong>.</p>
+<p>As before, the idea is to create a <strong>mimicking portfolio</strong> that duplicates P’s systematic risk. Put weight <span class="math inline">\(\beta_{P1}\)</span> in factor portfolio 1, weight <span class="math inline">\(\beta_{P2}\)</span> in factor portfolio 2, and the remainder, <span class="math inline">\((1 - \beta_{P1} - \beta_{P2})\)</span>, in T-bills. The rate of return on the mimicking portfolio is:</p>
+<p><span class="math display">\[\beta_{P1}r_{M1} + \beta_{P2}r_{M2} + (1 - \beta_{P1} - \beta_{P2})r_f = r_f + \beta_{P1}(r_{M1} - r_f) + \beta_{P2}(r_{M2} - r_f) \tag{7.13}\]</span></p>
+<p>There is no residual risk term in Equation 7.13 because the mimicking portfolio is composed of well-diversified factor portfolios. Its expected return is <span class="math inline">\(4\% + 0.5(10 - 4) + 0.75(12 - 4) = 13\%\)</span>. The mimicking portfolio therefore has exactly the same factor exposures as portfolio P, but its expected return is 13% rather than 15%, which is another way to see that <span class="math inline">\(\alpha_P = 2\%\)</span>.</p>
+<p>Given its higher return and identical factor exposure, <strong>arbitrageurs will buy large amounts of portfolio P and sell equal amounts of the mimicking portfolio</strong>. Their net investments are zero and their positions are risk-free because the factor exposures of P and the mimicking portfolio cancel out. This activity pushes up the price of portfolio P, driving down its expected rate of return until <span class="math inline">\(\alpha_P\)</span> is forced to zero. <strong>In the absence of arbitrage opportunities, the multifactor SML must prevail.</strong></p>
+<p>With two sources of systematic risk, factor portfolios M1 and M2, and betas of <span class="math inline">\(\beta_1\)</span> and <span class="math inline">\(\beta_2\)</span> on those portfolios, the <strong>two-factor SML</strong> for security <em>i</em> is:</p>
+<p><span class="math display">\[E(r_i) = r_f + \beta_1\left[E(r_{M1}) - r_f\right] + \beta_2\left[E(r_{M2}) - r_f\right] \tag{7.14}\]</span></p>
+<p>Just as the single-factor APT and CAPM give rise to the same SML, <strong>the multifactor extensions of the two models also produce identical SMLs</strong>.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Concept Check 7.6">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Concept Check 7.6
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the factor portfolios of Example 7.8, find the fair rate of return on a security with <span class="math inline">\(\beta_1 = 0.2\)</span> and <span class="math inline">\(\beta_2 = 1.4\)</span>.</p>
+<p><strong>Textbook solution:</strong> Using Equation 7.14, the expected return is <span class="math inline">\(4\% + (0.2 \times 6\%) + (1.4 \times 8\%) = 16.4\%\)</span>.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="smart-betas-and-multifactor-models" class="level2">
+<h2 class="anchored" data-anchor-id="smart-betas-and-multifactor-models">7.5.8 Smart Betas and Multifactor Models</h2>
+<p>Both the CAPM and the APT have multifactor generalizations. There are at least <strong>two important implications</strong>:</p>
+<ol type="1">
+<li>Investors should be aware that their portfolios are subject to <strong>more than one systematic source of risk</strong>, and they need to think about how much exposure they wish to establish to each systematic factor.</li>
+<li>When they evaluate investment performance, they should be aware that risk premiums come from exposure to several risk factors, and that <strong>alpha needs to be computed controlling for each of them</strong>.</li>
+</ol>
+<p>A product called <strong>smart-beta ETFs</strong> has important implications for both issues. They are analogous to index ETFs, but instead of tracking a broad market index using market-capitalization weights, they are funds designed to provide exposure to <strong>specific characteristics</strong> such as value, growth, or volatility. Prominent themes include the extra-market factors of the Fama-French three-factor model, <strong>size (SMB)</strong> and <strong>value (HML)</strong>. Other factors:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 68%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Factor</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Momentum (WML)</strong></td>
+<td>Winners minus losers: the return on a portfolio that buys recent well-performing stocks and sells poorly performing ones</td>
+</tr>
+<tr class="even">
+<td><strong>Volatility</strong></td>
+<td>Based on the standard deviation of stock returns</td>
+</tr>
+<tr class="odd">
+<td><strong>Quality</strong></td>
+<td>The difference in returns of firms with high versus low return on assets or similar measures of profitability</td>
+</tr>
+<tr class="even">
+<td><strong>Investment</strong></td>
+<td>The difference between returns on firms with high versus low rates of asset growth</td>
+</tr>
+<tr class="odd">
+<td><strong>Dividend yield</strong></td>
+<td>Based on firms’ dividend yields</td>
+</tr>
+</tbody>
+</table>
+<p>Smart-beta ETFs allow investors to tailor portfolio exposures <strong>toward or away from</strong> a range of extra-market risk factors using easy-to-trade index-like products. They are therefore well-suited to a multifactor environment. They also raise the question of appropriate performance evaluation: when investors can cheaply and effectively manage exposure to multidimensional sources of systematic risk, investment success is captured by a <strong>multifactor alpha</strong>, providing a clean measure of the success of security selection. This is the message of the multifactor SML in Equation 7.14.</p>
+<hr>
+</section>
+</section>
+<section id="chapter-summary" class="level1">
+<h1>Chapter Summary</h1>
+<ul>
+<li>The CAPM assumes investors are rational, single-period planners who agree on a common input list from security analysis and seek mean-variance optimal portfolios, in ideal security markets (no taxes, no transaction costs, all risky assets publicly traded, and unlimited borrowing and lending at a fixed risk-free rate). These assumptions mean that all investors hold identical risky portfolios. In equilibrium, the <strong>market portfolio</strong> is the unique mean-variance efficient tangency portfolio, so a <strong>passive strategy is efficient</strong>.</li>
+<li>The market portfolio is <strong>value-weighted</strong>. Its risk premium is proportional to its variance, <span class="math inline">\(\sigma_M^2\)</span>, and to the risk aversion of the average investor.</li>
+<li>The CAPM implies that the risk premium on any individual asset or portfolio is the product of the market risk premium and the asset’s <strong>beta</strong>. The <strong>security market line</strong> shows the return demanded by investors as a function of beta, and serves as a benchmark for evaluating performance, for capital budgeting discount rates, and in regulatory proceedings on the “fair” rate of return for regulated industries.</li>
+<li>In a single-index market, beta can be estimated from a regression of the security’s excess return on the index’s excess return (the <strong>security characteristic line</strong>). The intercept is <strong>alpha</strong>, and the CAPM implies that alphas should average zero.</li>
+<li>The CAPM is usually implemented as a single-factor model, but <strong>multifactor generalizations</strong> let the risk premium of any security depend on its sensitivity to each systematic risk factor and the risk premium associated with that factor. There are two general approaches to finding extra-market factors: one looks for factors <strong>empirically associated with high average returns</strong> (possible proxies for systematic risk); the other focuses on factors that are <strong>plausibly important sources of risk</strong> to wide segments of investors.</li>
+<li>An <strong>arbitrage opportunity</strong> arises when the disparity between security prices enables investors to construct a zero-net-investment portfolio that yields a sure profit. Trading pressure continues until prices reach levels that preclude arbitrage (the <strong>no-arbitrage condition</strong>); only a few investors need to become aware of the opportunity to trigger this process, because of the large volume of trades in which they will engage.</li>
+<li><strong>Well-diversified</strong> portfolios have negligible residual risk. In a single-factor market, all well-diversified portfolios must satisfy the SML’s expected return-beta relationship to satisfy the no-arbitrage condition; if they do, all but a small number of securities must as well.</li>
+<li>The <strong>APT</strong> implies the same expected return-beta relationship as the CAPM without requiring that all investors be mean-variance optimizers. The price of this generality is that the APT does not guarantee the relationship for all securities at all times. The <strong>multifactor APT</strong> produces the same multifactor SML as the multifactor CAPM.</li>
+</ul>
+<hr>
+</section>
+<section id="key-terms" class="level1">
+<h1>Key Terms</h1>
+<p>Definitions are the textbook’s. Page numbers refer to Bodie, Kane &amp; Marcus, <em>Essentials of Investments</em> (2024 Release), Chapter 7.</p>
+<p><strong>alpha</strong> (p.&nbsp;206)<br>
+A stock’s expected excess return beyond that consistent with its beta and the market’s excess return.</p>
+<p><strong>arbitrage</strong> (p.&nbsp;214)<br>
+Creation of riskless profits made possible by relative mispricing among securities.</p>
+<p><strong>arbitrage pricing theory (APT)</strong> (p.&nbsp;214)<br>
+A theory of risk-return relationships derived from no-arbitrage considerations in large capital markets.</p>
+<p><strong>capital asset pricing model (CAPM)</strong> (p.&nbsp;200)<br>
+A model that relates the required rate of return on a security to its systematic risk as measured by beta.</p>
+<p><strong>expected return-beta relationship</strong> (p.&nbsp;204)<br>
+Implication of the CAPM that security risk premiums should be proportional to beta.</p>
+<p><strong>factor portfolio</strong> (p.&nbsp;218)<br>
+A well-diversified portfolio constructed to have a beta of 1 on one factor and a beta of 0 on any other factor.</p>
+<p><strong>market portfolio (M)</strong> (p.&nbsp;201)<br>
+The portfolio for which each security is held in proportion to its total market value.</p>
+<p><strong>multifactor models</strong> (p.&nbsp;210)<br>
+Models of security markets positing that returns respond to several systematic factors.</p>
+<p><strong>mutual fund theorem</strong> (p.&nbsp;203)<br>
+States that all investors desire the same portfolio of risky assets and can be satisfied by a single mutual fund composed of that portfolio.</p>
+<p><strong>security market line (SML)</strong> (p.&nbsp;205)<br>
+Graphical representation of the expected return-beta relationship of the CAPM.</p>
+<p><strong>well-diversified portfolio</strong> (p.&nbsp;216)<br>
+A portfolio sufficiently diversified that nonsystematic risk is negligible.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/clb18\.github\.io\/FIN-3440_Investments");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -47,6 +47,9 @@ website:
                 href: Lectures/Chapter05_Lecture.qmd
               - text: "Ch 6 - Efficient Diversification" 
                 href: Lectures/Chapter06_Lecture.qmd
+              - text: "Ch 7 - Capital Asset Pricing and Arbitrage Pricing Theory" 
+                href: Lectures/Chapter07_Lecture.qmd
+
 format:
   html:
     code-fold: true
